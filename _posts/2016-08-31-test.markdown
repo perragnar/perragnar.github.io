@@ -1,0 +1,6 @@
+---
+title: Test
+layout: post
+---
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus hic quidem ad accusamus sapiente. Ea voluptates est expedita quae, distinctio id cum eaque, neque rem ut rerum magni modi natus!

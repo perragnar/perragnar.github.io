@@ -1,0 +1,24 @@
+<div class="top-bar"></div>
+<header class="page-header">
+  <div class="wrapper">
+    <nav class="main-navigation">
+      <div class="main-navigation-button">MENY</div>
+      <ul>
+        {% for link in site.navigation %}
+          <li><a href="{{ site.baseurl }}{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="site-title-wrapper">
+      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h2 class="site-secondary-title">{{ site.secondary-title }}</h2>
+    </div>
+    <nav class="secondary-navigation">
+      <ul>
+        <li><a href="https://github.com/perragnar" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/perragnaredin" target="_blank">Twitter</a></li>
+        <li><a href="https://perragnar.artstation.com" target="_blank">Artstation</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

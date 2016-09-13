@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="page-wrapper">
+  <div class="wrapper">
+    <div class="post">
+      <div class="box">
+        {% if page.poster %}
+          <div class="post-poster">
+            <img src="{{ site.baseurl }}/img/posters/{{ page.poster }}" />
+          </div>
+        {% endif %}
+        <header class="post-header">
+          <div class="post-meta">
+            <div class="date">{% include datetime.html datetime=page.date %}</div>
+          </div>
+          {% if page.title %}<h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>{% endif %}
+        </header>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
