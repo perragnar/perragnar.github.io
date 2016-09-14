@@ -37,16 +37,16 @@ Låt oss skapa ett enkelt scenario där vi har några enkla filer i branchen **m
 
 Nu ska vi lägga till en cool funktion till vår webbsida och skapar därför en ny branch som vi döper till **cool-new-feature**.
 
-```language-git
+{% highlight plaintext linenos %}
 git branch cool-new-feature
 git checkout cool-new-feature
-```
+{% endhighlight %}
 
 eller om man vill göra bägge kommandon i samma svep:
 
-```language-git
+{% highlight plaintext linenos %}
 git checkout -b cool-new-feature
-```
+{% endhighlight %}
 
 Vi lägger till filen `js/cool-new-feature.js` och länkar in den i `index.php`. Nu har vi en modifierad fil (index.php) samt en ny fil (js/cool-new-feature.js).
 
@@ -54,49 +54,49 @@ Låt oss säga att det ska göras en ändring i CSS-filen som inte kan vänta. �
 
 Skulle vi försöka lägga filerna i en stash nu kommer vi att få ett felmeddelande eftersom filen `js/cool-new-feature.js` inte ännu lagts till i index. Det gör vi genom att skriva:
 
-```language-git
+{% highlight plaintext linenos %}
 git add js/cool-new-feature.js
-```
+{% endhighlight %}
 
 Nu har vi inga oindexerade filer och kan då spara undan dem i en stash. 
 
-```language-git
+{% highlight plaintext linenos %}
 git stash save "Cool funktion, ej färdig"
-```
+{% endhighlight %}
 
 Vi kan kontrollera att det sparats undan genom att skriva
 
-```language-git
+{% highlight plaintext linenos %}
 git stash list
-```
+{% endhighlight %}
 
 Varje stash får ett löpnummer för att kunna hanteras separat. Så här ser det ut efter att vår stash har lagts till:
 
-```language-git
+{% highlight plaintext linenos %}
 stash@{0}: On cool-new-feature: Cool funktion, ej färdig
-```
+{% endhighlight %}
 
 Nu kan vi byta branch till **master** för att genomföra ändringen och när det är klart och vi återigen är i branchen **cool-new-feature** kan vi hämta våra _stashade_ filer igen.
 
 Om vi vet att de _stashade_ filerna ligger högst upp i stashlistan eller om det bara finns en post i listan kan vi snabbt hämta dem och radera dem från listan i ett svep:
 
-```language-git
+{% highlight plaintext linenos %}
 git stash pop
-```
+{% endhighlight %}
 
 Har du flera sparade stashes i listan kan du ta tillbaka en specifik post i listan genom att ange indexnumret enligt följande där `{0}` är index:
 
-```language-git
+{% highlight plaintext linenos %}
 git stash apply stash@{0}
-```
+{% endhighlight %}
 
 _Enligt dokumentationen ska man skriva som ovan men i skrivande stund måste jag ange stash inom citationstecken, dvs `git stash apply 'stash@{0}'`._
 
 Efter att du hämtat filerna från index 0 i stashlistan vill du förmodligen radera dem och det gör du så här:
 
-```language-git
+{% highlight plaintext linenos %}
 git stash drop stash@{0}
-```
+{% endhighlight %}
 
 _Enligt dokumentationen ska man skriva som ovan men i skrivande stund måste jag ange stash inom citationstecken, dvs `git stash drop 'stash@{0}'`._
 
