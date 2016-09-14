@@ -4,3 +4,21 @@ layout: post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus hic quidem ad accusamus sapiente. Ea voluptates est expedita quae, distinctio id cum eaque, neque rem ut rerum magni modi natus!
+
+<!--more-->
+
+{% highlight javascript %}
+function test(var value) {
+  // Returning the value
+  return value;
+}
+{% endhighlight %}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in `reprehenderit` in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+`highglight = true`
