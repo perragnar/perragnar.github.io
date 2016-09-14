@@ -566,6 +566,39 @@ a {
           margin-right: -1rem;
         }
       }
+      
+      pre,
+      code {
+        font-family: $font-mono;
+        margin: 0;
+      }
+      
+      code.highlighter-rouge {
+        padding: .2rem .5rem;
+        border-radius: .1rem;
+        background-color: #E1F7FF;
+        border: solid 1px #AED3E1;
+        line-height: 1;
+      }
+      
+      .highlight {
+        line-height: 1.5;
+        
+        table {
+          margin: 0;
+        }
+        
+        .gutter {
+          padding-right: 1rem;
+          color: #D9D9D9;
+        }
+        
+        & > pre {
+          padding: 1rem;
+          border-radius: .5rem;
+          box-shadow: 0 0 2px rgba(0,0,0,.5);
+        }
+      }
 
       ul {
         list-style: square;
@@ -643,12 +676,13 @@ a {
   font-size: .75em;
   color: #676B74;
   font-weight: bold;
+  padding-bottom: 5rem;
 
   @include clearfix();
 }
 
 // Some resets
-p, table, pre, ul, ol, dl, blockquote, form {
+p, table, ul, ol, dl, blockquote, form, .highlight {
   @include large {
     margin: 0 0 1rem;
   }
