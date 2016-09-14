@@ -14,11 +14,26 @@ layout: default
         <header class="post-header">
           <div class="post-meta">
             <div class="date">{% include datetime.html datetime=page.date %}</div>
+            <ul class="categories">
+              {% for category in page.categories %}
+                <li><a href="/categories/{{ category }}">{{ category }}</a></li>
+              {% endfor %}
+            </ul>
           </div>
           {% if page.title %}<h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>{% endif %}
         </header>
         <div class="post-content">
+          {% if page.excerpt %}
+            <div class="excerpt">{{ page.excerpt | markdownify }}</div>
+          {% endif %}
           {{ content }}
+        </div>
+        <div class="tags">
+          <ul>
+            {% for tag in page.tags %}
+              <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>
