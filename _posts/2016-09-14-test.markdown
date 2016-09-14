@@ -1,0 +1,7 @@
+---
+title: Testing local files
+layout: post
+---
+Testing local files.
+
+![photo]({{ site.baseurl }}/_assets\photo.jpg)
