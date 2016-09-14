@@ -1,7 +1,8 @@
 ---
 title: Testing local files
 layout: post
+date: 2016-09-14 11:01:22
 ---
 Testing local files.
 
-![photo]({{ site.baseurl }}/_assets\photo.jpg)
+![photo]({{ site.baseurl }}/assets\photo.jpg)
