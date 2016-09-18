@@ -7,9 +7,10 @@ _site
 ################
 sftp-config.json
 
-# Grunt files #
+# Gulp files #
 ###############
 .sass-cache/
+node_modules/
 
 # Compiled source #
 ###################
