@@ -107,7 +107,7 @@ a {
   }
   
   @include small {
-    padding: 0 .5rem;
+    padding: 0;
   }
   
   @include clearfix();
@@ -156,8 +156,9 @@ a {
     }
     
     @include small {
-      width: 50%;
+      width: 60%;
       margin: 0;
+      padding: .5rem;
     }
     
     .site-title {
@@ -181,8 +182,8 @@ a {
       }
       
       @include small {
-        font-size: .6em;
-        letter-spacing: .15rem;
+        font-size: .5em;
+        letter-spacing: .1rem;
       }
 
       a {
@@ -232,12 +233,16 @@ a {
       @include small {
         padding: .4rem;
         font-size: .45em;
-        letter-spacing: .15rem;
+        letter-spacing: .1rem;
       }
     }
   }
 
   .main-navigation {
+    @include small {
+      padding: 1rem;
+    }
+    
     .main-navigation-button {
       padding: .8rem 1rem;
       border-radius: .2rem;
@@ -259,13 +264,12 @@ a {
       
       @include medium {
         display: inline-block;
-        margin: .6rem;
+        margin: .6rem 0;
         font-size: 1rem;
       }
       
       @include small {
         display: inline-block;
-        margin: .4rem;
         font-size: .9rem;
       }
       
@@ -351,7 +355,7 @@ a {
     }
     
     @include small {
-      width: 50%;
+      width: 40%;
       float: right;
       text-align: right;
       
@@ -552,14 +556,16 @@ a {
         
         @include medium {
           padding: 1.5rem 3rem;
-          margin-left: -3rem;
-          margin-right: -3rem;
+          margin: 0 -3rem 2rem;
         }
         
         @include small {
           padding: 1rem 2rem;
-          margin-left: -2rem;
-          margin-right: -2rem;
+          margin: 0 -2rem 1rem;
+        }
+        
+        p:last-child {
+          margin-bottom: 0;
         }
       }
       
@@ -730,15 +736,23 @@ a {
 
 .page-footer {
   font-size: .75em;
-  color: #676B74;
+  color: #888D98;
   font-weight: bold;
   padding-bottom: 5rem;
-
+  
+  @include small {
+    text-align: center;
+    padding: .5rem;
+    font-size: .65em;
+  }
+  
   @include clearfix();
 }
 
 // Some resets
-p, table, ul, ol, dl, blockquote, form, .highlight {
+p, table, ul, ol, dl, blockquote, form, s, .highlight {
+  display: block;
+  
   @include large {
     margin: 0 0 1rem;
   }
