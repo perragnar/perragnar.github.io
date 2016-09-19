@@ -439,18 +439,6 @@ a {
 }
 
 .page-wrapper {
-  @include large {
-    padding-top: 1rem;
-  }
-  
-  @include medium {
-    padding-top: 0;
-  }
-  
-  @include small {
-    padding-top: 0;
-  }
-  
   .post {
     .post-poster {
       img {
@@ -468,7 +456,7 @@ a {
       }
       
       @include small {
-        padding: 1rem 1rem 0;
+        padding: 1.5rem 1.5rem 0;
       }
 
       .post-title {
@@ -542,7 +530,7 @@ a {
       }
       
       @include small {
-        padding: 1rem;
+        padding: 1.5rem;
         font-size: .8em;
       }
       
@@ -560,13 +548,17 @@ a {
         }
         
         @include small {
-          padding: 1.5rem 2rem;
-          margin: 0 -2rem 1rem;
+          padding: 1.5rem;
+          margin: 0 -1.5rem 1.5rem;
         }
         
         p:last-child {
           margin-bottom: 0;
         }
+      }
+      
+      img {
+        max-width: 100%;
       }
       
       p {
@@ -628,9 +620,20 @@ a {
         }
         
         & > pre {
-          padding: 1rem;
-          border-radius: .5rem;
-          box-shadow: 0 0 2px rgba(0,0,0,.5);
+          @include large {
+            padding: 1rem;
+          }
+          
+          @include medium {
+            padding: .8rem;
+          }
+          
+          @include small {
+            padding: .5rem;
+          }
+          
+          border-radius: .2rem;
+          border: solid 1px #ccc;
         }
       }
 
