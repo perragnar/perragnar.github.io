@@ -4,12 +4,14 @@ secondary-title: Webbutvecklare
 baseurl:
 
 navigation:
-- title: Hem
-  url: /
-- title: Blog
-  url: /blog/
-#- title: Om
-#  url: /about/
+  - title: Hem
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Arkiv
+    url: /arkiv/
+  #- title: Om
+  #  url: /about/
 
 markdown: kramdown
 
