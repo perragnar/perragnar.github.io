@@ -8,8 +8,8 @@ navigation:
   url: /
 - title: Blog
   url: /blog/
-- title: Om
-  url: /about/
+#- title: Om
+#  url: /about/
 
 markdown: kramdown
 
