@@ -94,22 +94,22 @@ a {
 
 // Webpage structure
 .wrapper {
-  min-width: $page-min-width;
+  // min-width: $page-min-width;
   max-width: $page-max-width;
   margin: 0 auto;
-  
+
   @include large {
     padding: 0 1rem;
   }
-  
+
   @include medium {
     padding: 0 1rem;
   }
-  
+
   @include small {
     padding: 0;
   }
-  
+
   @include clearfix();
 }
 
@@ -117,38 +117,34 @@ a {
   @include large {
     padding: 1rem 0;
   }
-  
+
   @include medium {
     padding: 1rem 0;
   }
-  
+
   @include small {
-    padding: 0;
+    padding: 1rem;
   }
-  
+
   .site-title-wrapper {
     float: left;
     text-align: center;
-    
+
     @include large {
       width: 40%;
     }
-    
+
     @include medium {
       width: 40%;
     }
-    
+
     @include small {
-      width: 60%;
+      width: 50%;
     }
-    
+
     .site-title {
       margin: 0;
-      
-      @include small {
-        padding: 1rem;
-      }
-      
+
       a {
         display: block;
         background-color: gold;
@@ -164,30 +160,33 @@ a {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        
+
         @include large {
           font-size: .4em;
           letter-spacing: .25rem;
           padding: 1.5rem;
+          width: 350px;
         }
-        
+
         @include medium {
           font-size: .3em;
           letter-spacing: .25rem;
           padding: 1rem;
+          width: 250px;
         }
-        
+
         @include small {
           font-size: .4em;
           letter-spacing: .1rem;
           padding: 1rem .5rem;
+          max-width: 160px;
         }
-        
+
         &:hover {
           background-color: white;
           color: black;
         }
-        
+
         transition: all 500ms ease-in-out;
       }
     }
@@ -196,11 +195,7 @@ a {
   .main-navigation {
     float: right;
     text-align: right;
-    
-    @include small {
-      padding: 1rem;
-    }
-    
+
     .main-navigation-button {
       padding: .8rem 1rem;
       border-radius: .2rem;
@@ -215,27 +210,27 @@ a {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      
+
       @include large {
         display: none;
       }
-      
+
       @include medium {
         display: inline-block;
         font-size: 1rem;
       }
-      
+
       @include small {
         display: inline-block;
         font-size: .9rem;
       }
-      
+
       &.active {
         background-color: white;
         color: black;
       }
     }
-    
+
     @include large {
       width: 60%;
 
@@ -275,10 +270,10 @@ a {
         }
       }
     }
-    
+
     @include medium {
       width: 40%;
-      
+
       ul {
         margin: 1rem 0 0;
         padding: 0;
@@ -288,22 +283,22 @@ a {
         left: 0;
         right: 0;
         text-align: left;
-        
+
         li {
           background-color: #323740;
-          
+
           a {
             display: block;
             padding: 1rem 2rem;;
             text-transform: uppercase;
             font-family: $font-menu;
             color: white;
-            
+
             &:hover {
               background-color: #2D5A8B;
               color: white;
             }
-            
+
             &.current {
               background-color: #4295f0;
               color: white;
@@ -312,10 +307,10 @@ a {
         }
       }
     }
-    
+
     @include small {
-      width: 40%;
-      
+      width: 50%;
+
       ul {
         margin: 1rem 0 0;
         padding: 0;
@@ -325,22 +320,22 @@ a {
         left: 0;
         right: 0;
         text-align: left;
-        
+
         li {
           background-color: #323740;
-          
+
           a {
             display: block;
             padding: 1rem 2rem;;
             text-transform: uppercase;
             font-family: $font-menu;
             color: white;
-            
+
             &:hover {
               background-color: #2D5A8B;
               color: white;
             }
-            
+
             &.current {
               background-color: #4295f0;
               color: white;
@@ -359,16 +354,16 @@ a {
         width: 100%;
       }
     }
-    
+
     .post-header {
       @include large {
         padding: 5rem 5rem 0;
       }
-      
+
       @include medium {
         padding: 3rem 3rem 0;
       }
-      
+
       @include small {
         padding: 1.5rem 1.5rem 0;
       }
@@ -401,22 +396,22 @@ a {
         font-weight: bold;
         letter-spacing: .1rem;
         text-transform: uppercase;
-        
+
         @include large {
           margin-bottom: 2rem;
           font-size: .9rem;
         }
-        
+
         @include medium {
           margin-bottom: 1rem;
           font-size: .8rem;
         }
-        
+
         @include small {
           margin-bottom: 1rem;
           font-size: .8rem;
         }
-        
+
         .categories {
           display: none;
         }
@@ -424,60 +419,60 @@ a {
 
       @include clearfix();
     }
-    
+
     .post-header + .post-content {
       padding-top: 1rem;
     }
-    
+
     .post-content {
       font-family: $font-content;
       clear: both;
-      
+
       @include large {
         padding: 5rem;
         font-size: 1em;
       }
-      
+
       @include medium {
         padding: 3rem;
         font-size: 1em;
       }
-      
+
       @include small {
         padding: 1.5rem;
         font-size: .8em;
       }
-      
+
       .excerpt {
         background-color: #f5f5f5;
         color: #7C7C7C;
         font-family: $font-content-serif;
         font-size: 1.2em;
-        
+
         @include large {
           padding: 2rem 5rem;
           margin: 0 -5rem 3rem;
         }
-        
+
         @include medium {
           padding: 1.5rem 3rem;
           margin: 0 -3rem 2rem;
         }
-        
+
         @include small {
           padding: 1.5rem;
           margin: 0 -1.5rem 1.5rem;
         }
-        
+
         p:last-child {
           margin-bottom: 0;
         }
       }
-      
+
       img {
         max-width: 100%;
       }
-      
+
       p {
         line-height: 1.5;
       }
@@ -489,32 +484,32 @@ a {
         color: #2d5d7e;
         border-left-width: 12px;
         font-style: normal;
-        
+
         @include large {
           margin-left: -4rem;
           margin-right: -4rem;
           padding: 3rem;
         }
-        
+
         @include medium {
           margin-left: -2rem;
           margin-right: -2rem;
           padding: 2rem;
         }
-        
+
         @include small {
           margin-left: -1rem;
           margin-right: -1rem;
           padding: 1rem;
         }
       }
-      
+
       pre,
       code {
         font-family: $font-mono;
         margin: 0;
       }
-      
+
       code.highlighter-rouge {
         padding: .2rem .5rem;
         border-radius: .2rem;
@@ -525,32 +520,32 @@ a {
         white-space: pre-line;
         color: #5c6b70;
       }
-      
+
       .highlight {
         line-height: 1.5;
-        
+
         table {
           margin: 0;
         }
-        
+
         .gutter {
           padding-right: 1rem;
           color: #D9D9D9;
         }
-        
+
         & > pre {
           @include large {
             padding: 1rem;
           }
-          
+
           @include medium {
             padding: .8rem;
           }
-          
+
           @include small {
             padding: .5rem;
           }
-          
+
           border-radius: .2rem;
           border: solid 1px #ccc;
         }
@@ -572,25 +567,25 @@ a {
 
       @include clearfix();
     }
-    
+
     .tags {
       display: none;
     }
-    
+
     .archive-post-list {
       font-family: $font-content;
       clear: both;
-      
+
       @include large {
         padding: 5rem;
         font-size: 1em;
       }
-      
+
       @include medium {
         padding: 3rem;
         font-size: 1em;
       }
-      
+
       @include small {
         padding: 2rem;
         font-size: .8em;
@@ -618,7 +613,7 @@ a {
       width: 33.33333333333333333%;
       color: gray;
     }
-    
+
     .next {
       float: right;
     }
@@ -639,15 +634,15 @@ a {
   .box {
     background-color: white;
     color: $font-content-color;
-    
+
     @include large {
       margin: 0 0 2rem 0;
     }
-    
+
     @include medium {
       margin: 0 0 1rem 0;
     }
-    
+
     @include small {
       margin: 0 0 .5rem 0;
     }
@@ -661,28 +656,28 @@ a {
   color: #888D98;
   font-weight: bold;
   padding-bottom: 5rem;
-  
+
   @include small {
     text-align: center;
     padding: .5rem;
     font-size: .65em;
   }
-  
+
   @include clearfix();
 }
 
 // Some resets
 p, table, ul, ol, dl, blockquote, form, s, .highlight {
   display: block;
-  
+
   @include large {
     margin: 0 0 1rem;
   }
-  
+
   @include medium {
     margin: 0 0 1rem;
   }
-  
+
   @include small {
     margin: 0 0 1rem;
   }
