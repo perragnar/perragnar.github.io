@@ -113,21 +113,6 @@ a {
   @include clearfix();
 }
 
-.top-bar {
-  background-color: black;
-  height: 2rem;
-  
-  @include medium {
-    display: none;
-  }
-  
-  @include small {
-    display: none;
-  }
-
-  @include clearfix();
-}
-
 .page-header {
   @include large {
     padding: 1rem 0;
@@ -138,7 +123,7 @@ a {
   }
   
   @include small {
-    padding: .5rem 0;
+    padding: 0;
   }
   
   .site-title-wrapper {
@@ -146,99 +131,72 @@ a {
     text-align: center;
     
     @include large {
-      width: 28%;
-      margin: -2rem 0 0 0;
+      width: 40%;
     }
     
     @include medium {
       width: 40%;
-      margin: 0;
     }
     
     @include small {
       width: 60%;
-      margin: 0;
-      padding: .5rem;
     }
     
     .site-title {
       margin: 0;
-      background-color: #800;
-      font-family: $font-ui-bold;
-      font-weight: 700;
-      text-transform: uppercase;
-      border-radius: .1rem;
-      text-align: center;
-      white-space: nowrap;
-      
-      @include large {
-        font-size: 1em;
-        letter-spacing: .25rem;
-      }
-      
-      @include medium {
-        font-size: .8em;
-        letter-spacing: .25rem;
-      }
       
       @include small {
-        font-size: .5em;
-        letter-spacing: .1rem;
+        padding: 1rem;
       }
-
+      
       a {
         display: block;
-        color: white;
+        background-color: gold;
+        color: black;
+        font-family: $font-menu;
+        font-weight: bold;
         text-decoration: none;
         line-height: 1;
+        border-radius: .2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         
         @include large {
-          padding: 1rem 1.5rem 1.8rem;
+          font-size: .4em;
+          letter-spacing: .25rem;
+          padding: 1.5rem;
         }
         
         @include medium {
-          padding: .8rem 1rem 1.5rem;
+          font-size: .3em;
+          letter-spacing: .25rem;
+          padding: 1rem;
         }
         
         @include small {
-          padding: .8rem .5rem 1.5rem;
+          font-size: .4em;
+          letter-spacing: .1rem;
+          padding: 1rem .5rem;
         }
-      }
-    }
-    
-    .site-secondary-title {
-      margin: -.8rem auto .3rem;
-      line-height: 1;
-      background: gold;
-      font-family: $font-ui-bold;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: .1rem;
-      text-align: center;
-      display: block;
-      width: 90%;
-      
-      @include large {
-        padding: .6rem;
-        font-size: .6em;
-        letter-spacing: .25rem;
-      }
-      
-      @include medium {
-        padding: .6rem;
-        font-size: .6em;
-        letter-spacing: .25rem;
-      }
-      
-      @include small {
-        padding: .4rem;
-        font-size: .45em;
-        letter-spacing: .1rem;
+        
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+        
+        transition: all 500ms ease-in-out;
       }
     }
   }
 
   .main-navigation {
+    float: right;
+    text-align: right;
+    
     @include small {
       padding: 1rem;
     }
@@ -264,7 +222,6 @@ a {
       
       @include medium {
         display: inline-block;
-        margin: .6rem 0;
         font-size: 1rem;
       }
       
@@ -280,8 +237,7 @@ a {
     }
     
     @include large {
-      float: left;
-      width: 36%;
+      width: 60%;
 
       ul {
         margin: 0;
@@ -298,7 +254,7 @@ a {
             display: block;
             color: white;
             text-decoration: none;
-            padding: .8rem 1rem;
+            padding: 1.4rem;
             border-radius: .2rem;
             font-family: $font-menu;
             font-size: 1.2rem;
@@ -321,9 +277,7 @@ a {
     }
     
     @include medium {
-      width: 50%;
-      float: right;
-      text-align: right;
+      width: 40%;
       
       ul {
         margin: 1rem 0 0;
@@ -345,6 +299,11 @@ a {
             font-family: $font-menu;
             color: white;
             
+            &:hover {
+              background-color: #2D5A8B;
+              color: white;
+            }
+            
             &.current {
               background-color: #4295f0;
               color: white;
@@ -356,11 +315,9 @@ a {
     
     @include small {
       width: 40%;
-      float: right;
-      text-align: right;
       
       ul {
-        margin: .3rem 0 0;
+        margin: 1rem 0 0;
         padding: 0;
         list-style: none;
         display: none;
@@ -379,6 +336,11 @@ a {
             font-family: $font-menu;
             color: white;
             
+            &:hover {
+              background-color: #2D5A8B;
+              color: white;
+            }
+            
             &.current {
               background-color: #4295f0;
               color: white;
@@ -388,54 +350,6 @@ a {
       }
     }
   }
-  
-  .secondary-navigation {
-    float: left;
-    text-align: right;
-    
-    @include large {
-      width: 36%;
-      
-      ul {
-        margin: .8rem 0 0;
-        padding: 0;
-        list-style: none;
-        display: inline-block;
-
-        li {
-          display: inline-block;
-          
-          a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: .5rem;
-            border-radius: .2rem;
-            font-family: $font-menu;
-            font-size: .8rem;
-            font-weight: bold;
-            line-height: 1;
-            text-transform: uppercase;
-            letter-spacing: .1rem;
-
-            &:hover {
-              background-color: rgba(0,0,0,.3);
-            }
-          }
-        }
-      }
-    }
-    
-    @include medium {
-      display: none;
-    }
-    
-    @include small {
-      display: none;
-    }
-  }
-
-  @include clearfix();
 }
 
 .page-wrapper {
