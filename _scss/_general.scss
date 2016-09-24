@@ -283,6 +283,7 @@ a {
         left: 0;
         right: 0;
         text-align: left;
+        box-shadow: 0 1rem 2rem 1rem rgba(0,0,0,.2), 0 .8rem 1rem rgba(0,0,0,.2);
 
         li {
           background-color: #323740;
@@ -312,7 +313,7 @@ a {
       width: 50%;
 
       ul {
-        margin: 1rem 0 0;
+        margin: .5rem 0 0;
         padding: 0;
         list-style: none;
         display: none;
@@ -320,6 +321,7 @@ a {
         left: 0;
         right: 0;
         text-align: left;
+        box-shadow: 0 1rem 2rem 1rem rgba(0,0,0,.2), 0 .8rem 1rem rgba(0,0,0,.2);
 
         li {
           background-color: #323740;
