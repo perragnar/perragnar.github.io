@@ -19,7 +19,7 @@ highlighter: rouge
 
 permalink: pretty
 
-future: false
+future: true
 
 show_drafts: false
 
