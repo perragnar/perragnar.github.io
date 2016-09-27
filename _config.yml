@@ -32,3 +32,5 @@ sass:
   sass_dir: _scss
 
 exclude: [node_modules, gulpfile.js]
+
+disqus_shortname: perragnarcom
