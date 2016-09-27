@@ -414,6 +414,41 @@ a {
           font-size: .8rem;
         }
 
+        @include large {
+          .date {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+
+          .comments {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+        }
+
+        @include medium {
+          .date {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+
+          .comments {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+        }
+
+        @include small {
+          .date {
+            display: block;
+            margin-bottom: 1rem;
+          }
+
+          .comments {
+            display: inline-block;
+          }
+        }
+
         .categories {
           display: none;
         }
@@ -572,6 +607,25 @@ a {
 
     .tags {
       display: none;
+    }
+
+    #disqus_thread {
+      clear: both;
+
+      @include large {
+        padding: 5rem;
+        font-size: 1em;
+      }
+
+      @include medium {
+        padding: 3rem;
+        font-size: 1em;
+      }
+
+      @include small {
+        padding: 1.5rem;
+        font-size: .8em;
+      }
     }
 
     .archive-post-list {

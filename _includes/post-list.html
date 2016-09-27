@@ -11,6 +11,9 @@
           <header class="post-header">
             <div class="post-meta">
               <div class="date">{% include datetime.html datetime=post.date %}</div>
+              {% if post.comments %}
+                <div class="comments"><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"></a></div>
+              {% endif %}
             </div>
             {% if post.title %}<h1 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>{% endif %}
           </header>

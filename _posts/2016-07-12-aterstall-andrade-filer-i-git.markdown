@@ -22,7 +22,7 @@ Det finns olika scenarion där man behöver ångra sina ändrade filer och jag s
 
 ### Exempel 1: "Dirty state files"
 
-Vi har filerna `index.html` och `main.css` och till att börja med ändrar vi lite i CSS-filen.  
+Vi har filerna `index.html` och `main.css` och till att börja med ändrar vi lite i CSS-filen.
 Jag tar bort raden med bakgrundsfärgen och sparar.
 
 ![Ändrad CSS-fil]({{ site.baseurl }}/assets\git-aterstall-git-discard-css-change-1.png)
@@ -60,13 +60,13 @@ Nu ska vi commita våra ändringar och det gör vi genom att först lägga till 
 git add index.html main.css
 {% endhighlight %}
 
-alternativt 
+alternativt
 
 {% highlight plaintext linenos %}
 git add .
 {% endhighlight %}
 
-för att lägga till alla ändrade filer.  
+för att lägga till alla ändrade filer.
 Sedan ska vi commita filerna och lägga till en kommentar.
 
 {% highlight plaintext linenos %}
@@ -80,7 +80,7 @@ Kör vi `git log` visar den att vår commit är registrerad. Den nedre posten i 
 
 Nu ska vi ångra den senaste commiten och återställa filerna med hjälp av `git reset`. Observera att det finns olika sätt att göra en reset på (--soft, --hard och --mixed) och i vårt fall ska vi använda `git reset --hard`. Innan du gör en reset i dina riktiga projekt bör du [läsa på](http://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard) vad de olika sätten gör med dina filer.
 
-Vi ska alltså återgå till en tidigare commit. Varje commit har en sk "commit hash" som är unik och vi måste veta vilken hash den commit vi vill återgå har. Börja med att visa loggen igen genom att skriva `git log`. Den commit vi ska återgå till är den första i loggen vilken ligger längst ner. 
+Vi ska alltså återgå till en tidigare commit. Varje commit har en sk "commit hash" som är unik och vi måste veta vilken hash den commit vi vill återgå har. Börja med att visa loggen igen genom att skriva `git log`. Den commit vi ska återgå till är den första i loggen vilken ligger längst ner.
 
 ![Git log]({{ site.baseurl }}/assets\git-aterstall-git-discard-files-change-4.png)
 
@@ -101,11 +101,11 @@ Direkt får vi responsen från Git att vi befinner oss på rätt commit:
 HEAD is now at 7dd4586 Initial commit
 {% endhighlight %}
 
-Nu har vi backat till den första commiten och raderat allt efter den gjordes och våra ändringar är återställda.   
+Nu har vi backat till den första commiten och raderat allt efter den gjordes och våra ändringar är återställda.
 I vårt fall är det dock ingen fara eftersom vi vill ta bort alla ändringar och återgå till ursprungsläget.
 
 En `git log` bekräftar nu att vår senaste commit är borta.
 
-Som jag nämde ovan är det riskabelt att använda `git reset --hard` och många har nog förlorat många jobbtimmar pga det. Återigen, [läs på om git reset](http://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard) innan du använder det i ditt projekt. 
+Som jag nämde ovan är det riskabelt att använda `git reset --hard` och många har nog förlorat många jobbtimmar pga det. Återigen, [läs på om git reset](http://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard) innan du använder det i ditt projekt.
 
 *Lycka till!*
