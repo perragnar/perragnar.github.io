@@ -1,7 +1,8 @@
 ---
 layout: post
 title: MrHyde och Jekyll
-tags: 
+poster: mrhyde-jekyll-header.jpg
+tags:
   - jekyll
   - mrhyde
   - android
@@ -13,4 +14,4 @@ comments: true
 draft: true
 ---
 
-[MrHyde på Google Play Store](https://play.google.com/store/apps/details?id=org.faudroids.mrhyde) 
+[MrHyde på Google Play Store](https://play.google.com/store/apps/details?id=org.faudroids.mrhyde)
