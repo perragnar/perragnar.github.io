@@ -723,10 +723,6 @@ a {
         }
       }
     }
-
-    .excerpt {
-      background-color: red;
-    }
   }
 
   .pagination {
@@ -753,9 +749,10 @@ a {
     a.previous,
     a.next {
       color: #4295f0;
+      text-decoration: none;
 
       &:hover {
-        background-color: red;
+        background-color: #4295f0;
         color: white;
       }
     }
