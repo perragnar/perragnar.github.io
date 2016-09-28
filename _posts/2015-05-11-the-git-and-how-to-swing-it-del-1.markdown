@@ -1,7 +1,7 @@
 ---
 title: 'The Git and how to swing it - Del 1: Installation och konfiguration'
 layout: post
-categories: 
+categories:
   - Webbutveckling
 tags:
   - git
@@ -18,14 +18,14 @@ Med följande tanke i huvudet börjar jag skriva ner den första meningen i den 
 
 <!--more-->
 
-![Git logo]({{ site.baseurl }}/assets\git-logo.png)
+![Git logo]({{ site.baseurl }}/assets/postfiles/git-logo.png)
 
-### Använder du git och är nybörjare eller funderar du på att börja?  
-__Innan du läser vidare__ är det viktigt att du vet om att det här är en artikel skriven av en nybörjare med andra nybörjare som målgrupp. 
+### Använder du git och är nybörjare eller funderar du på att börja?
+__Innan du läser vidare__ är det viktigt att du vet om att det här är en artikel skriven av en nybörjare med andra nybörjare som målgrupp.
 Jag själv har använt git (sparsamt) under bara ett par år men på senare tid har jag sett styrkan med Git och då väcks viljan att vilja lära och förstå.
 
 ### Vad är Git?
-> Git is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.  
+> Git is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.
 > ~ [Wikipedia](http://en.wikipedia.org/wiki/Git_%28software%29)
 
 Jag ska inte gå mer in på detta eftersom målet med artikeln är att nå ut till dem som redan vet vad det är men behöver tips och hjälp med att komma igång att använda Git.
@@ -36,7 +36,7 @@ En liten rolig sak om namnet _Git_ bara:
 > Torvalds said: "I'm an egotistical bastard, and I name all my projects after myself.
 
 ### Lite kort om min bakgrund med Git
-När jag började lära mig och sätta mig in i Git hade jag som mål att försöka undvika hjälpmedel som gör jobbet åt mig, dvs exempelvis Git-klienter med funktioner som kör Git-kommandon i bakgrunden. [SourceTree][sourcetree] hade jag installerat om jag skulle köra fast, och jösses vad jag körde fast! Men jag var envis och försökte i första hand att lösa problemen i terminalen och om det inte löste sig gick jag över till SourceTree.  
+När jag började lära mig och sätta mig in i Git hade jag som mål att försöka undvika hjälpmedel som gör jobbet åt mig, dvs exempelvis Git-klienter med funktioner som kör Git-kommandon i bakgrunden. [SourceTree][sourcetree] hade jag installerat om jag skulle köra fast, och jösses vad jag körde fast! Men jag var envis och försökte i första hand att lösa problemen i terminalen och om det inte löste sig gick jag över till SourceTree.
 Idag använder jag _Git Bash_, _Microsoft PowerShell_ och i min texteditor Sublime Text 3 ett plugin som heter _[GitSavvy](https://github.com/divmain/GitSavvy)_.
 
 Nog om mig...
@@ -69,10 +69,10 @@ git version 1.9.5.msysgit.1
 ### Din Git-identitet
 En sak som man bör göra innan man sätter igång att jobba är att lägga till en identitet för att märka dina _commits_. Det som behövs är namn och en e-postadress.
 
-För att lägga in dessa uppgifter skriver du;  
+För att lägga in dessa uppgifter skriver du;
 
 {% highlight plaintext linenos %}
-git config --global user.name "John Doe"  
+git config --global user.name "John Doe"
 git config --global user.email "john@doe.com"
 {% endhighlight %}
 
@@ -110,9 +110,9 @@ Om du planerar på att använda terminalen kan det vara en bra idé att aktivera
 
 {% highlight plaintext linenos %}
 git config --global color.diff auto
-git config --global color.status auto  
+git config --global color.status auto
 git config --global color.branch auto
-{% endhighlight %} 
+{% endhighlight %}
 
 \[TODO: Skärmdump på terminalen med färger.\]
 
@@ -125,8 +125,8 @@ En sak som jag har svårt med är att förklara Git på svenska. Oftast blir det
 Jag hittade denna sida på github.com om hur fel det kan låta med Git på svenska. [Bjorne](https://github.com/bjorne/) som gjort sidan har förslag på en svensk Git-parlör:
 [Git på svenska](https://github.com/bjorne/git-pa-svenska).
 
-> &dash; Kan du rycka grenen jag just ympade och trycka till github?  
-> &dash; Skicka en ryckbegäran när du är färdig med sammanfogningen!  
+> &dash; Kan du rycka grenen jag just ympade och trycka till github?
+> &dash; Skicka en ryckbegäran när du är färdig med sammanfogningen!
 > &dash; Låt oss plocka russin från mäster-grenen.
 
 | Verb        | Nuvarande bruk | Förslag       |

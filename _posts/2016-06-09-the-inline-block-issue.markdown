@@ -53,17 +53,17 @@ Inga konstigheter. Nu ska vi forma menyn med CSS.
 
 Så här ser vår meny ut:
 
-![Meny]({{ site.baseurl }}/assets\inline-block-issue-fig-1.png)
+![Meny]({{ site.baseurl }}/assets/postfiles/inline-block-issue-fig-1.png)
 
 Här ser vi direkt problemet med `display: inline-block`; mellan varje li ligger en 4 pixlar stor marginal. Anledningen till det är **"whitepspace"** som blir när vi radbryter efter varje `<li>` i HTML. I vårt fall ser det visserligen bra ut med lite luft mellan varje menyalternativ, men i andra fall vill man inte ha marginalen.
 
-![4 pixlar marginal]({{ site.baseurl }}/assets\inline-block-issue-fig-2.png)
+![4 pixlar marginal]({{ site.baseurl }}/assets/postfiles/inline-block-issue-fig-2.png)
 
 ## Ta kontroll över marginalerna!
 
 För att få bort marginalen kan man göra på olika sätt, bra eller dåliga får du avgöra.
 
-![Ta kontroll över marginalerna]({{ site.baseurl }}/assets\inline-block-issue-fig-3.png)
+![Ta kontroll över marginalerna]({{ site.baseurl }}/assets/postfiles/inline-block-issue-fig-3.png)
 
 ### Ta bort "whitespace" mellan `<li>` eller minifiera HTML
 

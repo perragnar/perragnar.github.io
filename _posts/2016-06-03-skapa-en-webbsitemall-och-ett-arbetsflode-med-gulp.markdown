@@ -19,17 +19,17 @@ draft: true
 ---
 ## — Vad betyder allt det där och hur kan det hjälpa mig?
 
-![webdev-bot]({{ site.baseurl }}/assets\webdev-bot.jpg)
+![webdev-bot]({{ site.baseurl }}/assets/postfiles/webdev-bot.jpg)
 
 Ta en titt på bilden nedan. Tänk dig att du har två mappar; `app` och `dist` där du i den första arbetar med dina filer och så fort du gör en ändring i någon fil sköter Gulp kompilering, minifiering osv i bakgrunden och skickar över de färdiga filerna till mappen `dist`. Inom ett ögonblick när allt är klart laddas sidan om automatiskt i din webbläsare.
 
-![Gulpprocessen]({{ site.baseurl }}/assets\basics.png)
+![Gulpprocessen]({{ site.baseurl }}/assets/postfiles/basics.png)
 
 ## Installation av Node.js, npm och Gulp
 
 ### Node.js
 
-![Node.js]({{ site.baseurl }}/assets\node-js-logo.png)
+![Node.js]({{ site.baseurl }}/assets/postfiles/node-js-logo.png)
 
 Det första vi måste göra är att installera Node.js. Är du osäker på om du har det installerat kan du kontrollera det genom att i din prompt skriva `node -v` vilket kontrollerar vilken version du har. Om du har Node.js installerat returneras versionsnumret, annars får du ett felmeddelande att kommandot inte hittas.
 
@@ -37,13 +37,13 @@ Gå till [https://nodejs.org/en/download/](nodejs.org) och ladda ner installatio
 
 ### npm
 
-![npm - Node Package Manager]({{ site.baseurl }}/assets\Npm-logo.svg_.png)
+![npm - Node Package Manager]({{ site.baseurl }}/assets/postfiles/Npm-logo.svg_.png)
 
 [https://www.npmjs.com/](npmjs.com)
 
 ### Gulp
 
-![Gulp]({{ site.baseurl }}/assets\gulp-logo.png)
+![Gulp]({{ site.baseurl }}/assets/postfiles/gulp-logo.png)
 
 Lorem ipsum Commodo occaecat deserunt culpa Duis irure ut deserunt nisi laborum minim minim aute incididunt voluptate non velit pariatur irure nostrud non dolore eiusmod ullamco irure.
 
