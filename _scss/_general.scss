@@ -1,43 +1,43 @@
 @font-face {
   font-family: 'Roboto';
-  src:  url('/css/fonts/roboto-regular-webfont.woff2') format('woff2'),
-        url('/css/fonts/roboto-regular-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/roboto-regular-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/roboto-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Bold';
-  src:  url('/css/fonts/roboto-bold-webfont.woff2') format('woff2'),
-        url('/css/fonts/roboto-bold-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/roboto-bold-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/roboto-bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src:  url('/css/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
-        url('/css/fonts/robotocondensed-regular-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/robotocondensed-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Mono';
-  src:  url('/css/fonts/robotomono-regular-webfont.woff2') format('woff2'),
-        url('/css/fonts/robotomono-regular-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/robotomono-regular-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/robotomono-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Slab';
-  src:  url('/css/fonts/robotoslab-regular-webfont.woff2') format('woff2'),
-        url('/css/fonts/robotoslab-regular-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/robotoslab-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Slab Bold';
-  src:  url('/css/fonts/robotoslab-bold-webfont.woff2') format('woff2'),
-        url('/css/fonts/robotoslab-bold-webfont.woff') format('woff');
+  src:  url('/assets/css/fonts/robotoslab-bold-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/robotoslab-bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bree Serif';
-  src: url('/css/fonts/breeserif-regular.woff2') format('woff2'),
-  url('/css/fonts/breeserif-regular.woff') format('woff');
+  src: url('/assets/css/fonts/breeserif-regular.woff2') format('woff2'),
+  url('/assets/css/fonts/breeserif-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -179,7 +179,13 @@ a {
           font-size: .4em;
           letter-spacing: .1rem;
           padding: 1rem .5rem;
-          // max-width: 160px;
+        }
+
+        &:before {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('/assets/img/logotype.svg');
         }
 
         &:hover {
