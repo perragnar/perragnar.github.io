@@ -1,15 +1,15 @@
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">&larr;</a>
+      <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Nyare inlägg</a>
     {% else %}
-      <span class="previous">&larr;</span>
+      <span class="previous">&larr; Nyare inlägg</span>
     {% endif %}
-    <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    <span class="page_number ">Sida {{ paginator.page }} av {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">&rarr;</a>
+      <a href="{{ paginator.next_page_path }}" class="next">Äldre inlägg &rarr;</a>
     {% else %}
-      <span class="next ">&rarr;</span>
+      <span class="next ">Äldre inlägg &rarr;</span>
     {% endif %}
   </div>
 {% endif %}
