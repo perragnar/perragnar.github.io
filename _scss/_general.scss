@@ -158,6 +158,8 @@ a {
         img {
           height: 1rem;
         }
+
+        transition: all 500ms ease-in-out;
       }
 
       a.title {
@@ -185,11 +187,26 @@ a {
         @include small {
           display: none;
         }
+
+        transition: all 500ms ease-in-out;
       }
 
-      &:hover {
-        background-color: white;
-        color: black;
+      @include large {
+        &:hover {
+          background-color: transparent;
+
+          a.logotype {
+            transform: scale(3) translateX(-.45rem) rotate(-5deg);
+            filter: invert(100%);
+            -webkit-font-smoothing: antialiased;
+          }
+
+          a.title {
+            transform: translateX(1rem);
+            color: white;
+            letter-spacing: .25rem;
+          }
+        }
       }
 
       transition: all 500ms ease-in-out;
@@ -264,6 +281,7 @@ a {
             display: block;
             padding: 1rem 2rem;;
             text-transform: uppercase;
+            text-decoration: none;
             font-family: $font-menu;
             color: white;
 
@@ -302,6 +320,7 @@ a {
             display: block;
             padding: 1rem 2rem;;
             text-transform: uppercase;
+            text-decoration: none;
             font-family: $font-menu;
             color: white;
 
