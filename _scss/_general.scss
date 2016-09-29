@@ -93,6 +93,10 @@ a {
   }
 }
 
+strong {
+  font-family: $font-content-bold;
+}
+
 // Webpage structure
 .wrapper {
   max-width: $page-max-width;
@@ -197,7 +201,7 @@ a {
 
           a.logotype {
             transform: scale(3) translateX(-.45rem) rotate(-5deg);
-            filter: invert(100%);
+            filter: blur(.0001px) invert(100%);
             -webkit-font-smoothing: antialiased;
           }
 
