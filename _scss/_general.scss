@@ -128,114 +128,77 @@ a {
 
   .site-title-wrapper {
     float: left;
-    text-align: center;
-
-    @include large {
-      width: 40%;
-    }
-
-    @include medium {
-      width: 40%;
-    }
-
-    @include small {
-      width: 50%;
-    }
+    width: auto;
 
     .site-title {
+      display: flex;
+      align-items: stretch;
       margin: 0;
+      background-color: gold;
+      border-radius: .2rem;
+      font-weight: bold;
+      line-height: 1;
 
-      a {
-        display: block;
-        background-color: gold;
-        color: black;
+      a.logotype {
+        line-height: 0;
+
+        @include large {
+          padding: 1.7rem .5rem 1.7rem 1.7rem;
+        }
+
+        @include medium {
+          padding: 1.05rem .2rem 1.05rem 1.05rem;
+        }
+
+        @include small {
+          padding: 1rem;
+          transform: scale(1.2);
+        }
+
+        img {
+          height: 1rem;
+        }
+      }
+
+      a.title {
         font-family: $font-menu;
         font-weight: bold;
         text-decoration: none;
-        line-height: 1;
-        border-radius: .2rem;
+        white-space: nowrap;
+        color: black;
         text-transform: uppercase;
-        letter-spacing: .1rem;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
 
         @include large {
-          font-size: .4em;
-          letter-spacing: .25rem;
-          padding: 1.5rem;
-          width: 350px;
+          font-size: 1em;
+          padding: 1.5rem 1.5rem 1.5rem .2rem;
         }
 
         @include medium {
-          font-size: .3em;
-          letter-spacing: .25rem;
-          padding: 1rem;
-          width: 250px;
+          font-size: .8em;
+          padding: 1rem 1rem 1rem .2rem;
         }
 
         @include small {
-          font-size: .4em;
-          letter-spacing: .1rem;
-          padding: 1rem .5rem;
+          display: none;
         }
-
-        &:before {
-          content: '';
-          width: 50px;
-          height: 50px;
-          background-image: url('/assets/img/logotype.svg');
-        }
-
-        &:hover {
-          background-color: white;
-          color: black;
-        }
-
-        transition: all 500ms ease-in-out;
       }
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      transition: all 500ms ease-in-out;
     }
   }
 
   .main-navigation {
     float: right;
     text-align: right;
-
-    .main-navigation-button {
-      padding: .8rem 1rem;
-      border-radius: .2rem;
-      font-family: $font-menu;
-      font-weight: bold;
-      line-height: 1;
-      text-transform: uppercase;
-      letter-spacing: .1rem;
-      border: solid 1px white;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-
-      @include large {
-        display: none;
-      }
-
-      @include medium {
-        display: inline-block;
-        font-size: 1rem;
-      }
-
-      @include small {
-        display: inline-block;
-        font-size: .9rem;
-      }
-
-      &.active {
-        background-color: white;
-        color: black;
-      }
-    }
 
     @include large {
       width: 60%;
@@ -244,21 +207,22 @@ a {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: inline-block;
+        display: block;
+        float: right;
 
         li {
           float: left;
-          display: inline-block;
+          display: block;
           margin-left: .4rem;
 
           a {
             display: block;
             color: white;
             text-decoration: none;
-            padding: 1.4rem;
+            padding: 1.6rem;
             border-radius: .2rem;
             font-family: $font-menu;
-            font-size: 1.2rem;
+            font-size: 1em;
             font-weight: bold;
             line-height: 1;
             text-transform: uppercase;
@@ -274,6 +238,8 @@ a {
             }
           }
         }
+
+        @include clearfix();
       }
     }
 
@@ -350,6 +316,41 @@ a {
             }
           }
         }
+      }
+    }
+
+    .main-navigation-button {
+      padding: 1rem;
+      border-radius: .2rem;
+      font-family: $font-menu;
+      font-weight: bold;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      border: solid 1px white;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      @include large {
+        display: none;
+      }
+
+      @include medium {
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      @include small {
+        display: inline-block;
+        font-size: .9rem;
+      }
+
+      &.active {
+        background-color: white;
+        color: black;
       }
     }
   }
