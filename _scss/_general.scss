@@ -546,9 +546,24 @@ strong {
         }
       }
 
+      figure,
       img,
       iframe {
         max-width: 100%;
+      }
+
+      figure {
+        display: inline-block;
+
+        img {
+        }
+
+        figcaption {
+          font-size: .75em;
+          line-height: 1;
+          color: slategray;
+          padding: .5rem;
+        }
       }
 
       p {
@@ -830,18 +845,7 @@ strong {
 }
 
 // Some resets
-p, table, ul, ol, dl, blockquote, form, s, .highlight {
+p, table, ul, ol, dl, blockquote, form, s, figure, .highlight {
   display: block;
-
-  @include large {
-    margin: 0 0 1rem;
-  }
-
-  @include medium {
-    margin: 0 0 1rem;
-  }
-
-  @include small {
-    margin: 0 0 1rem;
-  }
+  margin: 0 0 2rem;
 }
