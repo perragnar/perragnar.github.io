@@ -163,7 +163,7 @@ strong {
           height: 1rem;
         }
 
-        transition: all 500ms ease-in-out;
+        transition: all 300ms ease-in-out;
       }
 
       a.title {
@@ -192,7 +192,7 @@ strong {
           display: none;
         }
 
-        transition: all 500ms ease-in-out;
+        transition: all 400ms ease-in-out;
       }
 
       @include large {
@@ -208,12 +208,13 @@ strong {
           a.title {
             transform: translateX(1rem);
             color: white;
-            letter-spacing: .25rem;
+            letter-spacing: .4rem;
+            font-size: 1.1em;
           }
         }
       }
 
-      transition: all 500ms ease-in-out;
+      transition: all 200ms ease-in-out;
     }
   }
 
