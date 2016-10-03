@@ -138,7 +138,7 @@ strong {
       display: flex;
       align-items: stretch;
       margin: 0;
-      background-color: gold;
+      background-color: #feb800;
       border-radius: .2rem;
       font-weight: bold;
       line-height: 1;
@@ -806,6 +806,12 @@ strong {
       }
     }
 
+    @include small {
+      .label {
+        display: none;
+      }
+    }
+
     @include clearfix();
   }
 
@@ -833,12 +839,68 @@ strong {
   font-size: .75em;
   color: #888D98;
   font-weight: bold;
-  padding-bottom: 5rem;
+
+  @include large {
+    padding-bottom: 5rem;
+
+    .site-info {
+      float: left;
+      width: 50%;
+    }
+
+    .hosting-info {
+      text-align: right;
+      float: right;
+      width: 50%;
+
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  @include medium {
+    padding-bottom: 5rem;
+
+    .site-info {
+      float: left;
+      width: 50%;
+    }
+
+    .hosting-info {
+      text-align: right;
+      float: right;
+      width: 50%;
+
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100px;
+        padding-left: 5px;
+      }
+    }
+  }
 
   @include small {
-    text-align: center;
-    padding: .5rem;
     font-size: .65em;
+    padding: .5rem;
+    text-align: center;
+
+    p {
+      margin-bottom: .5rem;
+    }
+
+    .hosting-info {
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 80px;
+        padding-left: 5px;
+      }
+    }
   }
 
   @include clearfix();
