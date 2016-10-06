@@ -7,6 +7,7 @@ tags:
   - property nesting
 category: Webbutveckling
 poster: sass-poster.jpg
+comments: true
 excerpt: |
   Utnyttjar du Sass "property nesting"?
 ---
