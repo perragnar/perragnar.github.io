@@ -4,9 +4,9 @@ layout: post
 categories: 
   - Webbutveckling
 tags:
-  - addons
-  - plugins
-  - sublime-text
+  - Addons
+  - Plugins
+  - Sublime Text
 poster: sublime-header.jpg
 excerpt: |
   Är du ute efter att göra din version av Sublime Text mer personlig? Här visar jag mina inställningar samt vilka plugins jag använder.

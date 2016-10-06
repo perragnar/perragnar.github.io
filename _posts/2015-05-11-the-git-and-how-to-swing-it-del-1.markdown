@@ -4,8 +4,8 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - git
-  - nybörjare
+  - Git
+  - Nybörjare
 poster: git-header.jpg
 excerpt: |
   Lär dig använda Git. Från en nybörjare till dig som nybörjare.

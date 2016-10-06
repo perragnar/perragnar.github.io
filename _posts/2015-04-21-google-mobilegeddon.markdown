@@ -4,10 +4,10 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - google
-  - mobilegeddon
-  - rank
-  - seo
+  - Google
+  - Mobilegeddon
+  - Rank
+  - SEO
 poster: seo.jpg
 excerpt: |
   Google rankar hemsidor som är mobilanpassade högre. Är din webbsida mobilanpassad?

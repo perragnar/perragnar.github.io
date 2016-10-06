@@ -4,8 +4,8 @@ layout: post
 categories:
   - webbutveckling
 tags:
-  - gitignore
-  - git
+  - Gitignore
+  - Git
 poster: git-header.jpg
 excerpt: |
   Vill du versionshantera bara en eller ett fåtal filer med Git? Läs mer om detta enkla sätt med hjälp av .gitignore.

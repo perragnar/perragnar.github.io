@@ -4,8 +4,8 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - checkout
-  - git
+  - Checkout
+  - Git
 poster: git-header.jpg
 excerpt: |
   Ibland händer det att jag har ändrat i en eller flera filer och kommer på att jag vill återgå till originalet, eller rättare sagt till den senaste "commiten". Här ska jag visa hur man återställer filer(na) med Git.

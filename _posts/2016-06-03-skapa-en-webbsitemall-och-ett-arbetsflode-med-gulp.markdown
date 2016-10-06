@@ -4,10 +4,9 @@ layout: post
 categoreies:
   - Webbutveckling
 tags:
-  - arbetsflode
-  - browsersync
-  - gulp
-  - mall
+  - Arbetsflode
+  - Browsersync
+  - Gulp
   - npm
   - Sass
   - Scss

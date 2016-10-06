@@ -4,10 +4,10 @@ layout: post
 categories:
  - Webbutveckling
 tags: 
-  - google
-  - optimering
-  - page-speed-insights
-  - seo
+  - Google
+  - Optimering
+  - Page Speed Insights
+  - SEO
 poster: google-header.jpg
 excerpt: |
   Analysera och förbättra din webbplats med Google PageSpeed Insights.

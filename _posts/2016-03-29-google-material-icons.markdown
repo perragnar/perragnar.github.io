@@ -4,10 +4,10 @@ layout: post
 categories:
   - webbutveckling
 tags:
-  - google
-  - icons
-  - material-design
-  - open-source
+  - Google
+  - Ikoner
+  - Material Design
+  - Open Source
 poster: google-material-design-icons.jpg
 excerpt: |
   Länktips: Google Material Design icons.

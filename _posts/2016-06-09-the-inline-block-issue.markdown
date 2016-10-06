@@ -4,7 +4,7 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - css
+  - CSS
   - inline-block
 poster: webdev.jpg
 excerpt: |

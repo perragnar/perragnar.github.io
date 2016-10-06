@@ -4,8 +4,8 @@ layout: post
 categories:
   - webbutveckling
 tags:
-  - gitignore
-  - git
+  - Gitignore
+  - Git
 poster: git-header.jpg
 excerpt: |
   Hur gör man för att ignorera filer i Git efter att de redan finns cachade? Kan man ta bort dem från versionshanteringen utan att radera filerna?

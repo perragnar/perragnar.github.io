@@ -4,10 +4,10 @@ layout: post
 categories:
   - Noterat
 tags:
-  - font
-  - sverige
-  - sweden-sans
-  - typsnitt
+  - Font
+  - Sverige
+  - Sweden Sans
+  - Typsnitt
 poster: 20141030-sweden-font.jpg
 excerpt: |
   Sveriges egna typsnitt framtagen av svenska regeringen i marknadsföringssyfte.

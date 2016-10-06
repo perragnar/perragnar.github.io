@@ -4,10 +4,10 @@ layout: post
 categories:
   - Noterat
 tags:
-  - font
-  - open-source
-  - roboto
-  - typsnitt
+  - Font
+  - Open Source
+  - Roboto
+  - Typsnitt
 excerpt: |
   Googles typsnitt Roboto blir open source.
 ---

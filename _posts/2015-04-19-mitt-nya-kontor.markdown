@@ -4,8 +4,8 @@ layout: post
 categories:
   - Noterat
 tags:
-  - kontor
-  - sala
+  - Kontor
+  - Sala
 excerpt: |
   Jag har flyttat mitt kontor till Sala.
 ---

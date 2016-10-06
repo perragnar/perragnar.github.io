@@ -4,9 +4,9 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - git
-  - humor
-  - svenska
+  - Git
+  - Humor
+  - Svenska
 poster: git-header.jpg
 excerpt: |
   Känns det obekvämt att säga <br />"— Kan du commita och pusha upp till repositoryt?"?<br />Björne har gjort en parlör för oss svenska Git-användare så att vi slipper skämmas när vi kommunicerar med varandra.

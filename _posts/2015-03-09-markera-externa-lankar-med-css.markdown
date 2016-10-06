@@ -4,8 +4,8 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - css
-  - externa-lankar
+  - CSS
+  - Externa Lankar
 excerpt: |
   Lägg till en ikon för externa länkar med ett enkelt CSS-trick.
 ---

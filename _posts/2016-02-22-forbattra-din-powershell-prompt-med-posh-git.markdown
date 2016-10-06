@@ -2,11 +2,11 @@
 title: Förbättra din PowerShell-prompt med Posh-Git
 layout: post
 categories:
-  - webbutveckling
+  - Webbutveckling
 tags:
-  - git
-  - post-git
-  - powershell
+  - Git
+  - Posh-Git
+  - Powershell
 poster: git-header.jpg
 excerpt: |
   Här kommer ett tips för att förenkla ditt arbetsflöde. Ge din PowerShell-prompt superkrafter med Posh-Git. Den ger inte bara en visuell feedback på din Git-status utan ger dig också förslag på Git-kommandon, Branch-namn mm.

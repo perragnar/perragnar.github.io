@@ -4,10 +4,10 @@ layout: post
 categories: 
   - Webbutveckling
 tags:
-  - autocorrect
-  - git
-  - fat-finger-syndrome
-  - fat-finger-error
+  - Autocorrect
+  - Git
+  - Fat Finger Syndrome
+  - Fat Finger Error
 poster: git-header.jpg
 excerpt: |
   Stavar du ofta fel när du skriver? Då kan du tala om för Git att du behöver lite hjälp på traven med autorättning.

@@ -4,8 +4,8 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - kurser
-  - tutorials
+  - Kurser
+  - Tutorials
 excerpt: |
   En resurs med tutorials för utveckling.
 ---

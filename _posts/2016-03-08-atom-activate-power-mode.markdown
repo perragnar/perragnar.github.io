@@ -4,10 +4,10 @@ layout: post
 categories:
   - Noterat
 tags:
-  - activate-power-mode
-  - power-mode
-  - atom
-  - humor
+  - Activate Power Mode
+  - Power Mode
+  - Atom
+  - Humor
 poster: webdev-header.jpg
 excerpt: |
   Har du funderat på att byta din dammiga gamla kodeditor till något fräsigare? Idag finns det en drös moderna program på marknaden men jag vill här och nu slå ett slag för Atom, och detta på grund av ett enda plugin...

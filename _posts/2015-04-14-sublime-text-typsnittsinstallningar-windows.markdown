@@ -4,9 +4,9 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - font
-  - sublime-text
-  - typsnitt
+  - Font
+  - Sublime Text
+  - Typsnitt
 poster: sublime-header.jpg
 excerpt: |
   Ser typsnittet i Sublime Text inte bra ut på din Windowsmaskin?

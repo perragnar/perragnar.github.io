@@ -4,9 +4,9 @@ layout: post
 categories: 
   - Noterat
 tags:
-  - hello-world
-  - markdown-blog
-  - wordpress
+  - Hello World
+  - Markdown Blog
+  - Wordpress
 poster: perragnar.jpg
 excerpt: |
   Ner med Wordpress! Länge Leve Wordpress!

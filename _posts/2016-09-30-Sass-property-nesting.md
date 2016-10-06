@@ -2,9 +2,9 @@
 layout: post
 title: Sass property nesting
 tags:
-  - sass
-  - scss
-  - property nesting
+  - Sass
+  - Scss
+  - Property nesting
 category: Webbutveckling
 poster: sass-poster.jpg
 comments: true

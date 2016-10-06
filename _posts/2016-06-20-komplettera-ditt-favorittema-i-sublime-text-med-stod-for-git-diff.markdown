@@ -4,12 +4,9 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - color-scheme
-  - fargschema
-  - git
-  - git-diff
-  - sublime-text
-  - theme
+  - Tema
+  - Git
+  - Sublime Text
 poster: sublime-header.jpg
 excerpt: |
   Saknar ditt favorittema i Sublime Text stöd för färgmarkering i Gitt Diff? Det är lätt att fixa!

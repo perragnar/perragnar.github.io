@@ -4,8 +4,9 @@ layout: post
 categories: 
   - Webbutveckling
 tags:
-  - emmet
-  - kommentarer
+  - Emmet
+  - Zen coding
+  - Kommentarer
 poster: emmet-comments-header.jpg
 excerpt: |
   Konfigurera Emmet att lägga till kommentarer som du vill ha dem.

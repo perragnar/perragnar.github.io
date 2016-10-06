@@ -4,8 +4,8 @@ layout: post
 categories:
   - Noterat
 tags:
-  - markdown
-  - wes-bos
+  - Markdown
+  - Wes Bos
 excerpt: |
   Markdown blir ett mer och mer vanligt sätt att skriva på nätet, inte längre bara bland författare och skribenter. Lär dig att behärska Markdown med Wes Bos.
 ---

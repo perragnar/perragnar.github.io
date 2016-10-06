@@ -2,7 +2,7 @@
 layout: post
 title: perragnar.com och jekyll
 tags:
-  - jekyll
+  - Jekyll
 categories:
   - Noterat
 excerpt: |

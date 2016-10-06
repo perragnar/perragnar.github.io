@@ -4,10 +4,10 @@ layout: post
 categories:
   - Webbutveckling
 tags:
-  - git
-  - nyborjare
-  - stash
-  - tips
+  - Git
+  - Nyborjare
+  - Stash
+  - Tips
 poster: git-header.jpg
 excerpt: |
   Ibland behöver man avbryta det man håller på med för att t ex byta branch och fortsätta med annan kod. Hur gör man då med de filer man arbetar med för tillfället utan att behöva göra en git commit? Det du behöver är git stash.
