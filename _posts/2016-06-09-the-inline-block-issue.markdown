@@ -2,7 +2,7 @@
 title: "The inline-block issue"
 layout: post
 categories:
-  - Webbutvekling
+  - Webbutveckling
 tags:
   - css
   - inline-block
