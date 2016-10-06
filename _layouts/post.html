@@ -13,12 +13,33 @@ layout: default
         {% endif %}
         <header class="post-header">
           <div class="post-meta">
-            <div class="date">{% include datetime.html datetime=page.date %}</div>
-            <ul class="categories">
-              {% for category in page.categories %}
-                <li><a href="/categories/{{ category }}">{{ category }}</a></li>
-              {% endfor %}
-            </ul>
+            <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
+            {% if page.categories %}
+              <div class="post-meta-section categories">
+                <ul>
+                  {% for category in page.categories %}
+                    <li>
+                      <!-- <a href="/categories/{{ category }}"> -->
+                        {{ category }}
+                      <!-- </a> -->
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+            {% if page.tags %}
+              <div class="post-meta-section tags">
+                <ul>
+                  {% for tag in page.tags %}
+                    <li>
+                      <!-- <a href="/tag/{{ tag }}"> -->
+                        {{ tag }}
+                      <!-- </a> -->
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
           </div>
           {% if page.title %}<h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>{% endif %}
         </header>
@@ -27,13 +48,6 @@ layout: default
             <div class="excerpt">{{ page.excerpt | markdownify }}</div>
           {% endif %}
           {{ content }}
-        </div>
-        <div class="tags">
-          <ul>
-            {% for tag in page.tags %}
-              <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-            {% endfor %}
-          </ul>
         </div>
       </div>
       {% if page.comments %}
