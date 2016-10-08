@@ -551,17 +551,17 @@ dl {
       
       .full-width {        
         @include large {
-          margin: 0 -5rem 2rem;
+          margin: 0 -5rem;
           padding: 2rem 5rem;
         }
 
         @include medium {
-          margin: 0 -3rem 2rem;
+          margin: 0 -3rem;
           padding: 2rem 3rem;
         }
 
         @include small {
-          margin: 0 -1.5rem 1rem;
+          margin: 0 -1.5rem;
           padding: 1rem 1.5rem;
         }
       }
