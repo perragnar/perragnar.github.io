@@ -1,9 +1,9 @@
-img.float-left {
+.float-left {
   float: left;
   margin: 0 1rem 1rem 0;
 }
 
-img.float-right {
+.float-right {
   float: right;
   margin: 0 0 1rem 1rem;
 }
@@ -13,4 +13,8 @@ img.float-right {
   padding: 2rem;
   margin-bottom: 1rem;
   border-radius: .5rem;
+}
+
+.round {
+  border-radius: 50%;
 }

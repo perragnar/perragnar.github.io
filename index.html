@@ -4,8 +4,7 @@ poster: perragnar.jpg
 ---
 
 <h1>Hej, jag heter Per Ragnar Edin</h1>
-
-<h2>Vem är jag?</h2>
+<img src="/assets/img/perragnar.jpg" alt="Per Ragnar Edin" class="float-right round" style="max-width: 40%;" />
 <p>
   Jag är <strong>webbutvecklare</strong> (front- &amp; backend), <strong>webbdesigner</strong> och <strong>grafiker</strong> bosatt i <a href="https://sv.wikipedia.org/wiki/Ransta,_Sala_kommun" target="_blank">Ransta</a> mellan Sala och Västerås.
 </p>
@@ -19,14 +18,42 @@ poster: perragnar.jpg
   <figcaption>Per Ragnar Edin</figcaption>
 </figure>
 
-<h2>Kontakta mig</h2>
-<dl>
-  <dt>E-post</dt>
-    <dd><a href="mailto:perragnar@gmail.com">perragnar@gmail.com</a><br /></dd>
-  <dt>Twitter</dt>
-    <dd><a href="https://twitter.com/perragnaredin">@perragnar</a><br /></dd>
-  <dt>Github</dt>
-    <dd><a href="https://github.com/perragnar">github.com/perragnar</a></dd>
-  <dt>Artstation</dt>
-    <dd><a href="https://www.artstation.com/artist/perragnar">artstation.com/artist/perragnar</a></dd>
-</dl>
+<div class="row full-width">
+  <div class="col col-50">
+    <h2>Kontakta mig</h2>
+    <dl>
+      <dt>E-post</dt>
+        <dd><a href="mailto:perragnar@gmail.com">perragnar@gmail.com</a><br /></dd>
+      <dt>Twitter</dt>
+        <dd><a href="https://twitter.com/perragnaredin">@perragnar</a><br /></dd>
+      <dt>Github</dt>
+        <dd><a href="https://github.com/perragnar">github.com/perragnar</a></dd>
+      <dt>Artstation</dt>
+        <dd><a href="https://www.artstation.com/artist/perragnar">artstation.com/artist/perragnar</a></dd>
+    </dl>
+    
+    <!-- <h2>test</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero animi eaque asperiores totam earum, cum ut, cumque optio perferendis eum ducimus ratione modi nesciunt officia est facilis tempora quasi dolore fugiat voluptas fuga dicta. Molestiae ullam, debitis nihil. Enim nostrum rem et quis optio nam doloribus, possimus consequatur sit totam!
+    </p> -->
+  </div>
+  <div class="col col-50">
+    <h2>Senast från <a href="/blog/">bloggen</a></h2>
+    
+    <ul class="front-page-post-list">
+      {% assign counter = '.' %}
+      {% for post in site.posts %}
+        {% if counter.size <= 5 and post.draft != true %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="front-page-post-list-link">{{ post.title }}</a>
+            <div class="front-page-post-list-date">{% include datetime.html datetime=post.date %}</div>
+            <div class="front-page-post-list-excerpt">
+              {{ post.excerpt | markdownify }}
+            </div>
+          </li>
+          {% capture counter %}{{ counter | append:'.' }}{% endcapture %} 
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
