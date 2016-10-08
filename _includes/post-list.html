@@ -4,8 +4,13 @@
       <div class="post">
         <div class="box">
           {% if post.poster %}
+            {% if post.poster contains '://' %}
+              {% assign poster_url = post.poster %}
+            {% else %}
+              {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
+            {% endif %}
             <div class="post-poster">
-              <img src="{{ site.baseurl }}/assets/posters/{{ post.poster }}" />
+              <img src="{{ poster_url }}" alt="{{ post.title }}" />
             </div>
           {% endif %}
           <header class="post-header">
