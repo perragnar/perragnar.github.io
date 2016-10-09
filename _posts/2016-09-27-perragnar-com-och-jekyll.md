@@ -34,11 +34,13 @@ Förmodligen pga Toms inblandning i GitHub kan du husera din jekyllgenererade we
   </div>  
 </div>
 
-## Hur fungerar då Jekyll?
+## Hur fungerar Jekyll?
 
 En enkel förklaring är att Jekyll kompilerar en webbplats med hjälp av mallspråket [Liquid](http://shopify.github.io/liquid/) i kombination med enkla textfiler som utgör innehållet i sidan.
 
-{ Bild på SSG-flödet }
+<div class="full-width margin" markdown="1">
+  <img src="{{ site.baseurl }}/assets/postfiles/ssg.jpg" class="fill-width" alt="Static site generator flöde" />
+</div>
 
 Detta kallas för **Static site generator** och det finns en del fördelar med det.
 
