@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
     {% include header.html %}
@@ -15,7 +14,17 @@
 
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.1.0.min.js"></script>
     <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/functions.js"></script>
-
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '{{ site.baseurl }}/assets/css/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    
     {% if site.google_analytics_id %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
