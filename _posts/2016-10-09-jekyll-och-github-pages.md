@@ -49,7 +49,7 @@ Här är ett exempel på en loop i Liquid för en enkel huvudmeny.
 
 **Wordpress är ett kraftfullt verktyg** för att driva en webbsida. Jag tycker dock att det är en smula långsamt att jobba med men i övrigt ser jag inga nackdelar eller fel med det. Det finns en anledning till att Wordpress är den ledande plattformen för att publicera webbsidor på idag.
 
-Dock är Wordpress överkvalificerat för mitt behov. Det kräves en webbplats med en MySql-server och det kostar pengar att hyra in sig på ett webbhotell (i dags läge runt 1000 kr per år för ett respektabelt och pålitligt webbhotell i Sverige).
+Dock är Wordpress överkvalificerat för mitt behov. Det krävs en webbplats med en MySql-server och det kostar pengar att hyra in sig på ett webbhotell (i dags läge runt 1000 kr per år för ett respektabelt och pålitligt webbhotell i Sverige).
 
 Förmodligen pga Toms Preston-Werners inblandning i GitHub kan du husera din Jekyll-genererade webbplats hos GithHub helt gratis via [GitHub Pages](https://pages.github.com/) och det är en av anledningarna till att jag valt Jekyll. Frågan är om Jekyll och GitHub räcker till för att driva en enkel hemsida för det finns begränsningar. I min mening är begränsningarna tillräckligt få för att det ska fungera.
 
