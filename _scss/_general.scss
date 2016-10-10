@@ -519,7 +519,7 @@ dl {
               &:not(:last-child):after {
                 content: ',';
                 color: #BEC0C0;
-                margin-right: .5rem;
+                margin-right: .2rem;
                 display: inline-block;
               }
             }
