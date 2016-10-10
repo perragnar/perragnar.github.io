@@ -55,9 +55,26 @@
   }
   
   &.margin { margin-bottom: 2rem; }
+  &.padding {
+    @include large {
+      padding: 3rem 5rem;
+    }
+
+    @include medium {
+      padding: 2rem 3rem;
+    }
+
+    @include small {
+      padding: 1.5rem;
+    }
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.bg-light-gray { background-color: lightgray; }
-.bg-note { background-color: #fffabc; }
-.bg-info { background-color: #63BBFF; }
+.bg-pop { background-color: lightgray; color: gray; }
+.bg-note { background-color: #fffabc; color: #927827; }
+.bg-info { background-color: #63BBFF; color: white; }
 .bg-warning, .bg-alert { background-color: #800; color: white; }
