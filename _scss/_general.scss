@@ -585,16 +585,13 @@ dl {
         max-width: 100%;
       }
 
-      figure {
-        display: inline-block;
-        
-        figcaption {
-          text-align: center;
-          font-size: .75em;
-          line-height: 1;
-          color: slategray;
-        }
-      }
+      // figure {
+      //   figcaption {
+      //     font-size: .75em;
+      //     line-height: 1;
+      //     color: slategray;
+      //   }
+      // }
 
       p {
         line-height: 1.5;
