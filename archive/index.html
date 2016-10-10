@@ -1,6 +1,6 @@
 ---
 layout: page
-poster: arkiv-header.jpg
+poster: perragnar.jpg
 ---
 
 <div class="page-wrapper">
@@ -8,6 +8,7 @@ poster: arkiv-header.jpg
     <div class="post">
       <div class="box">
         <section class="archive-post-list">
+          <h1>Arkiv</h1>
           {% for post in site.posts %}
             {% unless post.draft %}
               {% assign currentDate = post.date | date: "%Y" %}
