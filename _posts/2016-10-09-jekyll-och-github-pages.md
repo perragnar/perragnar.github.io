@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll och GitHub Pages
-poster: webdev-header.jpg
+seo-title: Jekyll och GitHub Pages
 seo-description: |
   Vad är en statiskt genererad webbplats (Static Site Generator) och vem är Jekyll?
 excerpt: |
@@ -11,6 +11,7 @@ tags:
   - Static site generator
 categories:
   - Noterat
+poster: webdev-header.jpg
 comments: true
 draft: false
 ---

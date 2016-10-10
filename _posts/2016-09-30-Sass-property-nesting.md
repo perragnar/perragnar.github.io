@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Sass property nesting
+seo-title: Sass property nesting
+seo-description: |
+  Sass property nesting, en av de största fördelarna med Sass
 tags:
   - Sass
   - Scss
