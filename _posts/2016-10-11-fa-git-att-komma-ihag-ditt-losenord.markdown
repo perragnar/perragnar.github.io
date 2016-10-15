@@ -1,5 +1,8 @@
 ---
 title: Få Git att komma ihåg ditt lösenord
+seo-title: Få Git att komma ihåg ditt lösenord
+seo-description: |
+ Hur du får Git att komma ihåg ditt lösenord till remote repository
 layout: post
 tags:
   - Git
