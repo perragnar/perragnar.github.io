@@ -19,28 +19,11 @@ layout: default
         <header class="post-header">
           <div class="post-meta">
             <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
-            {% if page.categories %}
-              <div class="post-meta-section categories">
-                <ul>
-                  {% for category in page.categories %}
-                    <li>
-                      <!-- <a href="/categories/{{ category }}"> -->
-                        {{ category }}
-                      <!-- </a> -->
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
             {% if page.tags %}
               <div class="post-meta-section tags">
                 <ul>
                   {% for tag in page.tags %}
-                    <li>
-                      <!-- <a href="/tag/{{ tag }}"> -->
-                        {{ tag }}
-                      <!-- </a> -->
-                    </li>
+                    <li><a href="/tags/#{{ tag | downcase }}">{{ tag }}</a></li>
                   {% endfor %}
                 </ul>
               </div>
