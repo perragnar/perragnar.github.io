@@ -17,8 +17,6 @@ Hemsidan drivs numera med Wordpress och mitt projekt Markdown Blog ligger på is
 ### Wordpress, vad nu!?
 Min hemsida har under ett par år drivits av mitt egna blogverktyg, <strong>Markdown Blog</strong>, efter att jag gått ifrån Wordpress av olika anledningar. Den största anledningen var att jag ville testa något helt nytt och att jag ville göra verktyget själv.
 
-<img class="size-medium wp-image-31 alignright" src="http://perragnar.com/wp-content/uploads/2016/01/wp-1452985941253-300x225.jpg" alt="wp-1452985941253.jpg" width="300" height="225" />
-
 Alla som har barn vet att man inte har mycket fritid och ungefär i samma veva som Markdown Blog började utvecklas fick vi vår son. Under de här två åren har jag tagit fram koden ibland och lagt till nya features och funktioner men nyligen insåg jag två saker;
 
 - Jag har inte tiden jag behöver för att utveckla Markdown Blog i den takt jag vill.
