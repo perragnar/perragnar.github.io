@@ -5,7 +5,7 @@ categories:
   - Webbutveckling
 tags:
   - Git
-  - Nyborjare
+  - Nybörjare
   - Stash
   - Tips
 poster: git-header.jpg
