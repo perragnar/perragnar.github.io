@@ -21,6 +21,7 @@ permalink: /:year/:month/:day/:title/
 future: false
 
 show_drafts: false
+show_related_posts: true
 
 paginate: 10
 paginate_path: "/blog/page:num"
