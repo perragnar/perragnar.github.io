@@ -5,7 +5,7 @@ categories:
   - Webbutveckling
 tags:
   - CSS
-  - Externa Lankar
+  - Länkar
 excerpt: |
   Lägg till en ikon för externa länkar med ett enkelt CSS-trick.
 ---
@@ -34,11 +34,6 @@ a[href^="http"] {
   padding-right: 20px; /* Padding beror på storleken på ikonen */
 }
 {% endhighlight %}
-
-### Resultat
-Så här kan det se ut med ovanstående exempel:
-
-![Resultat](http://perragnar.com/wp-content/uploads/2016/01/external-link-icon-example.png)
 
 [external-link-icon-1]: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/VisualEditor_-_Icon_-_External-link.svg/120px-VisualEditor_-_Icon_-_External-link.svg.png
 [external-link-icon-2]: https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/link.png
