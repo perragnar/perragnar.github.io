@@ -4,7 +4,6 @@ layout: post
 categories:
   - Noterat
 tags:
-  - Activate Power Mode
   - Power Mode
   - Atom
   - Humor
