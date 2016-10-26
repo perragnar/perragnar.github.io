@@ -23,7 +23,7 @@ layout: default
               <div class="post-meta-section tags">
                 <ul>
                   {% for tag in page.tags %}
-                    <li><a href="/tags/#{{ tag | downcase }}" class="tag">{{ tag }}</a></li>
+                    <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
                   {% endfor %}
                 </ul>
               </div>
