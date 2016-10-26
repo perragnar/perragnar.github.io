@@ -30,22 +30,26 @@ seo-description: Per Ragnar Edins blogarkiv
   <div class="wrapper">
     <div class="post">
       <div class="box">
-        <section class="tags">
+        <section class="tags-index">
           <h1>Etiketter</h1>
           
-          <ul class="tags-list">
-            {% for tag in tags %}
-              <li><a href="#{{ tag | slugify }}">{{ tag }}</a></li>
-            {% endfor %}
-          </ul>
+          <div class="tags">
+            <ul class="tags">
+              {% for tag in tags %}
+                <li><a href="#{{ tag | slugify }}" class="tag">{{ tag }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
           
-          <section class="archive-post-list">
+          <section class="generic-post-list">
             {% for tag in tags %}
               <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
               <ul>
                 {% for post in site.posts %}
                   {% if post.tags contains tag %}
-                    <li><span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+                    <li>
+                      <span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
                   {% endif %}
                 {% endfor %}
               </ul>

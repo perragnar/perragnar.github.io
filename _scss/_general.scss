@@ -471,7 +471,7 @@ dl {
             
             &:not(:first-child) {
               border-left: solid 1px #BEC0C0;
-              padding-left: 1rem;
+              padding-left: 1.5rem;
             }
           }
           
@@ -479,6 +479,12 @@ dl {
           .categories,
           .tags {
             color: #6F7B8E;
+          }
+          
+          @include large {
+            .date {
+              vertical-align: text-top;
+            }
           }
         }
 
@@ -515,13 +521,6 @@ dl {
             
             li {
               display: inline-block;
-              
-              &:not(:last-child):after {
-                content: ',';
-                color: #BEC0C0;
-                margin-right: .2rem;
-                display: inline-block;
-              }
             }
           }
         }
@@ -692,8 +691,25 @@ dl {
         font-size: .8em;
       }
     }
-
-    .archive-post-list {
+    
+    .tags-index {
+      .tags {
+        margin-bottom: 2rem;
+        
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          
+          li {
+            display: inline-block;
+            margin-bottom: .25rem;
+          }
+        }
+      }
+    }
+    
+    .generic-post-list {
       ul {
         list-style: none;
         margin-bottom: 2rem;
@@ -842,6 +858,23 @@ dl {
   }
 
   @include clearfix();
+}
+
+.padding {
+  @include large {
+    padding: 5rem;
+    font-size: 1em;
+  }
+
+  @include medium {
+    padding: 3rem;
+    font-size: 1em;
+  }
+
+  @include small {
+    padding: 1.5rem;
+    font-size: .8em;
+  }
 }
 
 .page-footer {

@@ -78,3 +78,78 @@
 .bg-note { background-color: #fffabc; color: #927827; }
 .bg-info { background-color: #63BBFF; color: white; }
 .bg-warning, .bg-alert { background-color: #800; color: white; }
+
+$tag-background-color: #eee;
+$tag-color: #999;
+$tag-hover-background-color: #feb800;
+$tag-hover-color: black;
+
+.tag {
+  background: $tag-background-color;
+  border-radius: 3px 0 0 3px;
+  font-family: $font-condensed;
+  color: $tag-color;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin: 0 .25rem 0 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  
+  @include large {
+    font-size: .8em;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0 1rem 0 .5rem;
+  }
+  
+  @include medium {
+    font-size: .8em;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0 1rem 0 .5rem;
+  }
+  
+  @include small {
+    font-size: .9em;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0 .5rem 0 .25rem;
+  }
+}
+
+.tag::after {
+  background: white;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  @include large {
+    border-bottom: .8rem solid transparent;
+    border-left: .5rem solid $tag-background-color;
+    border-top: .8rem solid transparent;
+  }
+  
+  @include medium {
+    border-bottom: .8rem solid transparent;
+    border-left: .5rem solid $tag-background-color;
+    border-top: .8rem solid transparent;
+  }
+  
+  @include small {
+    border-bottom: .6rem solid transparent;
+    border-left: .3rem solid $tag-background-color;
+    border-top: .7rem solid transparent;
+  }
+}
+
+.tag:hover {
+  background-color: $tag-hover-background-color;
+  color: $tag-hover-color;
+  text-decoration: none;
+}
+
+.tag:hover::after {
+   border-left-color: $tag-hover-background-color; 
+}

@@ -23,7 +23,7 @@ layout: default
               <div class="post-meta-section tags">
                 <ul>
                   {% for tag in page.tags %}
-                    <li><a href="/tags/#{{ tag | downcase }}">{{ tag }}</a></li>
+                    <li><a href="/tags/#{{ tag | downcase }}" class="tag">{{ tag }}</a></li>
                   {% endfor %}
                 </ul>
               </div>
@@ -38,6 +38,29 @@ layout: default
           {{ content }}
         </div>
       </div>
+      
+      {% if site.show_related_posts %}
+        <div class="box padding related-posts">
+          <div class="generic-post-list">
+            <h3>Relaterade inlägg</h3>
+            <ul>
+              {% assign listed_posts_urls = page.url | split: ' ' %}
+              {% for tag in page.tags %}
+                {% for mypost in site.tags[tag] %}
+                  {% unless mypost.draft %}
+                    {% if listed_posts_urls contains mypost.url %}
+                    {% else %}
+                      <li><span>{% include datetime.html datetime=mypost.date %}</span> <a href="{{ mypost.url }}">{{ mypost.title }}</a></li>
+                      {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+                    {% endif %}
+                  {% endunless %}
+                {% endfor %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+      
       {% if page.comments %}
         <div class="box">
           <div id="disqus_thread"></div>
