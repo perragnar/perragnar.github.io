@@ -475,6 +475,10 @@ dl {
             }
           }
           
+          .post-status {
+            color: #961A02;
+          }
+          
           .date,
           .categories,
           .tags {
@@ -482,6 +486,7 @@ dl {
           }
           
           @include large {
+            .post-status,
             .date {
               vertical-align: text-top;
             }
@@ -494,8 +499,8 @@ dl {
           
           .post-meta-section {
             display: block;
-            border-left: solid 1px #BEC0C0;
             margin: .5rem 0 .5rem;
+            border-left: solid 1px #BEC0C0;
             padding-left: .5rem;
           }
         }
@@ -506,8 +511,8 @@ dl {
           
           .post-meta-section {
             display: block;
-            border-left: solid 1px #BEC0C0;
             margin: .5rem 0 .5rem;
+            border-left: solid 1px #BEC0C0;
             padding-left: .5rem;
           }
         }

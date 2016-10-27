@@ -18,6 +18,9 @@ layout: default
         {% endif %}
         <header class="post-header">
           <div class="post-meta">
+            {% if page.draft %}
+              <div class="post-meta-section post-status">Utkast</div>
+            {% endif %}
             <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
             {% if page.tags %}
               <div class="post-meta-section tags">
