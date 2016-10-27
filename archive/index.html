@@ -1,31 +1,27 @@
 ---
 layout: page
+title: Arkiv
 poster: perragnar.jpg
 seo-title: Arkiv över Per Ragnar Edins blog
 seo-description: Per Ragnar Edins blogarkiv
 ---
 
-<div class="page-wrapper">
-  <div class="wrapper">
-    <div class="post">
-      <div class="box">
-        <section class="generic-post-list">
-          <h1>Arkiv</h1>
-          {% for post in site.posts %}
-            {% unless post.draft %}
-              {% assign currentDate = post.date | date: "%Y" %}
-              {% if currentDate != myDate %}
-                {% unless forloop.first %}</ul>{% endunless %}
-                <h2>{{ currentDate }}</h2>
-                <ul>
-                {% assign myDate = currentDate %}
-              {% endif %}
-              <li><span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-              {% if forloop.last %}</ul>{% endif %}
-            {% endunless %}
-          {% endfor %}
-        </section>
-      </div>
-    </div>
+<div class="post">
+  <div class="box">
+    <section class="generic-post-list">
+      {% for post in site.posts %}
+        {% unless post.draft %}
+          {% assign currentDate = post.date | date: "%Y" %}
+          {% if currentDate != myDate %}
+            {% unless forloop.first %}</ul>{% endunless %}
+            <h2>{{ currentDate }}</h2>
+            <ul>
+            {% assign myDate = currentDate %}
+          {% endif %}
+          <li><span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% if forloop.last %}</ul>{% endif %}
+        {% endunless %}
+      {% endfor %}
+    </section>
   </div>
 </div>

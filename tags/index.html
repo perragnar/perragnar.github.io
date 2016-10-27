@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Index
 poster: perragnar.jpg
 seo-title: Arkiv över Per Ragnar Edins blog
 seo-description: Per Ragnar Edins blogarkiv
@@ -26,37 +27,30 @@ seo-description: Per Ragnar Edins blogarkiv
   {% endif %}
 {% endfor %}
 
-<div class="page-wrapper">
-  <div class="wrapper">
-    <div class="post">
-      <div class="box">
-        <section class="tags-index">
-          <h1>Etiketter</h1>
-          
-          <div class="tags">
-            <ul class="tags">
-              {% for tag in tags %}
-                <li><a href="#{{ tag | slugify }}" class="tag">{{ tag }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-          
-          <section class="generic-post-list">
-            {% for tag in tags %}
-              <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
-              <ul>
-                {% for post in site.posts %}
-                  {% if post.tags contains tag %}
-                    <li>
-                      <span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            {% endfor %}
-          </section>
-        </section>
+<div class="post">
+  <div class="box">
+    <section class="tags-index">
+      <div class="tags">
+        <ul class="tags">
+          {% for tag in tags %}
+            <li><a href="#{{ tag | slugify }}" class="tag">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
-    </div>
+      <section class="generic-post-list">
+        {% for tag in tags %}
+          <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+          <ul>
+            {% for post in site.posts %}
+              {% if post.tags contains tag %}
+                <li>
+                  <span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </section>
+    </section>
   </div>
 </div>
