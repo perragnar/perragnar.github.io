@@ -52,7 +52,11 @@ Jag har stött på problem med att Node.js inte fungerat i Windows 10 och då ha
 
 ## Browsersync
 
-<iframe src="https://www.youtube.com/embed/Ig8kOytR-ek" width="1000" height="563" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="full-width margin">
+  <div class="responsive-container ratio-50">
+    <iframe src="https://www.youtube.com/embed/Ig8kOytR-ek" width="1000" height="563" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+</div>
 
 ## Varför Gulp och inte Grunt?
 
