@@ -12,15 +12,19 @@ tags:
   - Scss
 poster: webdev.jpg
 excerpt: |
-  Med hjälp av Gulp och några paket är det ganska lätt att skapa ett arbetsflöde där innehållet automatiskt kompileras, minifieras, slås ihop, optimeras och kopieras till en mapp som du snabbt kan lägga ut på nätet.<br />
+  Med hjälp av Gulp och några paket är det ganska lätt att skapa ett arbetsflöde där innehållet automatiskt kompileras, minifieras, slås ihop, optimeras och kopieras till en mapp som du snabbt kan lägga ut på nätet.
+
   Vi ska titta på hur man kompilerar Sass till CSS, minifierar CSS, Javascript och HTML, slår ihop CSS- och Javascriptfiler och hur man optimerar bilder.
 draft: true
 ---
 ## — Vad betyder allt det där och hur kan det hjälpa mig?
 
-![webdev-bot]({{ site.baseurl }}/assets/postfiles/webdev-bot.jpg)
+<figure markdown="1">
+  ![webdev-bot]({{ site.baseurl }}/assets/postfiles/webdev-bot.jpg)
+  <figcaption>Låt Gulp göra jobbet</figcaption>
+</figure>
 
-Ta en titt på bilden nedan. Tänk dig att du har två mappar; `app` och `dist` där du i den första arbetar med dina filer och så fort du gör en ändring i någon fil sköter Gulp kompilering, minifiering osv i bakgrunden och skickar över de färdiga filerna till mappen `dist`. Inom ett ögonblick när allt är klart laddas sidan om automatiskt i din webbläsare.
+Ta en titt på bilden nedan. Tänk dig att du har två mappar, *app* och *dist* där du i den första arbetar med dina filer och så fort du gör en ändring i någon fil sköter Gulp kompilering, minifiering osv i bakgrunden och skickar över de färdiga filerna till mappen *dist*. Inom ett ögonblick när allt är klart laddas sidan om automatiskt i din webbläsare.
 
 ![Gulpprocessen]({{ site.baseurl }}/assets/postfiles/basics.png)
 
