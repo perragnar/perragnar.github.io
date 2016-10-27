@@ -476,12 +476,6 @@ dl {
             }
           }
           
-          .date,
-          .categories,
-          .tags {
-            color: #6F7B8E;
-          }
-          
           @include large {
             .post-status,
             .date {
@@ -497,8 +491,6 @@ dl {
           .post-meta-section {
             display: block;
             margin: .5rem 0 .5rem;
-            border-left: solid 1px #BEC0C0;
-            padding-left: .5rem;
           }
         }
 
@@ -509,12 +501,27 @@ dl {
           .post-meta-section {
             display: block;
             margin: .5rem 0 .5rem;
-            border-left: solid 1px #BEC0C0;
-            padding-left: .5rem;
           }
         }
         
-        .categories,
+        .post-status {
+          display: inline-block;
+          background-color: #961A02;
+          color: white;
+          font-size: .65em;
+          padding: .25rem;
+          margin-bottom: 1rem;
+          border-radius: .15rem;
+          text-transform: uppercase;
+          font-family: $font-ui-bold;
+          letter-spacing: .1rem;
+          border: none;
+        }
+        
+        .date {
+          font-family: $font-content-serif;
+        }
+        
         .tags {
           ul {
             list-style: none;
@@ -525,19 +532,6 @@ dl {
               display: inline-block;
             }
           }
-        }
-        
-        .post-status {
-          display: inline-block;
-          background-color: #961A02;
-          color: white;
-          font-size: .65em;
-          padding: .25rem;
-          border-radius: .15rem;
-          text-transform: uppercase;
-          font-family: $font-ui-bold;
-          letter-spacing: .1rem;
-          border: none;
         }
       }
 
