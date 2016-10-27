@@ -11,6 +11,8 @@ navigation:
     url: /blog/
   - title: Arkiv
     url: /archive/
+  - title: Index
+    url: /tags/
 
 markdown: kramdown
 
