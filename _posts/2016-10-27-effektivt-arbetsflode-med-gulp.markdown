@@ -1,5 +1,5 @@
 ---
-title: Skapa en webbsitemall och ett arbetsflöde med Gulp
+title: Effektivt arbetsflöde med Gulp
 layout: post
 categoreies:
   - Webbutveckling
@@ -24,7 +24,7 @@ draft: true
   <figcaption>Låt Gulp göra jobbet</figcaption>
 </figure>
 
-Ta en titt på bilden nedan. Tänk dig att du har två mappar, *app* och *dist* där du i den första arbetar med dina filer och så fort du gör en ändring i någon fil sköter Gulp kompilering, minifiering osv i bakgrunden och skickar över de färdiga filerna till mappen *dist*. Inom ett ögonblick när allt är klart laddas sidan om automatiskt i din webbläsare.
+Ta en titt på filstrukturerna nedan och jämför lite. Tänk dig att du har två mappar, **app** och **dist**. I den första arbetar med dina filer och så fort du gör sparar sköter Gulp kompilering, minifiering osv i bakgrunden och skickar över de färdiga filerna till mappen **dist**. Inom ett ögonblick när allt är klart laddas sidan om automatiskt i din webbläsare.
 
 ![Gulpprocessen]({{ site.baseurl }}/assets/postfiles/basics.png)
 
