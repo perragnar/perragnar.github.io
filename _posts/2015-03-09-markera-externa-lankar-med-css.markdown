@@ -21,15 +21,15 @@ eller en kedjelänk;
 
 ![Länk]({{ site.baseurl }}/assets/postfiles/icon-link.png)
 
-### Koden
+## Attribute selectors
 
-Här är ett bra sätt att i CSS markera externa länkar. Använd `[href^="http"]` för att hitta alla länkar på sidan som innehåller "http" som i de flesta fall bara används i externa länkar.
+Här är ett bra sätt att i CSS markera externa länkar. Använd CSS Attribute Selector `[href^="http"]` för att hitta alla länkar på sidan som innehåller "http" som i de flesta fall bara används i externa länkar.
 
-Lägg till din ikon som en högerställd bakgrundsbild och lägg till extra padding för att göra plats för ikonen.
+Vi måste också leta efter länkar som innehåller **https** och då kan vi använda oss av _multiple CSS attribute selectors_ så här: `[href^="http"][href^="https"]`.
 
-#### CSS
+### CSS
 {% highlight css linenos %}
-a[href^="http"] {
+a[href^="http"][href^="https"] {
   background: url(external-link-icon.png) no-repeat right;
   padding-right: 20px; /* Padding beror på storleken på ikonen */
 }
