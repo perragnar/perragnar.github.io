@@ -31,7 +31,11 @@ seo-description: Per Ragnar Edins blogarkiv
   <div class="box">
     <section class="tags-index">
       <div class="tags">
-        <ul class="tags">
+        <p>
+          Här hittar du alla tags (etiketter) på inlägg i bloggen. Klicka på en tag och se vilka inlägg som är relaterade till just den.
+        </p>
+        
+        <ul>
           {% for tag in tags %}
             <li><a href="#{{ tag | slugify }}" class="tag">{{ tag }}</a></li>
           {% endfor %}
