@@ -20,7 +20,7 @@ Man kan säga att MrHyde är i princip en Git-klient i mobilformat som är skrä
 
 När du lagt upp en wepplats i MrHyde får du en genväg till de senaste inläggen, samt länk till alla inlägg (_posts/) och en länk till hela webbplatsens filer (repository root).
 
-<figure>
+<figure markdown="1">
   ![fig-1]({{ site.baseurl }}/assets/postfiles/mrhyde/fig-1.jpg)
   <figcaption>Din webbplatsöversikt</figcaption>
 </figure>
