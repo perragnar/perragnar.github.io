@@ -1,1 +1,1 @@
-$(".main-navigation-button").on("click",function(){$(this).toggleClass("active"),$(".main-navigation ul").slideToggle("fast")}),$.each($(".related-posts"),function(a,b){0==$(b).find("ul").children("li").length&&$(this).remove()});
+$(".main-navigation-button").on("click",function(){$(this).toggleClass("active"),$(".main-navigation ul").slideToggle("fast")}),$.each($(".related-posts"),function(a,b){0==$(b).find("ul").children("li").length&&$(this).remove()}),$(".return-to-blog-link").on("click",function(){history.back()});

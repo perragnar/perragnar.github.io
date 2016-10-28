@@ -419,6 +419,54 @@ dl {
 
 .page-wrapper {
   .post {
+    .return-to-blog-link {
+      background-color: rgba(255,255,255,.9);
+      position: absolute;
+      font-family: $font-ui-bold;
+      text-transform: uppercase;
+      line-height: 1;
+      
+      @include large {
+        transform: translate(-.8rem, 1rem);
+        padding: 1rem;
+        font-size: .8em;
+        border-radius: .25rem;
+      }
+      
+      @include medium {
+        transform: translate(-.8rem, 1rem);
+        padding: .5rem;
+        font-size: .7em;
+        border-radius: .15rem;
+      }
+      
+      @include small {
+        padding: .5rem;
+        font-size: .7em;
+      }
+      
+      &:before {
+        content: '\021A9';
+        width: 1ch;
+      }
+      
+      span {
+        margin-left: 1ch;
+        display: none;
+      }
+      
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+        
+        span {
+          display: inline-block;
+        }
+      }
+      
+      transition: all 200ms ease-in-out;
+    }
+    
     .post-poster {
       img {
         width: 100%;
