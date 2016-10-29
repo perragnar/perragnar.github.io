@@ -587,10 +587,12 @@ dl {
             list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
             
             li {
-              display: block;
-              float: left;
+              margin: 0 .25rem .25rem 0;
             }
           }
         }
@@ -782,8 +784,6 @@ dl {
           li {
             margin: 0 .25rem .25rem 0;
           }
-          
-          @include clearfix();
         }
       }
     }
