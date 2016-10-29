@@ -433,6 +433,11 @@ dl {
         padding: 1rem;
         font-size: .8em;
         border-radius: .25rem;
+        
+        span {
+          display: none;
+          margin-left: 1ch;
+        }
       }
       
       @include medium {
@@ -440,21 +445,26 @@ dl {
         padding: .5rem;
         font-size: .7em;
         border-radius: .15rem;
+        
+        span {
+          display: inline-block;
+          margin-left: 1ch;
+        }
       }
       
       @include small {
         padding: .5rem;
         font-size: .7em;
+        
+        span {
+          display: inline-block;
+          margin-left: 1ch;
+        }
       }
       
       &:before {
         content: '\021A9';
         width: 1ch;
-      }
-      
-      span {
-        margin-left: 1ch;
-        display: none;
       }
       
       &:hover {
