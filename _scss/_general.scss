@@ -537,9 +537,13 @@ dl {
           }
           
           @include large {
-            .post-status,
+            .post-status {
+              vertical-align: text-top;
+            }
+            
             .date {
               vertical-align: text-top;
+              padding: .3rem 0;
             }
           }
         }
@@ -570,12 +574,23 @@ dl {
           color: white;
           font-size: .65em;
           padding: .25rem;
-          margin-bottom: 1rem;
           border-radius: .15rem;
           text-transform: uppercase;
           font-family: $font-ui-bold;
           letter-spacing: .1rem;
           border: none;
+          
+          @include large {
+            margin: .25rem 1rem .25rem 0;
+          }
+          
+          @include medium {
+            margin-bottom: 1rem;
+          }
+          
+          @include small {
+            margin-bottom: 1rem;
+          }
         }
         
         .date {
