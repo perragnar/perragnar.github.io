@@ -43,12 +43,20 @@ seo-description: Per Ragnar Edins blogarkiv
       </div>
       <section class="generic-post-list">
         {% for tag in tags %}
-          <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+          <h3 id="{{ tag | slugify }}"># {{ tag }}</h3>
           <ul>
             {% for post in site.posts %}
               {% if post.tags contains tag %}
                 <li>
-                  <span>{% include datetime.html datetime=post.date %}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+                  <div class="post-date">{% include datetime.html datetime=post.date %}</div>
+                  <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                  <div class="post-tags">
+                    {% for post_tag in post.tags %}
+                      {% unless tag == post_tag %}
+                        <a href="#{{ post_tag | slugify }}" class="tag">{{ post_tag }}</a>
+                      {% endunless %}
+                    {% endfor %}
+                  </div>
                 </li>
               {% endif %}
             {% endfor %}

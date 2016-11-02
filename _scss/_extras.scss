@@ -80,8 +80,8 @@
 .bg-warning, .bg-alert { background-color: #800; color: white; }
 
 .tag {
-  background: #fffabc;
-  border-radius: 3px;
+  background: #FFF291;
+  border-radius: .1rem;
   font-family: $font-condensed;
   color: #927827;
   display: inline-block;
@@ -89,6 +89,7 @@
   position: relative;
   margin: 0;
   text-decoration: none;
+  text-align: center;
   padding: 0 .5rem;
   
   @include large {
