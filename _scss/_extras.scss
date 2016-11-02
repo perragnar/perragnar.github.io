@@ -79,16 +79,11 @@
 .bg-info { background-color: #63BBFF; color: white; }
 .bg-warning, .bg-alert { background-color: #800; color: white; }
 
-$tag-background-color: #eee;
-$tag-color: #999;
-$tag-hover-background-color: #feb800;
-$tag-hover-color: black;
-
 .tag {
-  background: $tag-background-color;
+  background: #fffabc;
   border-radius: 3px;
   font-family: $font-condensed;
-  color: $tag-color;
+  color: #927827;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -116,11 +111,7 @@ $tag-hover-color: black;
 }
 
 .tag:hover {
-  background-color: $tag-hover-background-color;
-  color: $tag-hover-color;
+  background-color: #feb800;
+  color: black;
   text-decoration: none;
-}
-
-.tag:hover::after {
-   border-left-color: $tag-hover-background-color; 
 }
