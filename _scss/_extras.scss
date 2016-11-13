@@ -80,10 +80,10 @@
 .bg-warning, .bg-alert { background-color: #800; color: white; }
 
 .tag {
-  background: #FFF291;
+  background: #feb800;
   border-radius: .1rem;
   font-family: $font-condensed;
-  color: #927827;
+  color: #584202;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -112,7 +112,7 @@
 }
 
 .tag:hover {
-  background-color: #feb800;
+  background-color: #FFDB5C;
   color: black;
   text-decoration: none;
 }
