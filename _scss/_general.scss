@@ -236,16 +236,13 @@ dl {
           background-color: transparent;
 
           a.logotype {
-            transform: scale(2) translateX(-.2rem) rotate(-5deg);
-            filter: blur(.0001px) invert(100%);
-            -webkit-font-smoothing: antialiased;
+            filter: invert(100%);
           }
 
           a.title {
-            transform: translateX(1rem);
             color: white;
             letter-spacing: .4rem;
-            font-size: 1.1em;
+            margin-left: .5rem;
           }
         }
       }
