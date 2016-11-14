@@ -418,6 +418,7 @@ dl {
 .page-wrapper {
   .post {
     .return-to-blog-link {
+      display: none;
       background-color: rgba(255,255,255,.9);
       position: absolute;
       z-index: 1;
@@ -540,7 +541,7 @@ dl {
             
             .date {
               vertical-align: text-top;
-              // padding: .3rem 0;
+              padding: .3rem 0;
             }
           }
         }

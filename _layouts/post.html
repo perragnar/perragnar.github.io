@@ -68,7 +68,7 @@ layout: default
         </div>
       {% endif %}
       
-      {% if page.comments %}
+      {% if page.comments and site.show_comments %}
         <div class="box">
           <div id="disqus_thread"></div>
           <script>

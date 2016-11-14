@@ -24,6 +24,7 @@ future: false
 
 show_drafts: false
 show_related_posts: true
+show_comments: false
 
 paginate: 10
 paginate_path: "/blog/page:num"
