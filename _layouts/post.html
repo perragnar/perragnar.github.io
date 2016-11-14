@@ -57,11 +57,6 @@ layout: default
                       <li>
                         <div class="post-date">{% include datetime.html datetime=mypost.date %}</div>
                         <div class="post-name"><a href="{{ mypost.url }}">{{ mypost.title }}</a></div>
-                        <div class="post-tags">
-                          {% for post_tag in mypost.tags %}
-                            <a href="{{ site.baseurl }}/tags/#{{ post_tag | slugify }}" class="tag">{{ post_tag }}</a>
-                          {% endfor %}
-                        </div>
                       </li>
                       {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
                     {% endif %}

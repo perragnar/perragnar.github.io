@@ -17,18 +17,13 @@ seo-description: Per Ragnar Edins blogarkiv
           {% assign currentDate = post.date | date: "%Y" %}
           {% if currentDate != myDate %}
             {% unless forloop.first %}</ul>{% endunless %}
-            <h3 class="header">{{ currentDate }}</h3>
+            <h4 class="header">{{ currentDate }}</h4>
             <ul>
             {% assign myDate = currentDate %}
           {% endif %}
           <li>
             <div class="post-date">{% include datetime.html datetime=post.date %}</div>
             <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
-            <div class="post-tags">
-              {% for post_tag in post.tags %}
-                <a href="{{ site.baseurl }}/tags/#{{ post_tag | slugify }}" class="tag">{{ post_tag }}</a>
-              {% endfor %}
-            </div>
           </li>
           {% if forloop.last %}</ul>{% endif %}
         {% endunless %}
