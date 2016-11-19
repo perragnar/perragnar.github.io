@@ -11,7 +11,11 @@
   
   @include small {
     flex-direction: column;
-  } 
+  }
+  
+  &.margin {
+    margin-bottom: 2rem;
+  }
 }
 
 .col {
