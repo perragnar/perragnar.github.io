@@ -498,12 +498,15 @@ dl {
 
       .post-title {
         display: block;
-        clear: both;
-        max-width: $page-max-width;
         white-space: nowrap;
         line-height: 1;
         margin-bottom: 1rem;
-
+        
+        @include large {
+          float: left;
+          width: 75%;
+        }
+        
         a {
           color: #3C3C3C;
           text-decoration: none;
@@ -517,31 +520,18 @@ dl {
       }
 
       .post-meta {
-        clear: left;
         line-height: 1;
         font-family: $font-condensed;
 
         @include large {
-          margin-bottom: 2rem;
+          float: right;
+          width: 25%;
+          padding-left: 1rem;
+          text-align: right;
+          margin-bottom: 3rem;
           
           .post-meta-section {
-            display: inline-block;
-            margin-right: 1rem;
-            
-            &:not(:first-child) {
-              border-left: solid 1px #BEC0C0;
-              padding-left: 1.5rem;
-            }
-          }
-          
-          @include large {
-            .post-status {
-              vertical-align: text-top;
-            }
-            
-            .date {
-              vertical-align: text-top;
-            }
+            margin: 1rem 0 1rem;
           }
         }
 
@@ -550,7 +540,6 @@ dl {
           font-size: .9rem;
           
           .post-meta-section {
-            display: block;
             margin: .5rem 0 .5rem;
           }
         }
@@ -560,7 +549,6 @@ dl {
           font-size: .8rem;
           
           .post-meta-section {
-            display: block;
             margin: .5rem 0 .5rem;
           }
         }
@@ -573,7 +561,7 @@ dl {
           display: inline-block;
           overflow: hidden;
           position: relative;
-          margin: 0 1rem 0 0;
+          margin: 0;
           text-decoration: none;
           padding: 0 .5rem;
           
@@ -608,8 +596,22 @@ dl {
             display: flex;
             flex-wrap: wrap;
             
+            @include large {
+              justify-content: flex-end;
+            }
+            
             li {
-              margin: 0 .25rem 0 0;
+              @include large {
+                margin: 0 0 .25rem .25rem;
+              }
+              
+              @include medium {
+                margin: 0 .25rem .25rem 0;
+              }
+              
+              @include small {
+                margin: 0 .25rem .25rem 0;
+              }
             }
           }
         }

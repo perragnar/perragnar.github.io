@@ -26,9 +26,7 @@ layout: default
             {% if page.tags %}
               <div class="post-meta-section tags">
                 <ul>
-                  {% for tag in page.tags %}
-                    <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
-                  {% endfor %}
+                  {% for tag in page.tags %}<li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>{% endfor %}
                 </ul>
               </div>
             {% endif %}
