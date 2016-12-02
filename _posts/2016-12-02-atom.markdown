@@ -1,0 +1,65 @@
+---
+layout: post
+title: Från Sublime Text till Atom
+seo-title: Från Sublime Text till Atom - att byta från Sublime Text till Atom
+seo-description: Vad är skillnaden och likheten mellan Sublime Text och Atom? Är jag redo att byta?
+categories:
+  - webbutveckling
+tags:
+  - Atom
+  - Sublime Text
+excerpt: |
+  Vid ett par tillfällen tidigare har jag testat Atom. Det har bara tagit högst ett par dagar innan jag bytt tillbaka till Sublime Text igen och den främsta anledningen har nog varit prestandan.
+  
+  Mer om det senare dock. Nu sitter jag på min _early 2011 Macbook Pro_ och knappar i Atom igen och då är frågan hur länge det kommer att vara denna gång?
+poster: webdev.jpg
+draft: true
+---
+
+## Första (eller tredje) intrycket
+Det finns två saker jag vill ta upp som är det första jag tänker på när jag startat upp Atom.
+
+### Prestanda
+Sublime Text är snabbare än Atom. Punkt! I alla fall i en helhetsupplevelse. Det handlar om uppstarttid, hantering av större filer och generell respons på saker du gör i Atom.
+
+Då kan man fråga sig, hur viktigt är denna prestandaskillnaden?  
+– När jag tänker efter är det egentligen inget fel på prestandan. Jag är nog bara bortskämd med just den biten från Sublime Text.
+
+OK, vi tar första exemplet med uppstarttid. Det är nog inte så viktigt i långa loppet om man inte stänger ner programmet ofta, för att sedan behöva starta upp det igen.
+
+Och hanteringen av stora filer? Nu vet jag inte hur stora filerna måste vara för att det ska bli ohanterbart men jag har än så länge i vanlig webbutveckling inte stött på några sådana problem. Jag kan tänka mig att stora loggfiler kan bli ett bekymmer dock.
+
+Tänk bara på hur många och vilka tillägg du kör i Atom så ska prestandan inte behöva vara några problem.
+
+### UI/presentation
+OK, här vinner Atom. På grund av begränsningar i gränssnittet i Sublime Text kan man inte få lika snyggt presenterade element som man kan i Atom.
+
+Det du ser i Atoms gränssnitt presenteras med Coffescript och Less och är baserat på Electron som är ett ramverk som kombinerar Chromium och node.js. Summan av den kardemumman är att det vi ser är i princip HTML, CSS och Javascript, och det är betydligt enklare att göra ett snyggt gränssnitt med de förutsättningarna.
+
+## Likheter och olikheter
+Jag skulle vilja påstå att Atom och Sublime Text är väldigt lika varandra. Med det menar jag att det har inte varit några större bekymmer för mig att börja arbeta i Atom med de kunskaper jag har om Sublime Text. Kortkommandon är relativt lika och kommandopaletten, sökfunktionen och en rad andra kärnfunktioner fungerar likadant.
+
+Det största skillnaden rent visuellt är nog att Atom har ett grafiskt gränssnitt för inställningar medan Sublime Text använder JSON-filer.
+
+### Gemensamma tillägg
+När det gäller packages, alltså tillägg, finns de flesta jag använder dagligen till bägge programmen.
+
+Dock finns det ett tillägg till Sublime Text som jag verkligen saknar i Atom och det är [GitSavvy](https://github.com/divmain/GitSavvy). GitSavvy är en rad paneler med Git-kommandon som har underlättat och snabbat upp arbetsflödet för mig väldigt mycket. Nu finns det som tur är en rad utmärkta tillägg som delvis har ersatt GitSavvy för mig och två av dem är [Git-Plus](https://atom.io/packages/git-plus) och [Atom git-control](https://atom.io/packages/git-control).
+
+## Tips på packages till Atom
+Här är några av de tillägg jag använder, utan någon speciell prioritetsordning i åtanke. Vi tar dem i bokstavsordning för att göra det enkelt.
+
+- [Advanced Open File](https://atom.io/packages/advanced-open-file) – Öppna och skapa filer snabbt genom en palett.
+-  [autocomplete+ paths suggestions](https://atom.io/packages/autocomplete-paths) – Känner av när du skriver en sökväg och föreslår med autocomplete.
+- [A color picker for Atom](https://atom.io/packages/color-picker) – Precis som namnet avslöjar är det en färgpalett för att snabbt hitta rätt färg.
+- [Emmet](https://atom.io/packages/emmet) – Före detta Zen Coding som med rätt kunskap kan snabba upp skapandet av din markup.
+- [Atom git-control](https://atom.io/packages/git-control) – Ett gränssnitt för att hantera git.
+- [Git-Plus](https://atom.io/packages/git-plus) – Styr git från kommandopaletten.
+- [Pigments](https://atom.io/packages/pigments) – Presenterar färger grafiskt när du anger färgkoder i bl a CSS.
+- [Project Manager](https://atom.io/packages/project-manager) – Hanterar dina projekt på ett smidigt sätt.
+
+
+Här är några andra tillägg som kanske inte har samma effekt på arbetsflödet, men som kanske höjer moralen lite. :D
+
+- [Activate Power Mode](https://atom.io/packages/activate-power-mode) – Activates... **POWER MODE**
+- [Ask Stack](https://atom.io/packages/ask-stack) – Detta tillägg låter dig söka på [stackoverflow.com](http://stackoverflow.com) utan att lämna Atom. Inte helt opraktist, men ganska komiskt.
