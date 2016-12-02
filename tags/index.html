@@ -46,12 +46,14 @@ seo-description: Per Ragnar Edins blogarkiv
           <h4 class="header" id="{{ tag | slugify }}">{{ tag }}</h4>
           <ul>
             {% for post in site.posts %}
-              {% if post.tags contains tag %}
-                <li>
-                  <div class="post-date">{% include datetime.html datetime=post.date %}</div>
-                  <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
-                </li>
-              {% endif %}
+              {% unless post.draft %}
+                {% if post.tags contains tag %}
+                  <li>
+                    <div class="post-date">{% include datetime.html datetime=post.date %}</div>
+                    <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                  </li>
+                {% endif %}
+              {% endunless %}
             {% endfor %}
           </ul>
         {% endfor %}
