@@ -673,6 +673,16 @@ dl {
       img,
       iframe {
         max-width: 100%;
+        
+        &.float-left, &.float-right {
+          @include medium {
+            max-width: 75%;
+          }
+          
+          @include small {
+            max-width: 50%;
+          }
+        }
       }
 
       // figure {
