@@ -19,6 +19,8 @@ draft: true
 ## Första (eller tredje) intrycket
 Det finns två saker jag vill ta upp som är det första jag tänker på när jag startat upp Atom.
 
+<img src="{{ site.baseurl }}/assets/postfiles/atom-vs-st.png" alt="Atom vs Sublime Text" class="float-right" />
+
 ### Prestanda
 Sublime Text är snabbare än Atom. Punkt! I alla fall i en helhetsupplevelse. Det handlar om uppstarttid, hantering av större filer och generell respons på saker du gör i Atom.
 
