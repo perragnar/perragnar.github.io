@@ -49,10 +49,10 @@ När det gäller packages, alltså tillägg, finns de flesta jag använder dagli
 Dock finns det ett tillägg till Sublime Text som jag verkligen saknar i Atom och det är [GitSavvy](https://github.com/divmain/GitSavvy). GitSavvy är en rad paneler med Git-kommandon som har underlättat och snabbat upp arbetsflödet för mig väldigt mycket. Nu finns det som tur är en rad utmärkta tillägg som delvis har ersatt GitSavvy för mig och två av dem är [Git-Plus](https://atom.io/packages/git-plus) och [Atom git-control](https://atom.io/packages/git-control).
 
 ## Tips på packages till Atom
-Här är några av de tillägg jag använder, utan någon speciell prioritetsordning i åtanke. Vi tar dem i bokstavsordning för att göra det enkelt.
+Här är några av de tillägg jag använder, utan någon speciell favorisering eller prioritetsordning i åtanke.
 
 - [Advanced Open File](https://atom.io/packages/advanced-open-file) – Öppna och skapa filer snabbt genom en palett.
--  [autocomplete+ paths suggestions](https://atom.io/packages/autocomplete-paths) – Känner av när du skriver en sökväg och föreslår med autocomplete.
+- [autocomplete+ paths suggestions](https://atom.io/packages/autocomplete-paths) – Känner av när du skriver en sökväg och föreslår med autocomplete.
 - [A color picker for Atom](https://atom.io/packages/color-picker) – Precis som namnet avslöjar är det en färgpalett för att snabbt hitta rätt färg.
 - [Emmet](https://atom.io/packages/emmet) – Före detta Zen Coding som med rätt kunskap kan snabba upp skapandet av din markup.
 - [Atom git-control](https://atom.io/packages/git-control) – Ett gränssnitt för att hantera git.
