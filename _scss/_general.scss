@@ -126,6 +126,7 @@ dl {
 
 // Webpage structure
 .wrapper {
+  min-width: $page-min-width;
   max-width: $page-max-width;
   margin: 0 auto;
 
@@ -484,6 +485,8 @@ dl {
     }
 
     .post-header {
+      overflow-x: hidden;
+      
       @include large {
         padding: 5rem 5rem 0;
       }
@@ -985,7 +988,7 @@ dl {
 
   @include small {
     font-size: .65em;
-    padding: .5rem;
+    padding: .5rem .5rem 2rem;
     text-align: center;
 
     p {
