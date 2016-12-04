@@ -64,4 +64,4 @@ Här är några av de tillägg jag använder, utan någon speciell favorisering 
 Här är några andra tillägg som kanske inte har samma effekt på arbetsflödet, men som kanske höjer moralen lite. :D
 
 - [Activate Power Mode](https://atom.io/packages/activate-power-mode) – Activates... **POWER MODE**
-- [Ask Stack](https://atom.io/packages/ask-stack) – Detta tillägg låter dig söka på [stackoverflow.com](http://stackoverflow.com) utan att lämna Atom. Inte helt opraktist, men ganska komiskt.
+- [Ask Stack](https://atom.io/packages/ask-stack) – Detta tillägg låter dig söka på [stackoverflow.com](http://stackoverflow.com) utan att lämna Atom. Inte helt opraktiskt, men ganska komiskt.
