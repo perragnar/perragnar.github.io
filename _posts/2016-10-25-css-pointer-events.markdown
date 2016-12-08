@@ -1,7 +1,7 @@
 ---
 title: CSS pointer-events
 layout: post
-seo-title: Hur du använder CSS pointer-events för att klicka igenom element
+seo-title: Vad är CSS pointer-events?
 seo-description: Här är ett utmärkt CSS-trick för att kunna "klicka igenom" ett element som ligger ovanför ett annat.
 tags:
   - CSS
