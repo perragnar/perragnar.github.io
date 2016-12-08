@@ -1,22 +1,4 @@
 @font-face {
-  font-family: 'Roboto';
-  src:  url('/assets/css/fonts/roboto-regular-webfont.woff2') format('woff2'),
-        url('/assets/css/fonts/roboto-regular-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Roboto Bold';
-  src:  url('/assets/css/fonts/roboto-bold-webfont.woff2') format('woff2'),
-        url('/assets/css/fonts/roboto-bold-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src:  url('/assets/css/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
-        url('/assets/css/fonts/robotocondensed-regular-webfont.woff') format('woff');
-}
-
-@font-face {
   font-family: 'Roboto Mono';
   src:  url('/assets/css/fonts/robotomono-regular-webfont.woff2') format('woff2'),
         url('/assets/css/fonts/robotomono-regular-webfont.woff') format('woff');
@@ -29,17 +11,15 @@
 }
 
 @font-face {
-  font-family: 'Roboto Slab Bold';
-  src:  url('/assets/css/fonts/robotoslab-bold-webfont.woff2') format('woff2'),
-        url('/assets/css/fonts/robotoslab-bold-webfont.woff') format('woff');
+  font-family: 'Museo Sans Rounded';
+  src:  url('/assets/css/fonts/msr-normal-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/msr-normal-webfont.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Bree Serif';
-  src: url('/assets/css/fonts/breeserif-regular.woff2') format('woff2'),
-  url('/assets/css/fonts/breeserif-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Museo Sans Rounded Bold';
+  src:  url('/assets/css/fonts/msr-bold-webfont.woff2') format('woff2'),
+        url('/assets/css/fonts/msr-bold-webfont.woff') format('woff');
 }
 
 // Misc elements
@@ -222,7 +202,7 @@ dl {
 
         @include medium {
           font-size: .8em;
-          padding: 1rem 1rem 1rem .2rem;
+          padding: 1.1rem 1rem .9rem .2rem;
         }
 
         @include small {
@@ -323,6 +303,8 @@ dl {
             text-transform: uppercase;
             text-decoration: none;
             font-family: $font-menu;
+            font-size: .9em;
+            letter-spacing: .1rem;
             color: white;
 
             &:hover {
@@ -363,6 +345,8 @@ dl {
             text-transform: uppercase;
             text-decoration: none;
             font-family: $font-menu;
+            font-size: .9em;
+            letter-spacing: .1rem;
             color: white;
 
             &:hover {
@@ -524,7 +508,6 @@ dl {
 
       .post-meta {
         line-height: 1;
-        font-family: $font-condensed;
 
         @include large {
           float: right;
@@ -559,7 +542,6 @@ dl {
         .post-status {
           background: #881802;
           border-radius: 3px;
-          font-family: $font-condensed;
           color: white;
           display: inline-block;
           overflow: hidden;
@@ -588,7 +570,7 @@ dl {
         }
         
         .date {
-          font-family: $font-content-serif;
+          
         }
         
         .tags {
@@ -598,6 +580,7 @@ dl {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
+            font-size: .8em;
             
             @include large {
               justify-content: flex-end;
@@ -649,7 +632,6 @@ dl {
       .excerpt {
         background-color: #f5f5f5;
         color: #7C7C7C;
-        font-family: $font-content-serif;
         font-size: 1.2em;
 
         @include large {
@@ -710,7 +692,6 @@ dl {
         border-radius: .2rem;
         color: #666;
         font-style: normal;
-        font-family: $font-content-serif;
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
@@ -1034,7 +1015,6 @@ dl {
   
   .front-page-post-list-excerpt {
     margin-top: .5rem;
-    font-family: $font-content-serif;
     font-size: .8em;
     color: #666;
   }

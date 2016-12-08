@@ -82,27 +82,14 @@
 .tag {
   background: #feb800;
   border-radius: .1rem;
-  font-family: $font-condensed;
+  font-family: $font-ui-bold;
+  text-transform: uppercase;
   color: #584202;
   display: block;
   margin: 0;
   text-decoration: none;
   line-height: 1;
-  
-  @include large {
-    font-size: .8em;
-    padding: .4rem;
-  }
-  
-  @include medium {
-    font-size: .9em;
-    padding: .3rem;
-  }
-  
-  @include small {
-    font-size: .9em;
-    padding: .3rem;
-  }
+  padding: .4rem .6rem .3rem;
 }
 
 .tag:hover {
