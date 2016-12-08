@@ -26,7 +26,7 @@
               </div>
             {% endif %}
             </div>
-            {% if post.title %}<h1 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>{% endif %}
+            {% if post.title %}<h2 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>{% endif %}
           </header>
           <div class="post-content">
             {{ post.excerpt | markdownify }}

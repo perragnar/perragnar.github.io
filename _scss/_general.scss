@@ -401,6 +401,24 @@ dl {
 }
 
 .page-wrapper {
+  .post-list {
+    .post {
+      .post-title {
+        @include large {
+          font-size: 2.6em !important; margin: 0 0 1em;
+        }
+
+        @include medium {
+          font-size: 2.3em; margin: 0 0 1em;
+        }
+
+        @include small {
+          font-size: 1.6em; margin: 0 0 1em;
+        }
+      }
+    }
+  }
+  
   .post {
     .return-to-blog-link {
       display: none;
