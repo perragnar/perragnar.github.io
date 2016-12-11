@@ -3,7 +3,7 @@
     {% unless post.draft %}
       <div class="post">
         <div class="box">
-          {% if post.poster %}
+          {% if post.poster and site.show_poster_in_post_list %}
             {% if post.poster contains '://' %}
               {% assign poster_url = post.poster %}
             {% else %}
