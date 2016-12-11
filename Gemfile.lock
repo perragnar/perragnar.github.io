@@ -36,7 +36,6 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -45,10 +44,9 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.3.0)
   jekyll-paginate
-  wdm (~> 0.1.0)
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.13.6
