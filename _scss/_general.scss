@@ -713,6 +713,7 @@ dl {
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
+        border-left: solid .4rem #666;
 
         @include large {
           padding: 2rem;
@@ -724,6 +725,10 @@ dl {
 
         @include small {
           padding: 1rem;
+        }
+        
+        p:last-child {
+          margin-bottom: 0;
         }
       }
 
