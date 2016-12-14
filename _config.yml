@@ -32,7 +32,9 @@ paginate_path: "/blog/page:num"
 
 excerpt_separator: <!--more-->
 
-gems: [jekyll-paginate]
+gems:
+- jekyll-paginate
+- jemoji
 
 sass:
   sass_dir: _scss
