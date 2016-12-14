@@ -8,14 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#323740" />
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.1.0.min.js"></script>
-    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/functions.js"></script>
     
     {% if site.google_analytics_id %}
       <script>
@@ -29,5 +21,13 @@
 
       </script>
     {% endif %}
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.1.0.min.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/functions.js"></script>
   </body>
 </html>
