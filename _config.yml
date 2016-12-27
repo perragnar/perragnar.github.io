@@ -35,6 +35,7 @@ excerpt_separator: <!--more-->
 gems:
 - jekyll-paginate
 - jemoji
+- jekyll-sitemap
 
 sass:
   sass_dir: _scss
