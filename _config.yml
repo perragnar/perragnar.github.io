@@ -43,6 +43,6 @@ sass:
 
 exclude: [node_modules, gulpfile.js]
 
-google_analytics_id: UA-120155-7
+google_analytics_id: UA-120155-5
 
 disqus_shortname: perragnarcom
