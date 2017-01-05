@@ -15,7 +15,6 @@ excerpt: |
   Med hjälp av Gulp och några paket är det ganska lätt att skapa ett arbetsflöde där innehållet automatiskt kompileras, minifieras, slås ihop, optimeras och kopieras till en mapp som du snabbt kan lägga ut på nätet.
 
   Vi ska titta på hur man kompilerar Sass till CSS, minifierar CSS, Javascript och HTML, slår ihop CSS- och Javascriptfiler och hur man optimerar bilder.
-draft: true
 ---
 ## — Vad betyder allt det där och hur kan det hjälpa mig?
 
