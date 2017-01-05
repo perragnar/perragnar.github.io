@@ -1,3 +1,21 @@
+{% assign current_page = paginator.page | times: 1 %}
+
+<div class="post-list-header">
+  <img src="/assets/img/perragnar.jpg" alt="Per Ragnar Edin" class="author-photo round" />
+  
+  <h1>{{ page.title }}{% if paginator.page > 1 %}<span> - Sida {{ paginator.page }}</span>{% endif%}</h1>
+  
+  <p>
+    Hej, jag heter Per Ragnar Edin och är webbutvecklare. Detta är min blog med fokus just på webbutveckling.
+  </p>
+  
+  <ul class="contact">
+    <li><a href="https://twitter.com/perragnaredin" class="tag">Twitter</a></li>
+    <li><a href="https://github.com/perragnar" class="tag">Github</a></li>
+    <li><a href="https://www.artstation.com/artist/perragnar" class="tag">Artstation</a></li>
+  </ul>
+</div>
+
 <div class="post-list">
   {% for post in paginator.posts %}
     {% unless post.draft %}
