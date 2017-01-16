@@ -29,4 +29,4 @@ Tack, kära EU-kommission. Inte en dag för tidigt...
 
 - [politico.eu - Europe kills the cookie monster](http://www.politico.eu/article/click-yes-if-you-have-read-and-agree/)
 - [cookielaw.org - The Cookie Law Explained](https://www.cookielaw.org/the-cookie-law/)
-- [Tack pexels.com för den fina kakbilden! :heart_eyes:](https://www.pexels.com/)
+- [Tack pexels.com för den fina kakbilden!](https://www.pexels.com/)
