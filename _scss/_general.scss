@@ -1126,24 +1126,18 @@ dl {
 .front-page-post-list {
   list-style: none;
   padding: 0;
-  
+    
   .front-page-post-list-link {
-    font-family: $font-content-bold;
-    display: block;
+    color: #3C3C3C;
+    line-height: 1.1;
   }
   
   .front-page-post-list-date {
-    font-family: $font-content-bold;
-    color: #666;
+    font-family: $font-content;
+    color: #999;
     display: inline-block;
     line-height: 1;
     font-size: .8em;
-    
-    &:before {
-      content: '\01F4C6';
-      color: #ccc;
-      margin-right: .4rem;
-    }
   }
   
   .front-page-post-list-excerpt {
