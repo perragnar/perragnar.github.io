@@ -33,7 +33,9 @@
           {% endif %}
           <header class="post-header">
             <div class="post-meta">
+              {% include readingtime.html content=post.content %}
               <div class="post-meta-section date">{% include datetime.html datetime=post.date %}</div>
+              <div class="post-meta-section readingtime">{{ reading_time }} lästid</div>
               {% if post.tags %}
               <div class="post-meta-section tags">
                 <ul>
