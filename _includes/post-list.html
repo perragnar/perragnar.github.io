@@ -32,6 +32,7 @@
             </div>
           {% endif %}
           <header class="post-header">
+            {% if post.title %}<h2 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>{% endif %}
             <div class="post-meta">
               {% include readingtime.html content=post.content %}
               <div class="post-meta-section date">{% include datetime.html datetime=post.date %}</div>
@@ -46,7 +47,6 @@
               </div>
             {% endif %}
             </div>
-            {% if post.title %}<h2 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>{% endif %}
           </header>
           <div class="post-content">
             {{ post.excerpt | markdownify }}
