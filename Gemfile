@@ -9,8 +9,8 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.3.0"
-gem "jekyll-paginate"
+gem 'jekyll', '3.3.0'
+gem 'jekyll-paginate'
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 gem 'jemoji'
 gem 'jekyll-sitemap'
