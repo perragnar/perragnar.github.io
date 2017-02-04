@@ -813,7 +813,9 @@ dl {
       }
       
       ul ul,
-      ol ol {
+      ol ol,
+      ul ol,
+      ol ul {
         margin-bottom: 0;
       }
 
