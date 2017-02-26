@@ -50,6 +50,9 @@
           </header>
           <div class="post-content">
             {{ post.excerpt | markdownify }}
+            <div style="margin-top: 2em;">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
+            </div>
           </div>
         </div>
       </div>
