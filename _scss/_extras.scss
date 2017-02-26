@@ -109,10 +109,19 @@
   color: slategray;
 
   &:not(.small) {
-    padding: 1rem 2rem;
+    @include large {
+      padding: 1rem 2rem;
+    }
+    @include medium {
+      padding: .75rem 1.5rem;
+    }
+    @include small {
+      padding: .5rem 1rem;
+    }
   }
 
   &.small {
+    font-size: .9em;
     padding: .5rem 1rem;
   }
 
