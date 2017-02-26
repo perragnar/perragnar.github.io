@@ -101,3 +101,73 @@
   color: black;
   text-decoration: none;
 }
+
+.button {
+  display: inline-block;
+  line-height: 1;
+  border: transparent solid .15rem;
+  color: slategray;
+
+  &:not(.small) {
+    padding: 1rem 2rem;
+  }
+
+  &.small {
+    padding: .5rem 1rem;
+  }
+
+  &.rounded {
+    border-radius: .3rem;
+  }
+
+  &.ghost {
+    color: $button-generic-background;
+    border-color: $button-generic-background;
+
+    &:hover {
+      color: $button-generic-color;
+      border-color: $button-generic-background;
+      background-color: $button-generic-background;
+    }
+  }
+
+  &.generic {
+    background-color: $button-generic-background;
+    color: $button-generic-color;
+
+    &:hover {
+      background-color: lighten($button-generic-background, 10);
+    }
+  }
+
+  &.ok {
+    background-color: $button-ok-background;
+    color: $button-ok-color;
+
+    &:hover {
+      background-color: lighten($button-ok-background, 10);
+    }
+  }
+
+  &.warning {
+    background-color: $button-warning-background;
+    color: $button-warning-color;
+
+    &:hover {
+      background-color: lighten($button-warning-background, 10);
+    }
+  }
+
+  &.error {
+    background-color: $button-error-background;
+    color: $button-error-color;
+
+    &:hover {
+      background-color: lighten($button-error-background, 10);
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

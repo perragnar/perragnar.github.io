@@ -15,3 +15,20 @@ $font-mono: Consolas, 'Roboto Mono', monospace, serif;
 
 // Colors
 $font-content-color: #3C3C3C;
+
+$color-generic: #4295F0;
+$color-ok: #080;
+$color-warning: #ffa800;
+$color-error: #800;
+
+$button-generic-background: $color-generic;
+$button-generic-color: lighten($color-generic, 35);
+
+$button-ok-background: $color-ok;
+$button-ok-color: lighten($color-ok, 60);
+
+$button-warning-background: $color-warning;
+$button-warning-color: lighten($color-warning, 40);
+
+$button-error-background: $color-error;
+$button-error-color: lighten($color-error, 60);
