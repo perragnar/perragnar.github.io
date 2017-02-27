@@ -28,7 +28,9 @@
               {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
             {% endif %}
             <div class="post-poster">
-              <img src="{{ poster_url }}" alt="{{ post.title }}" />
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ poster_url }}" alt="{{ post.title }}" />
+              </a>
             </div>
           {% endif %}
           <header class="post-header">
