@@ -580,6 +580,10 @@ dl {
     }
     
     .post-poster {
+      a {
+        display: initial;
+      }
+
       img {
         width: 100%;
       }
