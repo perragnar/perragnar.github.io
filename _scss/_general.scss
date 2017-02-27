@@ -635,7 +635,6 @@ dl {
           width: 25%;
           padding-left: 1rem;
           text-align: right;
-          margin-bottom: 3rem;
           
           .post-meta-section {
             margin: .5rem 0 .5rem;
@@ -643,7 +642,6 @@ dl {
         }
 
         @include medium {
-          margin-bottom: 1.5rem;
           font-size: .9rem;
           
           .post-meta-section {
@@ -652,7 +650,6 @@ dl {
         }
 
         @include small {
-          margin-bottom: 1rem;
           font-size: .8rem;
           
           .post-meta-section {
