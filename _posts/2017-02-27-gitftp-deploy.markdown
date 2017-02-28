@@ -75,7 +75,7 @@ Vi dubbelkollar att allt ser OK ut på servern...
 
 <figure>
   <img src="{{ site.root }}/assets/postfiles/gitftp-deploy/07.jpg" alt="Alla filer uppladdade till servern." />
-  <figcaption>Alla filer uppladdade till servern.</figcaption>
+  <figcaption>Alla filer uppladdade till servern. Bilden visar programmet Transmit från <a href="https://panic.com">Panic</a>.</figcaption>
 </figure>
 
 ### Ändringar
