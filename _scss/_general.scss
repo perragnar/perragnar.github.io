@@ -1133,8 +1133,10 @@ dl {
 }
 
 // Downscaling retina images
-img.downscale {
-  width: 50%;
+@include large() {
+  img.downscale {
+    width: 50%;
+  }
 }
 
 // Front page stuff
