@@ -125,4 +125,6 @@ Filen är nu borta från servern.
 
 Kul idé och praktiskt program. **GitFTP-Deploy** kan definitivt underlätta ditt arbete om det passar dig och din utveklingsmiljö och framförallt resten av ditt team.
 
+Läs mer om GitFTP-Deploy på [css-tricks.com](https://css-tricks.com/gitftp-deploy/).
+
 _Denna artikel är **inte** sponsrad av eastwest.se eller någon annan._
