@@ -800,17 +800,13 @@ dl {
         }
       }
 
-      // figure {
-      //   figcaption {
-      //     font-size: .75em;
-      //     line-height: 1;
-      //     color: slategray;
-      //   }
-      // }
-      
-      figcaption {
-        color: slategray;
-        font-size: .9em;
+      figure {
+        figcaption {
+          font-size: .75em;
+          line-height: 1;
+          color: slategray;
+          margin-top: .5rem;
+        }
       }
       
       ul ul,
@@ -1134,6 +1130,11 @@ dl {
   }
 
   @include clearfix();
+}
+
+// Downscaling retina images
+img.downscale {
+  width: 50%;
 }
 
 // Front page stuff
