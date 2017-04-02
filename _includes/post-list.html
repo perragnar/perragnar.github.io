@@ -1,9 +1,9 @@
-{% assign current_page = paginator.page | times: 1 %}
+{% assign post_counter = 0 %}
 
 <div class="post-list-header">
   <img src="/assets/img/perragnar.jpg" alt="Per Ragnar Edin" class="author-photo round" />
   
-  <h1>{{ page.title }}{% if paginator.page > 1 %}<span> - Sida {{ paginator.page }}</span>{% endif%}</h1>
+  <h1>{{ page.title }}</h1>
   
   <p>
     Hej, jag heter Per Ragnar Edin och är webbutvecklare. Detta är min blog med fokus just på webbutveckling.
@@ -17,21 +17,24 @@
 </div>
 
 <div class="post-list">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     {% unless post.draft %}
-      <div class="post">
+      {% assign post_counter = post_counter | plus:1 %}
+      <div class="{% if post_counter <= site.featured_posts %}post{% else %}post-list-item{% endif %}">
         <div class="box">
-          {% if post.poster and site.show_poster_in_post_list %}
-            {% if post.poster contains '://' %}
-              {% assign poster_url = post.poster %}
-            {% else %}
-              {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
+          {% if post_counter <= site.featured_posts %}
+            {% if post.poster and site.show_poster_in_post_list %}
+              {% if post.poster contains '://' %}
+                {% assign poster_url = post.poster %}
+              {% else %}
+                {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
+              {% endif %}
+              <div class="post-poster">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  <img src="{{ poster_url }}" alt="{{ post.title }}" />
+                </a>
+              </div>
             {% endif %}
-            <div class="post-poster">
-              <a href="{{ site.baseurl }}{{ post.url }}">
-                <img src="{{ poster_url }}" alt="{{ post.title }}" />
-              </a>
-            </div>
           {% endif %}
           <header class="post-header">
             {% if post.title %}<h2 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>{% endif %}
@@ -51,10 +54,12 @@
             </div>
           </header>
           <div class="post-content">
-            {{ post.excerpt | markdownify }}
-            <div style="margin-top: 2em;">
-              <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
-            </div>
+            {% if post_counter <= site.featured_posts %}
+              {{ post.excerpt | markdownify }}
+              <div class="post-content-buttons">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
