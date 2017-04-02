@@ -7,10 +7,8 @@ host: 0.0.0.0
 baseurl:
 
 navigation:
-  - title: Hem
-    url: /
   - title: Blog
-    url: /blog/
+    url: /
   - title: Arkiv
     url: /archive/
   - title: Index
