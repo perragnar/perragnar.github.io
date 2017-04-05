@@ -39,7 +39,7 @@ gems:
 - jekyll-sitemap
 
 sass:
-  sass_dir: _scss
+  sass_dir: assets/_scss
   style: compressed
 
 exclude: [node_modules, gulpfile.js]
