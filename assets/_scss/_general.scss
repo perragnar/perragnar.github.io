@@ -532,6 +532,10 @@ dl {
     .post-list-item {
       border-left: solid .5rem #4295F0;
 
+      .box {
+        margin-bottom: 1px;
+      }
+
       .post-header {
         padding: 1rem;
 
