@@ -1,5 +1,7 @@
 ---
 title: Google Material Icons
+seo-title: Google Material Icons
+seo-description: Google Material Design icons
 layout: post
 categories:
   - webbutveckling
@@ -10,7 +12,7 @@ tags:
   - Open Source
 poster: google-material-design-icons.jpg
 excerpt: |
-  Länktips: Google Material Design icons.
+  Google Material Design icons.
 ---
 Här kommer ett litet länktips om du behöver ikoner till ditt projekt: [Google Material Icons][material-icons].
 

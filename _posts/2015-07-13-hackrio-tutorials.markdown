@@ -1,5 +1,7 @@
 ---
 title: Hackr.io – Tutorials
+seo-title: Hackr.io – Tutorials
+seo-description: En resurs med tutorials för utveckling
 layout: post
 categories:
   - Webbutveckling

@@ -1,5 +1,7 @@
 ---
 title: Sweden Sans - Sveriges egna typsnitt
+seo-title: Sweden Sans - Sveriges egna typsnitt
+seo-description: Sveriges egna typsnitt framtagen av svenska regeringen i marknadsföringssyfte.
 layout: post
 categories:
   - Noterat

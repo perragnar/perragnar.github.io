@@ -1,5 +1,7 @@
 ---
 title: Lagra filer temporärt med git stash
+seo-title: Lagra filer temporärt med git stash
+seo-description: Ibland behöver man avbryta det man håller på med för att t ex byta branch och fortsätta med annan kod. Hur gör man då med de filer man arbetar med för tillfället utan att behöva göra en git commit? Det du behöver är git stash.
 layout: post
 categories:
   - Webbutveckling

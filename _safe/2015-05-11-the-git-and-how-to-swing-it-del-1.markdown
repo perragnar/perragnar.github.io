@@ -1,5 +1,7 @@
 ---
 title: 'The Git and how to swing it - Del 1: Installation och konfiguration'
+seo-title: 'The Git and how to swing it - Del 1: Installation och konfiguration'
+seo-description: Lär dig använda Git. Från en nybörjare till dig som nybörjare. Vi inleder med att installera och konfigurera Git.
 layout: post
 categories:
   - Webbutveckling

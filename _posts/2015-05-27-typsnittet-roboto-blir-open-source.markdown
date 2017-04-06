@@ -1,5 +1,7 @@
 ---
 title: Typsnittet Roboto blir open source
+seo-title: Typsnittet Roboto blir open source
+seo-description: Googles typsnitt Roboto blir open source
 layout: post
 categories:
   - Noterat

@@ -1,5 +1,7 @@
 ---
 title: Mitt nya kontor
+seo-title: Mitt nya kontor
+seo-description: Jag har flyttat mitt kontor till Sala
 layout: post
 categories:
   - Noterat

@@ -1,5 +1,7 @@
 ---
 title: Min Sublime Text-konfiguration
+seo-title: Min Sublime Text-konfiguration
+seo-description: Är du ute efter att göra din version av Sublime Text mer personlig? Här visar jag mina inställningar samt vilka plugins jag använder.
 layout: post
 categories: 
   - Webbutveckling

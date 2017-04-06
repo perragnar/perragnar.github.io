@@ -1,5 +1,7 @@
 ---
 title: Google Mobilegeddon
+seo-title: Google Mobilegeddon
+seo-description: Google rankar hemsidor som är mobilanpassade högre. Är din webbsida mobilanpassad?
 layout: post
 categories:
   - Webbutveckling

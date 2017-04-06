@@ -1,5 +1,7 @@
 ---
 title: Ignorera filer eller mappar i Git
+seo-title: Ignorera filer eller mappar i Git
+seo-description: Hur gör man för att ignorera filer i Git efter att de redan finns cachade? Kan man ta bort dem från versionshanteringen utan att radera filerna?
 layout: post
 categories:
   - webbutveckling

@@ -1,5 +1,7 @@
 ---
 title: Git autocorrect
+seo-title: Git autocorrect
+seo-description: Stavar du ofta fel när du skriver? Då kan du tala om för Git att du behöver lite hjälp på traven med autorättning.
 layout: post
 categories: 
   - Webbutveckling

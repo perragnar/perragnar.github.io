@@ -1,5 +1,7 @@
 ---
 title: Förbättra din PowerShell-prompt med Posh-Git
+seo-title: Förbättra din PowerShell-prompt med Posh-Git
+seo-description: Här kommer ett tips för att förenkla ditt Git-arbete i din PowerShell-prompt
 layout: post
 categories:
   - Webbutveckling

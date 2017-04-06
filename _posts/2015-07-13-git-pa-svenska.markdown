@@ -1,5 +1,7 @@
 ---
 title: Git på svenska
+seo-title: Git på svenska
+seo-description: En guide om det känns obekvämt att slänga sig med svengelska uttryck när du arbeta i Git?
 layout: post
 categories:
   - Webbutveckling

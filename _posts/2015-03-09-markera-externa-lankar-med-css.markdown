@@ -1,5 +1,7 @@
 ---
 title: Markera externa länkar med CSS
+seo-title: Markera externa länkar med CSS
+seo-description: Lägg till en ikon för externa länkar med ett enkelt CSS-trick.
 layout: post
 categories:
   - Webbutveckling

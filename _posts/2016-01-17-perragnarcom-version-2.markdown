@@ -1,5 +1,7 @@
 ---
 title: perragnar.com version 2.0
+seo-title: perragnar.com version 2.0
+seo-description: Ner med Wordpress! Länge Leve Wordpress!
 layout: post
 categories: 
   - Noterat

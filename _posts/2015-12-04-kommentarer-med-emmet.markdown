@@ -1,5 +1,7 @@
 ---
 title: Kommentarer med Emmet
+seo-title: Kommentarer med Emmet
+seo-description: Konfigurera Emmet att lägga till kommentarer som du vill ha dem
 layout: post
 categories: 
   - Webbutveckling

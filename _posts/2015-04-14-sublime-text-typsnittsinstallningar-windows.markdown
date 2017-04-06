@@ -1,5 +1,7 @@
 ---
 title: Sublime Text - Typsnittsinställningar (Windows)
+seo-title: Sublime Text - Typsnittsinställningar (Windows)
+seo-description: Ser typsnittet i Sublime Text inte bra ut på din Windowsmaskin? Det finns en inställning du kan testa för att rendera typsnitten annorlunda.
 layout: post
 categories:
   - Webbutveckling

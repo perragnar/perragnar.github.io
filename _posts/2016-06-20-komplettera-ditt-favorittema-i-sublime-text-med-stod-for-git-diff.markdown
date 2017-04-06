@@ -1,5 +1,7 @@
 ---
 title: Komplettera ditt favorittema i Sublime Text med stöd för Git diff
+seo-title: Komplettera ditt favorittema i Sublime Text med stöd för Git diff
+seo-description: Saknar ditt favorittema i Sublime Text stöd för färgmarkering i Gitt Diff? Det är lätt att fixa!
 layout: post
 categories:
   - Webbutveckling

@@ -1,5 +1,7 @@
 ---
 title: Google PageSpeed Insights
+seo-title: Google PageSpeed Insights
+seo-description: Analysera och förbättra din webbplats med Google PageSpeed Insights.
 layout: post
 categories:
  - Webbutveckling

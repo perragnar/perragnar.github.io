@@ -1,5 +1,7 @@
 ---
 title: Mastering Markdown med Wes Bos
+seo-title: Mastering Markdown med Wes Bos
+seo-description: Markdown blir ett mer och mer vanligt sätt att skriva på nätet, inte längre bara bland författare och skribenter. Lär dig att behärska Markdown med Wes Bos.
 layout: post
 categories:
   - Noterat

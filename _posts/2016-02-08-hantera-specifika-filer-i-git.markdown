@@ -1,5 +1,7 @@
 ---
 title: Hantera specifika filer i Git
+seo-title: Hantera specifika filer i Git
+seo-description: Vill du versionshantera bara en eller ett fåtal filer med Git? Läs mer om detta enkla sätt med hjälp av .gitignore.
 layout: post
 categories:
   - webbutveckling

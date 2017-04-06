@@ -1,5 +1,7 @@
 ---
 title: "The inline-block issue"
+seo-title: "The inline-block issue"
+seo-description: Om du jobbar med HTML och CSS har du säkert stött på problemet med att element med inline-block får en oftast oönskad marginal. Vad beror det på och hur löser man problemet?
 layout: post
 categories:
   - Webbutveckling

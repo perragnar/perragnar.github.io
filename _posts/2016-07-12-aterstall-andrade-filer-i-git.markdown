@@ -1,5 +1,7 @@
 ---
 title: Återställ ändrade filer i Git
+seo-title: Återställ ändrade filer i Git
+seo-description: Ibland händer det att jag har ändrat i en eller flera filer och kommer på att jag vill återgå till originalet, eller rättare sagt till den senaste "commiten". Här ska jag visa hur man återställer filer(na) med Git.
 layout: post
 categories:
   - Webbutveckling
