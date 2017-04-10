@@ -6,6 +6,7 @@ _site
 # Config files #
 ################
 sftp-config.json
+.vscode/
 
 # Gulp files #
 ###############
