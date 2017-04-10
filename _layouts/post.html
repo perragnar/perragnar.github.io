@@ -4,7 +4,7 @@ layout: default
 
 <div class="page-wrapper">
   <div class="wrapper">
-    <div class="post">
+    <div class="post{% if page.custom-class %} {{ page.custom-class }}{% endif %}">
       <div class="box">
         {% if page.poster %}
           {% if page.poster contains '://' %}

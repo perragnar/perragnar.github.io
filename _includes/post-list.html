@@ -20,7 +20,7 @@
   {% for post in site.posts %}
     {% unless post.draft %}
       {% assign post_counter = post_counter | plus:1 %}
-      <div class="{% if post_counter <= site.featured_posts %}post{% else %}post-list-item{% endif %}">
+      <div class="{% if post_counter <= site.featured_posts %}post{% else %}post-list-item{% endif %}{% if post.custom-class %} {{ post.custom-class }}{% endif %}">
         <div class="box">
           {% if post_counter <= site.featured_posts %}
             {% if post.poster and site.show_poster_in_post_list %}
