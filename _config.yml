@@ -35,7 +35,6 @@ featured_posts: 5
 excerpt_separator: <!--more-->
 
 gems:
-- jekyll-paginate
 - jekyll-sitemap
 
 sass:
