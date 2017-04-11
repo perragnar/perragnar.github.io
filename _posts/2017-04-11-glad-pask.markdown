@@ -6,6 +6,7 @@ seo-description: Glad Påsk
 tags:
   - Glad Påsk
   - Binero
+  - Tävling
 categories:
   - Noterat
 comments: true
