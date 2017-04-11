@@ -14,9 +14,7 @@
 ;
 
 {% for post in site.posts %}
-  {% unless post.draft %}
-    {% if post.custom-css %}
-      @import 'custom/{{ post.custom-css }}';
-    {% endif %}
-  {% endunless %}
+  {% if post.custom-css %}
+    @import 'custom/{{ post.custom-css }}';
+  {% endif %}
 {% endfor %}
