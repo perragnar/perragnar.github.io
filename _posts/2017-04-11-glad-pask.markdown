@@ -10,12 +10,10 @@ categories:
   - Noterat
 comments: true
 excerpt: |
-  Nu är det påsk och det ska vi fira som vi svenskar firar alla högtider, med must, sill och snaps!  
-  Ta det lugnt och ha en trevlig helg.
+  Nu är det påsk och det ska vi fira som vi svenskar firar alla högtider, med must, sill och snaps! Ta det lugnt och ha en trevlig helg.
   
   ![Glad Påsk](/assets/postfiles/happy-easter.gif)
 
 custom-class: easter
 custom-css: easter
-draft: true
 ---
