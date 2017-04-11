@@ -55,10 +55,13 @@
           </header>
           <div class="post-content">
             {% if post_counter <= site.featured_posts %}
+              {% assign post_content = post.content | strip_newlines %}
               {{ post.excerpt | markdownify }}
-              <div class="post-content-buttons">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
-              </div>
+              {% if post_content != '' %}
+                <div class="post-content-buttons">
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
+                </div>
+              {% endif %}
             {% endif %}
           </div>
         </div>
