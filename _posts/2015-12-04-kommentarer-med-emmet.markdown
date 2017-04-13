@@ -7,8 +7,6 @@ categories:
   - Webbutveckling
 tags:
   - Emmet
-  - Zen coding
-  - Kommentarer
 poster: emmet-comments-header.jpg
 excerpt: |
   Konfigurera Emmet att lägga till kommentarer som du vill ha dem.
@@ -25,9 +23,11 @@ Tanken med den här artikeln är att visa hur man med hjälp av Emmet kan skräd
 __Förtydligande__: _Emmet har out of the box kommentering men genom att lägga till ett eget filter kan du göra om kommentarerna så det passar dig och ditt arbetssätt._
 
 ### — Vad är det som ska kommenteras?
+
 — När en html-sida börjar få många _nested elements_ (kapslade element enl. Google Translate) så är det ofta svårt att se vilken sluttagg som hör till vilket element. Då är det behändigt att kommentera sina sluttaggar med CSS-IDt eller klassnamnet så man snabbt hittar vilket element sluttaggen tillhör.
 
 #### Simpelt exempel
+
 {% highlight html linenos %}
 <div class="wrapper">
   <h1>Titel</h1>
@@ -96,6 +96,7 @@ Så här ska inställningsfilen se ut när den är klar;
 That's it! Mer behövs det inte och du kan lätt ändra i strängen för att få kommentaren precis som du vill ha den.
 
 ### Så här lägger du till kommentarer med Emmet
+
 Det enda du behöver göra är att lägga till `|c` efter din Emmet markup så lägger den till kommentarer på alla sluttaggar. Dock lägger den inte till kommentarer på taggar som ligger på samma rad eftersom det inte är svårt att identifiera sluttaggen. T ex
 
 {% highlight html linenos %}
@@ -103,6 +104,7 @@ Det enda du behöver göra är att lägga till `|c` efter din Emmet markup så l
 {% endhighlight %}
 
 #### Exempel 1
+
 Vi börjar enkelt.
 
 {% highlight plaintext linenos %}
@@ -118,6 +120,7 @@ header.wrapper>h1{Titel}|c
 {% endhighlight %}
 
 #### Exempel 2
+
 Lite mer markup.
 
 {% highlight plaintext linenos %}
@@ -139,6 +142,7 @@ header.page-header>.row>.col.col-100>h1{Title}
 Lägg märke till att den inte lägger till kommentarer på element som ligger på samma rad.
 
 #### Exempel 3
+
 Ytterligare markup.
 
 {% highlight plaintext linenos %}
@@ -166,6 +170,7 @@ Ytterligare markup.
 {% endhighlight %}
 
 ### Emmet, vad är det?
+
 Jag förutsätter i artikeln att du redan vet vad Emmet är, men skulle du inte ha hittat detta guldkorn tidigare är det väl värt att titta på vad det kan göra för dig.
 
 Det behöver inte vara att den ska skapa en hel HTML markup åt dig men kanske den kan snabba upp vissa saker. Jag använder det ofta som en ersättning för snippets.
@@ -175,6 +180,18 @@ Emmet hittar du på [emmet.io](http://emmet.io/).
 <iframe src="https://www.youtube.com/embed/0uIPGgq9R5Y" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 ### Avslutning
+
 Hoppas detta tips har hjälpt dig lite i alla fall i strävan att hitta det perfekta arbetsflödet.
 
 Jag har använt Emmet (tidigare Zen Coding) sedan ganska länge tillbaka och det är först nu jag upptäckt att den kan kommentera koden.
+
+### Uppdatering
+
+Detta fungerar även till **Visual Studio Code**.
+
+{% highlight plaintext linenos %}
+{
+  // Preferences used to modify behavior of some actions and resolvers of Emmet.
+  "emmet.preferences": {}
+}
+{% endhighlight %}
