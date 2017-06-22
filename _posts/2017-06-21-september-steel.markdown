@@ -67,7 +67,7 @@ excerpt: |
 ## Mina inställningar och plugins jag använder
 
 - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) &rarr; Formatterar HTML, Javascript och CSS.
-- [Blank Line at the End of File](/marketplace.visualstudio.com/items?itemName=riccardoNovaglia.missinglineendoffile) &rarr; Lägger till en tom rad i filer när filen sparas ([Varför?]).(https://stackoverflow.com/questions/2287967/why-is-it-recommended-to-have-empty-line-in-the-end-of-file))
+- [Blank Line at the End of File](https://marketplace.visualstudio.com/items?itemName=riccardoNovaglia.missinglineendoffile) &rarr; Lägger till en tom rad i filer när filen sparas ([Varför?]).(https://stackoverflow.com/questions/2287967/why-is-it-recommended-to-have-empty-line-in-the-end-of-file))
 - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) &rarr; Lägger till bokmärken för filer/rader och markerar rader med en symbol.
 - [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color) &rarr; En färgpalett. Inte jättesnabb men användbar. (Code kommer att få en native color picker i kommander versioner.)
 - [File Utils](https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils) &rarr; Döp om, radera, flytta filer mm med enkla kommandon.
