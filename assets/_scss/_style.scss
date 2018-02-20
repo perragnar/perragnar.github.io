@@ -153,12 +153,12 @@ img {
         background-image: linear-gradient(45deg, #222, #444);
         @include media('<=phone') {
             padding-top: 1rem;
-            font-size: 1em;
+            font-size: .8em;
         }
         @include media('>phone',
         '<desktop') {
             padding-top: 2rem;
-            font-size: 1.1em;
+            font-size: .8em;
         }
         @include media('>=desktop') {
             font-size: 1.2em;
@@ -333,7 +333,7 @@ img {
 }
 
 .page-footer {
-    font-size: .9em;
+    font-size: .8em;
     color: #aaa;
     background-color: #222;
 
@@ -350,7 +350,7 @@ img {
     }
     
     .github-logo {
-        width: 5rem;
+        width: 4rem;
     }
 }
 
@@ -381,7 +381,18 @@ img {
 
 .💩 {
     display: block;
-    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
+    font-family: 'Miriam Libre', sans-serif;
+
+    @include media('<=phone') {
+        font-size: .8em;
+    }
+    @include media('>phone',
+    '<desktop') {
+        font-size: 1em;
+    }
+    @include media('>=desktop') {
+        font-size: 1.5em;
+    }
 }
