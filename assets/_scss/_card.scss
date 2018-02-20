@@ -1,0 +1,53 @@
+.card {
+    $cardTransitionTime: 250ms;
+    border-radius: .25rem;
+    background-color: #fff;
+    color: #000;
+    transition: transform $cardTransitionTime ease, box-shadow $cardTransitionTime ease, background-color $cardTransitionTime ease, border $cardTransitionTime ease;
+    &.card--hover {
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 5px 5px 1rem rgba(0, 0, 0, .3), 5px 5px 4rem rgba(0, 0, 0, .3);
+            .card__title {
+                color: inherit;
+            }
+        }
+    }
+    &.card--shadow {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    }
+    &.card--ghost {
+        background-color: transparent;
+        color: inherit;
+        &.card--hover:hover {
+            color: initial;
+            background-color: #fff;
+        }
+    }
+    &.card--rogue {
+        background-color: rgba(255, 255, 255, .25);
+        @include text-contrast(#fff);
+        &.card--hover:hover {
+            color: initial;
+            background-color: #fff;
+        }
+    }
+    .card__body {
+        transition: color $cardTransitionTime ease;
+        @include media('<=phone') {
+            padding: 1rem;
+        }
+        @include media('>phone', '<desktop') {
+            padding: 1.5rem;
+        }
+        @include media('>=desktop') {
+            padding: 2rem;
+        }
+        .card__title {
+            font-size: 1.25em;
+            margin: 0 0 1rem;
+            flex: 1;
+            transition: inherit;
+        }
+    }
+}

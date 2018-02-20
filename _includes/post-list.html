@@ -1,71 +1,42 @@
 {% assign post_counter = 0 %}
+{% assign limit = include.limit | default: 0 %}
 
-<div class="post-list-header">
-  <img src="/assets/img/perragnar.jpg" alt="Per Ragnar Edin" class="author-photo round" />
-  
-  <h1>{{ page.title }}</h1>
-  
-  <p>
-     Hej, jag heter Per Ragnar Edin och är webbutvecklare. Detta är min blog med fokus på webbutveckling.
-  </p>
-  
-  <ul class="contact">
-    <li><a href="https://twitter.com/perragnaredin" class="tag">Twitter</a></li>
-    <li><a href="https://github.com/perragnar" class="tag">Github</a></li>
-    <li><a href="https://www.artstation.com/artist/perragnar" class="tag">Artstation</a></li>
-  </ul>
-</div>
+{% if limit == 0 %}
+    {% assign limit = site.posts | size %}
+{% endif %}
 
-<div class="post-list">
-  {% for post in site.posts %}
+{% for post in site.posts %}
     {% unless post.draft %}
-      {% assign post_counter = post_counter | plus:1 %}
-      <div class="{% if post_counter <= site.featured_posts %}post{% else %}post-list-item{% endif %}{% if post.custom-class %} {{ post.custom-class }}{% endif %}">
-        <div class="box">
-          {% if post_counter <= site.featured_posts %}
-            {% if post.poster and site.show_poster_in_post_list %}
-              {% if post.poster contains '://' %}
-                {% assign poster_url = post.poster %}
-              {% else %}
-                {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
-              {% endif %}
-              <div class="post-poster">
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                  <img src="{{ poster_url }}" alt="{{ post.title }}" />
-                </a>
-              </div>
-            {% endif %}
-          {% endif %}
-          <header class="post-header">
-            {% if post.title %}<h2 class="post-title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>{% endif %}
-            <div class="post-meta">
-              {% include readingtime.html content=post.content %}
-              <div class="post-meta-section date">{% include datetime.html datetime=post.date %}</div>
-              <div class="post-meta-section readingtime">{{ reading_time }} lästid</div>
-              {% if post.tags %}
-              <div class="post-meta-section tags">
-                <ul>
-                  {% for tag in post.tags %}
-                    <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-            </div>
-          </header>
-          <div class="post-content">
-            {% if post_counter <= site.featured_posts %}
-              {% assign post_content = post.content | strip_newlines %}
-              {{ post.excerpt | markdownify }}
-              {% if post_content != '' %}
-                <div class="post-content-buttons">
-                  <a href="{{ site.baseurl }}{{ post.url }}" class="button rounded generic">Läs artikeln</a>
+        {% assign post_counter = post_counter | plus:1 %}
+        {% if post_counter <= limit %}
+            <div class="col col--1-5 card">
+                <div class="card__body">
+                    {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
+                    
+                    <div class="post-meta">
+                        <div class="post-meta-section date">{% include datetime.html datetime=post.date %}</div>
+                        {% if post.tags %}
+                            <div class="post-meta-section tags">
+                                <ul>
+                                    {% for tag in post.tags %}
+                                        <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% if post_counter <= site.featured_posts %}
+                        {% assign post_content = post.content | strip_newlines %}
+                        {{ post.excerpt | markdownify }}
+                        {% if post_content != '' %}
+                            <div class="post-content-buttons">
+                                <a href="{{ site.baseurl }}{{ post.url }}" class="button button--green">Läs artikeln</a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
                 </div>
-              {% endif %}
-            {% endif %}
-          </div>
-        </div>
-      </div>
+            </div>
+        {% endif %}
     {% endunless %}
-  {% endfor %}
-</div>
+{% endfor %}

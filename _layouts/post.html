@@ -2,87 +2,48 @@
 layout: default
 ---
 
-<div class="page-wrapper">
-  <div class="wrapper">
-    <div class="post{% if page.custom-class %} {{ page.custom-class }}{% endif %}">
-      <div class="box">
-        {% if page.poster %}
-          {% if page.poster contains '://' %}
+<section class="section section--default">
+    <!-- {% if page.poster %}
+        {% if page.poster contains '://' %}
             {% assign poster_url = page.poster %}
-          {% else %}
+        {% else %}
             {% assign poster_url = page.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
-          {% endif %}
-          <div class="post-poster">
-            <img src="{{ poster_url }}" alt="{{ page.title }}" />
-          </div>
         {% endif %}
-        <header class="post-header">
-          {% if page.title %}<h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>{% endif %}
-          <div class="post-meta">
-            {% include readingtime.html content=page.content %}
-            {% if page.draft %}
-              <div class="post-meta-section post-status">Utkast</div>
-            {% endif %}
-            <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
-            <div class="post-meta-section readingtime">{{ reading_time }} lästid</div>
-            {% if page.tags %}
-              <div class="post-meta-section tags">
-                <ul>
-                  {% for tag in page.tags %}<li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>{% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-          </div>
-        </header>
-        <div class="post-content">
-          {% if page.excerpt %}
-            <div class="excerpt">{{ page.excerpt | markdownify }}</div>
-          {% endif %}
-          {{ content }}
+        <div class="post-poster">
+            <img src="{{ poster_url }}" alt="{{ page.title }}" />
         </div>
-      </div>
-      
-      {% if site.show_related_posts %}
-        <div class="box padding related-posts">
-          <div class="generic-post-list">
-            <h3>Relaterade inlägg</h3>
-            <ul>
-              {% assign listed_posts_urls = page.url | split: ' ' %}
-              {% for tag in page.tags %}
-                {% for mypost in site.tags[tag] %}
-                  {% unless mypost.draft %}
-                    {% if listed_posts_urls contains mypost.url %}
-                    {% else %}
-                      <li>
-                        <div class="post-date">{% include datetime.html datetime=mypost.date %}</div>
-                        <div class="post-name"><a href="{{ mypost.url }}">{{ mypost.title }}</a></div>
-                      </li>
-                      {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
-                    {% endif %}
-                  {% endunless %}
-                {% endfor %}
-              {% endfor %}
-            </ul>
-          </div>
+    {% endif %} -->
+    <div class="slice">
+        <div class="row">
+            <div class="col col--full card card--ghost">
+                <div class="card__body">
+                    <header class="post-header">
+                        <h1 class="section__header">{{ page.title }}</h1>
+                        <div class="post-meta">
+                            {% if page.draft %}
+                            <div class="post-meta-section post-status">Utkast</div>
+                            {% endif %}
+                            <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
+                            <div class="post-meta-section readingtime">{{ reading_time }} lästid</div>
+                            {% if page.tags %}
+                            <div class="post-meta-section tags">
+                                <ul>
+                                    {% for tag in page.tags %}<li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>{% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </header>
+                    <div class="post-content">
+                        {% if page.excerpt %}
+                        <div class="excerpt">{{ page.excerpt | markdownify }}</div>
+                        {% endif %}
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
         </div>
-      {% endif %}
-      
-      {% if page.comments and site.show_comments %}
-        <div class="box">
-          <div id="disqus_thread"></div>
-          <script>
-            (function() {
-              var d = document, s = d.createElement('script');
-
-              s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
-
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        <div class="row">
         </div>
-      {% endif %}
     </div>
-  </div>
-</div>
+</section>

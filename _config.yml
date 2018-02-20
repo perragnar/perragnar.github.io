@@ -1,14 +1,15 @@
 title: Per Ragnar
-secondary-title: Webbutvecklare
-description: perragnar.com – Per Ragnar Edin – Webbutvecklare, webbdesigner och grafiker
+description: perragnar.com – Per Ragnar Edin – Web developer, web designer, graphic designer and photographer newbie
 
 host: 0.0.0.0
 
 baseurl:
 
 navigation:
-  - title: Blog
+  - title: Home
     url: /
+  - title: Blog
+    url: /blog/
   - title: Arkiv
     url: /archive/
   - title: Index
@@ -23,11 +24,10 @@ permalink: /:year/:month/:day/:title/
 future: false
 
 show_drafts: false
-show_related_posts: true
-show_comments: false
-show_poster_in_post_list: true
 
 featured_posts: 5
+
+show_content: false
 
 # paginate: 20
 # paginate_path: "/blog/page:num"
@@ -44,5 +44,3 @@ sass:
 exclude: [node_modules, gulpfile.js]
 
 google_analytics_id: UA-120155-5
-
-disqus_shortname: perragnarcom

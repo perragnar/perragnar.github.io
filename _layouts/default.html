@@ -1,16 +1,15 @@
 {% assign current_page = paginator.page | times: 1 %}
 
-<!doctype html>
-<html lang="sv">
-  <head itemscope itemtype="http://schema.org/WebSite">
+<!DOCTYPE html>
+<html lang="en">
+
+<head itemscope itemtype="http://schema.org/WebSite">
     <title itemprop="name">{% if page.seo-title %}{{ page.seo-title }}{% else %}{{ site.title }}{% endif %}{% if current_page > 1 %} - sida {{ current_page }}{% endif %}</title>
     <meta name="description" content="{% if page.seo-description %}{{ page.seo-description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#323740" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
-    
     {% if site.google_analytics_id %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -20,16 +19,19 @@
 
         ga('create', '{{ site.google_analytics_id }}', 'auto');
         ga('send', 'pageview');
-
       </script>
     {% endif %}
-  </head>
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+</head>
 
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.1.1.min.js"></script>
-    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/functions.js"></script>
-  </body>
+<body>
+    <div id="app" class="app">
+        {% include header.html %}
+        {% include hero.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
+
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+
 </html>
