@@ -53,7 +53,7 @@ PLATFORMS
 
 DEPENDENCIES
   f00px
-  jekyll (= 3.4.0)
+  jekyll
   jekyll-sitemap
 
 RUBY VERSION
