@@ -2,40 +2,57 @@
 layout: default
 ---
 
-<div class="page-wrapper">
-  <div class="wrapper">
-    <div class="post">
-      <div class="box">
-        {% if page.poster %}
-          <div class="post-poster">
-            <img src="{{ site.baseurl }}/assets/posters/{{ page.poster }}" alt="{{ page.title }}" />
-          </div>
-        {% endif %}
-        {% if page.title %}
-          <header class="post-header">
-            <h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>
-          </header>
-        {% endif %}
-        <div class="post-content">
-          {{ content }}
+{% if site.show_content %}
+    <div class="page-wrapper">
+        <div class="wrapper">
+            <div class="post">
+                <div class="box">
+                    {% if page.poster %}
+                    <div class="post-poster">
+                        <img src="{{ site.baseurl }}/assets/posters/{{ page.poster }}" alt="{{ page.title }}" />
+                    </div>
+                    {% endif %}
+                    {% if page.title %}
+                    <header class="post-header">
+                        <h1 class="post-title{% if page.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h1>
+                    </header>
+                    {% endif %}
+                    <div class="post-content">
+                        {{ content }}
+                    </div>
+                </div>
+                {% if page.comments %}
+                <div class="box">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            
+                            s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+                            
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+                {% endif %}
+            </div>
         </div>
-      </div>
-      {% if page.comments %}
-        <div class="box">
-          <div id="disqus_thread"></div>
-          <script>
-            (function() {
-              var d = document, s = d.createElement('script');
-
-              s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
-
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
-      {% endif %}
     </div>
-  </div>
-</div>
+{% else %}
+    <section class="section section--default">
+        <div class="slice">
+            <div class="row">
+                <div class="col col--full card card--ghost">
+                    <div class="card__body">
+                        <h2 class="section__header">Oh, snap!</h2>
+                        <p>
+                            Content is currently not available at the moment. Please check back later. :(
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
