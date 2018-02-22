@@ -1,0 +1,28 @@
+.photo-gallery {
+    line-height: 0;
+    column-gap: 0;
+
+    @include media('<=tablet') {
+        column-count: 1;
+    }
+
+    @include media('>tablet', '<desktop') {
+        column-count: 2;
+    }
+
+    @include media('>=desktop') {
+        column-count: 3;
+    }
+
+    .photo {
+        a {
+            padding: 0;
+            margin: 10px;
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
+}

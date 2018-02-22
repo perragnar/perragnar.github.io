@@ -14,3 +14,18 @@ seo-description: ...
         </div>
     </div>
 </section>
+<section class="section section--photo">
+    <div class="slice">
+        <div class="row">
+            <div class="col col--full card card--ghost">
+                <div class="photo-gallery" id="500px_gallery">
+                    {% 500px authpath:500px-tokens %}
+                        <div class="photo">
+                            <a href="{{ item.images.large.url }}" title="{{ item.name }}"><img src="{{ item.images.thumbnail.url }}" width="24.5%"></a>
+                        </div>
+                    {% end500px %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
