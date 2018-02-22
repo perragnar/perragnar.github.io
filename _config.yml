@@ -29,8 +29,6 @@ featured_posts: 5
 
 show_content: false
 
-500px_consumer_key_file: 500px-ck
-
 # paginate: 20
 # paginate_path: "/blog/page:num"
 
