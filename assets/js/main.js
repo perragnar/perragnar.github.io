@@ -18,7 +18,7 @@ $(function() {
             var window_mid = window_top_position + $window.height() / 2;
             var window_bottom_position = (window_top_position + window_height);
             var window_top_offset = 0; //window_height * 0.25;
-            var window_bottom_offset = 0; //window_height * 0.05;
+            var window_bottom_offset = window_height * 0.05;
 
             var i = 1;
             $.each(animatedElements, function () {

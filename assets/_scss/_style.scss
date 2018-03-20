@@ -142,13 +142,21 @@ img {
     }
     @include media('>phone',
     '<desktop') {
-        padding: 1rem;
+        padding: .5rem;
     }
     @include media('>=desktop') {
-        padding: 3rem;
+        padding: 2rem;
     }
     .section__header {
-        font-size: 2em;
+        @include media('<=phone') {
+            font-size: 1.5em;
+        }
+        @include media('>phone', '<desktop') {
+            font-size: 2em;
+        }
+        @include media('>=desktop') {
+            font-size: 3em;
+        }
     }
     &.section--hero {
         color: #bbbbbb;
@@ -229,7 +237,6 @@ img {
                     background-color: rgba(0, 0, 0, .2);
                     display: block;
                     line-height: 1;
-                    border-radius: 3px;
                     color: $linkColor;
                     background-image: linear-gradient($linkColor, $linkColor);
                     &:hover {
@@ -317,10 +324,11 @@ img {
     }
     &.section--default {
         $textColor: #333;
-        $linkColor: #61afef;
-        $headerColor: #b5deff;
+        $linkColor: #0062b3;
+        $headerColor: #314352;
         color: $textColor;
-        background-image: linear-gradient(#6ab2fb, #0b81ff);
+        background-color: #f5f5f5;
+        // background-image: linear-gradient(#3a3c3e, #2a2b2d);
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);

@@ -43,6 +43,17 @@
         @include media('>=desktop') {
             padding: 2rem;
         }
+        &.card__body-extra-padding {
+            @include media('<=phone') {
+                padding: 1rem;
+            }
+            @include media('>phone', '<desktop') {
+                padding: 2rem;
+            }
+            @include media('>=desktop') {
+                padding: 5rem;
+            }
+        }
         .card__title {
             font-size: 1.25em;
             margin: 0 0 1rem;
