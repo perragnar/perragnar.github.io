@@ -59,6 +59,10 @@ img {
     @include media('>=desktop') {
         padding: 0 5rem;
     }
+    .page-header__content {
+        display: flex;
+        justify-content: space-between;
+    }
     .brand-wrapper {
         display: flex;
         align-items: center;
@@ -129,6 +133,24 @@ img {
             }
             .letter {
                 fill: #e0b2a1;
+            }
+        }
+    }
+    .main-navigation {
+        .main-navigation-button {
+            display: none;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                a {
+                    &.current {
+                        background-color: red;
+                    }
+                }
             }
         }
     }

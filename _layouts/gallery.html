@@ -11,7 +11,16 @@ layout: default
                         {% if page.title %}
                             <h1 class="section__header">{{ page.title }}</h1>
                         {% endif %}
-                        {{ content }}
+                        {% if site.data.galleries %}
+                            {% for gallery in site.data.galleries %}
+                                <li>
+                                    {{ gallery.title }}
+                                    {% for photo in site.data[gallery.slug] limit: 3 %}
+                                        {{ photo.filename }}
+                                    {% endfor %}
+                                </li>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>

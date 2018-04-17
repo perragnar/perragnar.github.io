@@ -5,7 +5,16 @@ layout: default
 {{ content }}
 
 {% if site.show_content %}
-    <section id="categories" class="section section--blog">
+    <section class="section section--default">
+        <div class="slice">
+            <div class="row">
+                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-down">
+                    <span class="💩">Soon&trade;?</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="section section--default">
         <div class="slice">
             <div class="row">
                 <div class="col col--full card card--rogue animate animate--fade-in animate--slide-right">
@@ -126,4 +135,6 @@ layout: default
             </div>
         </div>
     </section>
+{% else %}
+    {% include closed.html %}
 {% endif %}

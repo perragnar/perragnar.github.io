@@ -16,9 +16,10 @@ layout: default
         {% endif %} -->
         <div class="slice">
             <div class="row">
-                <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
-                    <div class="card__body card__body-extra-padding">
+                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-right">
+                    <div class="card__body">
                         <header class="post-header">
+                            ksdjfkdsjf
                             <h1 class="section__header">{{ page.title }}</h1>
                             <div class="post-meta">
                                 {% if page.draft %}
@@ -49,18 +50,5 @@ layout: default
         </div>
     </section>
 {% else %}
-    <section class="section section--default">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--full card card--ghost">
-                    <div class="card__body">
-                        <h2 class="section__header">Oh, snap!</h2>
-                        <p>
-                            Content is currently not available at the moment. Please check back later. :(
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include closed.html %}
 {% endif %}
