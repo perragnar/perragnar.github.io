@@ -1,8 +1,9 @@
 title: Gallery 1
 photos:
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
+  - filename: https://picsum.photos/800/1000
+    title: This is a nice photo
+    width: 800
+    height: 1000
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18
@@ -10,9 +11,9 @@ photos:
     shutter: 1/640
     iso: 400
     date: 1442314000
-  - filename: DSC_7085.jpg
+  - filename: https://picsum.photos/1200/500
     width: 1200
-    height: 795
+    height: 500
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18
@@ -20,9 +21,9 @@ photos:
     shutter: 1/640
     iso: 400
     date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
+  - filename: https://picsum.photos/800/800
+    width: 800
+    height: 800
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18
@@ -30,9 +31,9 @@ photos:
     shutter: 1/640
     iso: 400
     date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
+  - filename: https://picsum.photos/1100/1100
+    width: 1100
+    height: 1100
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18
@@ -40,9 +41,9 @@ photos:
     shutter: 1/640
     iso: 400
     date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
+  - filename: https://picsum.photos/400/1000
+    width: 400
+    height: 1000
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18
@@ -50,49 +51,9 @@ photos:
     shutter: 1/640
     iso: 400
     date: 1442314000
-  - filename: DSC_7085.jpg
+  - filename: https://picsum.photos/1200/2000
     width: 1200
-    height: 795
-    camera: NIKON D7000
-    lens: 18.0-70.0 mm f/3.5-4.5
-    focal: 18
-    aperture: 13
-    shutter: 1/640
-    iso: 400
-    date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
-    camera: NIKON D7000
-    lens: 18.0-70.0 mm f/3.5-4.5
-    focal: 18
-    aperture: 13
-    shutter: 1/640
-    iso: 400
-    date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
-    camera: NIKON D7000
-    lens: 18.0-70.0 mm f/3.5-4.5
-    focal: 18
-    aperture: 13
-    shutter: 1/640
-    iso: 400
-    date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
-    camera: NIKON D7000
-    lens: 18.0-70.0 mm f/3.5-4.5
-    focal: 18
-    aperture: 13
-    shutter: 1/640
-    iso: 400
-    date: 1442314000
-  - filename: DSC_7085.jpg
-    width: 1200
-    height: 795
+    height: 2000
     camera: NIKON D7000
     lens: 18.0-70.0 mm f/3.5-4.5
     focal: 18

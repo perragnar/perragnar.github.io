@@ -22,10 +22,29 @@ layout: default
                             <h2>{{ gallery[1].title }}</h2>
                             {% if gallery[1].photos %}
                                 <div class="photo-gallery">
-                                    {% for photo in gallery[1].photos limit: 4 %}
-                                        <div class="photo">
-                                            <h4 class="photo__title">{{ photo.filename }}</h4>
-                                            <img src="https://picsum.photos/800/500" alt="Placeholder" />
+                                    {% for photo in gallery[1].photos %}
+                                        {% capture photo_width %}
+                                            {{ photo.width | times: 1.0 }}
+                                        {% endcapture %}
+                                        {% capture photo_height %}
+                                            {{ photo.height | times: 1.0 }}
+                                        {% endcapture %}
+                                        <div class="photo" style="background-image: url({{ photo.filename }})">
+                                            <div class="photo__data">
+                                                <h4 class="photo__title data__post">
+                                                    {% if photo.title %}
+                                                        {{ photo.title }}
+                                                    {% else %}
+                                                        {{ photo.filename }}
+                                                    {% endif %}
+                                                </h4>
+                                                <div class="data__post">
+                                                    {{ photo.width }}&times;{{ photo.height }}px
+                                                </div>
+                                                <div class="data__post">
+                                                    {{ photo_height | divided_by: photo_width }}
+                                                </div>
+                                            </div>
                                         </div>
                                     {% endfor %}
                                 </div>
