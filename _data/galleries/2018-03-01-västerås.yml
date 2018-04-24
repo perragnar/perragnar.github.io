@@ -1,0 +1,87 @@
+title: A day in Västerås
+photos:
+  - filename: photo-1.jpg
+    title: This is a nice photo
+    width: 800
+    height: 1000
+    camera: NIKON D75100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-2.jpg
+    width: 1200
+    height: 500
+    date: 1442314000
+  - filename: photo-3.jpg
+    width: 800
+    height: 800
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-4.jpg
+    width: 110
+    height: 1100
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-5.jpg
+    width: 400
+    height: 1000
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-6.jpg
+    width: 1200
+    height: 2000
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-7.jpg
+    width: 1200
+    height: 2000
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-8.jpg
+    width: 1200
+    height: 2000
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
+  - filename: photo-9.jpg
+    width: 1200
+    height: 2000
+    camera: NIKON D5100
+    lens: 24.0-70.0 mm f/2.8
+    focal: 50
+    aperture: 8
+    shutter: 1/640
+    iso: 100
+    date: 1442314000
