@@ -22,28 +22,70 @@ layout: default
                             <h2>{{ gallery[1].title }}</h2>
                             {% if gallery[1].photos %}
                                 <div class="photo-gallery">
-                                    {% for photo in gallery[1].photos %}
+                                    {% for photo in gallery[1].photos limit: 3 %}
                                         {% capture photo_width %}
                                             {{ photo.width | times: 1.0 }}
                                         {% endcapture %}
                                         {% capture photo_height %}
                                             {{ photo.height | times: 1.0 }}
                                         {% endcapture %}
-                                        <div class="photo" style="background-image: url({{ photo.filename }}); height: calc({{ photo.width }}px * {{ photo.height | divided_by: photo_width }});">
+                                        <!-- <div class="photo" style="background-image: url({{ photo.filename }}); height: calc({{ photo.width }}px * {{ photo.height | divided_by: photo_width }});"> -->
+                                        <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/{{gallery[0]}}/{{ photo.filename }});" data-src="{{site.baseurl}}/assets/photos/{{gallery[0]}}/{{ photo.filename }}" data-fancybox="{{ gallery[0] }}">
                                             <div class="photo__data">
-                                                <h4 class="photo__title data__post">
-                                                    {% if photo.title %}
-                                                        {{ photo.title }}
-                                                    {% else %}
-                                                        {{ photo.filename }}
-                                                    {% endif %}
-                                                </h4>
-                                                <div class="data__post">
-                                                    {{ photo.width }}&times;{{ photo.height }}px
-                                                </div>
-                                                <div class="data__post">
+                                                {% if photo.title %}
+                                                    <h4 class="photo__title data__post">
+                                                        "{{ photo.title }}"
+                                                    </h4>
+                                                {% endif %}
+                                                {% if photo.date %}
+                                                    <div class="data__post">
+                                                        <span class="label">Date</span>
+                                                        {{ photo.date | date: "%Y-%m-%d" }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.camera %}
+                                                    <div class="data__post">
+                                                        <span class="label">Camera</span>
+                                                        {{ photo.camera }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.lens %}
+                                                    <div class="data__post">
+                                                        <span class="label">Lens</span>
+                                                        {{ photo.lens }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.iso %}
+                                                    <div class="data__post">
+                                                        <span class="label">ISO</span>
+                                                        {{ photo.iso }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.shutter %}
+                                                    <div class="data__post">
+                                                        <span class="label">Shutter</span>
+                                                        {{ photo.shutter }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.aperture %}
+                                                    <div class="data__post">
+                                                        <span class="label">Aperture</span>
+                                                        f/{{ photo.aperture }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if photo.focal %}
+                                                    <div class="data__post">
+                                                        <span class="label">Focal</span>
+                                                        {{ photo.focal }}mm
+                                                    </div>
+                                                {% endif %}
+                                                <!-- <div class="data__post">
+                                                    <span class="label">Size</span>
+                                                    {{ photo.width }} &times; {{ photo.height }} px
+                                                </div> -->
+                                                <!-- <div class="data__post">
                                                     {{ photo_height | divided_by: photo_width }}
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     {% endfor %}
