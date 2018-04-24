@@ -15,20 +15,25 @@ layout: default
                     </div>
                 </div>
             </div>
-            {% if site.data.galleries %}
-                {% for gallery in site.data.galleries %}
-                    <div class="row">
-                        <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
-                            <div class="card__body">
-                                {{ gallery.title }}
-                                {% for photo in site.data[gallery.slug] limit: 3 %}
-                                    {{ photo.filename }}
-                                {% endfor %}
-                            </div>
+            {% for gallery in site.data.galleries %}
+                <div class="row">
+                    <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
+                        <div class="card__body">
+                            <h2>{{ gallery[1].title }}</h2>
+                            {% if gallery[1].photos %}
+                                <div class="photo-gallery">
+                                    {% for photo in gallery[1].photos limit: 4 %}
+                                        <div class="photo">
+                                            <h4 class="photo__title">{{ photo.filename }}</h4>
+                                            <img src="https://picsum.photos/800/500" alt="Placeholder" />
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
-                {% endfor %}
-            {% endif %}
+                </div>
+            {% endfor %}
         </div>
     </section>
 {% else %}
