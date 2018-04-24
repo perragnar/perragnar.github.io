@@ -29,7 +29,7 @@ layout: default
                                         {% capture photo_height %}
                                             {{ photo.height | times: 1.0 }}
                                         {% endcapture %}
-                                        <div class="photo" style="background-image: url({{ photo.filename }})">
+                                        <div class="photo" style="background-image: url({{ photo.filename }}); height: calc({{ photo.width }}px * {{ photo.height | divided_by: photo_width }});">
                                             <div class="photo__data">
                                                 <h4 class="photo__title data__post">
                                                     {% if photo.title %}
