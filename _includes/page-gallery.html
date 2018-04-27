@@ -1,0 +1,73 @@
+{% if page.galleries %}
+    {% for gallerySlug in page.galleries %}
+        {% assign gallery = site.data.galleries[gallerySlug] %}
+        <div class="row">
+            <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
+                <div class="card__body">
+                    <h2>{{ gallery.title }}</h2>
+                    {% if gallery.contents %}
+                        {% assign photos = gallery.contents %}
+                        <div class="photo-gallery">
+                            {% for photo in photos %}
+                                {% capture photo_width %}{{ photo.width | times: 1.0 }}{% endcapture %}
+                                {% capture photo_height %}{{ photo.height | times: 1.0 }}{% endcapture %}
+                                {% capture ratio_height %}{{ photo_height | divided_by: photo_width | times: 100 }}{% endcapture %}
+                                <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}); /*padding-bottom: {{ ratio_height }}%;*/" data-src="{{ site.baseurl }}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}" data-fancybox="{{ gallerySlug }}">
+                                    <div class="photo__data">
+                                        {% if photo.title %}
+                                            <h4 class="photo__title data__post">
+                                                "{{ photo.title }}"
+                                            </h4>
+                                        {% endif %}
+                                        {% if photo.date %}
+                                            <div class="data__post">
+                                                <span class="label">Date</span>
+                                                {{ photo.date | date: "%Y-%m-%d" }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.camera %}
+                                            <div class="data__post">
+                                                <span class="label">Camera</span>
+                                                {{ photo.camera }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.lens %}
+                                            <div class="data__post">
+                                                <span class="label">Lens</span>
+                                                {{ photo.lens }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.iso %}
+                                            <div class="data__post">
+                                                <span class="label">ISO</span>
+                                                {{ photo.iso }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.shutter %}
+                                            <div class="data__post">
+                                                <span class="label">Shutter</span>
+                                                {{ photo.shutter }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.aperture %}
+                                            <div class="data__post">
+                                                <span class="label">Aperture</span>
+                                                f/{{ photo.aperture }}
+                                            </div>
+                                        {% endif %}
+                                        {% if photo.focal %}
+                                            <div class="data__post">
+                                                <span class="label">Focal</span>
+                                                {{ photo.focal }}mm
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endif %}
