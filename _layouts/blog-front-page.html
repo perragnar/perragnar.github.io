@@ -4,30 +4,7 @@ layout: default
 
 {{ content }}
 
-{% if site.show_content %}
-    <section class="section section--default">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-down">
-                    <span class="💩">Soon&trade;?</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="categories" class="section section--default">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--full card card--rogue animate animate--fade-in animate--slide-right">
-                    <div class="card__body">
-                        <h3 class="section__header">Blog</h3>
-                        <p>
-                            lorem ipsum
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{% if site.site_open and page.page_open != false  %}
     <section class="section section--web-development">
         <div class="slice">
             <div class="row">
