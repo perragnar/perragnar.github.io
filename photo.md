@@ -1,6 +1,6 @@
 ---
 title: Photography
-layout: gallery
+layout: gallery-list
 ---
 
 So, I like to take photos.
