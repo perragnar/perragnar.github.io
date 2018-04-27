@@ -4,6 +4,7 @@ title: Arkiv
 poster: perragnar.jpg
 seo-title: Arkiv över Per Ragnar Edins blog
 seo-description: Per Ragnar Edins blogarkiv
+page_open: false
 ---
 
 <div class="post">
