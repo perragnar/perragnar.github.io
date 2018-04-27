@@ -1,0 +1,19 @@
+---
+title: Photo
+seo-title: Photo
+seo-description: ...
+layout: post
+categories:
+  - Photo
+tags:
+  - Nikon
+  - Photo
+  - Photography
+poster: 
+galleries:
+  - 2018-04-21-gallery-1
+excerpt: |
+  ...
+---
+
+Ett par gallerier från häromveckan...
