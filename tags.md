@@ -4,6 +4,7 @@ title: Index
 poster: perragnar.jpg
 seo-title: Index över Per Ragnar Edins blog
 seo-description: Per Ragnar Edins blogindex
+page_open: false
 ---
 
 {% assign rawtags = "" %}
