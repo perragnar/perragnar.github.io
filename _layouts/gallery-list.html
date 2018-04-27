@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% if site.show_content %}
+    <section class="section section--photo">
+        <div class="slice">
+            <div class="row">
+                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-right">
+                    <div class="card__body">
+                        {% if page.title %}
+                            <h1 class="section__header">{{ page.title }}</h1>
+                        {% endif %}
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
+                    <div class="card__body">
+                        <h2>Galleries</h2>
+                        {% for post in site.posts %}
+                            {% if post.galleries %}
+                                {% unless post.draft %}
+                                    <h3 class="gallery__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                                {% endunless %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% else %}
+    {% include closed.html %}
+{% endif %}
