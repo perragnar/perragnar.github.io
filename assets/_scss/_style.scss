@@ -296,9 +296,9 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        @include header-selector {
-            // color: $headerColor;
-        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
     }
     &.section--web-development {
         $textColor: #481b07;
@@ -313,9 +313,9 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        @include header-selector {
-            // color: $headerColor;
-        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
     }
     &.section--photo {
         $textColor: #093910;
@@ -330,9 +330,9 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        @include header-selector {
-            // color: $headerColor;
-        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
     }
     &.section--misc {
         $textColor: #ffe7fb;
@@ -347,9 +347,9 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        @include header-selector {
-            // color: $headerColor;
-        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
     }
     &.section--default {
         $textColor: #333;
@@ -364,9 +364,9 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        @include header-selector {
-            color: $headerColor;
-        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
     }
 }
 
