@@ -1,7 +1,33 @@
 $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
 
+.gallery-list {
+    border: solid 1px #0A4513;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .gallery-post {
+        &:not(:last-child) {
+            border-bottom: solid 1px #0A4513;
+        }
+
+        .gallery__title {
+            margin: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            padding: .5rem;
+        }
+
+        .gallery__date {
+            white-space: nowrap;
+        }
+    }
+}
+
 .gallery__title {
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 .photo-gallery {
@@ -42,9 +68,9 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
         background-repeat: no-repeat;
         transition: box-shadow 250ms ease;
         
-        &:first-child {
-            flex-basis: 100%;
-        }
+        // &:first-child {
+        //     flex-basis: 100%;
+        // }
 
         @include media('<desktop') {
             flex-basis: 100%;
