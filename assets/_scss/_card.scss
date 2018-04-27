@@ -3,7 +3,9 @@
     border-radius: .25rem;
     background-color: #fff;
     color: #000;
+    overflow: hidden;
     transition: transform $cardTransitionTime ease, box-shadow $cardTransitionTime ease, background-color $cardTransitionTime ease, border $cardTransitionTime ease;
+
     &.card--hover {
         &:hover {
             transform: translateY(-.5rem);
@@ -22,7 +24,7 @@
         &.card--hover:hover {
             color: initial;
             background-color: #fff;
-        }
+        }    
     }
     &.card--rogue {
         background-color: rgba(255, 255, 255, .25);
@@ -30,6 +32,11 @@
         &.card--hover:hover {
             color: initial;
             background-color: #fff;
+        }
+    }
+    .card__poster {
+        img {
+            width: 100%;
         }
     }
     .card__body {
