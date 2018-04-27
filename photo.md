@@ -1,6 +1,8 @@
 ---
 title: Photography
 layout: gallery-list
+page_open: true
 ---
 
-So, I like to take photos.
+I love to take photos and edit them in Adobe Lightroom or Photoshop.  
+Below are links to photo related blog posts.
