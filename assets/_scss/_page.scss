@@ -1,10 +1,35 @@
 .post-meta {
     display: flex;
+    margin-bottom: 1rem;
+
+    .date {
+        margin-right: 1rem;
+        color: #555;
+    }
 
     .tags {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: .25rem; 
+                }
+
+                a.tag {
+                    background-color: #ffe0a2;
+                    color: #303030;
+                    line-height: 1;
+                    font-size: .9em;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
