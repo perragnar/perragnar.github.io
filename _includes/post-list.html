@@ -9,7 +9,7 @@
     {% unless post.draft %}
         {% assign post_counter = post_counter | plus:1 %}
         {% if post_counter <= limit %}
-            <div class="col col--1-5 card animate animate--fade-in animate--slide-left">
+            <div class="col col--1-5 card card--shadow animate animate--fade-in animate--slide-left">
                 <div class="card__body">
                     {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
                     
