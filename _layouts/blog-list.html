@@ -2,130 +2,18 @@
 layout: default
 ---
 
-{{ content }}
-
 {% if site.show_content %}
     <section id="categories" class="section section--blog">
         <div class="slice">
             <div class="row">
-                <div class="col col--full card card--rogue">
+                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-right">
                     <div class="card__body">
                         <h3 class="section__header">Blog</h3>
-                        <p>
-                            lorem ipsum
-                        </p>
+                        {{ content }}
                     </div>
                 </div>
                 {% include post-list.html limit=10 %}
             </div>
         </div>
     </section>
-    <section class="section section--web-development">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <h3 class="section__header">Web development</h3>
-                        <p>
-                            I'm a web developer working for
-                            <a href="https://hackyard.se" target="_blank">Hackyard</a> in Västerås, Sweden.
-                        </p>
-                        <p>
-                            I actually know how to exit VIM. Spoiler alert: it's
-                            <code>:q</code>.
-                        </p>
-                        <p>
-                            Sometimes, I put something up on
-                            <a href="https://github.com/perragnar" target="_blank" class="inline-github-logo">Github</a> or
-                            <a href="https://codepen.io/perragnar" target="_blank">Codepen</a>.
-                        </p>
-                    </div>
-                </div>
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <h3 class="section__header">Web design</h3>
-                        <p>
-                            sdkfjlsdkjfj
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section--photo">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <h3 class="section__header">Photography</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-                            <a href="#">numquam asperiores</a> provident aliquam, praesentium deserunt eveniet temporibus accusamus
-                            voluptatum laborum rerum, animi repellat omnis minus optio dolor ex odit eaque?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem numquam asperiores provident aliquam, praesentium deserunt
-                            eveniet temporibus accusamus voluptatum laborum rerum, animi repellat omnis minus optio dolor
-                            ex odit eaque?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem numquam asperiores provident aliquam, praesentium deserunt
-                            eveniet temporibus accusamus voluptatum laborum rerum, animi repellat omnis minus optio dolor
-                            ex odit eaque?
-                        </p>
-                        <div>
-                            <a href="#" class="button button--green">500px.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <img src="./assets/img/nikon.png" alt="Photography" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section--misc">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--full card card--ghost">
-                    <div class="card__body">
-                        <h3 class="section__header">Oh, btw...</h3>
-                        <p>
-                            Do you code? Using
-                            <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>?
-                            <br> I've made a couple of themes. Go grab them at
-                            <a href="https://marketplace.visualstudio.com/search?term=publisher%3A%22Per%20Ragnar%20Edin%22&target=VSCode&category=All%20categories&sortBy=Relevance"
-                                target="_blank">Visual Studio Marketplace</a>. Here's
-                            <strong>September Steel</strong> and
-                            <strong>Light+ Tweaked</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <h4>September Steel</h4>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.september-steel" target="_blank" class="silent">
-                            <img src="https://raw.githubusercontent.com/perragnar/september-steel/master/images/screenshots/syntax-javascript.png" alt="September Steel">
-                        </a>
-                        <img src="https://vsmarketplacebadge.apphb.com/installs-short/perragnaredin.september-steel.svg" alt="Installs" />
-                    </div>
-                </div>
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body">
-                        <h4>Light+ Tweaked</h4>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.light-plus-tweaked" target="_blank" class="silent">
-                            <img src="https://raw.githubusercontent.com/perragnar/light-plus-tweaked/master/images/screenshots/screenshot-01.png" alt="Light+ Tweaked">
-                        </a>
-                        <img src="http://vsmarketplacebadge.apphb.com/installs-short/perragnaredin.light-plus-tweaked.svg" alt="Installs" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 {% endif %}
-
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/500px-embed.js"></script>
