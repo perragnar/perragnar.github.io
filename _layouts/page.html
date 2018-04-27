@@ -7,6 +7,16 @@ layout: default
         <div class="slice">
             <div class="row">
                 <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
+                    {% if page.poster %}
+                        {% if page.poster contains '://' %}
+                            {% assign poster_url = page.poster %}
+                        {% else %}
+                            {% assign poster_url = page.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
+                        {% endif %}
+                        <div class="card__poster">
+                            <img src="{{ poster_url }}" alt="{{ page.title }}" />
+                        </div>
+                    {% endif %}
                     <div class="card__body">
                         {% if page.title %}
                             <h1 class="section__header">{{ page.title }}</h1>
