@@ -18,11 +18,15 @@ window.onscroll = function (e) {
     if(animatedElements.length) {
         animateElements(window_height, window_top_position, window_mid, window_bottom_position);
     }
-
-    // if(galleryPhotos.length) {
-    //     handlePhotoData(window_top_position);
-    // }
 };
+
+$('.photo__data-trigger').on('click', function() {
+    $(this).closest('.photo').addClass('info');
+});
+
+$('.photo__data').on('click', function() {
+    $(this).closest('.photo').removeClass('info');
+});
 
 function updateScrollData() {
     window_height = $window.height();
@@ -51,17 +55,4 @@ function animateElements(window_height, window_top_position, window_mid, window_
             i++;
         });
     }
-}
-
-function handlePhotoData(window_top_position) {
-    // $.each(galleryPhotos, function () {
-    //     var $element = $(this).find('.photo__data');
-    //     var element_top_position = $element.offset().top;
-
-    //     console.log(element_top_position, window_top_position);
-
-    //     if(element_top_position <) {
-
-    //     }
-    // });
 }

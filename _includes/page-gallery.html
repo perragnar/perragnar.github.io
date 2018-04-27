@@ -12,7 +12,8 @@
                                 {% capture photo_width %}{{ photo.width | times: 1.0 }}{% endcapture %}
                                 {% capture photo_height %}{{ photo.height | times: 1.0 }}{% endcapture %}
                                 {% capture ratio_height %}{{ photo_height | divided_by: photo_width | times: 100 }}{% endcapture %}
-                                <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}); /*padding-bottom: {{ ratio_height }}%;*/" data-src="{{ site.baseurl }}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}" data-fancybox="{{ gallerySlug }}">
+                                <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}); /*padding-bottom: {{ ratio_height }}%;*/">
+                                    <div class="photo__data-trigger">EXIF</div>
                                     <div class="photo__data">
                                         {% if photo.title %}
                                             <h4 class="photo__title data__post">
@@ -62,6 +63,7 @@
                                             </div>
                                         {% endif %}
                                     </div>
+                                    <a href="{{ site.baseurl }}/assets/photos/galleries/large/{{ gallerySlug }}/{{ photo.filename }}" class="photo__trigger" data-fancybox="{{ gallerySlug }}"></a>
                                 </div>
                             {% endfor %}
                         </div>

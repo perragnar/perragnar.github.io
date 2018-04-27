@@ -139,9 +139,9 @@ img {
     }
     .main-navigation {
         .main-navigation-button {
-            @include media('>=desktop') {
+            // @include media('>=desktop') {
                 display: none;
-            }
+            // }
         }
         ul {
             list-style: none;
