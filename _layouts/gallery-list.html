@@ -1,5 +1,6 @@
 ---
 layout: default
+category_filter: photography
 ---
 
 {% if site.site_open and page.page_open != false  %}
@@ -19,13 +20,21 @@ layout: default
                 <div class="col col--full card card--shadow animate animate--fade-in animate--slide-right">
                     <div class="card__body">
                         <h2>Galleries</h2>
-                        {% for post in site.posts %}
-                            {% if post.galleries %}
-                                {% unless post.draft %}
-                                    <h3 class="gallery__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-                                {% endunless %}
-                            {% endif %}
-                        {% endfor %}
+                        <div class="gallery-list">
+                            {% for post in site.posts %}
+                                {% assign post_categories = post.categories | downcase %}
+                                {% if post.galleries or post_categories contains layout.category_filter %}
+                                    {% unless post.draft %}
+                                        <div class="gallery-post">
+                                            <a href="{{ site.baseurl }}{{ post.url }}">
+                                                <h3 class="gallery__title">{{ post.title }}</h3>
+                                                <div class="gallery__date">{% include datetime.html datetime=post.date %}</div>
+                                            </a>
+                                        </div>
+                                    {% endunless %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
