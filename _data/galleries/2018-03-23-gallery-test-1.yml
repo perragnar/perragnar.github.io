@@ -1,5 +1,5 @@
-title: Västerås
-date: '2018-03-01'
+title: Gallery test 1
+date: '2018-03-23'
 contents:
   - filename: photo-8.jpg
     width: 4928
@@ -11,7 +11,7 @@ contents:
     shutter: 1/500
     iso: 100
     date: 1521807460
-  - filename: photo-1sdsd-sdaf-asdf-asdafoa.jpg
+  - filename: photo-1.jpg
     width: 3098
     height: 4928
     camera: NIKON D5100
@@ -41,6 +41,16 @@ contents:
     shutter: 1/1600
     iso: 100
     date: 1521820729
+  - filename: photo-3.jpg
+    width: 3264
+    height: 3264
+    camera: NIKON D5100
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 24
+    aperture: 2.8
+    shutter: 1/1600
+    iso: 100
+    date: 1521820820
   - filename: photo-4.jpg
     width: 4928
     height: 3264
