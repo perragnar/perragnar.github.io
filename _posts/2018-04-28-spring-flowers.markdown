@@ -7,7 +7,7 @@ tags:
   - Photography
   - Spring
   - Flowers
-poster: 
+poster: spring-flowers.jpg
 galleries:
   - 2018-04-28-spring-flowers
 ---
