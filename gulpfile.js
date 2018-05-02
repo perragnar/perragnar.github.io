@@ -26,14 +26,6 @@ gulp.task('cleanup', () => {
     return del(['./assets/photos/galleries/']);
 });
 
-// Temporary task to restore inbox example files
-// TODO: Remove later
-gulp.task('restore', () => {
-    return gulp.src('./assets/photos/backup/**/*.jpg')
-        .pipe(gulp.dest('./assets/photos/inbox/'))
-        ;
-});
-
 // Building photo gallery from the files in the inbox
 gulp.task('handleInbox', () => {
     return gulp.src('./assets/photos/inbox/**/*.jpg', { nocase: true })
