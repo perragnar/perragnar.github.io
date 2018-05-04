@@ -83,8 +83,8 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
 
         @include media('<desktop') {
             flex-basis: 100%;
-            min-height: 200px;
-            padding-bottom: 100%;
+            min-height: 250px;
+            // padding-bottom: 100%;
             margin: 5px;
 
             &:not(:last-child) {
