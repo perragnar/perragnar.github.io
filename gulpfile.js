@@ -75,7 +75,7 @@ gulp.task('clearInbox', () => {
 const walkPhotos = (path, index) => {
     const directory = fs.readdirSync(path);
 
-    // // Directory is going to be an array of album directories
+    // Directory is going to be an array of album directories
     for (var i = 0; i < directory.length; i++) {
         // This is the directory name from Lightroom ('2015-12-31 New Years Eve' style)
         const album = directory[i];
