@@ -140,7 +140,7 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
                 align-items: center;
 
                 @include media('<desktop') {
-                    align-items: baseline;
+                    align-items: stretch;
                     line-height: 1.1;
                 }
 
@@ -164,7 +164,7 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
 
                 .value {
                     @include media('<desktop') {
-                        flex: 4;
+                        flex: 3;
                     }
                 }
             }
