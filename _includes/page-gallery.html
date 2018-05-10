@@ -11,7 +11,7 @@
                                 {% capture photo_width %}{{ photo.width | times: 1.0 }}{% endcapture %}
                                 {% capture photo_height %}{{ photo.height | times: 1.0 }}{% endcapture %}
                                 {% capture ratio_height %}{{ photo_height | divided_by: photo_width | times: 100 }}{% endcapture %}
-                                <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/medium/{{ gallerySlug }}/{{ photo.filename }}); /*padding-bottom: {{ ratio_height }}%;*/">
+                                <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/medium/{{ gallerySlug }}/{{ photo.filename }}); padding-bottom: {{ ratio_height }}%;">
                                     <div class="photo__data-trigger">Info</div>
                                     <div class="photo__data">
                                         {% if photo.title %}
@@ -22,43 +22,43 @@
                                         {% if photo.date %}
                                             <div class="data__post">
                                                 <span class="label">Date</span>
-                                                {{ photo.date | date: "%Y-%m-%d" }}
+                                                <span class="value">{{ photo.date | date: "%Y-%m-%d" }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.camera %}
                                             <div class="data__post">
                                                 <span class="label">Camera</span>
-                                                {{ photo.camera }}
+                                                <span class="value">{{ photo.camera }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.lens %}
                                             <div class="data__post">
                                                 <span class="label">Lens</span>
-                                                {{ photo.lens }}
+                                                <span class="value">{{ photo.lens }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.iso %}
                                             <div class="data__post">
                                                 <span class="label">ISO</span>
-                                                {{ photo.iso }}
+                                                <span class="value">{{ photo.iso }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.shutter %}
                                             <div class="data__post">
                                                 <span class="label">Shutter</span>
-                                                {{ photo.shutter }}
+                                                <span class="value">{{ photo.shutter }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.aperture %}
                                             <div class="data__post">
                                                 <span class="label">Aperture</span>
-                                                f/{{ photo.aperture }}
+                                                <span class="value">f/{{ photo.aperture }}</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.focal %}
                                             <div class="data__post">
                                                 <span class="label">Focal</span>
-                                                {{ photo.focal }}mm
+                                                <span class="value">{{ photo.focal }}mm</span>
                                             </div>
                                         {% endif %}
                                     </div>
