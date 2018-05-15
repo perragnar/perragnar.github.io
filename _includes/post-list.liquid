@@ -14,7 +14,7 @@
                     {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
                     
                     <div class="post-meta">
-                        <div class="post-meta-section date">{% include datetime.html datetime=post.date %}</div>
+                        <div class="post-meta-section date">{% include datetime.liquid datetime=post.date %}</div>
                         {% if post.tags %}
                             <div class="post-meta-section tags">
                                 <ul>

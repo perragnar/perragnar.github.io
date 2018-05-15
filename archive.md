@@ -25,7 +25,7 @@ page_open: false
                             {% assign myDate = currentDate %}
                     {% endif %}
                     <li>
-                        <div class="post-date">{% include datetime.html datetime=post.date %}</div>
+                        <div class="post-date">{% include datetime.liquid datetime=post.date %}</div>
                         <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
                     </li>
                     {% if forloop.last %}

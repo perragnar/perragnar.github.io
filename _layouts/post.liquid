@@ -24,7 +24,7 @@ layout: default
                                 {% if page.draft %}
                                     <div class="post-meta-section post-status">Draft</div>
                                 {% endif %}
-                                <div class="post-meta-section date">{% include datetime.html datetime=page.date %}</div>
+                                <div class="post-meta-section date">{% include datetime.liquid datetime=page.date %}</div>
                                 {% if page.tags %}
                                     <div class="post-meta-section tags">
                                         <ul>
@@ -43,9 +43,9 @@ layout: default
                     </div>
                 </div>
             </div>
-            {% include page-gallery.html %}
+            {% include page-gallery.liquid %}
         </div>
     </section>
 {% else %}
-    {% include closed.html %}
+    {% include closed.liquid %}
 {% endif %}

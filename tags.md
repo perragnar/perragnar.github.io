@@ -50,7 +50,7 @@ page_open: false
               {% unless post.draft %}
                 {% if post.tags contains tag %}
                   <li>
-                    <div class="post-date">{% include datetime.html datetime=post.date %}</div>
+                    <div class="post-date">{% include datetime.liquid datetime=post.date %}</div>
                     <div class="post-name"><a href="{{ post.url }}">{{ post.title }}</a></div>
                   </li>
                 {% endif %}
