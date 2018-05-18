@@ -1,14 +1,14 @@
 ---
-title: Spring
+title: Vårblommor, del två
 layout: post
 categories:
-  - Photography
+  - Foto
 tags:
-  - Photography
-  - Spring
-  - Flowers
+  - Foto
+  - Vår
+  - Blommor
 galleries:
   - 2018-05-13-spring
 ---
 
-Most of the photos in this post are taken at home in our garden. The cherry and apple trees are blooming and everything in the garden is coming to life.
+Några veckor sedan förra inlägget om vårblommor och nu har det hänt lite mer. De flesta av fotona är tagna hemma i vår trädgård. Körsbärs- och äppelträden blommar och allt i trädgården har väckts till liv.
