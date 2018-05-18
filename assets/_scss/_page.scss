@@ -1,5 +1,6 @@
 .post-meta {
     display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
 
     @include media('<desktop') {
@@ -17,17 +18,23 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
 
             li {
-                &:not(:last-child) {
-                    margin-right: .25rem; 
+                line-height: 1;
+                margin: {
+                    right: .25rem;
+                    bottom: .25rem;
                 }
 
                 a.tag {
                     background-color: #ffe0a2;
                     color: #303030;
                     line-height: 1;
-                    font-size: .9em;
+                    font-size: .7em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    white-space: nowrap;
 
                     &:hover {
                         color: #fff;

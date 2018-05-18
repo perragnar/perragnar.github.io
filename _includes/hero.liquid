@@ -6,48 +6,35 @@
                 <ul class="hero__list">
                     <li class="check">
                         <span class="label">
-                            <span class="no-wrap">Web developer &amp;</span>
-                            <span class="no-wrap">web designer</span>
+                            <span class="no-wrap">Webbutvecklare &amp;</span>
+                            <span class="no-wrap">webbdesigner</span>
                         </span>
                     </li>
                     <li class="check">
-                        <span class="label">Graphic designer</span>
+                        <span class="label">Grafiker</span>
                     </li>
                     <li class="check">
                         <span class="label">
-                            <span class="strike">Photographer</span> Photographer newbie
+                            <span class="strike">Fotograf</span> Nybörjarfotograf
                         </span>
                     </li>
                 </ul>
             </div>
             <div class="col col--1-2 animate animate--fade-in animate--slide-down">
                 <p>
-                    Visit me @
+                    Du hittar mig på ...
                 </p>
                 <ul class="link__list">
-                    <li>
-                        <a href="https://twitter.com/perragnaredin" target="_blank">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/perragnar" target="_blank">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/perragnar" target="_blank">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/perragnar" target="_blank">CodePen</a>
-                    </li>
-                    <li>
-                        <a href="https://500px.com/perragnar" target="_blank">500px</a>
-                    </li>
-                    <li>
-                        <a href="https://www.artstation.com/perragnar" target="_blank">ArtStation</a>
-                    </li>
+                    {% for link in site.data.links %}
+                        <li>
+                            <a href="{{ link.url }}" class="hero-link hero-link--{{ link.class }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
                 <p>
-                    I also like
-                    <span class="sticker">☕️ coffee</span> and
-                    <span class="sticker">🌳🌲🌴 trees.</span>
+                    Jag gillar också
+                    <span class="sticker">☕️ kaffe</span> och
+                    <span class="sticker">🌳🌲🌴 träd.</span>
                 </p>
             </div>
         </div>

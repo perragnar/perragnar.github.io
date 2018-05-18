@@ -4,5 +4,6 @@ layout: gallery-list
 page_open: true
 ---
 
-I love to take photos and edit them in Adobe Lightroom or Photoshop.  
-Below are links to photo related blog posts.
+Jag är nybörjare och hobbyfotograf och har sedan drygt ett år tillbaka fotat ganska mycket för att lära mig både kameran, men också fototeknik och kompositioner.
+
+Kolla nedan för fotorelaterade blogginlägg.

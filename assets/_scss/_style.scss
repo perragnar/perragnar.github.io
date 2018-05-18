@@ -260,17 +260,73 @@ img {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
+            
             li {
                 padding: .2rem;
-                a {
+
+                .hero-link {
                     $linkColor: #6FB4F6;
                     background-color: rgba(0, 0, 0, .2);
                     display: block;
+                    font-size: .8em;
                     line-height: 1;
+                    padding: .5rem;
                     color: $linkColor;
                     background-image: linear-gradient($linkColor, $linkColor);
+                    // border-radius: 3px;
+
                     &:hover {
                         @include text-contrast($linkColor);
+                    }
+
+                    & {
+                        &--twitter {
+                            $linkColor: #33A4EC;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
+                        
+                        &--facebook {
+                            $linkColor: #466AAE;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
+
+                        &--github {
+                            $linkColor: #ffffff;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
+
+                        &--codepen {
+                            $linkColor: #FACE43;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
+
+                        &--fivehundredpx {
+                            $linkColor: #43BC55;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
+
+                        &--artstation {
+                            $linkColor: #31B1EA;
+                            background-image: linear-gradient($linkColor, $linkColor);
+                            &:hover {
+                                @include text-contrast($linkColor);
+                            }
+                        }
                     }
                 }
             }

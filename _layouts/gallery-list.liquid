@@ -1,6 +1,6 @@
 ---
 layout: default
-category_filter: photography
+category_filter: foto
 ---
 
 {% if site.site_open and page.page_open != false  %}
@@ -19,7 +19,7 @@ category_filter: photography
             <div class="row">
                 <div class="col col--full card card--shadow animate animate--fade-in animate--slide-left">
                     <div class="card__body">
-                        <h2>Blog posts</h2>
+                        <h2>Blogginlägg</h2>
                         <div class="gallery-list">
                             {% for post in site.posts %}
                                 {% assign post_categories = post.categories | downcase %}
