@@ -10,7 +10,9 @@ var window_bottom_position = (window_top_position + window_height);
 var animatedElements = $('.animate');
 var galleryPhotos = $('.photo-gallery .photo');
 
-animateElements(window_height, window_top_position, window_mid, window_bottom_position);
+if(animatedElements.length) {
+    animateElements(window_height, window_top_position, window_mid, window_bottom_position);
+}
 
 window.onscroll = function (e) {
     updateScrollData();
