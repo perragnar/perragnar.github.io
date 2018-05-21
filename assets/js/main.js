@@ -22,6 +22,11 @@ window.onscroll = function (e) {
     }
 };
 
+// Camera shutter audio
+$('.photo-gallery .photo').click(function() {
+    playAudio('audio-camera-shutter');
+});
+
 var defaults = {
     // Should display counter at the top left corner
     infobar: false,
@@ -99,4 +104,9 @@ function animateElements(window_height, window_top_position, window_mid, window_
             i++;
         });
     }
+}
+
+function playAudio(audioID) {
+    var audio = document.getElementById(audioID);
+    audio.play();
 }
