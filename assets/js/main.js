@@ -23,7 +23,7 @@ window.onscroll = function (e) {
 };
 
 // Camera shutter audio
-$('.photo-gallery .photo').click(function() {
+$('.photo-gallery .photo__trigger').click(function() {
     playAudio('audio-camera-shutter');
 });
 
