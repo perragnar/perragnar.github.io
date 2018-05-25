@@ -19,6 +19,11 @@
                         </span>
                     </li>
                 </ul>
+                <p style="margin-top: 2rem;">
+                    Jag gillar också
+                    <span class="sticker">☕️ kaffe</span> och
+                    <span class="sticker">🌳🌲🌴 träd.</span>
+                </p>
             </div>
             <div class="col col--1-2 animate animate--fade-in animate--slide-down">
                 <p>
@@ -27,15 +32,10 @@
                 <ul class="link__list">
                     {% for link in site.data.links %}
                         <li>
-                            <a href="{{ link.url }}" class="hero-link hero-link--{{ link.class }}">{{ link.title }}</a>
+                            <a href="{{ link.url }}" class="link link--{{ link.class }}">{{ link.title }}</a>
                         </li>
                     {% endfor %}
                 </ul>
-                <p>
-                    Jag gillar också
-                    <span class="sticker">☕️ kaffe</span> och
-                    <span class="sticker">🌳🌲🌴 träd.</span>
-                </p>
             </div>
         </div>
     </div>
