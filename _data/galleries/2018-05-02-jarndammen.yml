@@ -21,16 +21,6 @@ contents:
     shutter: 1/60
     iso: 100
     date: 1525286714
-  - filename: 2018-05-02-4.jpg
-    width: 4928
-    height: 3264
-    camera: NIKON D5100
-    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
-    focal: 36
-    aperture: 8
-    shutter: 1/40
-    iso: 100
-    date: 1525288121
   - filename: 2018-05-02-5.jpg
     width: 4928
     height: 2952
@@ -51,16 +41,6 @@ contents:
     shutter: 1/125
     iso: 100
     date: 1525288218
-  - filename: 2018-05-02-8.jpg
-    width: 6979
-    height: 2551
-    camera: NIKON D5100
-    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
-    focal: 24
-    aperture: 9
-    shutter: 1/100
-    iso: 100
-    date: 1525291039
   - filename: 2018-05-02-9.jpg
     width: 2474
     height: 3263
@@ -131,13 +111,3 @@ contents:
     shutter: 1/40
     iso: 100
     date: 1525295154
-  - filename: 2018-05-02-16.jpg
-    width: 6381
-    height: 1917
-    camera: NIKON D5100
-    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
-    focal: 24
-    aperture: 2.8
-    shutter: 1/40
-    iso: 100
-    date: 1525296365
