@@ -29,20 +29,20 @@ $('.photo-gallery .photo__trigger').click(function() {
 
 var defaults = {
     // Should display counter at the top left corner
-    infobar: false,
+    // infobar: false,
 
     // Should display close button (using `btnTpl.smallBtn` template) over the content
     // Can be true, false, "auto"
     // If "auto" - will be automatically enabled for "html", "inline" or "ajax" items
-    smallBtn: "false",
+    // smallBtn: "false",
 
     // Should display toolbar (buttons at the top)
     // Can be true, false, "auto"
     // If "auto" - will be automatically hidden if "smallBtn" is enabled
-    toolbar: "auto",
+    // toolbar: "auto",
 
     // Disable right-click and use simple image protection for images
-    protect: true,
+    // protect: true,
 
     // Open/close animation type
     // Possible values:
@@ -51,7 +51,7 @@ var defaults = {
     //   "fade"
     //   "zoom-in-out"
     //
-    animationEffect: "fade",
+    // animationEffect: "fade",
 
     // Transition effect between slides
     //
@@ -64,7 +64,7 @@ var defaults = {
     //   "zoom-in-out'
     //   "rotate'
     //
-    transitionEffect: "fade",
+    // transitionEffect: "fade",
 };
 
 $('[data-fancybox').fancybox(defaults);
