@@ -43,7 +43,7 @@ gulp.task('handleInbox', () => {
         .pipe(rename((path) => {
             createImgPath(path);
         }))
-        .pipe(resize({ width: 1800 }))
+        .pipe(resize({ width: 1200 }))
         .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
         .pipe(gulp.dest('./assets/photos/galleries/large/'))
 
@@ -51,17 +51,18 @@ gulp.task('handleInbox', () => {
         .pipe(rename((path) => {
             createImgPath(path);
         }))
-        .pipe(resize({ width: 1200 }))
+        .pipe(resize({ width: 800 }))
         .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
         .pipe(gulp.dest('./assets/photos/galleries/medium/'))
 
         // Thumb
-        .pipe(rename((path) => {
-            createImgPath(path);
-        }))
-        .pipe(resize({ width: 600, height: 600, crop: true, upscale: true }))
-        .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
-        .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
+        // .pipe(rename((path) => {
+        //     createImgPath(path);
+        // }))
+        // .pipe(resize({ width: 600, height: 600, crop: true, upscale: true }))
+        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+        // .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
+        
         ;
 });
 
