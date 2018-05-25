@@ -254,83 +254,6 @@ img {
                 }
             }
         }
-        .link__list {
-            list-style: none;
-            margin: 0 0 2rem;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            
-            li {
-                padding: .2rem;
-
-                .hero-link {
-                    $linkColor: #6FB4F6;
-                    background-color: rgba(0, 0, 0, .2);
-                    display: block;
-                    font-size: .8em;
-                    line-height: 1;
-                    padding: .5rem;
-                    color: $linkColor;
-                    background-image: linear-gradient($linkColor, $linkColor);
-                    // border-radius: 3px;
-
-                    &:hover {
-                        @include text-contrast($linkColor);
-                    }
-
-                    & {
-                        &--twitter {
-                            $linkColor: #33A4EC;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-                        
-                        &--facebook {
-                            $linkColor: #466AAE;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-
-                        &--github {
-                            $linkColor: #ffffff;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-
-                        &--codepen {
-                            $linkColor: #FACE43;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-
-                        &--fivehundredpx {
-                            $linkColor: #43BC55;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-
-                        &--artstation {
-                            $linkColor: #31B1EA;
-                            background-image: linear-gradient($linkColor, $linkColor);
-                            &:hover {
-                                @include text-contrast($linkColor);
-                            }
-                        }
-                    }
-                }
-            }
-        }
         .sticker {
             display: inline-block;
             line-height: 1;
@@ -358,23 +281,6 @@ img {
         // }
     }
     &.section--web-development {
-        $textColor: #481b07;
-        $linkColor: #9b3c00;
-        $headerColor: #644300;
-        color: $textColor;
-        background-image: linear-gradient(-135deg, #fdcd48, #ffa800);
-        a {
-            color: $linkColor;
-            background-image: linear-gradient($linkColor, $linkColor);
-            &:hover {
-                @include text-contrast($linkColor);
-            }
-        }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
-    }
-    &.section--photo {
         $textColor: #093910;
         $linkColor: #00470b;
         $headerColor: #fff;
@@ -391,12 +297,29 @@ img {
         //     color: $headerColor;
         // }
     }
+    &.section--photo {
+        $textColor: #481b07;
+        $linkColor: #9b3c00;
+        $headerColor: #644300;
+        color: $textColor;
+        background-image: linear-gradient(-135deg, #fdcd48, #ffa800);
+        a {
+            color: $linkColor;
+            background-image: linear-gradient($linkColor, $linkColor);
+            &:hover {
+                @include text-contrast($linkColor);
+            }
+        }
+        // @include header-selector {
+        //     color: $headerColor;
+        // }
+    }
     &.section--misc {
-        $textColor: #ffe7fb;
+        $textColor: #848e92;
         $linkColor: #ff6cf3;
         $headerColor: #52004b;
         color: $textColor;
-        background-image: linear-gradient(-135deg, #ed1d7a, #6f0064);
+        background-image: linear-gradient(45deg, #222, #444);
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
@@ -446,6 +369,83 @@ img {
     
     .github-logo {
         width: 4rem;
+    }
+}
+
+.link__list {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    li {
+        padding: .2rem;
+
+        .link {
+            $linkColor: #6FB4F6;
+            background-color: rgba(0, 0, 0, .2);
+            display: block;
+            line-height: 1;
+            padding: .5rem;
+            color: $linkColor;
+            background-image: linear-gradient($linkColor, $linkColor);
+            // border-radius: 3px;
+
+            &:hover {
+                @include text-contrast($linkColor);
+            }
+
+            & {
+                &--twitter {
+                    $linkColor: #33A4EC;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+                
+                &--facebook {
+                    $linkColor: #466AAE;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+
+                &--github {
+                    $linkColor: #ffffff;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+
+                &--codepen {
+                    $linkColor: #FACE43;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+
+                &--fivehundredpx {
+                    $linkColor: #43BC55;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+
+                &--artstation {
+                    $linkColor: #31B1EA;
+                    background-image: linear-gradient($linkColor, $linkColor);
+                    &:hover {
+                        @include text-contrast($linkColor);
+                    }
+                }
+            }
+        }
     }
 }
 
