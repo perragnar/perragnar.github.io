@@ -6,6 +6,7 @@ categories:
 tags:
   - Foto
   - Ransta
+  - Cykel
 galleries:
   - 2018-05-20-cykeltur
 ---
