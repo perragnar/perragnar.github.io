@@ -1,0 +1,11 @@
+---
+title: Några bilder från Västerås
+layout: post
+categories:
+  - Foto
+tags:
+  - Foto
+  - Västerås
+galleries:
+  - 2018-05-29-vasteras
+---
