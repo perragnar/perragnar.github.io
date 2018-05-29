@@ -69,7 +69,7 @@ gulp.task('handleInbox', () => {
 // Clearing the inbox
 gulp.task('clearInbox', () => {
     // Cleaning up the inbox
-    return del(['./assets/photos/inbox/**/*']);
+    // return del(['./assets/photos/inbox/**/*']);
 });
 
 // Scanning all original photos and creating data files
