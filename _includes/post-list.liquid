@@ -9,7 +9,7 @@
     {% unless post.draft %}
         {% assign post_counter = post_counter | plus:1 %}
         {% if post_counter <= limit %}
-            <div class="col col--1-5 card card--shadow animate animate--fade-in animate--slide-left">
+            <div class="col col--1-5 card card--shadow">
                 {% if post.poster %}
                     ...
                 {% endif %}
