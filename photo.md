@@ -1,5 +1,5 @@
 ---
-title: Photography
+title: Foto
 layout: gallery-list
 page_open: true
 ---
