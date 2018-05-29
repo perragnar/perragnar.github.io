@@ -78,11 +78,11 @@ var defaults = {
 
 $('[data-fancybox').fancybox(defaults);
 
-$('.photo__data-trigger').on('click', function() {
+$('.photo__data-trigger').off().on('click tap', function() {
     $(this).closest('.photo').addClass('info');
 });
 
-$('.photo__data').on('click', function() {
+$('.photo__data').on('click tap', function() {
     $(this).closest('.photo').removeClass('info');
 });
 
