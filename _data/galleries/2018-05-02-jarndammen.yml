@@ -41,6 +41,16 @@ contents:
     shutter: 1/125
     iso: 100
     date: 1525288218
+  - filename: 2018-05-02-8.jpg
+    width: 3613
+    height: 2551
+    camera: NIKON D5100
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 24
+    aperture: 9
+    shutter: 1/100
+    iso: 100
+    date: 1525291039
   - filename: 2018-05-02-9.jpg
     width: 2474
     height: 3263
