@@ -58,7 +58,7 @@ img {
         padding: 0 1rem;
     }
     @include media('>=desktop') {
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
     .page-header__content {
         display: flex;
@@ -140,6 +140,12 @@ img {
     }
     .main-navigation {
         .main-navigation-button {
+            padding: .5rem;
+            margin: .5rem 0;
+            line-height: 1;
+            border: solid 1px rgba(255, 255, 255, .2);
+            border-radius: 3px;
+
             // @include media('>=desktop') {
                 display: none;
             // }
@@ -175,7 +181,7 @@ img {
         padding: .5rem;
     }
     @include media('>=desktop') {
-        padding: 2rem;
+        padding: 1rem 0;
     }
     .section__header {
         @include media('<=phone') {
@@ -192,7 +198,7 @@ img {
         color: #bbbbbb;
         background-image: linear-gradient(45deg, #222, #444);
         @include media('<=phone') {
-            padding-top: 1rem;
+            padding-top: 2rem;
             font-size: .8em;
         }
         @include media('>phone',
@@ -201,7 +207,8 @@ img {
             font-size: .8em;
         }
         @include media('>=desktop') {
-            font-size: 1.2em;
+            padding-top: 2rem;
+            font-size: 1em;
         }
         .page-title {
             color: #000;
@@ -263,6 +270,33 @@ img {
             background-color: rgba(0, 0, 0, .2);
         }
     }
+    &.section--mini-hero {
+        background-color: #ffa800;
+        @include media('<=phone') {
+            padding-top: .5rem;
+            font-size: .8em;
+        }
+        @include media('>phone',
+        '<desktop') {
+            padding-top: 1rem;
+            font-size: .8em;
+        }
+        @include media('>=desktop') {
+            padding-top: 1rem;
+            font-size: 1em;
+        }
+        .share-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            font-size: .8em;
+            a {
+                color: #fff;
+            }
+        }
+    }
     &.section--blog {
         $textColor: #bde5ff;
         $linkColor: #61afef;
@@ -276,9 +310,6 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
     }
     &.section--web-development {
         $textColor: #093910;
@@ -293,9 +324,6 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
     }
     &.section--photo {
         $textColor: #481b07;
@@ -310,9 +338,6 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
     }
     &.section--misc {
         $textColor: #848e92;
@@ -327,9 +352,6 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
     }
     &.section--default {
         $textColor: #333;
@@ -344,9 +366,6 @@ img {
                 @include text-contrast($linkColor);
             }
         }
-        // @include header-selector {
-        //     color: $headerColor;
-        // }
     }
 }
 
@@ -390,7 +409,6 @@ img {
             padding: .5rem;
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
-            // border-radius: 3px;
 
             &:hover {
                 @include text-contrast($linkColor);
