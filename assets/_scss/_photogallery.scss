@@ -1,34 +1,27 @@
-$animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
-
+$animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
 .gallery-list {
     .gallery-post {
         &:not(:last-child) {
             border-bottom: solid 1px #acacac;
         }
-
         .gallery__title {
             margin: 0;
             font-size: 1em;
-
             @include media('<=tablet') {
                 font-size: .9em;
             }
         }
-
         a {
             display: flex;
             justify-content: space-between;
             padding: .5rem;
-
             @include media('<=tablet') {
                 flex-direction: column;
             }
         }
-
         .gallery__date {
             white-space: nowrap;
             font-size: .9em;
-            
             @include media('<=tablet') {
                 font-size: .8em;
             }
@@ -43,20 +36,16 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    
     @include media('>=desktop') {
         margin: -2rem;
         padding: 5px;
     }
-
     @include media('<=phone') {
         margin: -1rem;
     }
-
     @include media('>phone', '<desktop') {
         margin: -1.5rem;
     }
-
     .photo {
         position: relative;
         flex: 0 1;
@@ -66,41 +55,34 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
         background-size: cover;
         background-repeat: no-repeat;
         transition: box-shadow 250ms ease;
-
         @include media('>=desktop') {
             margin: 5px;
             flex-basis: calc(50% - 10px);
             padding-bottom: 0 !important;
         }
-
         @include media('<desktop') {
             flex-basis: 100%;
             min-height: 250px;
             margin: 5px;
-
             &:not(:last-child) {
                 margin-bottom: 0;
             }
         }
-
         &.info {
             position: relative;
-
             .photo__data-trigger {
                 display: none;
             }
-
             .photo__data {
                 transform: translateX(0);
-                background-color: rgba(0,0,0,.5);
+                background-color: rgba(0, 0, 0, .5);
             }
         }
-
         .photo__data-trigger {
             position: absolute;
             top: 5px;
             right: 5px;
-            background-color: rgba(0,0,0,.5);
+            background-color: rgba(0, 0, 0, .5);
             color: #fff;
             line-height: 1;
             padding: .5rem;
@@ -108,7 +90,6 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
             border-radius: 3px;
             z-index: 3;
         }
-        
         .photo__data {
             position: absolute;
             display: flex;
@@ -119,31 +100,27 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
             left: 0;
             right: 0;
             padding: .5rem;
-            background-color: rgba(0,0,0,0);
+            background-color: rgba(0, 0, 0, 0);
             color: #fff;
             transform: translateY(-100%);
             z-index: 2;
             cursor: n-resize;
             transition: transform 250ms ease, background-color 250ms ease;
-
             @include media('<desktop') {
                 flex-direction: column;
                 bottom: 0;
                 align-items: stretch;
                 flex-wrap: nowrap;
             }
-
             .data__post {
                 font-size: .8em;
                 padding: .25rem .5rem;
                 display: flex;
                 align-items: center;
-
                 @include media('<desktop') {
                     align-items: stretch;
                     line-height: 1.1;
                 }
-
                 .label {
                     color: #000;
                     font-weight: bold;
@@ -152,23 +129,20 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
                     line-height: 1;
                     padding: .25rem;
                     display: inline-block;
-                    background-color: rgba(255,255,255,.5);
+                    background-color: rgba(255, 255, 255, .5);
                     border-radius: 3px;
                     margin-right: .5rem;
                     text-align: right;
-
                     @include media('<desktop') {
                         flex: 1;
                     }
                 }
-
                 .value {
                     @include media('<desktop') {
                         flex: 3;
                     }
                 }
             }
-
             .photo__title {
                 font-family: 'Source Sans Pro', sans-serif;
                 color: inherit;
@@ -177,7 +151,6 @@ $animationEaseing: cubic-bezier(.75,-0.5,0,1.75);
                 margin-bottom: 0;
             }
         }
-
         .photo__trigger {
             position: absolute;
             left: 0;
