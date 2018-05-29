@@ -1,5 +1,5 @@
 ---
-title: Några bilder från Västerås
+title: En promenad i Västerås
 layout: post
 categories:
   - Foto
