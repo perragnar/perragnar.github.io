@@ -43,7 +43,7 @@ gulp.task('handleInbox', () => {
         .pipe(rename((path) => {
             createImgPath(path);
         }))
-        .pipe(resize({ width: 1200 }))
+        .pipe(resize({ width: 1500 }))
         .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
         .pipe(gulp.dest('./assets/photos/galleries/'))
 
