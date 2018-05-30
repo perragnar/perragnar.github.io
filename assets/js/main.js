@@ -79,8 +79,8 @@ var defaults = {
 $('[data-fancybox').fancybox(defaults);
 
 $('.photo__data-trigger').on('click', function(event) {
-    event.stopPropagation();
     $(this).closest('.photo').addClass('info');
+    event.stopPropagation();
 });
 
 $('.photo__data').on('click', function() {
