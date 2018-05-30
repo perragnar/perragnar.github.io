@@ -80,6 +80,7 @@ $('[data-fancybox').fancybox(defaults);
 
 $('.photo__data-trigger').on('click', function(event) {
     event.preventDefault();
+    event.stopPropagation();
     $(this).closest('.photo').addClass('info');
 });
 
