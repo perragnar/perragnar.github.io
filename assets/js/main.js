@@ -66,7 +66,7 @@ var defaults = {
     //
     // transitionEffect: "fade",
 
-    afterLoad : function(instance, current) {
+    afterLoad: function(instance, current) {
         var pixelRatio = window.devicePixelRatio || 1;
 
         if ( pixelRatio > 1.5 ) {
@@ -78,7 +78,8 @@ var defaults = {
 
 $('[data-fancybox').fancybox(defaults);
 
-$('.photo__data-trigger').on('click touchstart', function(event) {
+$('.photo__data-trigger').on('click', function(event) {
+    event.preventDefault();
     $(this).closest('.photo').addClass('info');
 });
 
