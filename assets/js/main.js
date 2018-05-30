@@ -78,10 +78,8 @@ var defaults = {
 
 $('[data-fancybox').fancybox(defaults);
 
-$('.photo__data-trigger').on('click', function(event) {
+$('.photo__data-trigger').on('click touchstart', function(event) {
     $(this).closest('.photo').addClass('info');
-    event.stopPropagation();
-    alert($(event.target).hasClass('photo__data-trigger'));
 });
 
 $('.photo__data').on('click', function() {
