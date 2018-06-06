@@ -17,8 +17,11 @@ Ryktet gick att en pyroman startat skogsbränder runt om Sala. Några av oss i b
 
 Hittade varken rök eller eld men den tidiga soluppgången bjöd på en otrolig upplevelse. Kameran var naturligtvis med och även om det var ont om tid att stanna och fota fick jag några bilder.
 
-Hem och sova några timmar, sedan upp och iväg till Sätra Brunn för att hänga upp några foton för Sala Fotoklubbs fotoutställning. 6 foton blev det i vår gemensamma inledande utställning.
+Hem och sova några timmar, sedan upp och iväg till Sätra Brunn för att hänga upp några foton för Sala Fotoklubbs fotoutställning.
 
 ![Fotoutställning på Sätra Brunn]({{ site.baseurl }}/assets/postfiles/fotoutstallning-satra-brunn-2018.jpg)
+
+6 foton blev det i vår gemensamma inledande utställning.
+
 
 Sista bilden i galleriet nedan är från Solinge med allén genom åkrarna.
