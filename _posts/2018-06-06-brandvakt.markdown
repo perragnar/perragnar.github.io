@@ -23,5 +23,4 @@ Hem och sova några timmar, sedan upp och iväg till Sätra Brunn för att häng
 
 6 foton blev det i vår gemensamma inledande utställning.
 
-
-Sista bilden i galleriet nedan är från Solinge med allén genom åkrarna.
+I galleriet nedan är bilderna från nattens patrull förutom sista som är tagen i Solinge efter fotoutsällningen.
