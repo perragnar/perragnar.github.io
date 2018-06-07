@@ -23,26 +23,49 @@ window.onscroll = function (e) {
 };
 
 // Camera shutter audio
-$('.photo-gallery .photo__trigger').click(function() {
-    playAudio('audio-camera-shutter');
-});
+// $('.photo-gallery .photo__trigger').click(function() {
+//     playAudio('audio-camera-shutter');
+// });
 
 var defaults = {
     // Should display counter at the top left corner
-    // infobar: false,
+    infobar: false,
 
     // Should display close button (using `btnTpl.smallBtn` template) over the content
     // Can be true, false, "auto"
     // If "auto" - will be automatically enabled for "html", "inline" or "ajax" items
-    // smallBtn: "false",
+    // smallBtn: "true",
 
     // Should display toolbar (buttons at the top)
     // Can be true, false, "auto"
     // If "auto" - will be automatically hidden if "smallBtn" is enabled
     // toolbar: "auto",
 
+    // Horizontal space between slides
+    gutter: 50,
+
     // Disable right-click and use simple image protection for images
-    // protect: true,
+    protect: true,
+
+    // Should display navigation arrows at the screen edges
+    arrows: false,
+
+    // Use mousewheel to navigate gallery
+    // If 'auto' - enabled for images only
+    wheel: false,
+
+    // What buttons should appear in the top right corner.
+    // Buttons will be created using templates from `btnTpl` option
+    // and they will be placed into toolbar (class="fancybox-toolbar"` element)
+    buttons: [
+        // "zoom",
+        "share",
+        //"slideShow",
+        //"fullScreen",
+        //"download",
+        // "thumbs",
+        "close"
+    ],
 
     // Open/close animation type
     // Possible values:
@@ -73,6 +96,40 @@ var defaults = {
             current.width  = current.width  / (pixelRatio / 1.2);
             current.height = current.height / (pixelRatio / 1.2);
         }
+    },
+
+    afterShow: function() {
+        playAudio('audio-camera-shutter');
+    },
+
+    lang: "sv",
+    i18n: {
+        en: {
+            CLOSE: "Close",
+            NEXT: "Next",
+            PREV: "Previous",
+            ERROR: "The requested content cannot be loaded. <br/> Please try again later.",
+            PLAY_START: "Start slideshow",
+            PLAY_STOP: "Pause slideshow",
+            FULL_SCREEN: "Full screen",
+            THUMBS: "Thumbnails",
+            DOWNLOAD: "Download",
+            SHARE: "Share",
+            ZOOM: "Zoom"
+        },
+        sv: {
+            CLOSE: "Stäng",
+            NEXT: "Nästa",
+            PREV: "Föregående",
+            ERROR: "Onnehållet kunde inte laddas. <br/> Försök igen senare.",
+            PLAY_START: "Starta bildspel",
+            PLAY_STOP: "Pausa bildspel",
+            FULL_SCREEN: "Fullskärm",
+            THUMBS: "Tumnaglar",
+            DOWNLOAD: "Ladda ner",
+            SHARE: "Dela",
+            ZOOM: "Zooma"
+        },
     }
 };
 
