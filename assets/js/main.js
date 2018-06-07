@@ -10,6 +10,19 @@ var window_bottom_position = (window_top_position + window_height);
 var animatedElements = $('.animate');
 var galleryPhotos = $('.photo-gallery .photo');
 
+// Photo gallery camera shutter audio on/off
+var photoCameraShutterAudio = false;
+
+// Checking if camera shutter sound is set by cookie
+var photoCameraShutterAudioCookie = getCookie('camera-shutter-sound');
+if(photoCameraShutterAudioCookie) {
+    if(photoCameraShutterAudioCookie == 'on') {
+        $('#shutter-sound-toggle-wrapper .switch').addClass('checked');
+        $('#shutter-sound-toggle').attr('checked', true);
+        photoCameraShutterAudio = true;
+    }
+}
+
 if(animatedElements.length) {
     animateElements(window_height, window_top_position, window_mid, window_bottom_position);
 }
@@ -21,11 +34,6 @@ window.onscroll = function (e) {
         animateElements(window_height, window_top_position, window_mid, window_bottom_position);
     }
 };
-
-// Camera shutter audio
-// $('.photo-gallery .photo__trigger').click(function() {
-//     playAudio('audio-camera-shutter');
-// });
 
 var defaults = {
     // Should display counter at the top left corner
@@ -59,7 +67,7 @@ var defaults = {
     // and they will be placed into toolbar (class="fancybox-toolbar"` element)
     buttons: [
         // "zoom",
-        "share",
+        // "share",
         //"slideShow",
         //"fullScreen",
         //"download",
@@ -74,7 +82,10 @@ var defaults = {
     //   "fade"
     //   "zoom-in-out"
     //
-    // animationEffect: "fade",
+    animationEffect: "false",
+
+    // Duration in ms for open/close animation
+    animationDuration: 0,
 
     // Transition effect between slides
     //
@@ -89,6 +100,7 @@ var defaults = {
     //
     // transitionEffect: "fade",
 
+    // After image has loaded
     afterLoad: function(instance, current) {
         var pixelRatio = window.devicePixelRatio || 1;
 
@@ -98,8 +110,12 @@ var defaults = {
         }
     },
 
+    // After image has loaded and animated
     afterShow: function() {
-        playAudio('audio-camera-shutter');
+        // Camera shutter audio
+        if(photoCameraShutterAudio) {
+            playAudio('audio-camera-shutter');
+        }
     },
 
     lang: "sv",
@@ -133,16 +149,25 @@ var defaults = {
     }
 };
 
+// Initializing fancybox
 $('[data-fancybox').fancybox(defaults);
 
+// Showing photo data
 $('.photo__data-trigger').on('click', function(event) {
     event.preventDefault();
     event.stopPropagation();
     $(this).closest('.photo').addClass('info');
 });
 
+// When clicking photo data area it closes
 $('.photo__data').on('click', function() {
     $(this).closest('.photo').removeClass('info');
+});
+
+// Toggle the camera shutter sound
+$('.switch').change(function() {
+    $(this).toggleClass('checked');
+    toggleCameraShutterSound($('#shutter-sound-toggle').is(':checked'));
 });
 
 function updateScrollData() {
@@ -177,4 +202,31 @@ function animateElements(window_height, window_top_position, window_mid, window_
 function playAudio(audioID) {
     var audio = document.getElementById(audioID);
     audio.play();
+}
+
+function toggleCameraShutterSound(enabled) {
+    if(enabled) {
+        // Enables the shutter sound
+        setCookie('camera-shutter-sound', 'on', 365);
+        photoCameraShutterAudio = true;
+    } else {
+        // Disabling the shutter sound
+        setCookie('camera-shutter-sound', 'off', 365);
+        photoCameraShutterAudio = false;
+    }
+}
+
+function setCookie(name, value, days) {
+    var d = new Date;
+    d.setTime(d.getTime() + 24*60*60*1000*days);
+    document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+}
+
+function getCookie(name) {
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+function eraseCookie(name) {   
+    setCookie(name, '', -1);
 }

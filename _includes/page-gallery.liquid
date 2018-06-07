@@ -1,4 +1,14 @@
 {% if page.galleries %}
+    <div class="row">
+        <div class="col col--full">
+            <div id="shutter-sound-toggle-wrapper">
+                <label class="switch">
+                    <input type="checkbox" id="shutter-sound-toggle">
+                </label>
+                <label class="switch-label">Kameraljud</label>
+            </div>
+        </div>
+    </div>
     {% for gallerySlug in page.galleries %}
         {% assign gallery = site.data.galleries[gallerySlug] %}
         <div class="row">

@@ -33,6 +33,19 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
     margin-bottom: 1.5rem;
 }
 
+#shutter-sound-toggle-wrapper {
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+
+    label.switch-label {
+        font-size: .8em;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+    }
+}
+
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
