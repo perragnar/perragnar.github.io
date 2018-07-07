@@ -1,0 +1,14 @@
+---
+title: Kivsta
+layout: post
+categories:
+  - Foto
+tags:
+  - Foto
+  - Kivsta
+  - HDR
+galleries:
+  - 2018-07-07-kivsta
+---
+
+Testar att gaffla foton och sätta ihop dem till HDR-bilder. Det svåra med HDR-bilder är att inte överdriva färger.
