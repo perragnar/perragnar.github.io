@@ -1,0 +1,15 @@
+---
+title: Björnö
+layout: post
+categories:
+  - Foto
+tags:
+  - Foto
+  - Björnö
+  - Västerås
+  - HDR
+galleries:
+  - 2018-07-06-bjorno
+---
+
+Fotade allt från slalombacken till stranden. Björnö levererar när det kommer till fina vyer.
