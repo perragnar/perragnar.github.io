@@ -141,16 +141,6 @@ contents:
     shutter: 30s
     iso: 100
     date: 1530830194
-  - filename: 2018-07-06-4.jpg
-    width: 3662
-    height: 5493
-    camera: NIKON D500
-    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
-    focal: 35
-    aperture: 6.3
-    shutter: 1/2500
-    iso: 100
-    date: 1530898958
   - filename: 2018-07-06.jpg
     width: 3712
     height: 5568
