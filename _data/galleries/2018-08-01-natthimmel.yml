@@ -1,0 +1,33 @@
+title: Natthimmel
+date: '2018-08-01'
+contents:
+  - filename: 2018-08-01.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 10
+    aperture: 3.5
+    shutter: 30s
+    iso: 100
+    date: 1533082789
+  - filename: 2018-08-01-2.jpg
+    width: 5097
+    height: 3398
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 10
+    aperture: 3.5
+    shutter: 30s
+    iso: 100
+    date: 1533083022
+  - filename: 2018-08-01-3.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 35
+    aperture: 2.8
+    shutter: 5s
+    iso: 800
+    date: 1533084057
