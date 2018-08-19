@@ -7,7 +7,8 @@ categories:
 tags:
   - Foto
   - Öland
-  - Högby fyr
+  - Sjöbod
+  - Solnedgång
 galleries:
   - 2018-08-13-oland-9
 ---
