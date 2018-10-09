@@ -137,7 +137,7 @@ var defaults = {
             CLOSE: "Stäng",
             NEXT: "Nästa",
             PREV: "Föregående",
-            ERROR: "Onnehållet kunde inte laddas. <br/> Försök igen senare.",
+            ERROR: "Innehållet kunde inte laddas. <br/> Försök igen senare.",
             PLAY_START: "Starta bildspel",
             PLAY_STOP: "Pausa bildspel",
             FULL_SCREEN: "Fullskärm",
