@@ -23,7 +23,7 @@ gulp.task('build', shell.task(['bundle exec jekyll build --watch --drafts']));
 
 // Cleaning up
 gulp.task('cleanup', () => {
-    return del(['./assets/photos/galleries/']);
+    return del(['./_site/']);
 });
 
 // Building photo gallery from the files in the inbox
@@ -185,7 +185,7 @@ function createImgPath(path) {
 }
 
 // Processing the inbox photos, then deletes them
-gulp.task('inbox', gulp.series('buildGalleryIndex', 'handleInbox', 'clearInbox'));
+gulp.task('inbox', ['buildGalleryIndex', 'handleInbox', 'clearInbox']);
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
@@ -194,4 +194,4 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('build', 'serve'));
+gulp.task('default', ['build', 'serve']);
