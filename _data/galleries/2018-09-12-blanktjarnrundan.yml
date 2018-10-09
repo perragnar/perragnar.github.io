@@ -221,16 +221,6 @@ contents:
     shutter: 1/80
     iso: 100
     date: 1536759761
-  - filename: 2018-09-12-23.jpg
-    width: 5475
-    height: 3650
-    camera: NIKON D500
-    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
-    focal: 70
-    aperture: 8
-    shutter: 1/200
-    iso: 100
-    date: 1536759865
   - filename: 2018-09-12-24.jpg
     width: 3491
     height: 5236
