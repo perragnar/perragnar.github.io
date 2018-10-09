@@ -15,6 +15,9 @@ site_open: true
 # paginate: 20
 # paginate_path: "/blog/page:num"
 
+github:
+  repository_url: https://github.com/perragnar/perragnar.github.io
+
 excerpt_separator: <!--more-->
 
 gems:
