@@ -570,6 +570,17 @@ img {
         }
     }
 
+    .footer-title {
+        display: inline-block;
+        color: #000;
+        background-color: #ffa800;
+        line-height: 1;
+        padding: .6rem 1rem .5rem;
+        border-radius: 2px;
+        font-size: 1.3rem;
+        border-bottom: solid .2rem #c48300;
+    }
+
     .sticker {
         display: inline-block;
         line-height: 1;
