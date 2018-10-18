@@ -39,11 +39,13 @@ layout: default
                                         {% assign gallery = site.data.galleries[gallerySlug] %}
                                         {% if gallery.contents %}
                                             {% assign photos = gallery.contents %}
-                                            {% for photo in photos limit:1 %}
-                                                <a href="{{ site.baseurl }}{{ post.url }}">
-                                                    <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
-                                                </a>
-                                            {% endfor %}
+                                            {% if gallery.poster %}
+                                                    <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ gallery.poster }});"></div>
+                                                {% else %}
+                                                    {% for photo in photos limit:1 %}
+                                                        <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
+                                                    {% endfor %}
+                                                {% endif %}
                                         {% endif %}
                                     {% endfor %}
                                 </div>
