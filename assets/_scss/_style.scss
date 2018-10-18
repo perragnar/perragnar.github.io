@@ -19,6 +19,10 @@ h6,
     font-weight: 700;
     margin: 0 0 1rem;
     line-height: 1;
+
+    &.no-margin {
+        margin: 0;
+    }
 }
 
 a {
@@ -30,13 +34,16 @@ a {
     padding: $linkPadding;
     color: $linkColor;
     font-weight: bold;
+
     background: {
         position: left bottom;
         size: 0 100%;
         repeat: no-repeat;
     }
+
     transition: background-size 250ms ease,
     color 250ms ease;
+
     &:hover {
         text-decoration: none;
         background-size: 100% 100%;
@@ -50,27 +57,34 @@ img {
 .page-header {
     background-color: #222;
     color: #fff;
+
     @include media('<=phone') {
         padding: 0 .5rem;
     }
+
     @include media('>phone',
     '<desktop') {
         padding: 0 1rem;
     }
+
     @include media('>=desktop') {
         padding: 0 2rem;
     }
+
     .page-header__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .brand-wrapper {
         display: flex;
         align-items: center;
+
         @include media('<=500px') {
             justify-content: center;
         }
+
         .brand-text {
             display: inline-block;
             color: #8a8a8a;
@@ -80,16 +94,20 @@ img {
             font-weight: 700;
             white-space: nowrap;
             font-size: .8em;
+
             @include media('<=500px') {
                 display: none;
             }
+
             @include media('>500px',
             '<desktop') {
                 margin-top: 20px;
             }
+
             @include media('>=desktop') {
                 margin-top: 30px;
             }
+
             .pulse {
                 display: inline-block;
                 line-height: 1;
@@ -102,42 +120,51 @@ img {
                 animation: pulse 2s infinite;
             }
         }
+
         a {
             margin: 0;
             padding: 0;
         }
+
         .logotype {
             border-radius: 3px;
             overflow: visible;
             background-color: #222;
             transform: translateY(20%);
+
             @include media('<=phone') {
                 width: 80px;
                 padding: 10px;
                 margin-top: -10px;
             }
+
             @include media('>phone',
             '<desktop') {
                 width: 100px;
                 padding: 15px;
                 margin-top: -5px;
             }
+
             @include media('>=desktop') {
                 width: 150px;
                 padding: 20px;
                 margin-top: -10px;
             }
+
             .body {
                 fill: #cd3700;
             }
+
             .shadow {
                 fill: #601900;
             }
+
             .letter {
                 fill: #e0b2a1;
             }
         }
     }
+
     .main-navigation {
         .main-navigation-button {
             padding: .5rem;
@@ -147,21 +174,26 @@ img {
             border-radius: 3px;
 
             // @include media('>=desktop') {
-                display: none;
+            display: none;
             // }
         }
+
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+
             @include media('<desktop') {
                 display: none;
             }
+
             li {
                 a {
                     padding: 1rem;
+
                     &.current {
+                        background-color: #000;
                         color: #fff;
                     }
                 }
@@ -176,40 +208,64 @@ img {
     @include media('<=phone') {
         padding: .5rem;
     }
+
     @include media('>phone',
     '<desktop') {
         padding: .5rem;
     }
+
     @include media('>=desktop') {
         padding: 1rem 0;
     }
-    .section__header {
+
+    h1 {
         @include media('<=phone') {
             font-size: 1.5em;
         }
+
         @include media('>phone', '<desktop') {
             font-size: 2em;
         }
+
         @include media('>=desktop') {
             font-size: 3em;
         }
     }
+
+    .section__header {
+        @include media('<=phone') {
+            font-size: 1.5em;
+        }
+
+        @include media('>phone', '<desktop') {
+            font-size: 2em;
+        }
+
+        @include media('>=desktop') {
+            font-size: 3em;
+        }
+    }
+
     &.section--hero {
         color: #bbbbbb;
         background-image: linear-gradient(45deg, #222, #444);
+
         @include media('<=phone') {
             padding-top: 2rem;
             font-size: .8em;
         }
+
         @include media('>phone',
         '<desktop') {
             padding-top: 2rem;
             font-size: .8em;
         }
+
         @include media('>=desktop') {
             padding-top: 2rem;
             font-size: 1em;
         }
+
         .page-title {
             color: #000;
             background-color: #ffa800;
@@ -218,18 +274,22 @@ img {
             margin-bottom: 2rem;
             border-radius: 2px;
             border-bottom: solid .5rem #c48300;
+
             @include media('<=500px') {
                 display: block;
                 text-align: center;
             }
+
             @include media('>500px') {
                 display: inline-block;
             }
         }
+
         .hero__list {
             list-style: none;
             margin: 0;
             padding: 0;
+
             li {
                 &:before {
                     font-family: 'Miriam Libre', sans-serif;
@@ -243,24 +303,29 @@ img {
                     justify-content: center;
                     align-items: center;
                 }
+
                 &.check:before {
                     content: '\2713';
                     color: #97ffa3;
                 }
+
                 &.times:before {
                     content: '✖';
                     color: #ff6334;
                 }
+
                 &.question:before {
                     content: '?';
                     color: #ffa800;
                 }
+
                 .label {
                     font-family: 'Miriam Libre', sans-serif;
                     color: #ffe0a2;
                 }
             }
         }
+
         .sticker {
             display: inline-block;
             line-height: 1;
@@ -270,98 +335,216 @@ img {
             background-color: rgba(0, 0, 0, .2);
         }
     }
+
     &.section--mini-hero {
-        background-color: #ffa800;
+        background-color: #333333;
+
         @include media('<=phone') {
-            padding-top: .5rem;
             font-size: .8em;
         }
+
         @include media('>phone',
         '<desktop') {
-            padding-top: 1rem;
             font-size: .8em;
         }
+
         @include media('>=desktop') {
-            padding-top: 1rem;
             font-size: 1em;
         }
-        .share-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            font-size: .8em;
-            a {
-                color: #fff;
-            }
-        }
     }
+
     &.section--blog {
         $textColor: #bde5ff;
         $linkColor: #61afef;
         $headerColor: #fff;
         color: $textColor;
-        background-image: linear-gradient(#6ab2fb, #0b81ff);
+        background-image: linear-gradient(#49698a, #20364e);
+
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
+
             &:hover {
                 @include text-contrast($linkColor);
             }
         }
     }
+
     &.section--web-development {
         $textColor: #093910;
         $linkColor: #00470b;
         $headerColor: #fff;
         color: $textColor;
         background-image: linear-gradient(-135deg, #4cd761, #237d31);
+
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
+
             &:hover {
                 @include text-contrast($linkColor);
             }
         }
     }
+
     &.section--photo {
         $textColor: #481b07;
         $linkColor: #9b3c00;
         $headerColor: #644300;
         color: $textColor;
         background-image: linear-gradient(-135deg, #fdcd48, #ffa800);
+
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
+
             &:hover {
                 @include text-contrast($linkColor);
             }
         }
     }
+
     &.section--misc {
         $textColor: #848e92;
         $linkColor: #ff6cf3;
         $headerColor: #52004b;
         color: $textColor;
         background-image: linear-gradient(45deg, #222, #444);
+
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
+
             &:hover {
                 @include text-contrast($linkColor);
             }
         }
     }
+
+    &.section--closed {
+        $textColor: #333;
+        $linkColor: #0062b3;
+        $headerColor: #314352;
+        color: $textColor;
+        padding: 0;
+        background-image: linear-gradient(45deg, #d4d4d4, #f6f6f6);
+
+        a {
+            color: $linkColor;
+            background-image: linear-gradient($linkColor, $linkColor);
+
+            &:hover {
+                @include text-contrast($linkColor);
+            }
+        }
+
+        .closed-graphics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-bottom: solid 1px #fff;
+            border-top: solid 1px #c2c1c2;
+            box-shadow: inset 0 -1px 0 #c2c1c2, inset 0 1px 0 #fff;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            transition: padding 250ms ease, margin 250ms ease;
+
+            &:before {
+                content: '';
+                border-bottom: solid 1px #8d8d8d;
+                box-shadow: 0 -1px 0 rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, 1);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-1px);
+                transition: transform 250ms ease, border 250ms ease;
+            }
+
+            &:hover {
+                padding: 30px;
+                margin: 10px 0;
+
+                &:before {
+                    border-width: 20px;
+                    transform: translateY(-11px);
+                    border-color: #414141;
+                }
+
+                .lock {
+                    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 3px 3px 12px rgba(0, 0, 0, 0.2);
+                    transform: scale(1.3);
+                }
+            }
+
+            .lock {
+                width: 4rem;
+                height: 4rem;
+                background-color: #c2c2c2;
+                border-radius: 50%;
+                padding: .5rem;
+                z-index: 2;
+                border: solid 2px #414141;
+                box-shadow: -1px -1px 0 #00000026, 1px 1px 0 #ffffff78;
+                transition: border 250ms ease, box-shadow 250ms ease, transform 250ms;
+            }
+        }
+    }
+
+    .share-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        font-size: .9em;
+        flex-wrap: wrap;
+
+        &.align--right {
+            justify-content: flex-end;
+        }
+
+        @include media('<desktop') {
+            justify-content: flex-start;
+        }
+
+        li {
+            @include media('<desktop') {
+                flex: 1 1;
+            }
+
+            a {
+                display: flex;
+                background-color: #656565;
+                margin: .3rem;
+                padding: .6rem;
+                color: #cecece;
+                box-shadow: 2px 2px 0 #0000006b;
+                border-radius: 3px;
+                text-shadow: 1px 1px rgba(0, 0, 0, .2);
+
+                &:hover {
+                    color: #fff;
+                    background-image: linear-gradient(#6cb3f8, #579ada);
+                }
+            }
+        }
+    }
+
     &.section--default {
         $textColor: #333;
         $linkColor: #0062b3;
         $headerColor: #314352;
         color: $textColor;
         background-color: #f5f5f5;
+
         a {
             color: $linkColor;
             background-image: linear-gradient($linkColor, $linkColor);
+
             &:hover {
                 @include text-contrast($linkColor);
             }
@@ -385,7 +568,7 @@ img {
             }
         }
     }
-    
+
     .github-logo {
         width: 4rem;
     }
@@ -397,7 +580,7 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    
+
     li {
         padding: .2rem;
 
@@ -418,14 +601,16 @@ img {
                 &--twitter {
                     $linkColor: #33A4EC;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
                 }
-                
+
                 &--facebook {
                     $linkColor: #466AAE;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
@@ -434,6 +619,7 @@ img {
                 &--github {
                     $linkColor: #ffffff;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
@@ -442,6 +628,7 @@ img {
                 &--codepen {
                     $linkColor: #FACE43;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
@@ -450,6 +637,7 @@ img {
                 &--fivehundredpx {
                     $linkColor: #43BC55;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
@@ -458,6 +646,7 @@ img {
                 &--artstation {
                     $linkColor: #31B1EA;
                     background-image: linear-gradient($linkColor, $linkColor);
+
                     &:hover {
                         @include text-contrast($linkColor);
                     }
@@ -472,6 +661,7 @@ img {
         left: auto;
         right: auto;
     }
+
     max-width: 1200px;
 }
 
@@ -479,9 +669,11 @@ img {
     0% {
         box-shadow: 0 0 0 0 #6CB3F8;
     }
+
     70% {
         box-shadow: 0 0 0 .5rem rgba(108, 178, 248, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(108, 178, 248, 0);
     }
@@ -490,7 +682,7 @@ img {
 .switch {
     background-color: #bebebe;
     border-radius: 20px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     color: #fff;
     cursor: pointer;
     display: flex;
@@ -500,7 +692,7 @@ img {
     position: relative;
     width: 40px;
     transition: background-color 0.2s ease-in-out;
-    
+
     &.checked {
         background-color: #76d21d;
     }
@@ -518,13 +710,13 @@ img {
     &.checked input[type="checkbox"] {
         margin-left: 23px;
     }
-    
+
     input:before {
         display: block;
         background: #fff;
         background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
         border-radius: 20px;
-        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
         content: '';
         height: 18px;
         line-height: 1;
@@ -545,10 +737,12 @@ img {
     @include media('<=phone') {
         font-size: .8em;
     }
+
     @include media('>phone',
     '<desktop') {
         font-size: 1em;
     }
+
     @include media('>=desktop') {
         font-size: 1.5em;
     }

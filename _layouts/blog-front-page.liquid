@@ -4,36 +4,13 @@ layout: default
 
 {% include hero.liquid %}
 
-{{ content }}
-
 {% if site.site_open and page.page_open != false  %}
-    <section class="section section--web-development">
+    <section class="section section--default">
         <div class="slice">
             <div class="row">
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-down">
+                <div class="col col--full card card--ghost">
                     <div class="card__body">
-                        <h3 class="section__header">Web development</h3>
-                        <p>
-                            I'm a web developer working for
-                            <a href="https://hackyard.se" target="_blank">Hackyard</a> in Västerås, Sweden.
-                        </p>
-                        <p>
-                            I actually know how to exit VIM. Spoiler alert: it's
-                            <code>:q</code>.
-                        </p>
-                        <p>
-                            Sometimes, I put something up on
-                            <a href="https://github.com/perragnar" target="_blank" class="inline-github-logo">Github</a> or
-                            <a href="https://codepen.io/perragnar" target="_blank">Codepen</a>.
-                        </p>
-                    </div>
-                </div>
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-up">
-                    <div class="card__body">
-                        <h3 class="section__header">Web design</h3>
-                        <p>
-                            sdkfjlsdkjfjsdfsdfdsfsdfsdf
-                        </p>
+                        {{ content }}
                     </div>
                 </div>
             </div>
@@ -42,42 +19,56 @@ layout: default
     <section class="section section--photo">
         <div class="slice">
             <div class="row">
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-right">
+                <div class="col col--full card card--rogue">
                     <div class="card__body">
-                        <h3 class="section__header">Photography</h3>
+                        <h2 class="section__header"><a href="{{ site.baseurl }}photo">Fotobloggen</a></h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-                            <a href="#">numquam asperiores</a> provident aliquam, praesentium deserunt eveniet temporibus accusamus
-                            voluptatum laborum rerum, animi repellat omnis minus optio dolor ex odit eaque?
+                            I fotobloggen lägger jag upp inlägg med foton. Här är de tre senaste inläggen.<br />
+                            Se alla inlägg i <a href="{{ site.baseurl }}/photo">fotobloggen</a>.
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem numquam asperiores provident aliquam, praesentium deserunt
-                            eveniet temporibus accusamus voluptatum laborum rerum, animi repellat omnis minus optio dolor
-                            ex odit eaque?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem numquam asperiores provident aliquam, praesentium deserunt
-                            eveniet temporibus accusamus voluptatum laborum rerum, animi repellat omnis minus optio dolor
-                            ex odit eaque?
-                        </p>
-                        <div>
-                            <a href="#" class="button button--green">500px.com</a>
-                        </div>
                     </div>
                 </div>
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-down">
-                    <div class="card__body">
-                        <img src="./assets/img/nikon.png" alt="Photography" />
-                    </div>
-                </div>
+            </div>
+            <div class="row">
+                {% for post in site.posts limit:3 %}
+                    {% assign post_categories = post.categories | downcase %}
+                    {% if post.galleries or post_categories contains layout.category_filter %}
+                        {% unless post.draft %}
+                            <div class="col col--1-3 card">
+                                <div class="card__poster">
+                                    {% for gallerySlug in post.galleries %}
+                                        {% assign gallery = site.data.galleries[gallerySlug] %}
+                                        {% if gallery.contents %}
+                                            {% assign photos = gallery.contents %}
+                                            {% for photo in photos limit:1 %}
+                                                <a href="{{ site.baseurl }}{{ post.url }}">
+                                                    <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
+                                                </a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="card__body">
+                                    <h3 class="card__title">
+                                        <a href="{{ site.baseurl }}{{ post.url }}">
+                                            {{ post.title }}
+                                        </a>
+                                    </h3>
+                                    <div class="card__date">{% include datetime.liquid datetime=post.date %}</div>
+                                    {{ post.content | strip_html | truncatewords: 20 }}
+                                </div>
+                            </div>
+                        {% endunless %}
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
     <section class="section section--misc">
         <div class="slice">
             <div class="row">
-                <div class="col col--full card card--ghost animate animate--fade-in animate--slide-left">
-                    <div class="card__body animate animate--fade-in">
+                <div class="col col--full card card--ghost">
+                    <div class="card__body">
                         <h3 class="section__header">Oh, btw...</h3>
                         <p>
                             Do you code? Using
@@ -92,7 +83,7 @@ layout: default
                 </div>
             </div>
             <div class="row">
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-right">
+                <div class="col col--1-2 card card--ghost">
                     <div class="card__body">
                         <h4>September Steel</h4>
                         <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.september-steel" target="_blank" class="silent">
@@ -101,7 +92,7 @@ layout: default
                         <img src="https://vsmarketplacebadge.apphb.com/installs-short/perragnaredin.september-steel.svg" alt="Installs" />
                     </div>
                 </div>
-                <div class="col col--1-2 card card--ghost animate animate--fade-in animate--slide-right">
+                <div class="col col--1-2 card card--ghost">
                     <div class="card__body">
                         <h4>Light+ Tweaked</h4>
                         <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.light-plus-tweaked" target="_blank" class="silent">

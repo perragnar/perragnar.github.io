@@ -3,6 +3,15 @@
         <div class="row">
             <div class="col col--1-2 animate animate--fade-in animate--slide-down">
                 <h1 class="page-title">Per Ragnar Edin</h1>
+                <p>
+                    Jag
+                    <span class="sticker">❤️</span> 
+                    <span class="sticker">☕️</span> +
+                    <span class="sticker">📷</span> &amp;
+                    <span class="sticker">🌳🌲🌴</span>
+                </p>
+            </div>
+            <div class="col col--1-2 animate animate--fade-in animate--slide-down">
                 <ul class="hero__list">
                     <li class="check">
                         <span class="label">
@@ -19,17 +28,7 @@
                         </span>
                     </li>
                 </ul>
-                <p style="margin-top: 2rem;">
-                    Jag gillar också
-                    <span class="sticker">☕️ kaffe</span> och
-                    <span class="sticker">🌳🌲🌴 träd.</span>
-                </p>
-            </div>
-            <div class="col col--1-2 animate animate--fade-in animate--slide-down">
-                <p>
-                    Du hittar mig på ...
-                </p>
-                <ul class="link__list">
+                <ul class="share-list" style="margin-top: 1.2rem;">
                     {% for link in site.data.links %}
                         <li>
                             <a href="{{ link.url }}" class="link link--{{ link.class }}">{{ link.title }}</a>

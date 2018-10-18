@@ -2,11 +2,13 @@
     <div class="slice">
         <div class="row">
             <div class="col col--full animate animate--fade-in animate--slide-left">
-                {% comment %} <ul class="share-list">
-                    <li>
-                        <a href="" class="">...</a>
-                    </li>
-                </ul> {% endcomment %}
+                <ul class="share-list align--right">
+                    {% for link in site.data.links %}
+                        <li>
+                            <a href="{{ link.url }}" class="link link--{{ link.class }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
