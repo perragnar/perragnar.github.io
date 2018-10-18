@@ -2,10 +2,17 @@
     display: inline-block !important;
     line-height: 1 !important;
     padding: 1rem 1.5rem !important;
+
     &.button--green {
         background-color: #008000 !important;
         color: #fff !important;
     }
+
+    &.button--white {
+        background-color: #fff !important;
+        color: #333 !important;
+    }
+
     &:hover {
         text-decoration: none !important;
     }
