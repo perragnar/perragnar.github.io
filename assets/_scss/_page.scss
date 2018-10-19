@@ -1,15 +1,16 @@
 .post-meta {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1rem;
 
-    @include media('<desktop') {
-        flex-direction: column;
-    }
-
     .date {
-        margin-right: 1rem;
-        color: #555;
+        display: inline-block;
+        font-size: 0.7em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: .5rem;
+        line-height: 1;
+        background-color: rgba(51, 51, 51, 0.8);
+        color: #fff;
+        margin-bottom: 1rem;
     }
 
     .tags {
@@ -22,6 +23,7 @@
 
             li {
                 line-height: 1;
+
                 margin: {
                     right: .25rem;
                     bottom: .25rem;
