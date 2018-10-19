@@ -2,7 +2,6 @@
 title: Gysinge
 layout: post
 tags:
-  - Foto
   - Gysinge
 categories:
   - Foto

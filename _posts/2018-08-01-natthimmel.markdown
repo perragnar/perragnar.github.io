@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Natt
 galleries:
   - 2018-08-01-natthimmel

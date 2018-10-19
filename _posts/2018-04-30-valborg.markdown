@@ -3,7 +3,6 @@ title: Valborg 2018
 layout: post
 tags:
   - Valborg
-  - Foto
   - Cruising
   - Sala
   - Raggarbil

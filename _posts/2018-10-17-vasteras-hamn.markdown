@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Västerås
 galleries:
   - 2018-10-17-vasteras-hamn

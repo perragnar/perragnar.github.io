@@ -4,7 +4,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Hårsbäcken
 galleries:
   - 2018-06-23-harsbacken-med-nils

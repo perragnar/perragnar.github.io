@@ -6,7 +6,6 @@ tags:
   - Ingbo källor
   - Långforsen
   - Måns Ols
-  - Foto
 categories:
   - Foto
 galleries:

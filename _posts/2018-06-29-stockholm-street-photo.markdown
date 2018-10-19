@@ -4,7 +4,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Stockholm
 galleries:
   - 2018-06-29-stockholm-street-photo

@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Öland
 galleries:
   - 2018-08-07-oland-4

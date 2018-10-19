@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Ristafallet
   - Jämtland
   - Vattenfall

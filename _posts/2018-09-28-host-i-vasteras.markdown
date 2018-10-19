@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Västerås
 galleries:
   - 2018-09-28-host-i-vasteras

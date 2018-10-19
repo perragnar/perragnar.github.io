@@ -4,7 +4,6 @@ layout: post
 tags:
   - Järndammen
   - Sala
-  - Foto
 categories:
   - Foto
 galleries:

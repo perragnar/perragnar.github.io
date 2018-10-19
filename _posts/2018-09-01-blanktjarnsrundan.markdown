@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Jämtland
   - Blanktjärn
 galleries:

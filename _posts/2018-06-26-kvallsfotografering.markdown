@@ -4,7 +4,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Skultuna
   - Skepplinge
   - Harakers kvarn

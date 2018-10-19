@@ -4,7 +4,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Vår
   - Blommor
 poster: spring-flowers.jpg

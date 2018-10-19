@@ -5,7 +5,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Åre
 galleries:
   - 2018-09-11-are

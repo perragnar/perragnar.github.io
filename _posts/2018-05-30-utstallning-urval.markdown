@@ -4,7 +4,6 @@ layout: post
 categories:
   - Foto
 tags:
-  - Foto
   - Sätra Brunn
   - Utställning
   - Sala Fotoklubb
