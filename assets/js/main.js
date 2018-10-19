@@ -170,6 +170,11 @@ $('.switch').change(function() {
     toggleCameraShutterSound($('#shutter-sound-toggle').is(':checked'));
 });
 
+// Toggles the mobile menu
+$('.navigation-button').click(function() {
+    $('.mobile-navigation').slideToggle();
+});
+
 function updateScrollData() {
     window_height = $window.height();
     window_top_position = $window.scrollTop();

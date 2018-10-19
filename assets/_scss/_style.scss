@@ -197,16 +197,23 @@ img {
     }
 
     .main-navigation {
-        .main-navigation-button {
-            padding: .5rem;
+        .navigation-button {
+            padding: .5rem .5rem .35rem;
             margin: .5rem 0;
             line-height: 1;
             border: solid 1px rgba(255, 255, 255, .2);
             border-radius: 3px;
+            font-family: 'Miriam Libre', sans-serif;
+            cursor: pointer;
 
             // @include media('>=desktop') {
             display: none;
             // }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, .2);
+                border-color: transparent;
+            }
         }
 
         ul {
@@ -231,6 +238,13 @@ img {
             }
         }
     }
+
+}
+
+.mobile-navigation {
+    display: none;
+    // @include media('>=desktop') {
+    // }
 }
 
 .section {

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <nav class="main-navigation animate animate--fade-in animate--slide-left">
-                <div class="main-navigation-button">MENY</div>
+                <div class="navigation-button">MENY</div>
                 <ul>
                     {% for link in site.data.navigation %}
                         <li>
@@ -37,3 +37,12 @@
         </div>
     </div>
 </header>
+<div class="mobile-navigation">
+    <ul>
+        {% for link in site.data.navigation %}
+            <li>
+                <a href="{{ site.baseurl }}{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
