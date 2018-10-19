@@ -25,6 +25,37 @@ h6,
     }
 }
 
+blockquote {
+    position: relative;
+    margin: 0 0 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    font-style: italic;
+    font-family: 'Miriam Libre', sans-serif;
+
+    &:before {
+        content: "\"";
+        display: inline-block;
+        position: absolute;
+        font-size: 5rem;
+        font-style: initial;
+        top: 0;
+        left: -18px;
+        line-height: 1;
+        opacity: 0.3;
+    }
+
+    cite {
+        display: block;
+        opacity: 0.3;
+        margin-left: 1rem;
+
+        &:before {
+            content: '~';
+            margin-right: 5px;
+        }
+    }
+}
+
 a {
     $linkPadding: .3rem;
     $linkColor: #61afef;
