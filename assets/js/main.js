@@ -153,14 +153,14 @@ var defaults = {
 $('[data-fancybox').fancybox(defaults);
 
 // Showing photo data
-$('.photo__data-trigger').on('click', function(event) {
+$('.photo__data-trigger').on('click tap', function(event) {
     event.preventDefault();
     event.stopPropagation();
     $(this).closest('.photo').addClass('info');
 });
 
 // When clicking photo data area it closes
-$('.photo__data').on('click', function() {
+$('.photo__data').on('click tap', function() {
     $(this).closest('.photo').removeClass('info');
 });
 
@@ -171,7 +171,7 @@ $('.switch').change(function() {
 });
 
 // Toggles the mobile menu
-$('.navigation-button').click(function() {
+$('.navigation-button').on('click tap', function() {
     $(this).toggleClass('active');
     $('.mobile-navigation').slideToggle('fast');
 });
