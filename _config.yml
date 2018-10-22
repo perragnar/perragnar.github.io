@@ -20,7 +20,7 @@ github:
 
 excerpt_separator: <!--more-->
 
-gems:
+plugins:
 - jekyll-sitemap
 
 sass:
