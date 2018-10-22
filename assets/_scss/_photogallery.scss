@@ -40,7 +40,13 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
     margin-bottom: 1.5rem;
 }
 
-#shutter-sound-toggle-wrapper {
+@include media('<desktop') {
+    .shutter-sound {
+        display: none;
+    }
+}
+
+.shutter-sound-toggle-wrapper {
     margin: 5px;
     display: flex;
     justify-content: flex-end;
