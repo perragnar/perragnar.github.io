@@ -198,7 +198,7 @@ img {
 
     .main-navigation {
         .navigation-button {
-            padding: .5rem .5rem .35rem;
+            padding: .8rem .8rem .65rem;
             margin: .5rem 0;
             line-height: 1;
             border: solid 1px rgba(255, 255, 255, .2);
@@ -206,11 +206,11 @@ img {
             font-family: 'Miriam Libre', sans-serif;
             cursor: pointer;
 
-            // @include media('>=desktop') {
-            display: none;
-            // }
+            @include media('>=desktop') {
+                display: none;
+            }
 
-            &:hover {
+            &.active {
                 background-color: rgba(255, 255, 255, .2);
                 border-color: transparent;
             }
@@ -243,8 +243,28 @@ img {
 
 .mobile-navigation {
     display: none;
-    // @include media('>=desktop') {
-    // }
+    background-color: #0a0a0a;
+    padding: .5rem;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            a {
+                padding: .8rem;
+                border-radius: 3px;
+
+                &.current {
+                    background-color: #1969ab;
+                    color: #cee8fd;
+                }
+            }
+        }
+    }
 }
 
 .section {
@@ -567,7 +587,7 @@ img {
                 margin: .3rem;
                 padding: .6rem;
                 color: #cecece;
-                box-shadow: 2px 2px 0 #0000006b;
+                box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
                 border-radius: 3px;
                 text-shadow: 1px 1px rgba(0, 0, 0, .2);
 

@@ -172,7 +172,8 @@ $('.switch').change(function() {
 
 // Toggles the mobile menu
 $('.navigation-button').click(function() {
-    $('.mobile-navigation').slideToggle();
+    $(this).toggleClass('active');
+    $('.mobile-navigation').slideToggle('fast');
 });
 
 function updateScrollData() {
