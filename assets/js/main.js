@@ -172,7 +172,7 @@ $(function() {
     });
     
     // Toggles the mobile menu
-    $('body').on('click touchstart', '.navigation-button', function(event) {
+    $(document).on('click', '.navigation-button', function(event) {
         // event.preventDefault();
 
         alert('Test');
