@@ -172,8 +172,8 @@ $(function() {
     });
     
     // Toggles the mobile menu
-    $(document).on('click', '.navigation-button', function() {
-        alert('Test');
+    $('.navigation-button').on('click', function() {
+        alert('Test 2');
         
         $(this).toggleClass('active');
         $('.mobile-navigation').slideToggle('fast');
