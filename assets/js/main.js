@@ -172,9 +172,7 @@ $(function() {
     });
     
     // Toggles the mobile menu
-    $(document).on('click', '.navigation-button', function(event) {
-        // event.preventDefault();
-
+    $(document).on('click', '.navigation-button', function() {
         alert('Test');
         
         $(this).toggleClass('active');
