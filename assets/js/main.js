@@ -172,8 +172,10 @@ $(function() {
     });
     
     // Toggles the mobile menu
-    $('.navigation-button').on('click touchstart', function(event) {
-        event.preventDefault();
+    $('body').on('click touchstart', '.navigation-button', function(event) {
+        // event.preventDefault();
+
+        alert('Test');
         
         $(this).toggleClass('active');
         $('.mobile-navigation').slideToggle('fast');
