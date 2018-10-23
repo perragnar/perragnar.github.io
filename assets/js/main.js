@@ -1,8 +1,5 @@
 var $window = $(window);
 
-console.log('Hi!');
-$('.debug').html('---');
-
 // Window scroll data
 var window_height = $window.height();
 var window_top_position = $window.scrollTop();
