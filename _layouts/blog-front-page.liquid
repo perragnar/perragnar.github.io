@@ -41,10 +41,10 @@ layout: default
                                             {% assign photos = gallery.contents %}
                                             <a href="{{ site.baseurl }}{{ post.url }}">
                                                 {% if gallery.poster %}
-                                                    <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ gallery.poster }});"></div>
+                                                    <div class="photo" style="background-image: url({{ site.baseurl }}/assets/photos/galleries/{{ gallerySlug }}/{{ gallery.poster }});"></div>
                                                 {% else %}
                                                     {% for photo in photos limit:1 %}
-                                                        <div class="photo" style="background-image: url({{site.baseurl}}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
+                                                        <div class="photo" style="background-image: url({{ site.baseurl }}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
                                                     {% endfor %}
                                                 {% endif %}
                                             </a>
