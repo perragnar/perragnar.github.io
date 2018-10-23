@@ -29,28 +29,28 @@
                                                 "{{ photo.title }}"
                                             </h4>
                                         {% endif %}
-                                        {% if photo.date %}
+                                        {% comment %} {% if photo.date %}
                                             <div class="data__post">
                                                 <span class="label">Datum</span>
                                                 <span class="value">{{ photo.date | date: "%Y-%m-%d" }}</span>
                                             </div>
-                                        {% endif %}
+                                        {% endif %} {% endcomment %}
                                         {% if photo.camera %}
                                             <div class="data__post">
                                                 <span class="label">Kamera</span>
                                                 <span class="value">{{ photo.camera }}</span>
                                             </div>
                                         {% endif %}
-                                        {% if photo.lens %}
+                                        {% comment %} {% if photo.lens %}
                                             <div class="data__post">
                                                 <span class="label">Objektiv</span>
                                                 <span class="value">{{ photo.lens }}</span>
                                             </div>
-                                        {% endif %}
-                                        {% if photo.iso %}
+                                        {% endif %} {% endcomment %}
+                                        {% if photo.focal %}
                                             <div class="data__post">
-                                                <span class="label">ISO</span>
-                                                <span class="value">{{ photo.iso }}</span>
+                                                <span class="label">Brännvidd</span>
+                                                <span class="value">{{ photo.focal }}mm</span>
                                             </div>
                                         {% endif %}
                                         {% if photo.shutter %}
@@ -65,10 +65,10 @@
                                                 <span class="value">f/{{ photo.aperture }}</span>
                                             </div>
                                         {% endif %}
-                                        {% if photo.focal %}
+                                        {% if photo.iso %}
                                             <div class="data__post">
-                                                <span class="label">Brännvidd</span>
-                                                <span class="value">{{ photo.focal }}mm</span>
+                                                <span class="label">ISO</span>
+                                                <span class="value">{{ photo.iso }}</span>
                                             </div>
                                         {% endif %}
                                     </div>
