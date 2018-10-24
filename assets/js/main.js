@@ -23,6 +23,12 @@ $(function () {
         }
     }
 
+    // Back button
+    $('.back-button').on('click', function(event) {
+        event.preventDefault();
+        history.back(-1);
+    });
+
     // Showing photo data
     $('.photo__data-trigger').on('click', function (event) {
         event.preventDefault();

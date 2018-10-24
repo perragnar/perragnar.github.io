@@ -1,10 +1,16 @@
 .button {
-    display: inline-block !important;
-    line-height: 1 !important;
-    padding: 1rem 1.5rem !important;
+    display: inline-block;
+    line-height: 1;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
 
     &.button--green {
         background-color: #008000 !important;
+        color: #fff !important;
+    }
+
+    &.button--blue {
+        background-color: #6CB3F8 !important;
         color: #fff !important;
     }
 
@@ -13,7 +19,12 @@
         color: #333 !important;
     }
 
+    &.button--small {
+        font-size: .9rem;
+        padding: .75rem 1rem !important;
+    }
+
     &:hover {
-        text-decoration: none !important;
+        text-decoration: none;
     }
 }
