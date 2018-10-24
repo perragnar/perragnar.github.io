@@ -4,6 +4,17 @@
     padding: 1rem 1.5rem;
     font-weight: bold;
 
+    &.button--black {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+
+    &.button--gray,
+    &.button--grey {
+        background-color: #666 !important;
+        color: #fff !important;
+    }
+
     &.button--green {
         background-color: #008000 !important;
         color: #fff !important;
@@ -14,6 +25,14 @@
         color: #fff !important;
     }
 
+    &.button--rogue {
+        background-color: rgba(255, 255, 255, .2) !important;
+    }
+
+    &.button--ghost {
+        background-color: transparent !important;
+    }
+
     &.button--white {
         background-color: #fff !important;
         color: #333 !important;
@@ -22,6 +41,20 @@
     &.button--small {
         font-size: .9rem;
         padding: .75rem 1rem !important;
+    }
+
+    &.button--smaller {
+        font-size: .9rem;
+        padding: .5rem .75rem !important;
+    }
+
+    &.button--smallest {
+        font-size: .8rem;
+        padding: .4rem !important;
+    }
+
+    &.button--rounded {
+        border-radius: 3px;
     }
 
     &:hover {
