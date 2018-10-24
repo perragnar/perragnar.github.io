@@ -746,6 +746,18 @@ img {
     }
 }
 
+.page-tools {
+    @include media('<desktop') {
+        display: none;
+    }
+
+    .page-tools__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .slice {
     margin: {
         left: auto;
