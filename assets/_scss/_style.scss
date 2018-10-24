@@ -64,7 +64,6 @@ a {
     line-height: 1;
     padding: $linkPadding;
     color: $linkColor;
-    // font-weight: bold;
 
     background: {
         position: left bottom;
@@ -230,6 +229,7 @@ img {
             li {
                 a {
                     padding: 1rem;
+                    font-weight: bold;
 
                     &.current {
                         background-color: #000;
@@ -258,6 +258,7 @@ img {
             a {
                 padding: .8rem;
                 border-radius: 3px;
+                font-weight: bold;
 
                 &.current {
                     background-color: #1969ab;
