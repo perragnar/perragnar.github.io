@@ -5,7 +5,8 @@ layout: post
 categories:
   - Foto
 tags:
-  - Västerås
+  - Dimma
+  - Sandsjön
 galleries:
   - 2018-09-08-dimma
 ---
