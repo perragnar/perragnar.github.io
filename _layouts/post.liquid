@@ -11,6 +11,15 @@ layout: default
                 <div class="col col--full">
                     <div class="page-tools__wrapper">
                         <a href="#" class="button button--blue back-button">Tillbaka</a>
+
+                        {% if page.galleries %}
+                            <div id="shutter-sound-toggle-wrapper" class="shutter-sound-toggle-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" id="shutter-sound-toggle">
+                                </label>
+                                <label class="switch-label">Kameraljud</label>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
