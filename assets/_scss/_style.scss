@@ -57,14 +57,14 @@ blockquote {
 }
 
 a {
-    $linkPadding: .3rem;
+    $linkPadding: 0;
     $linkColor: #61afef;
     color: $linkColor;
     display: inline-block;
     line-height: 1;
     padding: $linkPadding;
     color: $linkColor;
-    font-weight: bold;
+    // font-weight: bold;
 
     background: {
         position: left bottom;
@@ -472,8 +472,8 @@ img {
 
     &.section--misc {
         $textColor: #848e92;
-        $linkColor: #ff6cf3;
-        $headerColor: #52004b;
+        $linkColor: #78d354;
+        $headerColor: #418029;
         color: $textColor;
         background-image: linear-gradient(45deg, #222, #444);
 
