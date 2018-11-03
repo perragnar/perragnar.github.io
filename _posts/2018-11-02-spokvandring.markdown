@@ -1,5 +1,5 @@
 ---
-title: Ransta spövandring
+title: Ransta spökvandring
 date: 2018-11-02
 layout: post
 categories:
