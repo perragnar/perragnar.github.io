@@ -1,6 +1,5 @@
 title: Godmorgon Västerås
 date: '2018-11-15'
-poster: 2018-11-14-6.jpg
 contents:
   - filename: 2018-11-14.jpg
     width: 6000
@@ -22,16 +21,6 @@ contents:
     shutter: 1/60
     iso: 800
     date: 1542225041
-  - filename: 2018-11-14-7.jpg
-    width: 3289
-    height: 3289
-    camera: FUJIFILM X-T2
-    lens: XF18-55mmF2.8-4 R LM OIS
-    focal: 55
-    aperture: 4
-    shutter: 1/80
-    iso: 400
-    date: 1542225555
   - filename: 2018-11-14-5.jpg
     width: 3509
     height: 5470
@@ -52,3 +41,23 @@ contents:
     shutter: 1/60
     iso: 6400
     date: 1542225389
+  - filename: 2018-11-14-7.jpg
+    width: 3289
+    height: 3289
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 55
+    aperture: 4
+    shutter: 1/80
+    iso: 400
+    date: 1542225555
+  - filename: 2018-11-16-8.jpg
+    width: 4582
+    height: 4582
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 18
+    aperture: 4.5
+    shutter: 1/60
+    iso: 1250
+    date: 1542330974
