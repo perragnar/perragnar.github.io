@@ -110,6 +110,7 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
             .photo__data {
                 transform: translateX(0);
                 background-color: rgba(0, 0, 0, .5);
+                user-select: none;
             }
         }
 
