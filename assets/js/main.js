@@ -33,12 +33,29 @@ $(function () {
     $('.photo__data-trigger').on('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
-        $(this).closest('.photo').addClass('info');
+
+        if(event.altKey || event.shiftKey) {
+            // Showing info of all photos
+            $.each($('.photo'), function(key, value) {
+                $(this).addClass('info');
+            });
+        } else {
+            // Showing just the selected photo info
+            $(this).closest('.photo').addClass('info');
+        }
     });
 
     // When clicking photo data area it closes
     $('.photo__data').on('click', function () {
-        $(this).closest('.photo').removeClass('info');
+        if(event.altKey || event.shiftKey) {
+            // Hiding info of all photos
+            $.each($('.photo'), function(key, value) {
+                $(this).removeClass('info');
+            });
+        } else {
+            // Hiding just the selected photo info
+            $(this).closest('.photo').removeClass('info');
+        }
     });
 
     // Toggle the camera shutter sound
