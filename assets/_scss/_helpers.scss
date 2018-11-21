@@ -1,5 +1,6 @@
 a.silent {
     background: transparent !important;
+
     &:hover {
         background: transparent !important;
     }
@@ -11,18 +12,23 @@ a.silent {
 
 .float {
     position: absolute;
+
     &.float--top {
         top: 0;
     }
+
     &.float--right {
         right: 0;
     }
+
     &.float--bottom {
         bottom: 0;
     }
+
     &.float--left {
         left: 0;
     }
+
     &.float--top-right {
         top: 0;
         right: 0;
@@ -32,9 +38,11 @@ a.silent {
 .align-right {
     text-align: right;
 }
+
 .align-left {
     text-align: left;
 }
+
 .align-center {
     text-align: center;
 }
@@ -52,4 +60,9 @@ a.silent {
 .inline--center {
     display: inline-flex;
     align-items: center;
+}
+
+.corners--rounded {
+    border-radius: 3px;
+    overflow: hidden;
 }
