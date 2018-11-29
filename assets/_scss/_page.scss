@@ -1,5 +1,9 @@
 .post-meta {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
 
     .date {
         display: inline-block;
