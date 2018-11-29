@@ -1,6 +1,6 @@
 title: Dimma
 date: '2018-11-28'
-poster: 2018-11-27-10.jpg
+poster: 2018-11-27-12.jpg
 contents:
   - filename: 2018-11-27-1.jpg
     width: 5513
@@ -112,17 +112,7 @@ contents:
     shutter: 1/550
     iso: 200
     date: 1543362292
-  - filename: 2018-11-27-12a.jpg
-    width: 6000
-    height: 4000
-    camera: FUJIFILM X-T2
-    lens: XF18-55mmF2.8-4 R LM OIS
-    focal: 24.3
-    aperture: 4
-    shutter: 1/900
-    iso: 200
-    date: 1543362382
-  - filename: 2018-11-27-12b.jpg
+  - filename: 2018-11-27-12.jpg
     width: 6000
     height: 4000
     camera: FUJIFILM X-T2
