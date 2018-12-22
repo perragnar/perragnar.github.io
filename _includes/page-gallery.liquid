@@ -36,18 +36,18 @@
                                                 <span class="value">{{ photo.date | date: "%Y-%m-%d" }}</span>
                                             </div>
                                         {% endif %} {% endcomment %}
-                                        {% comment %} {% if photo.camera %}
+                                        {% if photo.camera %}
                                             <div class="data__post">
                                                 <span class="label">Kamera</span>
                                                 <span class="value">{{ photo.camera }}</span>
                                             </div>
-                                        {% endif %} {% endcomment %}
-                                        {% comment %} {% if photo.lens %}
+                                        {% endif %}
+                                        {% if photo.lens %}
                                             <div class="data__post">
                                                 <span class="label">Objektiv</span>
                                                 <span class="value">{{ photo.lens }}</span>
                                             </div>
-                                        {% endif %} {% endcomment %}
+                                        {% endif %}
                                         {% if photo.focal %}
                                             <div class="data__post">
                                                 <span class="label">Brännvidd</span>
