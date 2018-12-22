@@ -84,6 +84,11 @@ img {
     max-width: 100%;
 }
 
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
 .page-header {
     background-color: #222;
     color: #fff;
@@ -485,6 +490,18 @@ img {
             &:hover {
                 @include text-contrast($linkColor);
             }
+        }
+    }
+
+    &.section--low-prio-small-screens {
+        @include media('<desktop') {
+            order: 99;
+        }
+    }
+
+    &.section--hidden-small-screens {
+        @include media('<desktop') {
+            display: none;
         }
     }
 
