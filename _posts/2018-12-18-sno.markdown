@@ -1,0 +1,14 @@
+---
+title: Snö
+date: 2018-12-18
+layout: post
+categories:
+  - Foto
+tags:
+  - Vinter
+  - Snö
+galleries:
+  - 2018-12-18-sno
+---
+
+En enkel bild på snö i sent blått eftermiddagsljus och varma ljuskällor i bakgrunden.
