@@ -28,7 +28,7 @@ gulp.task('cleanup', () => {
 
 // Building photo gallery from the files in the inbox
 gulp.task('handleInbox', () => {
-    return gulp.src('./assets/photos/inbox/**/*.jpg', { nocase: true })
+    return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', { nocase: true })
         // Reading photo data
         .pipe(exif())
 
