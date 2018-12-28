@@ -11,17 +11,17 @@ $(function () {
     var animatedElements = $('.animate');
 
     // Photo gallery camera shutter audio on/off
-    var photoCameraShutterAudio = false;
+    var photoCameraShutterAudio = true;
 
     // Checking if camera shutter sound is set by cookie
-    var photoCameraShutterAudioCookie = getCookie('camera-shutter-sound');
-    if (photoCameraShutterAudioCookie) {
-        if (photoCameraShutterAudioCookie == 'on') {
-            $('#shutter-sound-toggle-wrapper .switch').addClass('checked');
-            $('#shutter-sound-toggle').attr('checked', true);
-            photoCameraShutterAudio = true;
-        }
-    }
+    // var photoCameraShutterAudioCookie = getCookie('camera-shutter-sound');
+    // if (photoCameraShutterAudioCookie) {
+    //     if (photoCameraShutterAudioCookie == 'on') {
+    //         $('#shutter-sound-toggle-wrapper .switch').addClass('checked');
+    //         $('#shutter-sound-toggle').attr('checked', true);
+    //         photoCameraShutterAudio = true;
+    //     }
+    // }
 
     // Back button
     $('.back-button').on('click', function(event) {
@@ -59,10 +59,10 @@ $(function () {
     });
 
     // Toggle the camera shutter sound
-    $('.switch').change(function () {
-        $(this).toggleClass('checked');
-        toggleCameraShutterSound($('#shutter-sound-toggle').is(':checked'));
-    });
+    // $('.switch').change(function () {
+    //     $(this).toggleClass('checked');
+    //     toggleCameraShutterSound($('#shutter-sound-toggle').is(':checked'));
+    // });
 
     // Toggles the mobile menu
     $('.navigation-button').on('click', function () {
@@ -233,17 +233,17 @@ $(function () {
         audio.play();
     }
 
-    function toggleCameraShutterSound(enabled) {
-        if (enabled) {
-            // Enables the shutter sound
-            setCookie('camera-shutter-sound', 'on', 365);
-            photoCameraShutterAudio = true;
-        } else {
-            // Disabling the shutter sound
-            setCookie('camera-shutter-sound', 'off', 365);
-            photoCameraShutterAudio = false;
-        }
-    }
+    // function toggleCameraShutterSound(enabled) {
+    //     if (enabled) {
+    //         // Enables the shutter sound
+    //         setCookie('camera-shutter-sound', 'on', 365);
+    //         photoCameraShutterAudio = true;
+    //     } else {
+    //         // Disabling the shutter sound
+    //         setCookie('camera-shutter-sound', 'off', 365);
+    //         photoCameraShutterAudio = false;
+    //     }
+    // }
 
     function setCookie(name, value, days) {
         var d = new Date;
