@@ -1,0 +1,13 @@
+---
+title: Promenad hemma
+date: 2018-12-27
+layout: post
+categories:
+  - Foto
+tags:
+  - Ransta
+galleries:
+  - 2018-12-27-promenad
+---
+
+Hög tid att komma ut efter allt för många dagar inomhus med julstök.

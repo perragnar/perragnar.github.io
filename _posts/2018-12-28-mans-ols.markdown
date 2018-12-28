@@ -1,0 +1,14 @@
+---
+title: Måns Ols
+date: 2018-12-28
+layout: post
+categories:
+  - Foto
+tags:
+  - Sala
+  - Måns Ols
+galleries:
+  - 2018-12-28-mans-ols
+---
+
+Solen tittade fram idag och det blev bara en snabb tur med kameran vid Måns Ols värdshus.
