@@ -1,0 +1,13 @@
+---
+title: En helt vanlig dag i Västerås 
+date: 2019-01-07
+layout: post
+categories:
+  - Foto
+tags:
+  - Västerås
+galleries:
+  - 2019-01-07-vasteras
+---
+
+Börjar bli tröttsamt att fota samma gamla motiv, men kameran behöver rastas ibland. :)
