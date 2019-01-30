@@ -80,6 +80,11 @@ a {
     }
 }
 
+figure {
+    display: flex;
+    align-items: flex-start;
+}
+
 img {
     max-width: 100%;
 }
