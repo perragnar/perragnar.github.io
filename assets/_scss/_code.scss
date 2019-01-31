@@ -21,6 +21,13 @@ pre[class*='language-'] {
     hyphens: none;
 }
 
+.highlighter-rouge {
+    border: solid 1px #adb7c3;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 0 0 30px;
+    box-shadow: 3px 3px 0px rgba(48, 74, 104, .1);
+}
 
 /* Code blocks */
 
