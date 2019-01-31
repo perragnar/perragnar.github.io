@@ -28,7 +28,9 @@ gulp.task('cleanup', () => {
 
 // Building photo gallery from the files in the inbox
 gulp.task('handleInbox', () => {
-    return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', { nocase: true })
+    return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', {
+            nocase: true
+        })
         // Reading photo data
         .pipe(exif())
 
@@ -43,27 +45,31 @@ gulp.task('handleInbox', () => {
         .pipe(rename((path) => {
             createImgPath(path);
         }))
-        .pipe(resize({ width: 1500 }))
-        .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+        .pipe(resize({
+            width: 1500
+        }))
+        .pipe(imagemin([imagemin.jpegtran({
+            progressive: true
+        })]))
         .pipe(gulp.dest('./assets/photos/galleries/'))
 
-        // Medium size
-        // .pipe(rename((path) => {
-        //     createImgPath(path);
-        // }))
-        // .pipe(resize({ width: 800 }))
-        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
-        // .pipe(gulp.dest('./assets/photos/galleries/medium/'))
+    // Medium size
+    // .pipe(rename((path) => {
+    //     createImgPath(path);
+    // }))
+    // .pipe(resize({ width: 800 }))
+    // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+    // .pipe(gulp.dest('./assets/photos/galleries/medium/'))
 
-        // Thumb
-        // .pipe(rename((path) => {
-        //     createImgPath(path);
-        // }))
-        // .pipe(resize({ width: 600, height: 600, crop: true, upscale: true }))
-        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
-        // .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
-        
-        ;
+    // Thumb
+    // .pipe(rename((path) => {
+    //     createImgPath(path);
+    // }))
+    // .pipe(resize({ width: 600, height: 600, crop: true, upscale: true }))
+    // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+    // .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
+
+    ;
 });
 
 // Clearing the inbox
@@ -102,7 +108,9 @@ const walkPhotos = (path, index) => {
             // Original images are sometimes in subdirectories by day or activity, which
             // is why we recused the whole thing. Don't try to get stats on a directory,
             // just skip it.
-            if (fs.statSync(photo).isDirectory()) { continue; }
+            if (fs.statSync(photo).isDirectory()) {
+                continue;
+            }
 
             const dimensions = imgsize(photo);
 
@@ -147,15 +155,38 @@ const walkPhotos = (path, index) => {
     //   ^^ @TODO: That'll fix most of the issue, but inserting/deleting within
     //      an existing album will still cause attributes to shift. :(
     for (var album in index) {
-        if (!index.hasOwnProperty(album)) { continue; }
+        if (!index.hasOwnProperty(album)) {
+            continue;
+        }
         index[album].contents = index[album].contents.sort((a, b) => {
-            if (a.date < b.date) { return -1; }
-            if (a.date > b.date) { return 1; }
+            if (a.date < b.date) {
+                return -1;
+            }
+            if (a.date > b.date) {
+                return 1;
+            }
             return 0;
         });
 
         // Writing each gallery data file
         fs.writeFileSync('./_data/galleries/' + album + '.yml', yaml.safeDump(index[album]));
+
+        // Creating blog posts for each album
+        let postContent = [];
+        postContent.push('---');
+        postContent.push('title: ' + index[album].title);
+        postContent.push('date: ' + index[album].date);
+        postContent.push('layout: post');
+        postContent.push('categories:');
+        postContent.push('  - Foto');
+        postContent.push('tags:');
+        postContent.push('  - Tag');
+        postContent.push('galleries:');
+        postContent.push('  - ' + album);
+        postContent.push('---');
+        postContent.push('');
+
+        fs.writeFileSync('./_posts/' + album + '.markdown', postContent.join('\n'));
     }
 
     return true;
@@ -164,7 +195,7 @@ const walkPhotos = (path, index) => {
 gulp.task('buildGalleryIndex', (done) => {
     let index = {};
     const generatedIndex = {};
-    
+
     walkPhotos('./assets/photos/inbox/', generatedIndex);
 
     done();
@@ -189,7 +220,12 @@ gulp.task('inbox', ['buildGalleryIndex', 'handleInbox', 'clearInbox']);
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
-    browserSync.init({ server: { baseDir: '_site/' }, notify: false });
+    browserSync.init({
+        server: {
+            baseDir: '_site/'
+        },
+        notify: false
+    });
     // Reloads page when some of the already built files changed:
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
