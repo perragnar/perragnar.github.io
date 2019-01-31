@@ -26,6 +26,9 @@ gulp.task('cleanup', () => {
     return del(['./_site/']);
 });
 
+// Removing .DS_Store files
+gulp.task('prepareInbox', shell.task(['find . -name .DS_Store -type f -delete']));
+
 // Building photo gallery from the files in the inbox
 gulp.task('handleInbox', () => {
     return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', {
@@ -75,7 +78,7 @@ gulp.task('handleInbox', () => {
 // Clearing the inbox
 gulp.task('clearInbox', () => {
     // Cleaning up the inbox
-    // return del(['./assets/photos/inbox/**/*']);
+    return del(['./assets/photos/inbox/**/*']);
 });
 
 // Scanning all original photos and creating data files
@@ -216,7 +219,8 @@ function createImgPath(path) {
 }
 
 // Processing the inbox photos, then deletes them
-gulp.task('inbox', ['buildGalleryIndex', 'handleInbox', 'clearInbox']);
+gulp.task('inbox', ['prepareInbox', 'buildGalleryIndex', 'handleInbox']);
+// gulp.task('inbox', ['prepareInbox', 'buildGalleryIndex', 'handleInbox', 'clearInbox']);
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
