@@ -219,8 +219,8 @@ function createImgPath(path) {
 }
 
 // Processing the inbox photos, then deletes them
-gulp.task('inbox', ['prepareInbox', 'buildGalleryIndex', 'handleInbox']);
-// gulp.task('inbox', ['prepareInbox', 'buildGalleryIndex', 'handleInbox', 'clearInbox']);
+gulp.task('inbox', ['buildGalleryIndex', 'handleInbox']);
+// gulp.task('inbox', ['buildGalleryIndex', 'handleInbox', 'clearInbox']);
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
