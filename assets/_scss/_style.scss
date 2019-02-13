@@ -80,6 +80,11 @@ a {
     }
 }
 
+figure {
+    display: flex;
+    align-items: flex-start;
+}
+
 img {
     max-width: 100%;
 }
@@ -782,7 +787,7 @@ img {
         right: auto;
     }
 
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 @keyframes pulse {
