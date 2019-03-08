@@ -24,7 +24,7 @@ $(function () {
     // }
 
     // Back button
-    $('.back-button').on('click', function(event) {
+    $('.back-button').on('click', function (event) {
         event.preventDefault();
         history.back(-1);
     });
@@ -34,9 +34,9 @@ $(function () {
         event.preventDefault();
         event.stopPropagation();
 
-        if(event.altKey || event.shiftKey) {
+        if (event.altKey || event.shiftKey) {
             // Showing info of all photos
-            $.each($('.photo'), function(key, value) {
+            $.each($('.photo'), function (key, value) {
                 $(this).addClass('info');
             });
         } else {
@@ -47,9 +47,9 @@ $(function () {
 
     // When clicking photo data area it closes
     $('.photo__data').on('click', function () {
-        if(event.altKey || event.shiftKey) {
+        if (event.altKey || event.shiftKey) {
             // Hiding info of all photos
-            $.each($('.photo'), function(key, value) {
+            $.each($('.photo'), function (key, value) {
                 $(this).removeClass('info');
             });
         } else {
@@ -83,8 +83,11 @@ $(function () {
     };
 
     var lb_defaults = {
+        // Enable infinite gallery navigation
+        loop: false,
+
         // Should display counter at the top left corner
-        infobar: false,
+        infobar: true,
 
         // Should display close button (using `btnTpl.smallBtn` template) over the content
         // Can be true, false, "auto"
@@ -94,30 +97,26 @@ $(function () {
         // Should display toolbar (buttons at the top)
         // Can be true, false, "auto"
         // If "auto" - will be automatically hidden if "smallBtn" is enabled
-        // toolbar: "auto",
+        toolbar: "auto",
 
         // Horizontal space between slides
         gutter: 50,
 
         // Disable right-click and use simple image protection for images
-        protect: true,
+        protect: false,
 
         // Should display navigation arrows at the screen edges
-        arrows: false,
-
-        // Use mousewheel to navigate gallery
-        // If 'auto' - enabled for images only
-        wheel: false,
+        arrows: true,
 
         // What buttons should appear in the top right corner.
         // Buttons will be created using templates from `btnTpl` option
         // and they will be placed into toolbar (class="fancybox-toolbar"` element)
         buttons: [
-            // "zoom",
+            "zoom",
             // "share",
-            //"slideShow",
-            //"fullScreen",
-            //"download",
+            "slideShow",
+            "fullScreen",
+            // "download",
             // "thumbs",
             "close"
         ],
@@ -129,10 +128,12 @@ $(function () {
         //   "fade"
         //   "zoom-in-out"
         //
-        animationEffect: "false",
+        animationEffect: "fade",
 
         // Duration in ms for open/close animation
-        animationDuration: 0,
+        animationDuration: 500,
+
+        zoomOpacity: "auto",
 
         // Transition effect between slides
         //
@@ -145,7 +146,15 @@ $(function () {
         //   "zoom-in-out'
         //   "rotate'
         //
-        // transitionEffect: "fade",
+        transitionEffect: "fade",
+
+        // Duration in ms for transition animation
+        transitionDuration: 500,
+
+        slideShow: {
+            autoStart: false,
+            speed: 5000
+        },
 
         // After image has loaded
         afterLoad: function (instance, current) {
