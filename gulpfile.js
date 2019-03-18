@@ -1,39 +1,188 @@
 const gulp = require('gulp');
-const shell = require('gulp-shell');
+const browsersync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const plumber = require('gulp-plumber');
 const del = require('del');
-const slug = require('slug');
-const exif = require('gulp-exif');
-const exifPrsr = require('exif-parser');
-const fs = require('fs');
-const recursiveReadSync = require('recursive-readdir-sync');
-const merge = require('deepmerge');
-const imgsize = require('image-size');
+const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
-const resize = require('gulp-image-resize');
-const yaml = require('js-yaml');
-const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify');
+const htmlmin = require('gulp-htmlmin');
+const concat = require('gulp-concat');
+const concatCss = require('gulp-concat-css');
+const merge = require('merge-stream');
 
 const slugOptions = {
     lower: true
 };
 
-// Task for building blog when something changed:
-gulp.task('build', shell.task(['bundle exec jekyll build --watch --drafts']));
+/**
+ * Handles content files such as html, markdown and text files
+ */
+function content() {
+    // HTML
+    const html = gulp.src('./src/**/*.{htm,html}')
+        .pipe(plumber())
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true,
+            minifyJS: true,
+            minifyCSS: true,
+        }))
+        .pipe(gulp.dest('./_site/'));
 
-// Cleaning up
-gulp.task('cleanup', () => {
-    return del(['./_site/']);
-});
+    // Other
+    const misc = gulp.src('./src/**/*.{md,markdown,txt,json}')
+        .pipe(plumber())
+        .pipe(gulp.dest('./_site/'));
 
-// Removing .DS_Store files
-gulp.task('prepareInbox', shell.task(['find . -name .DS_Store -type f -delete']));
+    return merge(html, misc);
+}
 
-// Building photo gallery from the files in the inbox
-gulp.task('handleInbox', () => {
+/**
+ * Handles javascript files
+ */
+function javascript() {
+    // Building vendors file
+    const vendorJs = gulp.src('./src/assets/js/vendor/**/*.js')
+        .pipe(plumber())
+        .pipe(concat('vendor.js'))
+        .on('error', function (err) {
+            console.log(err.toString());
+        })
+        .pipe(rename({
+            suffix: '.min',
+        }))
+        .pipe(gulp.dest('./_site/assets/js/'));
+
+    // Building app file
+    const appJs = gulp.src('./src/assets/js/app/**/*.js')
+        .pipe(plumber())
+        .pipe(concat('app.js'))
+        .pipe(uglify())
+        .on('error', function (err) {
+            console.log(err.toString());
+        })
+        .pipe(rename({
+            suffix: '.min',
+        }))
+        .pipe(gulp.dest('./_site/assets/js/'));
+
+    return merge(vendorJs, appJs);
+}
+
+/**
+ * Handles Sass files and compiles them to CSS
+ */
+function css() {
+    return gulp.src('./src/assets/scss/**/*.scss')
+        .pipe(plumber({
+            errorHandler(err) {
+                this.emit('end');
+            },
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: true,
+        }))
+        .pipe(sourcemaps.write())
+        .pipe(concatCss('bundle.css'))
+        .pipe(gulp.dest('./src/assets/css/'))
+        .pipe(cssnano())
+        .pipe(rename({
+            suffix: '.min',
+        }))
+        .pipe(gulp.dest('./_site/assets/css/'))
+        .pipe(browsersync.stream());
+}
+
+/**
+ * Fonts
+ */
+function fonts(done) {
+    return gulp.src('./src/assets/fonts/**/*.*')
+        .pipe(gulp.dest('./_site/assets/fonts/'));
+}
+
+/**
+ * Handles images
+ */
+function images() {
+    return gulp.src('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}')
+        .pipe(plumber())
+        .pipe(imagemin([imagemin.jpegtran({
+            progressive: true
+        })]))
+        .pipe(gulp.dest('./_site/assets/img/'));
+}
+
+/**
+ * Browser sync browser(s) reloading
+ */
+function browsersyncReload(done) {
+    browsersync.reload();
+    done();
+}
+
+/**
+ * Gulp watch
+ * Watching for file changes
+ */
+function siteWatch() {
+    gulp.watch('./src/assets/scss/**/*.scss', css);
+    gulp.watch('./src/assets/js/**/*.js', javascript);
+    gulp.watch('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}', images);
+    gulp.watch('./src/**/*.{htm,html,md,markdown,txt}', content);
+}
+
+/**
+ * Gulp serve
+ * Watching for file changes and running browser sync
+ */
+function siteServe() {
+    browsersync.init({
+        notify: false,
+        port: 3000,
+        directory: false,
+        server: {
+            baseDir: './_site/'
+        },
+    });
+
+    gulp.watch('./src/assets/scss/**/*.scss', gulp.series(css, browsersyncReload));
+    gulp.watch('./src/assets/js/**/*.js', gulp.series(javascript, browsersyncReload));
+    gulp.watch('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}', gulp.series(images, browsersyncReload));
+    gulp.watch('./src/**/*.{htm,html,md,markdown,txt}', gulp.series(content, browsersyncReload));
+}
+
+/**
+ * Cleanup
+ * Deletes the _site folder
+ */
+function cleanup() {
+    return del(['./_site/', './src/assets/css/']);
+}
+
+/**
+ * Removing .DS_Store files
+ */
+function prepareInbox() {
+    return shell.task(['find . -name .DS_Store -type f -delete']);
+}
+
+/**
+ * Building photo gallery from the files in the inbox
+ */
+function handleInbox() {
     return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', {
             nocase: true
         })
+
         // Reading photo data
         .pipe(exif())
 
@@ -73,16 +222,12 @@ gulp.task('handleInbox', () => {
     // .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
 
     ;
-});
+};
 
-// Clearing the inbox
-gulp.task('clearInbox', () => {
-    // Cleaning up the inbox
-    return del(['./assets/photos/inbox/**/*']);
-});
-
-// Scanning all original photos and creating data files
-const walkPhotos = (path, index) => {
+/**
+ * Scanning all original photos and creating data files
+ */
+function walkPhotos(path, index) {
     const directory = fs.readdirSync(path);
 
     // Directory is going to be an array of album directories
@@ -195,20 +340,20 @@ const walkPhotos = (path, index) => {
     return true;
 };
 
-gulp.task('buildGalleryIndex', (done) => {
+/**
+ * Building gallery index
+ */
+function buildGalleryIndex(done) {
     let index = {};
     const generatedIndex = {};
 
     walkPhotos('./assets/photos/inbox/', generatedIndex);
 
     done();
-});
+};
 
 /**
  * Adds a sub folder to the path object
- * 
- * @param {obj} path
- * @param {string} target
  */
 function createImgPath(path) {
     path.dirname = slug(path.dirname.split('/').pop(), slugOptions);
@@ -218,20 +363,22 @@ function createImgPath(path) {
     return path;
 }
 
-// Processing the inbox photos, then deletes them
-gulp.task('inbox', ['buildGalleryIndex', 'handleInbox']);
-// gulp.task('inbox', ['buildGalleryIndex', 'handleInbox', 'clearInbox']);
+const build = gulp.series(cleanup, gulp.parallel(content, javascript, css, images, fonts));
+const watch = gulp.series(build, siteWatch);
+const serve = gulp.series(build, siteServe);
+const inbox = gulp.series(buildGalleryIndex, handleInbox);
 
-// Task for serving blog with Browsersync
-gulp.task('serve', function () {
-    browserSync.init({
-        server: {
-            baseDir: '_site/'
-        },
-        notify: false
-    });
-    // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
-});
-
-gulp.task('default', ['build', 'serve']);
+exports.css = css;
+exports.content = content;
+exports.javascript = javascript;
+exports.images = images;
+exports.fonts = fonts;
+exports.watch = watch;
+exports.serve = serve;
+exports.build = build;
+exports.cleanup = cleanup;
+exports.prepareInbox = prepareInbox;
+exports.handleInbox = handleInbox;
+exports.buildGalleryIndex = buildGalleryIndex;
+exports.inbox = inbox;
+exports.default = build;
