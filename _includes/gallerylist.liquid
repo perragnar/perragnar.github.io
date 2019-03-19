@@ -14,7 +14,7 @@
             {% assign photo_posts = site.posts | where: "categories", "Foto" %}
             {% for post in photo_posts %}
                 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+                {% capture prev_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
                 {% assign post_categories = post.categories | downcase %}
 
                 {% if forloop.first %}
@@ -67,12 +67,12 @@
                     </div>
                 {% endunless %}
                 
-                {% if this_year != next_year %}
+                {% if this_year != prev_year %}
                     {% if forloop.last %}
                     {% else %}
                         <div class="col col--full card card--ghost">
                             <div class="card__body card__body-no-padding">
-                                <h2 id="{{ this_year }}-ref" class="no-margin">{{this_year}}</h2>
+                                <h2 id="{{ prev_year }}-ref" class="no-margin">{{prev_year}}</h2>
                             </div>
                         </div>
                     {% endif %}
