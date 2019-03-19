@@ -45,7 +45,51 @@
     .card__poster {
         position: relative;
         overflow: hidden;
-        height: 180px;
+        height: 100%;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-bottom: 60%;
+        }
+
+        .card__meta {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+
+            .card__title {
+                font-size: 1rem;
+                color: #fff;
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
+                margin: 1rem 1rem .5rem;
+            }
+
+            .post-meta {
+                margin: 0 1rem 1rem;
+
+                .tags {
+                    .tag {
+                        font-size: .5em;
+                    }
+                }
+            }
+        }
+
+        .card__date--poster {
+            font-size: .6em;
+            position: absolute;
+            top: .2rem;
+            right: .2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: .5rem;
+            line-height: 1;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
+            color: #fff;
+            z-index: 1;
+        }
 
         a {
             display: block;
@@ -67,7 +111,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            transition: transform 4s ease;
+            transform: scale(1.01);
+            transition: transform 1s ease;
         }
     }
 
