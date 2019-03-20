@@ -35,6 +35,23 @@ layout: default
                         {% unless post.draft %}
                             <div class="col col--1-3 card">
                                 <div class="card__poster">
+                                    <div class="card__date--poster">{% include datetime.liquid datetime=post.date %}</div>
+                                    <div class="card__meta">
+                                        <h3 class="card__title">
+                                            {{ post.title }}
+                                        </h3>
+                                        <div class="post-meta">
+                                            {% if post.tags %}
+                                                <div class="post-meta-section tags">
+                                                    <ul>
+                                                        {% for tag in post.tags %}
+                                                            <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
                                     {% for gallerySlug in post.galleries %}
                                         {% assign gallery = site.data.galleries[gallerySlug] %}
                                         {% if gallery.contents %}
@@ -50,26 +67,6 @@ layout: default
                                             </a>
                                         {% endif %}
                                     {% endfor %}
-                                </div>
-                                <div class="card__body">
-                                    <h3 class="card__title">
-                                        <a href="{{ site.baseurl }}{{ post.url }}">
-                                            {{ post.title }}
-                                        </a>
-                                    </h3>
-                                    <div class="card__date--poster">{% include datetime.liquid datetime=post.date %}</div>
-                                    <div class="post-meta">
-                                    {% if post.tags %}
-                                        <div class="post-meta-section tags">
-                                            <ul>
-                                                {% for tag in post.tags %}
-                                                    <li><a href="/tags/#{{ tag | slugify: 'pretty' }}" class="tag">{{ tag }}</a></li>
-                                                {% endfor %}
-                                            </ul>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                                    {{ post.content | strip_html | truncatewords: 20 }}
                                 </div>
                             </div>
                         {% endunless %}
