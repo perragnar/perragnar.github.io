@@ -1,0 +1,114 @@
+title: Ransta
+date: '2019-03-22'
+poster: 2019-03-22.jpg
+contents:
+  - filename: 2019-03-20.jpg
+    width: 4000
+    height: 4000
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/2700
+    iso: 200
+    date: 1553053933
+  - filename: 2019-03-20-2.jpg
+    width: 6000
+    height: 4000
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/125
+    iso: 500
+    date: 1553054489
+  - filename: 2019-03-20-3.jpg
+    width: 3890
+    height: 3890
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 4
+    shutter: 1/70
+    iso: 800
+    date: 1553054529
+  - filename: 2019-03-20-5.jpg
+    width: 3723
+    height: 3723
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 7.1
+    shutter: 1/30
+    iso: 800
+    date: 1553054667
+  - filename: 2019-03-20-6.jpg
+    width: 5105
+    height: 3668
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 8
+    shutter: 30s
+    iso: 100
+    date: 1553064533
+  - filename: 2019-03-20-7.jpg
+    width: 5131
+    height: 2994
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 8
+    shutter: 8s
+    iso: 100
+    date: 1553064836
+  - filename: 2019-03-21.jpg
+    width: 4853
+    height: 4000
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 4.5
+    shutter: 1/1250
+    iso: 200
+    date: 1553209383
+  - filename: 2019-03-22.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 10
+    aperture: 8
+    shutter: 1/1.25
+    iso: 100
+    date: 1553256154
+  - filename: 2019-03-22-2.jpg
+    width: 3712
+    height: 5568
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 11
+    aperture: 8
+    shutter: 1/1.25
+    iso: 100
+    date: 1553256380
+  - filename: 2019-03-22-3.jpg
+    width: 6356
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 11
+    aperture: 8
+    shutter: 1/2.5
+    iso: 100
+    date: 1553256461
+  - filename: 2019-03-22-4.jpg
+    width: 3712
+    height: 5568
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 11
+    aperture: 8
+    shutter: 1/1.6666666666666667
+    iso: 100
+    date: 1553256520
