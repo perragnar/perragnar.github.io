@@ -178,6 +178,13 @@ function cleanup() {
 }
 
 /**
+ * Deletes all photos in inbox
+ */
+function clearInbox() {
+    return del(['./assets/photos/inbox/**/*']);
+}
+
+/**
  * Removing .DS_Store files
  */
 function prepareInbox() {
@@ -390,4 +397,5 @@ exports.prepareInbox = prepareInbox;
 exports.handleInbox = handleInbox;
 exports.buildGalleryIndex = buildGalleryIndex;
 exports.inbox = inbox;
+exports.clearInbox = clearInbox;
 exports.default = build;
