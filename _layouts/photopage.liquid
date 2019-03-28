@@ -26,6 +26,7 @@ layout: default
             </div>
         </div>
     </section>
+    {% include gallerylist.liquid %}
     <section class="section section--default section--low-prio-small-screens">
         <div class="slice">
             <div class="row">
@@ -37,7 +38,7 @@ layout: default
             </div>
         </div>
     </section>
-    {% include gallerylist.liquid %}
+}
 {% else %}
     {% include closed.liquid %}
 {% endif %}
