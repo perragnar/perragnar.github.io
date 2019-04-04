@@ -11,7 +11,7 @@ $(function () {
     var animatedElements = $('.animate');
 
     // Photo gallery camera shutter audio on/off
-    var photoCameraShutterAudio = true;
+    var photoCameraShutterAudio = false;
 
     // Checking if camera shutter sound is set by cookie
     // var photoCameraShutterAudioCookie = getCookie('camera-shutter-sound');
