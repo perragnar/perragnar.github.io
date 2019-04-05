@@ -84,10 +84,17 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
         background-repeat: no-repeat;
         transition: box-shadow 250ms ease;
 
+        &:only-child {
+            flex: 1 1;
+        }
+
         @include media('>=desktop') {
             margin: 5px;
             flex-basis: calc(50% - 10px);
-            padding-bottom: 0 !important;
+
+            &:not(:only-child) {
+                padding-bottom: 0 !important;
+            }
         }
 
         @include media('<desktop') {
