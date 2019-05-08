@@ -3,7 +3,7 @@ title: Västerås hamn
 date: 2018-10-17
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

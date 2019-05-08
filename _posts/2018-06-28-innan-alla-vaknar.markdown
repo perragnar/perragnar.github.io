@@ -1,8 +1,8 @@
 ---
-title: Innan alla vaknar 
+title: Innan alla vaknar
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
   - Morgon

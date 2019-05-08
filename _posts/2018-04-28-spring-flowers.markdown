@@ -2,7 +2,7 @@
 title: Vårblommor
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Vår
   - Blommor

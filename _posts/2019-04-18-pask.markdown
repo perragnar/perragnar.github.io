@@ -3,7 +3,7 @@ title: Påsk
 date: 2019-04-18
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Påsk
   - Vår

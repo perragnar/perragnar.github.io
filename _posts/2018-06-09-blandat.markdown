@@ -2,7 +2,7 @@
 title: Blandade foton
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
 galleries:
   - 2018-06-09-blandade-foton

@@ -3,7 +3,7 @@ title: Street foto i svartvitt
 date: 2018-11-21
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
   - Street

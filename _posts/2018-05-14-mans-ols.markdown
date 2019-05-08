@@ -2,7 +2,7 @@
 title: Solnedgång över Långforsen
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Solnedgång
   - Måns Ols

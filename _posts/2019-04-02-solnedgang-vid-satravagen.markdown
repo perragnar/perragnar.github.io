@@ -3,7 +3,7 @@ title: Solnedgång vid Sätravägen
 date: 2019-04-02
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Solnedgång
   - Sätra Brunn

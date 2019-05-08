@@ -2,7 +2,7 @@
 title: En cykeltur med kameran, del två
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
   - Cykel
@@ -11,7 +11,7 @@ galleries:
   - 2018-05-24-cykeltur
 ---
 
-\- "Jag tar bara kameran och sticker ut en sväng på cykeln".  
+\- "Jag tar bara kameran och sticker ut en sväng på cykeln".
 Två och en halv mil blev det och inte speciellt många foton. Men det var skönt att röra på sig och komma ut i naturen.
 
 Två av bilderna — på skogsvägen — är på samma motiv, men ville testa att göra den ena svartvit.

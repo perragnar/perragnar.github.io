@@ -1,9 +1,9 @@
 ---
-title: Fristedts Herrekipering 
+title: Fristedts Herrekipering
 date: 2018-08-29
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Sala
   - Arkitektur

@@ -3,7 +3,7 @@ title: Öland - Tillbaka till sjöboden
 date: 2018-08-13
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
   - Sjöbod

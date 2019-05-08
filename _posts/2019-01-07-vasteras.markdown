@@ -1,9 +1,9 @@
 ---
-title: En helt vanlig dag i Västerås 
+title: En helt vanlig dag i Västerås
 date: 2019-01-07
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

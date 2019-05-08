@@ -3,7 +3,7 @@ title: Åre
 date: 2018-09-11
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Åre
 galleries:

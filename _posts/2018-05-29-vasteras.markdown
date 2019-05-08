@@ -2,7 +2,7 @@
 title: En promenad i Västerås
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

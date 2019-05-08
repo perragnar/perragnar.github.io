@@ -3,7 +3,7 @@ title: Tännforsen
 date: 2018-09-14
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Tännforsen
   - Höst

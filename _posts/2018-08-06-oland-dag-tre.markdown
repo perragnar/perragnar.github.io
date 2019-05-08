@@ -3,7 +3,7 @@ title: Öland - Byrum, Byxelkrok och Högby fyr
 date: 2018-08-06
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
   - Byrum

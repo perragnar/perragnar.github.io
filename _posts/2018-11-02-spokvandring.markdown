@@ -3,7 +3,7 @@ title: Ransta spökvandring
 date: 2018-11-02
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
   - Spökvandring

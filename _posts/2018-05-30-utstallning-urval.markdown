@@ -2,7 +2,7 @@
 title: Utställning på Sätra Brunn
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Sätra Brunn
   - Utställning

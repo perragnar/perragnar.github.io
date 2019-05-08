@@ -3,7 +3,7 @@ title: Öland - Hagskogsvägen
 date: 2018-08-07
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
 galleries:

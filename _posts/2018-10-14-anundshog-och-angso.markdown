@@ -3,7 +3,7 @@ title: Anundshög och Ängsö
 date: 2018-10-14
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Anundshög
   - Ängsö

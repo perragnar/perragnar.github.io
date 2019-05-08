@@ -3,7 +3,7 @@ title: Höst i Västerås, del tre
 date: 2018-10-11
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
   - Höst

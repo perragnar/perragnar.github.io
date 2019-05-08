@@ -3,7 +3,7 @@ title: Bondgården
 date: 2018-08-18
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
 galleries:

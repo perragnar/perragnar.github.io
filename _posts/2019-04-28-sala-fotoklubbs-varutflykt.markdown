@@ -3,7 +3,7 @@ title: Sala fotoklubbs vårutflykt
 date: 2019-04-28
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Sala Fotoklubb
   - Ängsö

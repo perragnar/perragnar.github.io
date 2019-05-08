@@ -3,7 +3,7 @@ title: Höst i Undersåker
 date: 2018-09-10
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Undersåker
   - Höst

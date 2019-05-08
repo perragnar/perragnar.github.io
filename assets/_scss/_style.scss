@@ -103,7 +103,7 @@ img {
     }
 
     @include media('>phone',
-    '<desktop') {
+        '<desktop') {
         padding: 0 1rem;
     }
 
@@ -140,7 +140,7 @@ img {
             }
 
             @include media('>500px',
-            '<desktop') {
+                '<desktop') {
                 margin-top: 20px;
             }
 
@@ -179,7 +179,7 @@ img {
             }
 
             @include media('>phone',
-            '<desktop') {
+                '<desktop') {
                 width: 100px;
                 padding: 15px;
                 margin-top: -5px;
@@ -287,7 +287,7 @@ img {
     }
 
     @include media('>phone',
-    '<desktop') {
+        '<desktop') {
         padding: .5rem;
     }
 
@@ -333,7 +333,7 @@ img {
         }
 
         @include media('>phone',
-        '<desktop') {
+            '<desktop') {
             padding-top: 2rem;
             font-size: .8em;
         }
@@ -421,7 +421,7 @@ img {
         }
 
         @include media('>phone',
-        '<desktop') {
+            '<desktop') {
             font-size: .8em;
         }
 
@@ -539,7 +539,7 @@ img {
             box-shadow: inset 0 -1px 0 #c2c1c2, inset 0 1px 0 #fff;
             position: relative;
             z-index: 1;
-            cursor: pointer;
+            cursor: not-allowed;
             transition: padding 250ms ease, margin 250ms ease;
 
             &:before {
@@ -864,7 +864,7 @@ img {
     }
 
     @include media('>phone',
-    '<desktop') {
+        '<desktop') {
         font-size: 1em;
     }
 

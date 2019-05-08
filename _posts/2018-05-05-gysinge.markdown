@@ -4,8 +4,8 @@ layout: post
 tags:
   - Gysinge
 categories:
-  - Foto
-galleries: 
+  - Fotoblogg
+galleries:
   - 2018-05-05-gysinge
 ---
 

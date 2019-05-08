@@ -3,7 +3,7 @@ title: Järndammen
 date: 2019-01-20
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Järndammen
   - Sala

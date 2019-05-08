@@ -3,7 +3,7 @@ title: Öland - Långe Erik
 date: 2018-08-05
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
 galleries:

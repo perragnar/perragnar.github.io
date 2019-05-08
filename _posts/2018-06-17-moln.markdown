@@ -2,7 +2,7 @@
 title: Moln
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Moln
 galleries:

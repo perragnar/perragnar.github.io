@@ -2,7 +2,7 @@
 title: En cykeltur med kameran
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
   - Cykel

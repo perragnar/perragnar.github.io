@@ -2,7 +2,7 @@
 title: Björnö
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Björnö
   - Västerås

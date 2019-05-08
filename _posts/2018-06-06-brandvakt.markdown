@@ -2,7 +2,7 @@
 title: Brandvakt och fotoutställning på Sätra Brunn
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Skogsbrand
   - Brandvakt

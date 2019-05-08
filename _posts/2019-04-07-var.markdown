@@ -3,7 +3,7 @@ title: Vår
 date: 2019-04-07
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Vår
   - Blommor

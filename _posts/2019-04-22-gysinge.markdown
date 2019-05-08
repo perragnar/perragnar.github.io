@@ -3,7 +3,7 @@ title: Gysinge
 date: 2019-04-22
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Skekarsbo
   - Gysinge

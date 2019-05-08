@@ -3,7 +3,7 @@ title: Blandade foton från Västerås
 date: 2018-12-05
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

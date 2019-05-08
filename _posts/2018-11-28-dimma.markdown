@@ -3,7 +3,7 @@ title: Dimma
 date: 2018-11-28
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Dimma
   - Kyla

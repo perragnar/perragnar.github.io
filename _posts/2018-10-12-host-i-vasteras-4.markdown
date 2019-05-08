@@ -1,9 +1,9 @@
 ---
-title: Höst i Västerås, del fyra 
+title: Höst i Västerås, del fyra
 date: 2018-10-12
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
   - Höst

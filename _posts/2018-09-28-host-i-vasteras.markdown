@@ -3,7 +3,7 @@ title: Höst i Västerås
 date: 2018-09-28
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

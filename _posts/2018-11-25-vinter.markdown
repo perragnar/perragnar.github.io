@@ -3,7 +3,7 @@ title: Vinter
 date: 2018-11-25
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Vinter
 galleries:

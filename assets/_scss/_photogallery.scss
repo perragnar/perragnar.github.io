@@ -107,6 +107,10 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
             }
         }
 
+        &.faded {
+            opacity: .1;
+        }
+
         &.info {
             position: relative;
 

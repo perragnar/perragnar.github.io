@@ -3,7 +3,7 @@ title: Kvällstur med Nils
 date: 2019-04-13
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Kivsta
   - Limsta

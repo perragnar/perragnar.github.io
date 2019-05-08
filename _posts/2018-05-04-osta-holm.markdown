@@ -7,7 +7,7 @@ tags:
   - Långforsen
   - Måns Ols
 categories:
-  - Foto
+  - Fotoblogg
 galleries:
   - 2018-05-04-osta-holm
 ---

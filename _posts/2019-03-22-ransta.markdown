@@ -3,7 +3,7 @@ title: Ransta
 date: 2019-03-22
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
 galleries:

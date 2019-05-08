@@ -3,7 +3,7 @@ title: Björkar (och problemet att fånga dem på bild)
 date: 2019-05-06
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Björk
 galleries:

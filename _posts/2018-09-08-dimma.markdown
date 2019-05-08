@@ -3,7 +3,7 @@ title: Dimma
 date: 2018-09-08
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Dimma
   - Sandsjön

@@ -3,7 +3,7 @@ title: Acros svartvitt
 date: 2018-12-02
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Dimma
   - Ransta

@@ -3,7 +3,7 @@ title: Måns Ols i vinterskrud
 date: 2018-12-22
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Måns Ols
   - Sala

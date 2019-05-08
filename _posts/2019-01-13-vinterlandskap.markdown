@@ -3,7 +3,7 @@ title: Vinterlandskap
 date: 2019-01-13
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
   - Labacken

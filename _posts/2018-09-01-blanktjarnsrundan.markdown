@@ -3,7 +3,7 @@ title: Blanktjärnsrundan
 date: 2018-09-12
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Jämtland
   - Blanktjärn

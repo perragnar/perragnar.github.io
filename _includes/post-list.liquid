@@ -8,15 +8,24 @@
 {% assign blog_posts = site.posts %}
 {% for post in blog_posts %}
     {% unless post.draft %}
-        {% unless post.categories contains "Foto" %}
+        {% unless post.categories contains "Fotoblogg" %}
             {% assign post_counter = post_counter | plus:1 %}
             {% if post_counter <= limit %}
                 <div class="col col--1-3 card ">
                     <div class="card__body">
                         {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
-                        
+
                         <div class="post-meta">
                             <div class="post-meta-section date">{% include datetime.liquid datetime=post.date %}</div>
+                            {% if post.categories %}
+                                <div class="post-meta-section categories">
+                                    <ul>
+                                        {% for category in post.categories %}
+                                            <li><a href="/category/{{ category | slugify: 'pretty' }}" class="category">{{ category }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
                             {% if post.tags %}
                                 <div class="post-meta-section tags">
                                     <ul>

@@ -3,7 +3,7 @@ title: Natthimmel över Ransta
 date: 2018-08-01
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Natt
 galleries:

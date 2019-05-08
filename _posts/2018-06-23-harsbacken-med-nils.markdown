@@ -2,7 +2,7 @@
 title: Hårsbäcken med Nils
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Hårsbäcken
 galleries:

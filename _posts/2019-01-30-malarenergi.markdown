@@ -3,7 +3,7 @@ title: Mälarenergi
 date: 2019-01-30
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Mälarenergi
   - Dimma

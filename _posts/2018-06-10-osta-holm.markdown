@@ -2,7 +2,7 @@
 title: Fotoutflykt till Östa Holm
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Östa Holm
   - Myggor

@@ -3,7 +3,7 @@ title: Sala Silvergruva
 date: 2019-02-03
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Sala
   - Silvergruva

@@ -3,7 +3,7 @@ title: Promenad hemma
 date: 2018-12-27
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ransta
 galleries:

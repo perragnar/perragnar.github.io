@@ -3,7 +3,7 @@ title: Öland, dag ett
 date: 2018-08-04
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
 galleries:

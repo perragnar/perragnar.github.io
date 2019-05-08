@@ -3,7 +3,7 @@ title: Tidövägen
 date: 2019-04-14
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Asköviken
   - Tidö

@@ -1,9 +1,9 @@
 ---
-title: Ristafallet 
+title: Ristafallet
 date: 2018-09-09
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Ristafallet
   - Jämtland

@@ -3,7 +3,7 @@ title: Dimma i västerås
 date: 2019-01-23
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
   - Dimma

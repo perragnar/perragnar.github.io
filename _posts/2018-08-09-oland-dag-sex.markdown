@@ -3,7 +3,7 @@ title: Öland - Kapelluddens fyr och kustvägen
 date: 2018-08-09
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
   - Kapelludden

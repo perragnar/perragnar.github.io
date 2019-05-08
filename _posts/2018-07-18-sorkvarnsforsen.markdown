@@ -2,7 +2,7 @@
 title: Sörkvarnsforsen
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Sörkvarnsforsen
   - Hallstahammar

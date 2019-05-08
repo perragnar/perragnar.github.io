@@ -3,7 +3,7 @@ title: Kvällsfotografering i Västerås hamn
 date: 2018-09-01
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

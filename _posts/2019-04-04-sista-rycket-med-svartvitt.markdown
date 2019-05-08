@@ -3,7 +3,7 @@ title: Sista rycket med svartvitt
 date: 2019-04-04
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Svartvitt
   - Västerås

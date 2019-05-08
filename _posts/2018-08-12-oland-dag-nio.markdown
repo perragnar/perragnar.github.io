@@ -3,7 +3,7 @@ title: Öland - Tillbaka till Högby fyr
 date: 2018-08-12
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Öland
   - Högby fyr

@@ -3,7 +3,7 @@ title: Östra Silvberg gruva
 date: 2018-09-22
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Dalarna
   - Gruva

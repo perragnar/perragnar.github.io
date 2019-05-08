@@ -3,7 +3,7 @@ title: Utmaning i svartvitt
 date: 2019-03-15
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Svartvitt
   - Utmaning

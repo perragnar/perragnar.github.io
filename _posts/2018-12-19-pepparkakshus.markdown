@@ -3,7 +3,7 @@ title: Pepparkakshus
 date: 2018-12-19
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Stockholm
   - Jul

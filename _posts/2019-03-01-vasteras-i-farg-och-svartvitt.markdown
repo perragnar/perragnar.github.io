@@ -3,7 +3,7 @@ title: Västerås i färg och svartvitt
 date: 2019-03-01
 layout: post
 categories:
-  - Foto
+  - Fotoblogg
 tags:
   - Västerås
 galleries:

@@ -5,7 +5,7 @@ tags:
   - Järndammen
   - Sala
 categories:
-  - Foto
+  - Fotoblogg
 galleries:
   - 2018-05-02-jarndammen
 ---
