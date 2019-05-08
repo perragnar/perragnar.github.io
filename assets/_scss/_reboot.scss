@@ -58,13 +58,13 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 abbr[title],
@@ -77,7 +77,7 @@ abbr[data-original-title] {
 }
 
 address {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-style: normal;
     line-height: inherit;
 }
@@ -86,7 +86,7 @@ ol,
 ul,
 dl {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 ol ol,
@@ -175,7 +175,7 @@ samp {
 
 pre {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     overflow: auto;
     -ms-overflow-style: scrollbar;
 }

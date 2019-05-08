@@ -17,7 +17,7 @@ h6,
 .header {
     font-family: 'Miriam Libre', sans-serif;
     font-weight: 700;
-    margin: 0 0 1rem;
+    margin: .5rem 0 1rem;
     line-height: 1;
 
     &.no-margin {
@@ -25,9 +25,14 @@ h6,
     }
 }
 
+h2,
+.header {
+    margin-bottom: 2rem;
+}
+
 blockquote {
     position: relative;
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
     padding: 1rem 1rem 1rem 2rem;
     font-style: italic;
     font-family: 'Miriam Libre', sans-serif;
@@ -84,6 +89,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 0 0 2rem;
 
     &.column {
         flex-direction: column;
