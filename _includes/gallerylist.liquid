@@ -60,6 +60,13 @@
                                             {% endif %}
                                         {% endif %}
                                     {% endfor %}
+                                {% elsif post.poster %}
+                                    {% if post.poster contains '://' %}
+                                        {% assign poster_url = post.poster %}
+                                    {% else %}
+                                        {% assign poster_url = post.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
+                                    {% endif %}
+                                    <div class="photo" style="background-image: url({{ poster_url }});"></div>
                                 {% else %}
                                     <div class="photo faded" style="background-image: url({{ site.baseurl }}/assets/img/photo-blog-default-poster.jpg);"></div>
                                 {% endif %}
