@@ -45,6 +45,7 @@
 
                     &::before {
                         content: '@';
+                        opacity: 0.6;
                         display: inline-block;
                         margin-right: 3px;
                     }
@@ -85,6 +86,7 @@
 
                     &::before {
                         content: '#';
+                        opacity: 0.6;
                         display: inline-block;
                         margin-right: 3px;
                     }
