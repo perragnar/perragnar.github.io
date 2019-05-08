@@ -13,17 +13,6 @@ layout: default
                         <div>
                             <a href="#" class="button button--blue back-button">Tillbaka</a>
                         </div>
-                        {% comment %} <div>
-                            {% if page.galleries %}
-                                <div id="shutter-sound-toggle-wrapper" class="shutter-sound-toggle-wrapper">
-                                    <label class="switch">
-                                        <input type="checkbox" id="shutter-sound-toggle">
-                                    </label>
-                                    <label class="switch-label">Kameraljud</label>
-                                </div>
-                            {% endif %}
-                            {% comment %} <div class="sharethis-inline-share-buttons"></div> {% endcomment %}
-                        </div> {% endcomment %}
                     </div>
                 </div>
             </div>
@@ -47,6 +36,15 @@ layout: default
                                     <div class="post-meta-section post-status">Draft</div>
                                 {% endif %}
                                 <div class="post-meta-section date">{% include datetime.liquid datetime=page.date %}</div>
+                                {% if page.categories %}
+                                    <div class="post-meta-section categories">
+                                        <ul>
+                                            {% for category in page.categories %}
+                                                <li><a href="/category/{{ category | slugify: 'pretty' }}" class="category">{{ category }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
                                 {% if page.tags %}
                                     <div class="post-meta-section tags">
                                         <ul>
