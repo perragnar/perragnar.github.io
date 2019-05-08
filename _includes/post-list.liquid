@@ -8,7 +8,7 @@
 {% assign blog_posts = site.posts %}
 {% for post in blog_posts %}
     {% unless post.draft %}
-        {% unless post.categories contains "Fotoblogg" %}
+        {% unless post.categories contains "Fotoblogg" and post.categories.size == 1 %}
             {% assign post_counter = post_counter | plus:1 %}
             {% if post_counter <= limit %}
                 <div class="col col--1-3 card ">
