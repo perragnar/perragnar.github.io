@@ -8,6 +8,7 @@ tags:
   - Visual Studio Code
   - Tower
   - Mac
+poster: git-header.jpg
 ---
 
 Använder du Git-klienten **Tower** och vill använda **Visual Studio Code** för att jämföra och slå ihop (diff och merge) commits?  

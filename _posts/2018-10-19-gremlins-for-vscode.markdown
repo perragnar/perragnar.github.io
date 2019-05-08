@@ -7,6 +7,7 @@ tags:
   - Visual Studio Code
   - vscode
   - Gremlins
+poster: webdev.jpg
 ---
 
 Vill tipsa om en ganska liten och enkel extension till Visual Studio Code. Det enda den gör är att markera, både rad och vilken position, "felaktiga" tecken. 
