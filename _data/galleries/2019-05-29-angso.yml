@@ -72,6 +72,16 @@ contents:
     shutter: 1/100
     iso: 560
     date: 1559161984
+  - filename: 2019-05-29-7b.jpg
+    width: 5568
+    height: 2883
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 70
+    aperture: 5.6
+    shutter: 1/100
+    iso: 100
+    date: 1559162071
   - filename: 2019-05-29-8.jpg
     width: 5221
     height: 3712
