@@ -7,10 +7,18 @@ categories:
 tags:
   - Fotografering
   - Komposition
+  - Öland
+  - Engsö slott
+  - Ängsö
+  - Torp
+  - Årstider
 poster: return-to-composition.jpg
 ---
 
 Att ta ett kort vid ett tillfälle och senare komma tillbaka till samma plats med samma komposition _kan_ resultera i helt olika bilder. Årstiden, tid på dygnet, vädret och andra parametrar spelar såklart en stor roll för resultatet. Det kan också vara ett mått på sin fotografiska utveckling.
+
+**Uppdatering, 6:e juni 2019** - 
+Jag har lagt upp lite fler bilder från torpet och ännu ett exempel på en komposition i olika årstider.
 
 ## Exempel ett - Torpet i olika årstider
 
@@ -23,7 +31,7 @@ I mitt första exempel har jag fotograferat ett öde torp, 5 minuter med bil fr�
   <figcaption>Torpet, mars 2019</figcaption>
 </figure>
 
-Torpet är fotograferat en dimmig marsdag. Dimman har isolerat huset och träden helt från bakgrunden. Kameran hade problem att mäta vitbalansen så fotot fick ett rejält blåstick så jag gjorde fotot svartvitt.
+Torpet är fotograferat [en dimmig marsdag]({{ site.baseurl }}/2019/03/14/vinterdimma/). Dimman har isolerat huset och träden helt från bakgrunden. Kameran hade problem att mäta vitbalansen så fotot fick ett rejält blåstick så jag gjorde fotot svartvitt.
 
 - Kamera: Nikon D500
 - Objektiv: Tamron 24-70mm f2.8 G2
@@ -46,6 +54,36 @@ Den här bilden är tagen nu i början av maj. Himlen är lite orolig men solen 
 - Brännvidd: 24mm
 - Slutartid: 1/250
 - Bländare: f/4
+- ISO: 100
+
+### Torpet på sommaren
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-3.jpg" alt="Torpet, dagtid juni 2019">
+  <figcaption>Torpet, dagtid juni 2019</figcaption>
+</figure>
+
+I början av juni är allt grönare. Den här bilden är tagen mitt på dagen med bara några begynnande stackmoln i horisonten. Allt är fortfarande försommargrönt.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/800
+- Bländare: f/8
+- ISO: 100
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-4.jpg" alt="Torpet, kvällstid juni 2019">
+  <figcaption>Torpet, kvällstid juni 2019</figcaption>
+</figure>
+
+Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis innan solen går ner. Ljuset är varmare och skuggorna längre.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/125
+- Bländare: f/8
 - ISO: 100
 
 ## Exempel två - Sjöboden, ett år senare
@@ -75,7 +113,7 @@ Den första bilden är, i mina ögon, överexponerad och har inte lika bra skär
   <figcaption>Sjöboden på Öland, ett år senare</figcaption>
 </figure>
 
-Denna bild är tagen ett år senare, plus minus en vecka, med min nyare kamera. Skärpan är bättre och den har bättre ljus, även om den kan upplevas en smula underexponerad. Inställningarna är:
+Denna bild är tagen [ett år senare]({{ site.baseurl }}/2018/08/13/oland-dag-10/), plus minus en vecka, med min nyare kamera. Skärpan är bättre och den har bättre ljus, även om den kan upplevas en smula underexponerad. Inställningarna är:
 
 - Kamera: Nikon D500
 - Objektiv: Tamron 24-70mm f2.8 G2
@@ -84,6 +122,47 @@ Denna bild är tagen ett år senare, plus minus en vecka, med min nyare kamera. 
 - Bländare: f/8
 - ISO: 180
 
+## Exempel tre - Eken vid hagen
+
+Här kommer ett till exempel på skillnaden mellan årstider. På väg ut mot Engsö Slott på Ängsö mellan Västerås och Enköping finns en hage fylld med gamla ekar.
+
+### Eken på vintern
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-1.jpg" alt="Eken i hagen på vintern">
+  <figcaption>Eken i hagen på vintern</figcaption>
+</figure>
+
+Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindstilla dag]({{ site.baseurl }}/2018/12/30/angso/). Lite snö, lite frost, lite sol och lite moln. 
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 42mm
+- Slutartid: 1/250
+- Bländare: f/8
+- ISO: 100
+
+### Eken på försommaren
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-2.jpg" alt="Eken i hagen på försommaren">
+  <figcaption>Eken i hagen på försommaren</figcaption>
+</figure>
+
+Här är samma komposition i slutet av [maj 2019]({{ site.baseurl }}/2019/05/29/angso/). Lite annorlunda vinkel och placering dock.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 36mm
+- Slutartid: 1/500
+- Bländare: f/8
+- ISO: 100
+
 ## Nästa steg
 
 Jag kommer att återvända till bägge platserna i år. Torpet här hemma kommer jag att fota flera gånger under året i olika väder och årstider. Sjöboden på Öland återkommer jag till i sommar och det ska bli kul att se hur den bilden kommer att bli.
+
+**Uppdatering, 6:e juni 2019**  
+Nu har jag återkommit till torpet ännu en gång, eller rättare sagt två gånger under samma dag, och tagit två nya bilder för att visa på ytterligare en årstid men också tidpunkt på dagen.
+
+Jag har även lagt till ännu ett exempel på en komposition i olika årstider. Eken vid hagen på Ängsö.
