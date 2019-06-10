@@ -53,6 +53,11 @@
         padding: .4rem !important;
     }
 
+    &.button--large {
+        font-size: 1.5rem;
+        padding: 1.5rem 2.5rem;
+    }
+
     &.button--rounded {
         border-radius: 3px;
     }
