@@ -12,13 +12,17 @@ tags:
   - Ängsö
   - Torp
   - Årstider
+  - Sala silvergruva
 poster: return-to-composition.jpg
 ---
 
 Att ta ett kort vid ett tillfälle och senare komma tillbaka till samma plats med samma komposition _kan_ resultera i helt olika bilder. Årstiden, tid på dygnet, vädret och andra parametrar spelar såklart en stor roll för resultatet. Det kan också vara ett mått på sin fotografiska utveckling.
 
-**Uppdatering, 6:e juni 2019** - 
+**Uppdatering, 6:e juni 2019**  
 Jag har lagt upp lite fler bilder från torpet och ännu ett exempel på en komposition i olika årstider.
+
+**Uppdatering, 27:e juni 2019**  
+Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar.
 
 ## Exempel ett - Torpet i olika årstider
 
@@ -133,7 +137,7 @@ Här kommer ett till exempel på skillnaden mellan årstider. På väg ut mot En
   <figcaption>Eken i hagen på vintern</figcaption>
 </figure>
 
-Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindstilla dag]({{ site.baseurl }}/2018/12/30/angso/). Lite snö, lite frost, lite sol och lite moln. 
+Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindstilla dag]({{ site.baseurl }}/2018/12/30/angso/). Lite snö, lite frost, lite sol och lite moln.
 
 - Kamera: Nikon D500
 - Objektiv: Tamron 24-70mm f2.8 G2
@@ -158,11 +162,50 @@ Här är samma komposition i slutet av [maj 2019]({{ site.baseurl }}/2019/05/29/
 - Bländare: f/8
 - ISO: 100
 
+## Exempel fyra - Karl XIs schakt
+
+I Sala silvergruvas nordvästra del, längs Drottning Christinas väg, ligger Karl XIs schakt. Här kommer ännu ett exempel på skillanden mellan vinter och sommar.
+
+### Schaktet på vintern
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-1.jpg" alt="Karl XIs schakt på vintern">
+  <figcaption>Karl XIs schakt på vintern</figcaption>
+</figure>
+
+Bilden är tagen i [februari 2019]({{ site.baseurl }}/2019/02/03/sala-silvergruva/). Det snöade en hel del och området var i princip helt tomt på folk.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/10
+- Bländare: f/8
+- ISO: 50
+
+### Schaktet på sommaren
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-2.jpg" alt="Karl XIs schakt på sommaren">
+  <figcaption>Karl XIs schakt på sommaren</figcaption>
+</figure>
+
+Här är i princip samma komposition i slutet av [juni 2019]({{ site.baseurl }}/2019/06/25/sala/). Den här gången i lite sämre ljusförhållanden och handhållet.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/100
+- Bländare: f/5.6
+- ISO: 1000
+
 ## Nästa steg
 
-Jag kommer att återvända till bägge platserna i år. Torpet här hemma kommer jag att fota flera gånger under året i olika väder och årstider. Sjöboden på Öland återkommer jag till i sommar och det ska bli kul att se hur den bilden kommer att bli.
+Jag kommer att återvända till flera av platserna i år. Torpet här hemma kommer jag att fota flera gånger under året i olika väder och årstider. Sjöboden på Öland återkommer jag till i sommar och det ska bli kul att se hur den bilden kommer att bli.
 
-**Uppdatering, 6:e juni 2019**  
+**Uppdatering, 6:e juni 2019**
 Nu har jag återkommit till torpet ännu en gång, eller rättare sagt två gånger under samma dag, och tagit två nya bilder för att visa på ytterligare en årstid men också tidpunkt på dagen.
 
 Jag har även lagt till ännu ett exempel på en komposition i olika årstider. Eken vid hagen på Ängsö.
+
+**Uppdatering, 27:e juni 2019**
+Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar. Motivet är Karl XIs schakt i Sala silvergruva.
