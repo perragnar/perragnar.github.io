@@ -1,0 +1,64 @@
+title: Sala
+date: '2019-06-25'
+poster: 2019-06-25-4.jpg
+contents:
+  - filename: 2019-06-25-1.jpg
+    width: 5099
+    height: 2913
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 24
+    aperture: 5.6
+    shutter: 1/100
+    iso: 1000
+    date: 1561489886
+  - filename: 2019-06-25-2.jpg
+    width: 4912
+    height: 4912
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 56
+    aperture: 5
+    shutter: 1/100
+    iso: 500
+    date: 1561490895
+  - filename: 2019-06-25-3.jpg
+    width: 5488
+    height: 3659
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 31
+    aperture: 5
+    shutter: 1/100
+    iso: 2800
+    date: 1561491781
+  - filename: 2019-06-25-4.jpg
+    width: 5562
+    height: 3223
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 70
+    aperture: 8
+    shutter: 1.6s
+    iso: 50
+    date: 1561493262
+  - filename: 2019-06-25-5.jpg
+    width: 3491
+    height: 3491
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 55
+    aperture: 8
+    shutter: 1/100
+    iso: 1000
+    date: 1561494385
+  - filename: 2019-06-25-6.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 66
+    aperture: 6.3
+    shutter: 1/13
+    iso: 200
+    date: 1561494654
