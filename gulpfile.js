@@ -306,6 +306,7 @@ function walkPhotos(path, index) {
         index[dirname] = {
             title: album.replace(/.+? /, ''),
             date: album.split(/ /, 1)[0],
+            poster: album.split(/ /, 1)[0] + '-1.jpg',
             contents: contains
         };
     }
