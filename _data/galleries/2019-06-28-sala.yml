@@ -1,0 +1,44 @@
+title: Sala
+date: '2019-06-28'
+poster: 2019-06-28-3.jpg
+contents:
+  - filename: 2019-06-28-1.jpg
+    width: 5738
+    height: 3583
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/1900
+    iso: 200
+    date: 1561713109
+  - filename: 2019-06-28-2.jpg
+    width: 5860
+    height: 6409
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 5.6
+    shutter: 1/125
+    iso: 400
+    date: 1561713561
+  - filename: 2019-06-28-3.jpg
+    width: 3958
+    height: 4948
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2.8
+    shutter: 1/1500
+    iso: 200
+    date: 1561713653
+  - filename: 2019-06-28-4.jpg
+    width: 5281
+    height: 6601
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 6.4
+    shutter: 1/2200
+    iso: 200
+    date: 1561718111
