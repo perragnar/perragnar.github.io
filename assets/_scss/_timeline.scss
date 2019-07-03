@@ -58,6 +58,7 @@
     width: 400px;
     max-width: 100%;
     text-align: right;
+    word-wrap: break-word;
 
     @include media('<=phone') {
         padding: 10px;
