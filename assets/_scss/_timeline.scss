@@ -58,7 +58,6 @@
     width: 400px;
     max-width: 100%;
     text-align: right;
-    word-wrap: break-word;
 
     @include media('<=phone') {
         padding: 10px;
@@ -86,6 +85,7 @@
     .timeline-item-header {
         margin: 0;
         font-size: .8em;
+        word-wrap: break-word;
     }
 
     .date {
