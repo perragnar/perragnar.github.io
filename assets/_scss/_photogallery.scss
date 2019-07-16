@@ -151,28 +151,23 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            align-items: baseline;
+            flex-direction: column;
             top: 0;
             left: 0;
             right: 0;
+            bottom: 0;
             padding: .5rem;
             background-color: rgba(0, 0, 0, 0);
             color: #fff;
             transform: translateY(-100%);
             z-index: 2;
             cursor: n-resize;
+            flex-wrap: nowrap;
             transition: transform 250ms ease, background-color 250ms ease;
-
-            @include media('<desktop') {
-                flex-direction: column;
-                bottom: 0;
-                align-items: stretch;
-                flex-wrap: nowrap;
-            }
 
             .data__post {
                 font-size: .8em;
-                padding: .25rem .5rem;
+                padding: .1rem;
                 display: flex;
                 align-items: center;
 
@@ -193,16 +188,11 @@ $animationEaseing: cubic-bezier(.75, -0.5, 0, 1.75);
                     border-radius: 3px;
                     margin-right: .5rem;
                     text-align: right;
-
-                    @include media('<desktop') {
-                        flex: 1;
-                    }
+                    flex: 1;
                 }
 
                 .value {
-                    @include media('<desktop') {
-                        flex: 3;
-                    }
+                    flex: 3;
                 }
             }
 
