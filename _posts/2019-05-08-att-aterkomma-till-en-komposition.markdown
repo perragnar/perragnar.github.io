@@ -24,6 +24,9 @@ Jag har lagt upp lite fler bilder från torpet och ännu ett exempel på en komp
 **Uppdatering, 27:e juni 2019**  
 Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar.
 
+**Uppdatering, 30:e juli 2019**
+Ännu en årstidsvariant av torpet.
+
 ## Exempel ett - Torpet i olika årstider
 
 I mitt första exempel har jag fotograferat ett öde torp, 5 minuter med bil från mitt hus. Jag har använt samma kamera och objektiv i bägge fotografierna, Nikon D500 med Tamron 24-70mm f2.8 G2.
@@ -87,6 +90,20 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 - Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/125
+- Bländare: f/8
+- ISO: 100
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-5.jpg" alt="Torpet, kvällstid juli 2019">
+  <figcaption>Torpet, kvällstid juli 2019</figcaption>
+</figure>
+
+Återigen en sommarbild, nu från slutet av juli 2019 och även denna kvällstid. Nu har det klargröna ersatts av gyllene fält i förgrunden.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/1000
 - Bländare: f/8
 - ISO: 100
 
@@ -209,3 +226,6 @@ Jag har även lagt till ännu ett exempel på en komposition i olika årstider. 
 
 **Uppdatering, 27:e juni 2019**
 Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar. Motivet är Karl XIs schakt i Sala silvergruva.
+
+**Uppdatering, 30:e juli 2019**
+Ännu en årstidsvariant av torpet.
