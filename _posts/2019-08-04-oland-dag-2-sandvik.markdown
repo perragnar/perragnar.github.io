@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2019
   - Lofta kustväg
   - Sandvik
   - Stenrösen

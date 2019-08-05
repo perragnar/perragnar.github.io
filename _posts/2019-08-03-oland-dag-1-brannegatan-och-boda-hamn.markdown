@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2019
   - Böda hamn
 galleries:
   - 2019-08-03-oland-dag-1-brannegatan-och-boda-hamn
