@@ -1,5 +1,5 @@
 ---
-title: Långe Erik
+title: Öland dag 4 - Långe Erik
 date: 2019-08-06
 layout: post
 categories:
