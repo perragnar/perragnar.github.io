@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
   - Högby fyr
 galleries:
   - 2018-08-12-oland-8

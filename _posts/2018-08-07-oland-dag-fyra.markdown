@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
 galleries:
   - 2018-08-07-oland-4
 ---

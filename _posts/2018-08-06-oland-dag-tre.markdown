@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
   - Byrum
   - Raukar
   - Byxelkrok

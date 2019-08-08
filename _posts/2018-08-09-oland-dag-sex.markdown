@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
   - Kapelludden
 galleries:
   - 2018-08-09-oland-6

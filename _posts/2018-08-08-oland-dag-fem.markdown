@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
   - Trollskogen
 galleries:
   - 2018-08-08-oland-5

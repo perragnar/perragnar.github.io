@@ -6,6 +6,7 @@ categories:
   - Fotoblogg
 tags:
   - Öland
+  - Öland 2018
   - Stjärnfall
 galleries:
   - 2018-08-10-oland-7
