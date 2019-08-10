@@ -24,8 +24,11 @@ Jag har lagt upp lite fler bilder från torpet och ännu ett exempel på en komp
 **Uppdatering, 27:e juni 2019**  
 Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar.
 
-**Uppdatering, 30:e juli 2019**
+**Uppdatering, 30:e juli 2019**  
 Ännu en årstidsvariant av torpet.
+
+**Uppdatering, 10:e augusti 2019**  
+En ny bild på sjöboden, tredje året.
 
 ## Exempel ett - Torpet i olika årstider
 
@@ -143,6 +146,22 @@ Denna bild är tagen [ett år senare]({{ site.baseurl }}/2018/08/13/oland-dag-10
 - Bländare: f/8
 - ISO: 180
 
+### Sjöboden på Öland, två år senare
+
+<figure class="column limit">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-3.jpg" alt="Sjöboden på Öland, två år senare">
+  <figcaption>Sjöboden på Öland, två år senare</figcaption>
+</figure>
+
+Denna bild är tagen ganska precis [ett år senare]({{ site.baseurl }}/2019/08/07/sjoboden/) än den förra bilden. Det blir alltså den tredje bilden med samma komposition med ett års mellanrum. Denna gång hade vi inte tur med ljuset men det är intressant att se skillnaderna från tidigare år. Inställningar:
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/100
+- Bländare: f/8
+- ISO: 50
+
 ## Exempel tre - Eken vid hagen
 
 Här kommer ett till exempel på skillnaden mellan årstider. På väg ut mot Engsö Slott på Ängsö mellan Västerås och Enköping finns en hage fylld med gamla ekar.
@@ -219,13 +238,16 @@ Här är i princip samma komposition i slutet av [juni 2019]({{ site.baseurl }}/
 
 Jag kommer att återvända till flera av platserna i år. Torpet här hemma kommer jag att fota flera gånger under året i olika väder och årstider. Sjöboden på Öland återkommer jag till i sommar och det ska bli kul att se hur den bilden kommer att bli.
 
-**Uppdatering, 6:e juni 2019**
+**Uppdatering, 6:e juni 2019**  
 Nu har jag återkommit till torpet ännu en gång, eller rättare sagt två gånger under samma dag, och tagit två nya bilder för att visa på ytterligare en årstid men också tidpunkt på dagen.
 
 Jag har även lagt till ännu ett exempel på en komposition i olika årstider. Eken vid hagen på Ängsö.
 
-**Uppdatering, 27:e juni 2019**
+**Uppdatering, 27:e juni 2019**  
 Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar. Motivet är Karl XIs schakt i Sala silvergruva.
 
-**Uppdatering, 30:e juli 2019**
+**Uppdatering, 30:e juli 2019**  
 Ännu en årstidsvariant av torpet.
+
+**Uppdatering, 10:e augusti 2019**  
+En ny bild på sjöboden, tredje året.
