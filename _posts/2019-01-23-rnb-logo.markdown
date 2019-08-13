@@ -12,7 +12,7 @@ tags:
 Ransta Nästa Bygdeförening behövde en ny logotyp som symboliserar bygdeföreningen och byn Ransta.  
 Detta är deras tidigare logotyp:  
 
-<img src="{{ site.baseurl }}/assets/postfiles/rnb-logga1.png" alt="Ransta Nästa Bygdeförening - tidigare logotyp" style="max-width: 300px;">
+<img src="{{ site.baseurl }}/assets/postfiles/rnb-logga1.png" alt="Ransta Nästa Bygdeförening - tidigare logotyp" loading="lazy" style="max-width: 300px;">
 
 I den tidigare logotypen är tågrälsen en viktig komponent då järnvägen har varit och fortfarande är en väldigt viktig resurs för Ransta.
 
@@ -20,4 +20,4 @@ När jag påbörjade skissandet av den nya logotypen ville jag behålla tågräl
 
 Efter olika varianter blev resultatet...
 
-<img src="{{ site.baseurl }}/assets/postfiles/rnb-logo-chart.png" alt="Ransta Nästa Bygdeförening - ny logotyp">
+<img src="{{ site.baseurl }}/assets/postfiles/rnb-logo-chart.png" alt="Ransta Nästa Bygdeförening - ny logotyp" loading="lazy">

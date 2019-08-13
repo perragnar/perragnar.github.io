@@ -37,7 +37,7 @@ I mitt första exempel har jag fotograferat ett öde torp, 5 minuter med bil fr�
 ### Torpet, vintertid
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-1.jpg" alt="Torpet, mars 2019">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-1.jpg" alt="Torpet, mars 2019" loading="lazy">
   <figcaption>Torpet, mars 2019</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Torpet är fotograferat [en dimmig marsdag]({{ site.baseurl }}/2019/03/14/vinter
 ### Torpet på våren
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-2.jpg" alt="Torpet, maj 2019">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-2.jpg" alt="Torpet, maj 2019" loading="lazy">
   <figcaption>Torpet, maj 2019</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Den här bilden är tagen nu i början av maj. Himlen är lite orolig men solen 
 ### Torpet på sommaren
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-3.jpg" alt="Torpet, dagtid juni 2019">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-3.jpg" alt="Torpet, dagtid juni 2019" loading="lazy">
   <figcaption>Torpet, dagtid juni 2019</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ I början av juni är allt grönare. Den här bilden är tagen mitt på dagen me
 - ISO: 100
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-4.jpg" alt="Torpet, kvällstid juni 2019">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-4.jpg" alt="Torpet, kvällstid juni 2019" loading="lazy">
   <figcaption>Torpet, kvällstid juni 2019</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 - ISO: 100
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-5.jpg" alt="Torpet, kvällstid juli 2019">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/torpet-5.jpg" alt="Torpet, kvällstid juli 2019" loading="lazy">
   <figcaption>Torpet, kvällstid juli 2019</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ Här nedan kommer ett exempel på precis samma komposition med ett års mellanru
 ### Sjöboden på Öland 2017
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-1.jpg" alt="Sjöboden på Öland 2017">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-1.jpg" alt="Sjöboden på Öland 2017" loading="lazy">
   <figcaption>Sjöboden på Öland 2017</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ Den första bilden är, i mina ögon, överexponerad och har inte lika bra skär
 ### Sjöboden på Öland, ett år senare
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-2.jpg" alt="Sjöboden på Öland, ett år senare">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-2.jpg" alt="Sjöboden på Öland, ett år senare" loading="lazy">
   <figcaption>Sjöboden på Öland, ett år senare</figcaption>
 </figure>
 
@@ -149,7 +149,7 @@ Denna bild är tagen [ett år senare]({{ site.baseurl }}/2018/08/13/oland-dag-10
 ### Sjöboden på Öland, två år senare
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-3.jpg" alt="Sjöboden på Öland, två år senare">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/sjoboden-3.jpg" alt="Sjöboden på Öland, två år senare" loading="lazy">
   <figcaption>Sjöboden på Öland, två år senare</figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ Här kommer ett till exempel på skillnaden mellan årstider. På väg ut mot En
 ### Eken på vintern
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-1.jpg" alt="Eken i hagen på vintern">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-1.jpg" alt="Eken i hagen på vintern" loading="lazy">
   <figcaption>Eken i hagen på vintern</figcaption>
 </figure>
 
@@ -185,7 +185,7 @@ Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindst
 ### Eken på försommaren
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-2.jpg" alt="Eken i hagen på försommaren">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/eken-2.jpg" alt="Eken i hagen på försommaren" loading="lazy">
   <figcaption>Eken i hagen på försommaren</figcaption>
 </figure>
 
@@ -205,7 +205,7 @@ I Sala silvergruvas nordvästra del, längs Drottning Christinas väg, ligger Ka
 ### Schaktet på vintern
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-1.jpg" alt="Karl XIs schakt på vintern">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-1.jpg" alt="Karl XIs schakt på vintern" loading="lazy">
   <figcaption>Karl XIs schakt på vintern</figcaption>
 </figure>
 
@@ -221,7 +221,7 @@ Bilden är tagen i [februari 2019]({{ site.baseurl }}/2019/02/03/sala-silvergruv
 ### Schaktet på sommaren
 
 <figure class="column limit">
-  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-2.jpg" alt="Karl XIs schakt på sommaren">
+  <img src="{{ site.baseurl }}/assets/postfiles/return-to-composition/schaktet-2.jpg" alt="Karl XIs schakt på sommaren" loading="lazy">
   <figcaption>Karl XIs schakt på sommaren</figcaption>
 </figure>
 

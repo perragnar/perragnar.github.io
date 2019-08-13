@@ -18,27 +18,27 @@ excerpt: |
 ## Skärmdumpar
 
 <figure>
-  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-html-js.png" alt="HTML + Sass" />
+  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-html-js.png" alt="HTML + Sass" loading="lazy" />
   <figcaption>HTML + Sass</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-markdown.png" alt="Markdown" />
+  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-markdown.png" alt="Markdown" loading="lazy" />
   <figcaption>Markdown</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-source-control.png" alt="Source Control" />
+  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-source-control.png" alt="Source Control" loading="lazy" />
   <figcaption>Source Control</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-detail-icons.png" alt="Ikon" />
+  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-detail-icons.png" alt="Ikon" loading="lazy" />
   <figcaption>Ikon</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-detail-settings.png" alt="Inställningar" />
+  <img src="{{ site.root }}/assets/postfiles/september-steel/screenshot-detail-settings.png" alt="Inställningar" loading="lazy" />
   <figcaption>Inställningar</figcaption>
 </figure>
 

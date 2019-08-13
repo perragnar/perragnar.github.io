@@ -16,7 +16,7 @@ comments: true
 draft: false
 ---
 
-<img src="{{ site.baseurl }}/assets/postfiles/jekyll-logo.png" alt="Jekyll logotyp" class="float-right" style="width: 400px; max-width: 50%;" />
+<img src="{{ site.baseurl }}/assets/postfiles/jekyll-logo.png" alt="Jekyll logotyp" class="float-right" style="width: 400px; max-width: 50%;" loading="lazy" />
 
 ## Jekyll, är inte det den där snubben med dubbla personligheter?
 — Stämmer bra. [Robert Louis Stevenson](https://sv.wikipedia.org/wiki/Robert_Louis_Stevenson) skrev på 1800-talet en bok om [Dr Jekyll och sitt alter ego Mr Edward Hyde](https://sv.wikipedia.org/wiki/Dr._Jekyll_och_Mr._Hyde). Men nog om Robert Louis Stevenson och hans karaktärer.

@@ -22,7 +22,7 @@ layout: default
                             {% assign poster_url = page.poster | prepend: site.baseurl | prepend: '/assets/posters/' %}
                         {% endif %}
                         <div class="card__poster">
-                            <img src="{{ poster_url }}" alt="{{ page.title }}" />
+                            <img src="{{ poster_url }}" alt="{{ page.title }}" loading="lazy" />
                         </div>
                     {% endif %}
                     <div class="card__body">
