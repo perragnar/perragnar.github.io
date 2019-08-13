@@ -1,0 +1,44 @@
+title: Ölandsbron
+date: '2019-08-13'
+poster: 2019-08-13-2.jpg
+contents:
+  - filename: 2019-08-13-1.jpg
+    width: 3138
+    height: 3138
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 48
+    aperture: 8
+    shutter: 1/200
+    iso: 100
+    date: 1565698016
+  - filename: 2019-08-13-2.jpg
+    width: 5513
+    height: 3689
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 32
+    aperture: 8
+    shutter: 1/1600
+    iso: 100
+    date: 1565698098
+  - filename: 2019-08-13-3.jpg
+    width: 4675
+    height: 3142
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 200
+    aperture: 8
+    shutter: 1/320
+    iso: 100
+    date: 1565698170
+  - filename: 2019-08-13-4.jpg
+    width: 5545
+    height: 3699
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 24
+    aperture: 8
+    shutter: 1/2000
+    iso: 100
+    date: 1565698540
