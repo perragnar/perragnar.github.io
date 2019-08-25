@@ -20,7 +20,7 @@ Med följande tanke i huvudet börjar jag skriva ner den första meningen i den 
 
 <!--more-->
 
-![Git logo]({{ site.baseurl }}/assets/postfiles/git-logo.png)
+![Git logo](/assets/postfiles/git-logo.png)
 
 ### Använder du git och är nybörjare eller funderar du på att börja?
 __Innan du läser vidare__ är det viktigt att du vet om att det här är en artikel skriven av en nybörjare med andra nybörjare som målgrupp.

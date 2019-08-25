@@ -20,11 +20,11 @@ Det har funnits en rad olika clearfix-hack genom åren men alla gör samma sak; 
 
 Vi har en container, dvs en `<div>` med CSS-klassen **container**. I container har vi t ex en bild eller vilket element som helst som flyter till vänster om text med hjälp av `float: left;`. Det som händer är att eftersom bilden flyter tar den inte hänsyn till containerns höjd och flyter därför utanför.
 
-![Utan clearfix]({{ site.baseurl }}/assets/postfiles/clear-fix-1.jpg)
+![Utan clearfix](/assets/postfiles/clear-fix-1.jpg)
 
 Använder vi oss av ett clearfix-hack i containern blir resultatet följande:
 
-![Med clearfix]({{ site.baseurl }}/assets/postfiles/clear-fix-2.jpg)
+![Med clearfix](/assets/postfiles/clear-fix-2.jpg)
 
 ## Clearfix CSS
 

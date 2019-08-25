@@ -17,11 +17,11 @@ Av olika anledningar vill man ibland undvika `target="_blank"` på sina länkar 
 
 Detta görs ofta med en liten pil;
 
-![Pil]({{ site.baseurl }}/assets/postfiles/icon-external-link.png)
+![Pil](/assets/postfiles/icon-external-link.png)
 
 eller en kedjelänk;
 
-![Länk]({{ site.baseurl }}/assets/postfiles/icon-link.png)
+![Länk](/assets/postfiles/icon-link.png)
 
 ## Attribute selectors
 

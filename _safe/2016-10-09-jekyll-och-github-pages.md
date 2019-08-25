@@ -16,7 +16,7 @@ comments: true
 draft: false
 ---
 
-<img src="{{ site.baseurl }}/assets/postfiles/jekyll-logo.png" alt="Jekyll logotyp" class="float-right" style="width: 400px; max-width: 50%;" loading="lazy" />
+<img src="/assets/postfiles/jekyll-logo.png" alt="Jekyll logotyp" class="float-right" style="width: 400px; max-width: 50%;" loading="lazy" />
 
 ## Jekyll, är inte det den där snubben med dubbla personligheter?
 — Stämmer bra. [Robert Louis Stevenson](https://sv.wikipedia.org/wiki/Robert_Louis_Stevenson) skrev på 1800-talet en bok om [Dr Jekyll och sitt alter ego Mr Edward Hyde](https://sv.wikipedia.org/wiki/Dr._Jekyll_och_Mr._Hyde). Men nog om Robert Louis Stevenson och hans karaktärer.
@@ -28,7 +28,7 @@ draft: false
 – Det finns en uppsjö verktyg för detta och de flesta fungerar på samma sätt. Designen är separerad från innehållet i form av mallar och textfiler och de bakas ihop till en färdig webbsida.
 
 <figure markdown="1">
-  ![Static site generator - flöde]({{ site.baseurl }}/assets/postfiles/ssg.jpg)
+  ![Static site generator - flöde](/assets/postfiles/ssg.jpg)
   <figcaption>Jekylls arbetsflöde</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Här är ett exempel på en loop i Liquid för en enkel huvudmeny.
 {% raw %}
 <ul class="main-menu">
   {% for link in site.navigation %}
-    <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
   {% endfor %}
 </ul>
 {% endraw %}

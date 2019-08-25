@@ -23,7 +23,7 @@
                         </div>
                     {% endif %}
                     <div class="card__body">
-                        {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
+                        {% if post.title %}<h4 class="card__title{% if post.poster %} poster-title{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></h4>{% endif %}
 
                         <div class="post-meta">
                             <div class="post-meta-section date">{% include datetime.liquid datetime=post.date %}</div>
@@ -53,7 +53,7 @@
                             {{ post.content | strip_html | truncatewords: 20 }}
                             {% if post_content != '' %}
                                 <div class="card__cta">
-                                    <a href="{{ site.baseurl }}{{ post.url }}" class="button button--green">Läs artikeln</a>
+                                    <a href="{{ post.url }}" class="button button--green">Läs artikeln</a>
                                 </div>
                             {% endif %}
                         {% endif %}

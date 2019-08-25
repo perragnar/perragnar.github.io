@@ -6,6 +6,7 @@ assets/photos/inbox/
 ################
 _site
 .jekyll-metadata
+.jekyll-cache
 
 # Config files #
 ################
