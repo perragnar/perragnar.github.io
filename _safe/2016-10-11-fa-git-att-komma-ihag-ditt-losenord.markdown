@@ -23,7 +23,6 @@ git config credential.helper store
 
 Första gången efter du aktiverat det måste du ange inloggningsuppgifter dock.
 
-![You're welcome!']({{ site.baseurl }}/assets/postfiles/yourewelcome.gif)
+![You're welcome!'](/assets/postfiles/yourewelcome.gif)
 
 Källa: [git-scm.com](https://git-scm.com/docs/git-credential-store)
-

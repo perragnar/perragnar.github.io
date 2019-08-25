@@ -21,15 +21,15 @@ Posh-Git lägger till en visuell feedback i din PowerShell-prompt som visar Git-
 
 Så här ser min PowerShell prompt ut (körs genom [ConEmu](https://conemu.github.io/)). Inga krusiduller, inga features.
 
-![default-conemu-powershell-prompt]({{ site.baseurl }}/assets/postfiles/default-conemu-powershell-prompt.jpg)
+![default-conemu-powershell-prompt](/assets/postfiles/default-conemu-powershell-prompt.jpg)
 
 Så här ser prompten ut med Posh-Git och en mindre modifiering av sökvägen. Prompten visar att två filer är tillagda och utropstecknet säger att filer finns som inte är trackade i repositoryt. Se nedan under rubriken __Vad visar Git-statusen i prompten?__.
 
-![posh-git-conemu-powershell-prompt]({{ site.baseurl }}/assets/postfiles/posh-git-conemu-powershell-prompt.jpg)
+![posh-git-conemu-powershell-prompt](/assets/postfiles/posh-git-conemu-powershell-prompt.jpg)
 
 Feature: Tab för att byta branch:
 
-![posh-git-prompt-tab]({{ site.baseurl }}/assets/postfiles/posh-git-prompt-tab.gif)
+![posh-git-prompt-tab](/assets/postfiles/posh-git-prompt-tab.gif)
 
 Här är en kort video på hur prompten ändras beroende på Git-statusen. I videon använder jag Sublime Text med tillägget [GitSavvy](https://github.com/divmain/GitSavvy) samt PowerShell genom [ConEmu](https://conemu.github.io/).
 

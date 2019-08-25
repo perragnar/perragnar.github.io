@@ -15,9 +15,9 @@ Använder du Git-klienten **Tower** och vill använda **Visual Studio Code** fö
 Det finns några verktyg att välja bland i Towers inställningar för att hantera merge och diff tools.
 
 <figure>
-  <img src="{{ site.baseurl }}/assets/postfiles/tower-diff-tools.png" alt="Tower diff tools" style="max-width: 300px;" loading="lazy">
+  <img src="/assets/postfiles/tower-diff-tools.png" alt="Tower diff tools" style="max-width: 300px;" loading="lazy">
 
-  <img src="{{ site.baseurl }}/assets/postfiles/tower-merge-tools.png" alt="Tower merge tools" style="max-width: 300px;" loading="lazy">
+  <img src="/assets/postfiles/tower-merge-tools.png" alt="Tower merge tools" style="max-width: 300px;" loading="lazy">
 </figure>
 
 Som du ser ligger Visual Studio Code med längst ner i listan, _men_ inte förrän du gjort ett par saker.

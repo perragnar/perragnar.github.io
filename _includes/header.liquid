@@ -5,7 +5,7 @@
                 <div class="brand-text">
                     I am
                 </div>
-                <a href="{{ site.baseurl }}/">
+                <a href="/">
                     <svg class="logotype" width="50" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 198.44 113">
                         <polygon class="body" points="135.23 12.04 135.23 0 72.94 12.04 72.94 0 0 13.66 0 113 62.75 100.73 73.29 98.53 62.75 113 125.97 100.5 136.74 98.3 125.97 113 198.44 98.88 198.44 0 135.23 12.04"
                         />
@@ -29,7 +29,7 @@
                 <ul>
                     {% for link in site.data.navigation %}
                         <li>
-                            <a href="{{ site.baseurl }}{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a>
+                            <a href="{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a>
                         </li>
                     {% endfor %}
                 </ul>
@@ -41,7 +41,7 @@
     <ul>
         {% for link in site.data.navigation %}
             <li>
-                <a href="{{ site.baseurl }}{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a>
+                <a href="{{ link.url }}"{% if page.url == link.url or (link.title == 'Blog' and page.layout == 'post') %} class="current"{% endif %}>{{ link.title }}</a>
             </li>
         {% endfor %}
     </ul>

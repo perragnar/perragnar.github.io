@@ -18,7 +18,7 @@ excerpt: |
 ---
 
 <figure markdown="1">
-  ![Internetanvändning 2009 till 2016]({{ site.baseurl }}/assets/postfiles/internet_usage_2009_2016_ww.png)
+  ![Internetanvändning 2009 till 2016](/assets/postfiles/internet_usage_2009_2016_ww.png)
   <figcaption>
     Internetanvändning 2009 till 2016.<br />
     Källa: <a href="http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide">statcounter.com</a>.

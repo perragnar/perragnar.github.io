@@ -14,7 +14,7 @@ excerpt: |
 ## Activate Power Mode
 OK, det kommer inte att snabba upp ditt arbetsflöde på något sätt, men definitivt höja moralen flera hundra procent.
 
-![activate-power-mode]({{ site.baseurl }}/assets/postfiles/activate-power-mode.gif)
+![activate-power-mode](/assets/postfiles/activate-power-mode.gif)
 
 Ladda ner [activate-power-mode][1] nu.
 

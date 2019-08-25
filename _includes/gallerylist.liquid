@@ -45,17 +45,17 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <a href="{{ site.baseurl }}{{ post.url }}">
+                            <a href="{{ post.url }}">
                                 {% if post.galleries %}
                                     {% for gallerySlug in post.galleries %}
                                         {% assign gallery = site.data.galleries[gallerySlug] %}
                                         {% if gallery.contents %}
                                             {% assign photos = gallery.contents %}
                                             {% if gallery.poster %}
-                                                <div class="photo" style="background-image: url({{ site.baseurl }}/assets/photos/galleries/{{ gallerySlug }}/{{ gallery.poster }});"></div>
+                                                <div class="photo" style="background-image: url(/assets/photos/galleries/{{ gallerySlug }}/{{ gallery.poster }});"></div>
                                             {% else %}
                                                 {% for photo in photos limit:1 %}
-                                                    <div class="photo" style="background-image: url({{ site.baseurl }}/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
+                                                    <div class="photo" style="background-image: url(/assets/photos/galleries/{{ gallerySlug }}/{{ photo.filename }});"></div>
                                                 {% endfor %}
                                             {% endif %}
                                         {% endif %}
@@ -68,7 +68,7 @@
                                     {% endif %}
                                     <div class="photo" style="background-image: url({{ poster_url }});"></div>
                                 {% else %}
-                                    <div class="photo faded" style="background-image: url({{ site.baseurl }}/assets/img/photo-blog-default-poster.jpg);"></div>
+                                    <div class="photo faded" style="background-image: url(/assets/img/photo-blog-default-poster.jpg);"></div>
                                 {% endif %}
                             </a>
                         </div>

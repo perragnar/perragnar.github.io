@@ -18,7 +18,7 @@ Hittade varken rök eller eld men den tidiga soluppgången bjöd på en otrolig 
 
 Hem och sova några timmar, sedan upp och iväg till Sätra Brunn för att hänga upp några foton för Sala Fotoklubbs fotoutställning.
 
-![Fotoutställning på Sätra Brunn]({{ site.baseurl }}/assets/postfiles/fotoutstallning-satra-brunn-2018.jpg)
+![Fotoutställning på Sätra Brunn](/assets/postfiles/fotoutstallning-satra-brunn-2018.jpg)
 
 6 foton blev det i vår gemensamma inledande utställning.
 

@@ -22,17 +22,17 @@ _I exemplet använder jag färgschemat [Energy](https://packagecontrol.io/packag
 
 ### Git diff utan stöd i färgschemat
 
-![Sublime Text tema utan stöd för Git diff]({{ site.baseurl }}/assets/postfiles/sublime-theme-diff-diff-1.png)
+![Sublime Text tema utan stöd för Git diff](/assets/postfiles/sublime-theme-diff-diff-1.png)
 
 ### Git diff med stöd i färgschemat
 
-![Sublime Text tema med stöd för Git diff]({{ site.baseurl }}/assets/postfiles/sublime-theme-diff-diff-2.png)
+![Sublime Text tema med stöd för Git diff](/assets/postfiles/sublime-theme-diff-diff-2.png)
 
 ## diff.header
 
 Headern visar information om just det segmentet som är aktuellt i den Git diff du hanterar. Se bilden nedan var headers för varje segment visas.
 
-![Segment, sk hunks]({{ site.baseurl }}/assets/postfiles/sublime-theme-diff-diff-header.png)
+![Segment, sk hunks](/assets/postfiles/sublime-theme-diff-diff-header.png)
 
 {% highlight xml linenos %}
 <dict>

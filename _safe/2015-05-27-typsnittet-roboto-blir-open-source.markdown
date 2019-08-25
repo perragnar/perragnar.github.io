@@ -17,7 +17,7 @@ _Roboto_ är Googles egna typsnitt, skapat av Christian Robertson, och används 
 
 Nu lägger Google ut typsnittet på [Github][github] som _Open Source_.
 
-![roboto-example]({{ site.baseurl }}/assets/postfiles/roboto-example.png)
+![roboto-example](/assets/postfiles/roboto-example.png)
 
 Källa: [Google Open Source Blog][google-blog].
 

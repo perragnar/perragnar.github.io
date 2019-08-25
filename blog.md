@@ -6,4 +6,4 @@ seo-description: ...
 page_open: true
 ---
   
-Mina inlägg om fotografering hittar du i [fotobloggen]({{ site.baseurl }}/photo).
+Mina inlägg om fotografering hittar du i [fotobloggen](/photo).
