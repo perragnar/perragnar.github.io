@@ -198,6 +198,22 @@ Här är samma komposition i slutet av [maj 2019](/2019/05/29/angso/). Lite anno
 - Bländare: f/8
 - ISO: 100
 
+### Eken på sensommaren
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/eken-3.jpg" alt="Eken i hagen på sensommaren" loading="lazy">
+  <figcaption>Eken i hagen på sensommaren</figcaption>
+</figure>
+
+Samma komposition igen men på sensommaren.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/160
+- Bländare: f/8
+- ISO: 100
+
 ## Exempel fyra - Karl XIs schakt
 
 I Sala silvergruvas nordvästra del, längs Drottning Christinas väg, ligger Karl XIs schakt. Här kommer ännu ett exempel på skillanden mellan vinter och sommar.
