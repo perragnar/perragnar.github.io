@@ -29,7 +29,7 @@ layout: default
                 </div>
             </div>
             <div class="row">
-                {% assign photo_posts = site.posts | where: "categories", "Fotoblogg" %}
+                {% assign photo_posts = site.posts | where: "categories", "Fotoblogg" | where_exp: "post", "post.draft != true" %}
                 {% for post in photo_posts limit: 6 %}
                     {% assign post_categories = post.categories | downcase %}
                         {% unless post.draft %}
