@@ -110,7 +110,7 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 - Bländare: f/8
 - ISO: 100
 
-## Exempel två - Sjöboden, ett år senare
+## Exempel två - Sjöboden på Öland
 
 Här nedan kommer ett exempel på precis samma komposition med ett års mellanrum. Det här exemplet visar dels skillnad rent tekniskt men också redigeringsmässigt.
 
