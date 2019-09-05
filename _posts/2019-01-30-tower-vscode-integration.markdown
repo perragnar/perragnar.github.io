@@ -45,7 +45,7 @@ code --wait $4
 Skapa därefter en fil som heter **CompareTools.plist** och lägg till följande;
 
 ```
-?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
     "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
