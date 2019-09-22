@@ -12,7 +12,7 @@
     "browser-sync": "^2.26.7",
     "deepmerge": "^4.0.0",
     "del": "^5.1.0",
-    "eslint": "^6.2.2",
+    "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-html": "^6.0.0",
@@ -39,11 +39,11 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "i": "^0.3.6",
-    "image-size": "^0.7.4",
+    "image-size": "^0.8.1",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
     "merge-stream": "^2.0.0",
-    "npm": "^6.11.2",
+    "npm": "^6.11.3",
     "recursive-readdir-sync": "^1.0.6",
     "slug": "^1.1.0"
   }
