@@ -2,7 +2,6 @@
 title: Ängsö och Björnö
 date: 2019-08-27
 layout: post
-draft: true
 categories:
   - Fotoblogg
 tags:
