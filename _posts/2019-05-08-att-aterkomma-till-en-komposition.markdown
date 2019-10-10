@@ -18,18 +18,6 @@ poster: return-to-composition.jpg
 
 Att ta ett kort vid ett tillfälle och senare komma tillbaka till samma plats med samma komposition _kan_ resultera i helt olika bilder. Årstiden, tid på dygnet, vädret och andra parametrar spelar såklart en stor roll för resultatet. Det kan också vara ett mått på sin fotografiska utveckling.
 
-**Uppdatering, 6:e juni 2019**  
-Jag har lagt upp lite fler bilder från torpet och ännu ett exempel på en komposition i olika årstider.
-
-**Uppdatering, 27:e juni 2019**  
-Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar.
-
-**Uppdatering, 30:e juli 2019**  
-Ännu en årstidsvariant av torpet.
-
-**Uppdatering, 10:e augusti 2019**  
-En ny bild på sjöboden, tredje året.
-
 ## Exempel ett - Torpet i olika årstider
 
 I mitt första exempel har jag fotograferat ett öde torp, 5 minuter med bil från mitt hus. Jag har använt samma kamera och objektiv i bägge fotografierna, Nikon D500 med Tamron 24-70mm f2.8 G2.
@@ -102,6 +90,22 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 </figure>
 
 Återigen en sommarbild, nu från slutet av juli 2019 och även denna kvällstid. Nu har det klargröna ersatts av gyllene fält i förgrunden.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/1000
+- Bländare: f/8
+- ISO: 100
+
+### Torpet på hösten
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/torpet-6.jpg" alt="Torpet, hösten 2019" loading="lazy">
+  <figcaption>Torpet, hösten 2019</figcaption>
+</figure>
+
+Dags för en höstbild. Tagen i början av oktober 2019.
 
 - Kamera: Nikon D500
 - Objektiv: Tamron 24-70mm f2.8 G2
@@ -214,6 +218,22 @@ Samma komposition igen men på sensommaren.
 - Bländare: f/8
 - ISO: 100
 
+### Eken på hösten
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/eken-4.jpg" alt="Eken i hagen på hösten" loading="lazy">
+  <figcaption>Eken i hagen på hösten</figcaption>
+</figure>
+
+Eken på hösten. Inte med höstfärgerna som jag hade förväntat mig men fint ändå. Fotograferat i början av oktober.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/100
+- Bländare: f/8
+- ISO: 100
+
 ## Exempel fyra - Karl XIs schakt
 
 I Sala silvergruvas nordvästra del, längs Drottning Christinas väg, ligger Karl XIs schakt. Här kommer ännu ett exempel på skillanden mellan vinter och sommar.
@@ -253,17 +273,3 @@ Här är i princip samma komposition i slutet av [juni 2019](/2019/06/25/sala/).
 ## Nästa steg
 
 Jag kommer att återvända till flera av platserna i år. Torpet här hemma kommer jag att fota flera gånger under året i olika väder och årstider. Sjöboden på Öland återkommer jag till i sommar och det ska bli kul att se hur den bilden kommer att bli.
-
-**Uppdatering, 6:e juni 2019**  
-Nu har jag återkommit till torpet ännu en gång, eller rättare sagt två gånger under samma dag, och tagit två nya bilder för att visa på ytterligare en årstid men också tidpunkt på dagen.
-
-Jag har även lagt till ännu ett exempel på en komposition i olika årstider. Eken vid hagen på Ängsö.
-
-**Uppdatering, 27:e juni 2019**  
-Har lagt till ännu ett exempel på skillnaden mellan vinter och sommar. Motivet är Karl XIs schakt i Sala silvergruva.
-
-**Uppdatering, 30:e juli 2019**  
-Ännu en årstidsvariant av torpet.
-
-**Uppdatering, 10:e augusti 2019**  
-En ny bild på sjöboden, tredje året.
