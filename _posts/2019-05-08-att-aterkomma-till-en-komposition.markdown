@@ -114,6 +114,22 @@ Dags för en höstbild. Tagen i början av oktober 2019.
 - Bländare: f/8
 - ISO: 100
 
+### Torpet på senhösten
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/torpet-7.jpg" alt="Torpet, sen höst 2019" loading="lazy">
+  <figcaption>Torpet, sen höst 2019</figcaption>
+</figure>
+
+Bilden är tagen den 4 november 2019. Löven är borta och likaså färgerna.
+
+- Kamera: Nikon D500
+- Objektiv: Tamron 24-70mm f2.8 G2
+- Brännvidd: 24mm
+- Slutartid: 1/13
+- Bländare: f/8
+- ISO: 50
+
 ## Exempel två - Sjöboden på Öland
 
 Här nedan kommer ett exempel på precis samma komposition med ett års mellanrum. Det här exemplet visar dels skillnad rent tekniskt men också redigeringsmässigt.
