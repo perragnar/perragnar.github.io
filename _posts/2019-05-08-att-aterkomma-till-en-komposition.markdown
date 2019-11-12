@@ -31,8 +31,6 @@ I mitt första exempel har jag fotograferat ett öde torp, 5 minuter med bil fr�
 
 Torpet är fotograferat [en dimmig marsdag](/2019/03/14/vinterdimma/). Dimman har isolerat huset och träden helt från bakgrunden. Kameran hade problem att mäta vitbalansen så fotot fick ett rejält blåstick så jag gjorde fotot svartvitt.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/10
 - Bländare: f/4
@@ -47,8 +45,6 @@ Torpet är fotograferat [en dimmig marsdag](/2019/03/14/vinterdimma/). Dimman ha
 
 Den här bilden är tagen nu i början av maj. Himlen är lite orolig men solen bröt igenom och lyste upp trädkronorna och omgivningen. Grönskan har börjat komma men åkrarna runtom saknar fortfarande grönskan.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/250
 - Bländare: f/4
@@ -63,8 +59,6 @@ Den här bilden är tagen nu i början av maj. Himlen är lite orolig men solen 
 
 I början av juni är allt grönare. Den här bilden är tagen mitt på dagen med bara några begynnande stackmoln i horisonten. Allt är fortfarande försommargrönt.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/800
 - Bländare: f/8
@@ -77,8 +71,6 @@ I början av juni är allt grönare. Den här bilden är tagen mitt på dagen me
 
 Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis innan solen går ner. Ljuset är varmare och skuggorna längre.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/125
 - Bländare: f/8
@@ -91,8 +83,6 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 
 Återigen en sommarbild, nu från slutet av juli 2019 och även denna kvällstid. Nu har det klargröna ersatts av gyllene fält i förgrunden.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/1000
 - Bländare: f/8
@@ -107,8 +97,6 @@ Denna bild är tagen samma dag som bild nummer tre, men på kvällen precis inna
 
 Dags för en höstbild. Tagen i början av oktober 2019.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/1000
 - Bländare: f/8
@@ -123,10 +111,22 @@ Dags för en höstbild. Tagen i början av oktober 2019.
 
 Bilden är tagen den 4 november 2019. Löven är borta och likaså färgerna.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/13
+- Bländare: f/8
+- ISO: 50
+
+### Torpet på vintern (igen)
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/torpet-8.jpg" alt="Torpet, tidig vinter 2019" loading="lazy">
+  <figcaption>Torpet, tidig vinter 2019</figcaption>
+</figure>
+
+Bilden är tagen den 12 november 2019. Första snön kom för några dagar sedan.
+
+- Brännvidd: 24mm
+- Slutartid: 1/50
 - Bländare: f/8
 - ISO: 50
 
@@ -144,7 +144,6 @@ Här nedan kommer ett exempel på precis samma komposition med ett års mellanru
 Den första bilden är, i mina ögon, överexponerad och har inte lika bra skärpa. Den är tagen med min gamla kamera med följande inställningar:
 
 - Kamera: Nikon D5100
-- Objektiv: Tamron 18-270mm f3.5-6.3
 - Brännvidd: 21mm
 - Slutartid: 1/160
 - Bländare: f/6.3
@@ -159,8 +158,6 @@ Den första bilden är, i mina ögon, överexponerad och har inte lika bra skär
 
 Denna bild är tagen [ett år senare](/2018/08/13/oland-dag-10/), plus minus en vecka, med min nyare kamera. Skärpan är bättre och den har bättre ljus, även om den kan upplevas en smula underexponerad. Inställningarna är:
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/60
 - Bländare: f/8
@@ -175,8 +172,6 @@ Denna bild är tagen [ett år senare](/2018/08/13/oland-dag-10/), plus minus en 
 
 Denna bild är tagen ganska precis [ett år senare](/2019/08/07/sjoboden/) än den förra bilden. Det blir alltså den tredje bilden med samma komposition med ett års mellanrum. Denna gång hade vi inte tur med ljuset men det är intressant att se skillnaderna från tidigare år. Inställningar:
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/100
 - Bländare: f/8
@@ -195,8 +190,6 @@ Här kommer ett till exempel på skillnaden mellan årstider. På väg ut mot En
 
 Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindstilla dag](/2018/12/30/angso/). Lite snö, lite frost, lite sol och lite moln.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 42mm
 - Slutartid: 1/250
 - Bländare: f/8
@@ -211,8 +204,6 @@ Bilden är tagen dagen innan nyårsafton 2018. Det var en ganska fin och [vindst
 
 Här är samma komposition i slutet av [maj 2019](/2019/05/29/angso/). Lite annorlunda vinkel och placering dock.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 36mm
 - Slutartid: 1/500
 - Bländare: f/8
@@ -227,8 +218,6 @@ Här är samma komposition i slutet av [maj 2019](/2019/05/29/angso/). Lite anno
 
 Samma komposition igen men på sensommaren.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/160
 - Bländare: f/8
@@ -243,8 +232,6 @@ Samma komposition igen men på sensommaren.
 
 Eken på hösten. Inte med höstfärgerna som jag hade förväntat mig men fint ändå. Fotograferat i början av oktober.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/100
 - Bländare: f/8
@@ -263,8 +250,6 @@ I Sala silvergruvas nordvästra del, längs Drottning Christinas väg, ligger Ka
 
 Bilden är tagen i [februari 2019](/2019/02/03/sala-silvergruva/). Det snöade en hel del och området var i princip helt tomt på folk.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/10
 - Bländare: f/8
@@ -279,8 +264,6 @@ Bilden är tagen i [februari 2019](/2019/02/03/sala-silvergruva/). Det snöade e
 
 Här är i princip samma komposition i slutet av [juni 2019](/2019/06/25/sala/). Den här gången i lite sämre ljusförhållanden och handhållet.
 
-- Kamera: Nikon D500
-- Objektiv: Tamron 24-70mm f2.8 G2
 - Brännvidd: 24mm
 - Slutartid: 1/100
 - Bländare: f/5.6
