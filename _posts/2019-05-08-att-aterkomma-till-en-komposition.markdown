@@ -130,6 +130,20 @@ Bilden är tagen den 12 november 2019. Första snön kom för några dagar sedan
 - Bländare: f/8
 - ISO: 50
 
+### Torpet en dimmig vinterdag
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/torpet-9.jpg" alt="Torpet, en dimmig vinterdag i november" loading="lazy">
+  <figcaption>Torpet, en dimmig vinterdag i november</figcaption>
+</figure>
+
+Bilden är tagen några dagar senare än den förra. Snön har försvunnit och det har varit fuktiga och dimmiga dagar.
+
+- Brännvidd: 24mm
+- Slutartid: 1/40
+- Bländare: f/8
+- ISO: 50
+
 ## Exempel två - Sjöboden på Öland
 
 Här nedan kommer ett exempel på precis samma komposition med ett års mellanrum. Det här exemplet visar dels skillnad rent tekniskt men också redigeringsmässigt.
