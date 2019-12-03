@@ -53,7 +53,17 @@ layout: default
                                         </div>
                                     </div>
                                     <a href="{{ post.url }}">
+                                        {% assign posterMode = '' %}
+
                                         {% if post.galleries %}
+                                            {% assign posterMode = 'galleryfile' %}
+                                        {% endif %}
+
+                                        {% if post.poster %}
+                                            {% assign posterMode = 'posterfile' %}
+                                        {% endif %}
+
+                                        {% if posterMode == 'galleryfile' %}
                                             {% for gallerySlug in post.galleries %}
                                                 {% assign gallery = site.data.galleries[gallerySlug] %}
                                                 {% if gallery.contents %}
@@ -67,7 +77,7 @@ layout: default
                                                     {% endif %}
                                                 {% endif %}
                                             {% endfor %}
-                                        {% elsif post.poster %}
+                                        {% elsif posterMode == 'posterfile' %}
                                             {% if post.poster contains '://' %}
                                                 {% assign poster_url = post.poster %}
                                             {% else %}
