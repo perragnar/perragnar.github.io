@@ -1,0 +1,14 @@
+---
+title: Västerås
+date: 2019-12-04
+layout: post
+categories:
+  - Fotoblogg
+tags:
+  - Västerås
+  - Vinter
+galleries:
+  - 2019-12-04-vasteras
+---
+
+Några blandade bilder från Västerås.
