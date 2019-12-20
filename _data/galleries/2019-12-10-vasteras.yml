@@ -1,0 +1,44 @@
+title: Västerås
+date: '2019-12-10'
+poster: 2019-12-10-4.jpg
+contents:
+  - filename: 2019-12-10-3.jpg
+    width: 6000
+    height: 3405
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 18
+    aperture: 8
+    shutter: 1.5s
+    iso: 100
+    date: 1575964305
+  - filename: 2019-12-10-2.jpg
+    width: 5813
+    height: 3535
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 39
+    aperture: 8
+    shutter: 2s
+    iso: 100
+    date: 1575964367
+  - filename: 2019-12-10-1.jpg
+    width: 5559
+    height: 3626
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 18
+    aperture: 8
+    shutter: 1.5s
+    iso: 100
+    date: 1575964569
+  - filename: 2019-12-10-4.jpg
+    width: 5767
+    height: 3976
+    camera: FUJIFILM X-T2
+    lens: XF18-55mmF2.8-4 R LM OIS
+    focal: 18
+    aperture: 16
+    shutter: 10s
+    iso: 100
+    date: 1575965098
