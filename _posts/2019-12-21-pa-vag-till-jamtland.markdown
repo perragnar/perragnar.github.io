@@ -5,7 +5,13 @@ layout: post
 categories:
   - Fotoblogg
 tags:
-  - Tag
+  - Jämtland
+  - Undersåker
+  - Åre
+  - Jul
+  - Vinter
+  - Snö
+  - Fjäll
 galleries:
   - 2019-12-21-pa-vag-till-jamtland
 ---

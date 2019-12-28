@@ -5,7 +5,14 @@ layout: post
 categories:
   - Fotoblogg
 tags:
-  - Tag
+  - Jämtland
+  - Undersåker
+  - Åre
+  - Jul
+  - Vinter
+  - Snö
+  - Fjäll
+  - Dimma
 galleries:
   - 2019-12-22-sno-och-dimma-i-undersaker
 ---
