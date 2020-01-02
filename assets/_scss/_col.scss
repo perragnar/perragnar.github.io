@@ -132,4 +132,10 @@
             }
         }
     }
+
+    .year-header {
+        & + .col {
+            flex-basis: 100%;
+        }
+    }
 }

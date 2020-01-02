@@ -18,7 +18,7 @@
                 {% assign post_categories = post.categories | downcase %}
 
                 {% if forloop.first %}
-                    <div class="col col--full card card--ghost">
+                    <div class="col col--full card card--ghost year-header">
                         <div class="card__body card__body-no-padding">
                             <h2 id="{{ this_year }}-ref" class="no-margin">{{this_year}}</h2>
                         </div>
@@ -88,7 +88,7 @@
                 {% if this_year != prev_year %}
                     {% if forloop.last %}
                     {% else %}
-                        <div class="col col--full card card--ghost">
+                        <div class="col col--full card card--ghost year-header">
                             <div class="card__body card__body-no-padding">
                                 <h2 id="{{ prev_year }}-ref" class="no-margin">{{prev_year}}</h2>
                             </div>
