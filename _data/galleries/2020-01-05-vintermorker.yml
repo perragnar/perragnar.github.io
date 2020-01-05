@@ -1,0 +1,44 @@
+title: Vintermörker
+date: '2020-01-05'
+poster: 2020-01-05-1.jpg
+contents:
+  - filename: 2020-01-05-1.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 55
+    aperture: 8
+    shutter: 20s
+    iso: 50
+    date: 1578238370
+  - filename: 2020-01-05-3.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 48
+    aperture: 2.8
+    shutter: 3s
+    iso: 50
+    date: 1578238631
+  - filename: 2020-01-05-4.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 82
+    aperture: 2.8
+    shutter: 4s
+    iso: 100
+    date: 1578239449
+  - filename: 2020-01-05-5.jpg
+    width: 5101
+    height: 3712
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 145
+    aperture: 2.8
+    shutter: 5s
+    iso: 100
+    date: 1578239504
