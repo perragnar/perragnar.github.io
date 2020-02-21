@@ -1,0 +1,84 @@
+title: Skogspromenad
+date: "2020-02-21"
+poster: 2020-02-19-3.jpg
+contents:
+  - filename: 2020-02-19-2.jpg
+    width: 6000
+    height: 4000
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/180
+    iso: 200
+    date: 1582114887
+  - filename: 2020-02-19-3.jpg
+    width: 3793
+    height: 4741
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/280
+    iso: 200
+    date: 1582115057
+  - filename: 2020-02-19-4.jpg
+    width: 5182
+    height: 3594
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/8000
+    iso: 200
+    date: 1582115639
+  - filename: 2020-02-19-5.jpg
+    width: 3674
+    height: 4592
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/2700
+    iso: 200
+    date: 1582117156
+  - filename: 2020-02-19-6.jpg
+    width: 6000
+    height: 4000
+    camera: FUJIFILM X-T2
+    lens: XF35mmF2 R WR
+    focal: 35
+    aperture: 2
+    shutter: 1/3200
+    iso: 200
+    date: 1582117306
+  - filename: 2020-02-21-1-2.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 200
+    aperture: 2.8
+    shutter: 1/25
+    iso: 50
+    date: 1582288815
+  - filename: 2020-02-21-2-2.jpg
+    width: 4689
+    height: 3634
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 200
+    aperture: 8
+    shutter: 1/15
+    iso: 50
+    date: 1582288900
+  - filename: 2020-02-21-3-2.jpg
+    width: 5548
+    height: 3699
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 40
+    aperture: 8
+    shutter: 1/250
+    iso: 100
+    date: 1582290092
