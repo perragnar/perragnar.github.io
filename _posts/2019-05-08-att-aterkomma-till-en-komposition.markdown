@@ -144,6 +144,21 @@ Bilden är tagen några dagar senare än den förra. Snön har försvunnit och d
 - Bländare: f/8
 - ISO: 50
 
+### Torpet, 10 foton och ett år senare
+
+<figure class="column limit">
+  <img src="/assets/postfiles/return-to-composition/torpet-10.jpg" alt="Torpet, 10 foton och ett år senare" loading="lazy">
+  <figcaption>Torpet, en dimmig vinterdag i november</figcaption>
+</figure>
+
+Här är en bild till, i princip ett år efter den allra första bilden från torpet, och inte helt olik den första bilden då väderförhållandet var nästan samma med den täta marsdimman.
+Det är bild nummer 10 i ordningen och jag har fått med alla årstider, dock med skiftande kvalitet och resultat på bilderna. Kompositionen har i alla fall varit densamma. Stativet på samma plats, samma objektiv med samma brännvidd.
+
+- Brännvidd: 24mm
+- Slutartid: 1/20
+- Bländare: f/8
+- ISO: 64
+
 ## Exempel två - Sjöboden på Öland
 
 Här nedan kommer ett exempel på precis samma komposition med ett års mellanrum. Det här exemplet visar dels skillnad rent tekniskt men också redigeringsmässigt.
