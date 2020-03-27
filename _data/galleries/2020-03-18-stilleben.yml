@@ -1,0 +1,44 @@
+title: Stilleben
+date: '2020-03-18'
+poster: 2020-03-18-1.jpg
+contents:
+  - filename: 2020-03-18-1.jpg
+    width: 5568
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 70
+    aperture: 7.1
+    shutter: 1/15
+    iso: 50
+    date: 1584564192
+  - filename: 2020-03-18-4.jpg
+    width: 2706
+    height: 3382
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 70
+    aperture: 8
+    shutter: 1/640
+    iso: 64
+    date: 1584564617
+  - filename: 2020-03-18-2.jpg
+    width: 3712
+    height: 3712
+    camera: NIKON D500
+    lens: TAMRON SP 24-70mm F/2.8 Di VC USD G2 A032N
+    focal: 70
+    aperture: 8
+    shutter: 1/25
+    iso: 64
+    date: 1584564727
+  - filename: 2020-03-18-3.jpg
+    width: 3712
+    height: 4640
+    camera: NIKON D500
+    lens: 70.0-200.0 mm f/2.8
+    focal: 200
+    aperture: 2.8
+    shutter: 1/40
+    iso: 50
+    date: 1584565450
