@@ -4,6 +4,19 @@
         opacity: 1 !important;
     }
     .fancybox-content {
-        border: solid 3px #fff;
+        border-style: solid;
+        border-color: #fff;
+
+        @include media('<=phone') {
+            border-width: 5vw;
+        }
+
+        @include media('>phone', '<desktop') {
+            border-width: 6vw;
+        }
+
+        @include media('>=desktop') {
+            border-width: 60px;
+        }
     }
 }
