@@ -1,7 +1,17 @@
 title: Sågdammen
 date: "2020-03-27"
-poster: 2020-03-27-10.jpg
+poster: 2020-03-27-1.jpg
 contents:
+  - filename: 2020-03-27-1.jpg
+    width: 3557
+    height: 4640
+    camera: NIKON D500
+    lens: TAMRON 10-24mm F3.5-4.5 DiII VC HLD B023N
+    focal: 200
+    aperture: 6
+    shutter: 1/25
+    iso: 50
+    date: 1585326635
   - filename: 2020-03-27-2.jpg
     width: 5568
     height: 3712
