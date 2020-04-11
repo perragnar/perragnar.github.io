@@ -6,17 +6,18 @@
     .fancybox-content {
         border-style: solid;
         border-color: #fff;
+        border-width: 0;
 
-        @include media('<=phone') {
-            border-width: 5vw;
-        }
+        // @include media('<=phone') {
+        //     border-width: 5vw;
+        // }
 
-        @include media('>phone', '<desktop') {
-            border-width: 6vw;
-        }
+        // @include media('>phone', '<desktop') {
+        //     border-width: 6vw;
+        // }
 
-        @include media('>=desktop') {
-            border-width: 60px;
-        }
+        // @include media('>=desktop') {
+        //     border-width: 60px;
+        // }
     }
 }
