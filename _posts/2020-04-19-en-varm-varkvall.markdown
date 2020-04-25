@@ -13,4 +13,4 @@ galleries:
   - 2020-04-19-en-varm-varkvall
 ---
 
-Tog min vanliga runda och slog mig ner på åkern vid det ensamma trädet medans jag väntade på solnedgången. Meditation!
+Varmt idag. 21 grader i skuggan. Tog min vanliga runda och slog mig ner på åkern vid det ensamma trädet medans jag väntade på solnedgången. Meditation!
