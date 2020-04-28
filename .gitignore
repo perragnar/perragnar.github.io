@@ -55,8 +55,3 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Ruby stuff (temporary fix) #
-##############################
-.ruby-version
-Gemfile.lock
