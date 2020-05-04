@@ -1,5 +1,5 @@
 ---
-layout: blog-front-page
+layout: frontpage
 title: Blog
 seo-title: Per Ragnar Edin
 seo-description: ...

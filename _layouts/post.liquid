@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include minihero.liquid %}
-
 {% if site.site_open and page.page_open != false  %}
     <section class="section section--blog">
         <div class="slice">
@@ -70,6 +68,5 @@ layout: default
             </div>
         </div>
     </section>
-{% else %}
-    {% include closed.liquid %}
+
 {% endif %}
