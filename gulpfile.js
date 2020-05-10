@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const browsersync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
 const shell = require('gulp-shell');
 const fs = require('fs');
 const exif = require('gulp-exif');
@@ -22,78 +23,71 @@ const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const concatCss = require('gulp-concat-css');
 const merge = require('merge-stream');
-const babel = require('gulp-babel');
-const size = require('gulp-size');
 
 const slugOptions = {
     lower: true
 };
 
 /**
+ * Handles content files such as html, markdown and text files
+ */
+function content() {
+    // HTML
+    const html = gulp.src('./src/**/*.{htm,html}')
+        .pipe(plumber())
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true,
+            minifyJS: true,
+            minifyCSS: true,
+        }))
+        .pipe(gulp.dest('./_site/'));
+
+    // Other
+    const misc = gulp.src('./src/**/*.{md,markdown,txt,json}')
+        .pipe(plumber())
+        .pipe(gulp.dest('./_site/'));
+
+    return merge(html, misc);
+}
+
+/**
  * Handles javascript files
  */
-const javascript = (done) => {
+function javascript() {
     // Building vendors file
-    const vendorJs = gulp.src(['./assets/js/vendor/**/*.js', '!./assets/*.min.js'])
+    const vendorJs = gulp.src('./src/assets/js/vendor/**/*.js')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(babel())
         .pipe(concat('vendor.js'))
-        .pipe(uglify())
-        .pipe(size({ gzip: true, showFiles: true }))
         .on('error', function (err) {
             console.log(err.toString());
         })
         .pipe(rename({
-            basename: "vendor",
             suffix: '.min',
         }))
-        .pipe(gulp.dest('./assets/js/'));
-
-    // Building function file
-    const functionsJs = gulp.src('./assets/js/functions/**/*.js')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(babel())
-        .pipe(concat('functions.js'))
-        .pipe(uglify())
-        .pipe(size({ gzip: true, showFiles: true }))
-        .pipe(sourcemaps.write())
-        .on('error', function (err) {
-            console.log(err.toString());
-        })
-        .pipe(rename({
-            basename: "functions",
-            suffix: '.min',
-        }))
-        .pipe(gulp.dest('./assets/js/'));
+        .pipe(gulp.dest('./_site/assets/js/'));
 
     // Building app file
-    const appJs = gulp.src('./assets/js/app/**/*.js')
+    const appJs = gulp.src('./src/assets/js/app/**/*.js')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(babel())
         .pipe(concat('app.js'))
         .pipe(uglify())
-        .pipe(size({ gzip: true, showFiles: true }))
-        .pipe(sourcemaps.write())
         .on('error', function (err) {
             console.log(err.toString());
         })
         .pipe(rename({
-            basename: "app",
             suffix: '.min',
         }))
-        .pipe(gulp.dest('./assets/js/'));
+        .pipe(gulp.dest('./_site/assets/js/'));
 
-    return merge(appJs, vendorJs, functionsJs);
+    return merge(vendorJs, appJs);
 }
 
 /**
  * Handles Sass files and compiles them to CSS
  */
-const css = (done) => {
-    return gulp.src('./assets/_scss/main.scss')
+function css() {
+    return gulp.src('./src/assets/scss/**/*.scss')
         .pipe(plumber({
             errorHandler(err) {
                 this.emit('end');
@@ -101,33 +95,36 @@ const css = (done) => {
         }))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: true,
+        }))
         .pipe(sourcemaps.write())
         .pipe(concatCss('bundle.css'))
+        .pipe(gulp.dest('./src/assets/css/'))
         .pipe(cssnano())
         .pipe(rename({
             suffix: '.min',
         }))
-        .pipe(gulp.dest('./assets/css/'))
-        // .pipe(gulp.dest('./_site/assets/css/'))
+        .pipe(gulp.dest('./_site/assets/css/'))
         .pipe(browsersync.stream());
 }
 
 /**
  * Fonts
  */
-const fonts = (done) => {
-    return gulp.src('./assets/fonts/**/*.*')
+function fonts(done) {
+    return gulp.src('./src/assets/fonts/**/*.*')
         .pipe(gulp.dest('./_site/assets/fonts/'));
 }
 
 /**
  * Handles images
  */
-const images = (done) => {
-    return gulp.src('./assets/img/**/*.{jpg,jpeg,gif,png,svg}')
+function images() {
+    return gulp.src('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}')
         .pipe(plumber())
-        .pipe(imagemin([imagemin.jpegtran({
+        .pipe(imagemin([imagemin.mozjpeg({
             progressive: true
         })]))
         .pipe(gulp.dest('./_site/assets/img/'));
@@ -136,7 +133,7 @@ const images = (done) => {
 /**
  * Browser sync browser(s) reloading
  */
-const browsersyncReload = (done) => {
+function browsersyncReload(done) {
     browsersync.reload();
     done();
 }
@@ -145,17 +142,18 @@ const browsersyncReload = (done) => {
  * Gulp watch
  * Watching for file changes
  */
-const siteWatch = () => {
-    gulp.watch('./assets/scss/**/*.scss', css);
-    gulp.watch(['./assets/js/**/*.js', '!./assets/js/*.min.js'], javascript);
-    gulp.watch('./assets/img/**/*.{jpg,jpeg,gif,png,svg}', images);
+function siteWatch() {
+    gulp.watch('./src/assets/scss/**/*.scss', css);
+    gulp.watch('./src/assets/js/**/*.js', javascript);
+    gulp.watch('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}', images);
+    gulp.watch('./src/**/*.{htm,html,md,markdown,txt}', content);
 }
 
 /**
  * Gulp serve
  * Watching for file changes and running browser sync
  */
-const siteServe = () => {
+function siteServe() {
     browsersync.init({
         notify: false,
         port: 3000,
@@ -165,37 +163,38 @@ const siteServe = () => {
         },
     });
 
-    gulp.watch('./assets/scss/**/*.scss', gulp.series(css, browsersyncReload));
-    gulp.watch(['./assets/js/**/*.js', '!./assets/js/*.min.js'], gulp.series(javascript, browsersyncReload));
-    gulp.watch('./assets/img/**/*.{jpg,jpeg,gif,png,svg}', gulp.series(images, browsersyncReload));
+    gulp.watch('./src/assets/scss/**/*.scss', gulp.series(css, browsersyncReload));
+    gulp.watch('./src/assets/js/**/*.js', gulp.series(javascript, browsersyncReload));
+    gulp.watch('./src/assets/img/**/*.{jpg,jpeg,gif,png,svg}', gulp.series(images, browsersyncReload));
+    gulp.watch('./src/**/*.{htm,html,md,markdown,txt}', gulp.series(content, browsersyncReload));
 }
 
 /**
  * Cleanup
  * Deletes the _site folder
  */
-const cleanup = () => {
-    return del(['./_site/', './assets/js/*.min.js']);
+function cleanup() {
+    return del(['./_site/', './src/assets/css/']);
 }
 
 /**
  * Deletes all photos in inbox
  */
-const clearInbox = () => {
+function clearInbox() {
     return del(['./assets/photos/inbox/**/*']);
 }
 
 /**
  * Removing .DS_Store files
  */
-const prepareInbox = () => {
+function prepareInbox() {
     return shell.task(['find . -name .DS_Store -type f -delete']);
 }
 
 /**
  * Building photo gallery from the files in the inbox
  */
-const handleInbox = () => {
+function handleInbox() {
     return gulp.src('./assets/photos/inbox/**/*.{jpg,jpeg}', {
         nocase: true
     })
@@ -207,7 +206,7 @@ const handleInbox = () => {
         // .pipe(rename((path) => {
         //     createImgPath(path);
         // }))
-        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+        // .pipe(imagemin([imagemin.mozjpeg({ progressive: true })]))
         // .pipe(gulp.dest('./assets/photos/galleries/original/'))
 
         // Large size
@@ -217,7 +216,7 @@ const handleInbox = () => {
         .pipe(resize({
             width: 1500
         }))
-        .pipe(imagemin([imagemin.jpegtran({
+        .pipe(imagemin([imagemin.mozjpeg({
             progressive: true
         })]))
         .pipe(gulp.dest('./assets/photos/galleries/'))
@@ -227,7 +226,7 @@ const handleInbox = () => {
         //     createImgPath(path);
         // }))
         // .pipe(resize({ width: 800 }))
-        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+        // .pipe(imagemin([imagemin.mozjpeg({ progressive: true })]))
         // .pipe(gulp.dest('./assets/photos/galleries/medium/'))
 
         // Thumb
@@ -235,7 +234,7 @@ const handleInbox = () => {
         //     createImgPath(path);
         // }))
         // .pipe(resize({ width: 600, height: 600, crop: true, upscale: true }))
-        // .pipe(imagemin([imagemin.jpegtran({ progressive: true })]))
+        // .pipe(imagemin([imagemin.mozjpeg({ progressive: true })]))
         // .pipe(gulp.dest('./assets/photos/galleries/thumbs/'))
 
         ;
@@ -244,7 +243,7 @@ const handleInbox = () => {
 /**
  * Scanning all original photos and creating data files
  */
-const walkPhotos = (path, index) => {
+function walkPhotos(path, index) {
     const directory = fs.readdirSync(path);
 
     // Directory is going to be an array of album directories
@@ -361,7 +360,7 @@ const walkPhotos = (path, index) => {
 /**
  * Building gallery index
  */
-const buildGalleryIndex = (done) => {
+function buildGalleryIndex(done) {
     let index = {};
     const generatedIndex = {};
 
@@ -373,7 +372,7 @@ const buildGalleryIndex = (done) => {
 /**
  * Adds a sub folder to the path object
  */
-const createImgPath = (path) => {
+function createImgPath(path) {
     path.dirname = slug(path.dirname.split('/').pop(), slugOptions);
     path.basename = slug(path.basename, slugOptions);
     path.extname = path.extname.toLowerCase();
@@ -381,12 +380,13 @@ const createImgPath = (path) => {
     return path;
 }
 
-const build = gulp.series(gulp.parallel(javascript, css, images, fonts));
+const build = gulp.series(cleanup, gulp.parallel(content, javascript, css, images, fonts));
 const watch = gulp.series(build, siteWatch);
 const serve = gulp.series(build, siteServe);
 const inbox = gulp.series(buildGalleryIndex, handleInbox);
 
 exports.css = css;
+exports.content = content;
 exports.javascript = javascript;
 exports.images = images;
 exports.fonts = fonts;
