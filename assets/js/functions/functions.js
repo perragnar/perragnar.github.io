@@ -134,7 +134,7 @@ const resetCarouselTimerIndicator = () => {
  */
 const showCarouselItem = () => {
     // Hides the current active item
-    const carouselActiveElement = document.querySelector('.carousel.active');
+    const carouselActiveElement = document.querySelector('.carousel .active');
     if (carouselActiveElement) {
         carouselActiveElement.classList.add('hide');
         carouselActiveElement.classList.remove('active');
