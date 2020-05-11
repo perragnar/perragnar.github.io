@@ -445,9 +445,9 @@ img {
                 }
 
                 &.nav-logo {
-                    @media screen and (max-width: 780px) {
-                        order: -1;
-                    }
+                    // @media screen and (max-width: 780px) {
+                    //     order: -1;
+                    // }
 
                     &:before {
                         background-color: transparent;
@@ -534,17 +534,12 @@ img {
                 background-position: center;
                 background-repeat: no-repeat;
                 transition: opacity $carouselDuration ease;
-
-                &.hide {
-                    opacity: 0;
-                }
+                visibility: hidden;
+                opacity: 0;
 
                 &.active {
                     opacity: 1;
-                }
-
-                .carousel-image {
-                    display: none;
+                    visibility: initial;
                 }
 
                 .carousel-info {
@@ -657,9 +652,13 @@ img {
                     &.nav-logo {
                         flex-basis: unset;
 
+                        a {
+                            padding: 10px 15px;
+                        }
+
                         .logotype--nav {
-                            min-width: 50px;
-                            max-width: 50px;
+                            min-width: 40px;
+                            max-width: 40px;
                             margin: 0 5px;
 
                             @media screen and (max-width: 780px) {
@@ -716,6 +715,7 @@ img {
 
     .signature {
         margin-top: 30px;
+        width: 250px;
         max-width: 100%;
     }
 }

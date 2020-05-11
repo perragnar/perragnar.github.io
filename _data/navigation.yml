@@ -37,7 +37,7 @@
     </svg>
   url: /
   cssClass: nav-logo
-- title: Artiklar
+- title: Blog
   url: /blog/
   cssClass: nav-item
 - title: Kontakt

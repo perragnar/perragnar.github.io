@@ -1,4 +1,38 @@
 /**
+ * Initializing the page header
+ */
+const initPageHeader = () => {
+    const header = document.querySelector('.page-header');
+
+    // Scroll positions
+    if (window.scrollY > headerDetachPosition) {
+        // Scrolled down below detach position
+        header.classList.remove('takeoff');
+        header.classList.add('detached');
+
+        if (carouselRunning) {
+            stopCarousel();
+        }
+    } else if (window.scrollY > 0 && window.scrollY < headerDetachPosition) {
+        // Starting scroll and still above detach position
+        // Takeoff!!
+        header.classList.remove('detached');
+        header.classList.add('takeoff');
+
+        if (!carouselRunning) {
+            startCarousel();
+        }
+    } else {
+        // Top
+        header.classList.remove('takeoff', 'detached');
+
+        if (!carouselRunning) {
+            startCarousel();
+        }
+    }
+}
+
+/**
  * Initializing the carousel
  */
 const initCarousel = () => {
@@ -19,8 +53,6 @@ const initCarousel = () => {
             } else {
                 listElement.classList.add('hide');
             }
-
-            // TODO: Add lazyload to carousel
 
             // Carousel item index
             listElement.setAttribute('data-carousel-item-index', key);
@@ -165,7 +197,6 @@ const showCarouselItem = () => {
     const currentImageTitle = (document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition]) ? document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition].getAttribute('data-title') : null;
     const indicators = document.querySelectorAll('#page-header .carousel-page-indicator .indicator');
     for (const indicator of indicators) {
-        // console.table(carouselItems[currentCarouselPosition]);
         indicator.style.borderColor = carouselItems[currentCarouselPosition].primaryColor;
         if (indicator.classList.contains('active')) {
             indicator.style.backgroundColor = carouselItems[currentCarouselPosition].primaryColor;

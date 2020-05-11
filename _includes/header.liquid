@@ -1,5 +1,5 @@
 <script>
-carouselItemData = {{ site.data.carousel | jsonify }};
+carouselItemData = {{ site.data.carousel | where: "active", "true" | jsonify }};
 const carouselItems = carouselItemData ? carouselItemData : [];
 </script>
 

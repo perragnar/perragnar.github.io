@@ -7,10 +7,10 @@ const headerDetachPosition = Math.floor(document.querySelector('.page-header').g
 const isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
 // Carousel init
-initCarousel(currentCarouselPosition);
+initCarousel();
 
-// Start the carousel
-startCarousel();
+// Page header init
+initPageHeader();
 
 // Carousel indicator click
 const indicatorContainer = document.querySelector('#carousel-page-indicator');
@@ -39,38 +39,12 @@ for (const indicator of indicators) {
 
 // Scrolling page
 document.addEventListener('scroll', (event) => {
-    const header = document.querySelector('.page-header');
-
-    // Scroll positions
-    if (window.scrollY > headerDetachPosition) {
-        // Scrolled down below detach position
-        header.classList.remove('takeoff');
-        header.classList.add('detached');
-
-        if (carouselRunning) {
-            stopCarousel();
-        }
-    } else if (window.scrollY > 0 && window.scrollY < headerDetachPosition) {
-        // Starting scroll and still above detach position
-        // Takeoff!!
-        header.classList.remove('detached');
-        header.classList.add('takeoff');
-
-        if (!carouselRunning) {
-            startCarousel();
-        }
-    } else {
-        // Top
-        header.classList.remove('takeoff', 'detached');
-
-        if (!carouselRunning) {
-            startCarousel();
-        }
-    }
+    initPageHeader();
 })
 
 // lazySizes options
 window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.loadHidden = false;
 window.lazySizesConfig.requireJs = function (modules, cb) {
     window.require(modules, cb);
 };
