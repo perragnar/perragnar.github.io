@@ -118,6 +118,10 @@ document.addEventListener('scroll', (event) => {
         // Takeoff!!
         header.classList.remove('detached');
         header.classList.add('takeoff');
+
+        if (!carouselRunning) {
+            startCarousel();
+        }
     } else {
         // Top
         header.classList.remove('takeoff', 'detached');
