@@ -47,9 +47,9 @@ img {
 }
 
 .section {
-    ul {
-        display: inline-block;
-    }
+    // ul {
+    //     display: inline-block;
+    // }
 }
 
 .section-title {
@@ -120,9 +120,15 @@ img {
         font-size: 0.8em;
     }
 
+    &.button--mini {
+        padding: 5px 10px;
+        font-size: 0.7em;
+    }
+
     &.button--outline {
         background-color: transparent;
         border: solid 2px transparent;
+        color: inherit;
         box-shadow: none;
     }
 
@@ -130,6 +136,11 @@ img {
         overflow: hidden;
         border-color: #fff;
         color: #fff;
+    }
+
+    &.button--footer {
+        background-color: #a0a0a0;
+        color: #111111;
     }
 
     &.button--contact {
@@ -283,11 +294,20 @@ img {
         justify-content: space-between;
     }
 
+    &.fb--align-start {
+        align-items: flex-start;
+    }
+
     &.fb--align-center {
         align-items: center;
     }
+
     &.fb--align-end {
         align-items: flex-end;
+    }
+
+    &.fb--justify-start {
+        justify-content: start;
     }
 
     &.fb--justify-center {
@@ -301,6 +321,16 @@ img {
     &.fb--center {
         justify-content: center;
         align-items: center;
+    }
+
+    &.fb--padding {
+        & > * {
+            padding: 2rem;
+
+            @media screen and (max-width: 780px) {
+                padding: 1rem;
+            }
+        }
     }
 
     @for $i from 1 through 9 {
@@ -874,7 +904,6 @@ img {
         z-index: 0;
         opacity: 0.1;
         background: {
-            // image: url(../img/about-bg.jpg);
             position: center;
             size: cover;
             repeat: no-repeat;
@@ -884,14 +913,50 @@ img {
 
 .page-footer {
     background-color: #111111;
-    color: #555;
+    color: #a0a0a0;
 
     .section__content {
         margin: 0 auto;
         max-width: 1200px;
-        padding: 80px 80px 120px;
+        padding: 40px 80px 120px;
         font-size: 0.8em;
         text-align: center;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .navigation-list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: flex-start;
+
+            .nav-item {
+                &.active {
+                    color: #fff;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+
+            @media screen and (max-width: 780px) {
+                display: inline-flex;
+            }
+        }
+
+        .host-logo {
+            max-width: 100px;
+        }
+
+        .host-status {
+            max-width: 100px;
+        }
 
         @media screen and (max-width: 780px) {
             padding: 20px;

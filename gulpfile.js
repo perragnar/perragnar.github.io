@@ -111,7 +111,7 @@ const javascript = () => {
  * Handles Sass files and compiles them to CSS
  */
 const css = () => {
-    return gulp.src('./assets/scss/**/*.scss')
+    return gulp.src('./assets/_scss/**/*.scss')
         .pipe(plumber({
             errorHandler(err) {
                 this.emit('end');
@@ -119,18 +119,20 @@ const css = () => {
         }))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: true,
-        }))
-        .pipe(sourcemaps.write())
+        .pipe(autoprefixer())
         .pipe(concatCss('bundle.css'))
-        .pipe(gulp.dest('./assets/css/'))
-        .pipe(cssnano())
+        .pipe(cssnano({
+            autoprefixer: {
+                browsers: ['> 1%', 'last 2 versions', 'Firefox >= 20'],
+                add: true
+            }
+        }))
         .pipe(rename({
+            basename: 'bundle',
             suffix: '.min',
         }))
-        .pipe(gulp.dest('./_site/assets/css/'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./assets/css/'))
         .pipe(browsersync.stream());
 }
 
@@ -167,7 +169,7 @@ const browsersyncReload = (done) => {
  * Watching for file changes
  */
 const siteWatch = () => {
-    // gulp.watch('./assets/scss/**/*.scss', css);
+    gulp.watch('./assets/_scss/**/*.scss', css);
     gulp.watch(['./assets/js/**/*.js', '!./assets/js/*.min.js'], javascript);
     // gulp.watch('./assets/img/**/*.{jpg,jpeg,gif,png,svg}', images);
     // gulp.watch('./**/*.{htm,html,md,markdown,txt}', content);
@@ -187,7 +189,7 @@ const siteServe = () => {
         },
     });
 
-    // gulp.watch('./assets/scss/**/*.scss', gulp.series(css, browsersyncReload));
+    gulp.watch('./assets/_scss/**/*.scss', gulp.series(css, browsersyncReload));
     gulp.watch('./assets/js/**/*.js', gulp.series(javascript, browsersyncReload));
     // gulp.watch('./assets/img/**/*.{jpg,jpeg,gif,png,svg}', gulp.series(images, browsersyncReload));
     // gulp.watch('./**/*.{htm,html,md,markdown,txt}', gulp.series(content, browsersyncReload));

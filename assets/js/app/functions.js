@@ -13,31 +13,24 @@ const initCarousel = () => {
 
             // Setting CSS classes
             listElement.classList.add('carousel-item', 'lazyload');
+
             if (currentCarouselPosition === key) {
                 listElement.classList.add('active');
             } else {
                 listElement.classList.add('hide');
             }
 
+            // TODO: Add lazyload to carousel
+
             // Carousel item index
             listElement.setAttribute('data-carousel-item-index', key);
-            listElement.setAttribute('data-bg', `./assets/img/photos/hero/${item.img}`);
+            listElement.setAttribute('data-bg', `/assets/img/photos/hero/${item.img}`);
 
+            // Carousel image info
             if (carouselShowImageInfo) {
-                // Adding the carousel item image
-                const imageElement = document.createElement('img');
-                imageElement.src = `./assets/img/photos/hero/${item.img}`;
-                imageElement.setAttribute('data-carousel-image-file', item.img);
-                imageElement.setAttribute('alt', item.title);
-                imageElement.classList.add('carousel-image');
-
-                // Adding the image to the list item
-                listElement.appendChild(imageElement);
-
-                // Carousel image info
                 const infoElement = document.createElement('div');
                 infoElement.classList.add('carousel-info');
-                infoElement.style.textShadow = `1px 1px 0 ${item.color.secondary};`;
+                infoElement.style.textShadow = `1px 1px 0 ${item.secondaryColor};`;
 
                 if (item.title && item.title !== '') {
                     const titleElement = document.createElement('div');
@@ -97,7 +90,7 @@ const startCarousel = () => {
     if (isMobile) {
         const navItems = document.querySelectorAll('#page-header .nav-item a');
         for (const navItem of navItems) {
-            navItem.style.color = carouselItems[currentCarouselPosition].color.primary;
+            navItem.style.color = carouselItems[currentCarouselPosition].primaryColor;
         };
     }
 
@@ -158,8 +151,8 @@ const showCarouselItem = () => {
     }
 
     // Set header color
-    document.querySelector('#page-header').style.color = carouselItems[currentCarouselPosition].color.primary;
-    document.querySelector('#page-header .logotype--nav').style.fill = carouselItems[currentCarouselPosition].color.primary;
+    document.querySelector('#page-header').style.color = carouselItems[currentCarouselPosition].primaryColor;
+    document.querySelector('#page-header .logotype--nav').style.fill = carouselItems[currentCarouselPosition].primaryColor;
 
     // Hero mobile 100vh fix
     if (isMobile) {
@@ -171,17 +164,29 @@ const showCarouselItem = () => {
     // Carousel indicators
     const currentImageTitle = (document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition]) ? document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition].getAttribute('data-title') : null;
     const indicators = document.querySelectorAll('#page-header .carousel-page-indicator .indicator');
-    if (indicators && currentImageTitle) {
-        for (const indicator of indicators) {
-            indicator.style.borderColor = carouselItems[currentCarouselPosition].color.primary;
-            if (indicator.classList.contains('active')) {
-                indicator.style.backgroundColor = carouselItems[currentCarouselPosition].color.primary;
-            } else {
-                indicator.style.backgroundColor = '';
-            }
+    for (const indicator of indicators) {
+        // console.table(carouselItems[currentCarouselPosition]);
+        indicator.style.borderColor = carouselItems[currentCarouselPosition].primaryColor;
+        if (indicator.classList.contains('active')) {
+            indicator.style.backgroundColor = carouselItems[currentCarouselPosition].primaryColor;
+        } else {
+            indicator.style.backgroundColor = '';
         }
-        document.querySelector('#carousel-page-indicator .indicator__title').innerHTML = currentImageTitle;
     }
+    document.querySelector('#carousel-page-indicator .indicator__title').innerHTML = currentImageTitle;
 
     currentCarouselPosition = (currentCarouselPosition + 1 >= carouselItems.length) ? 0 : currentCarouselPosition += 1;
+}
+
+/**
+ * Initializing all buttons with a data-href attribute
+ */
+const initButtons = () => {
+    const buttons = document.querySelectorAll('button[data-href]');
+    for (const button of buttons) {
+        button.addEventListener('click', (event) => {
+            const url = button.getAttribute('data-href');
+            document.location.href = url;
+        });
+    }
 }

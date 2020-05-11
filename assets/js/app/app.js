@@ -6,69 +6,6 @@ const carouselShowImageInfo = false;
 const headerDetachPosition = Math.floor(document.querySelector('.page-header').getBoundingClientRect().height) - Math.floor(document.querySelector('.page-navigation').getBoundingClientRect().height);
 const isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
-const carouselItems = [
-    {
-        img: 'PRE_2081.jpg',
-        title: 'Stairway',
-        note: '',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#ffffff',
-            secondary: 'rgba(0, 0, 0, .5)'
-        }
-    },
-    {
-        img: '2020-03-27-6.jpg',
-        title: 'Sunset and the tree',
-        note: '',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#ffffff',
-            secondary: 'rgba(0, 0, 0, .5)'
-        }
-    },
-    {
-        img: 'PRE_2290.jpg',
-        title: 'Contrast',
-        note: '',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#ffffff',
-            secondary: 'rgba(0, 0, 0, .5)'
-        }
-    },
-    {
-        img: '2020-02-23-17.jpg',
-        title: 'Kapplasse cliffs',
-        note: 'This is a note',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#ffffff',
-            secondary: 'rgba(0, 0, 0, .5)'
-        },
-    },
-    {
-        img: '2020-03-06-3.jpg',
-        title: 'The old house',
-        note: 'This is a note',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#333333',
-            secondary: '#ffffff'
-        }
-    },
-    {
-        img: '2019-12-23-6.jpg',
-        title: 'Välliste',
-        note: 'This is a note',
-        photographer: 'Per Ragnar Edin',
-        color: {
-            primary: '#ffffff',
-            secondary: 'transparent'
-        }
-    },
-];
-
 // Carousel init
 initCarousel(currentCarouselPosition);
 
@@ -131,15 +68,6 @@ document.addEventListener('scroll', (event) => {
         }
     }
 })
-
-// Contact buttos
-const contactButtons = document.querySelectorAll('.contact-options .button');
-for (const contactButton of contactButtons) {
-    contactButton.addEventListener('click', (event) => {
-        const url = contactButton.getAttribute('data-href');
-        document.location.href = url;
-    });
-}
 
 // lazySizes options
 window.lazySizesConfig = window.lazySizesConfig || {};
