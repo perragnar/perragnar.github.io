@@ -10,8 +10,10 @@ const initPageHeader = () => {
         header.classList.remove('takeoff');
         header.classList.add('detached');
 
-        if (carouselRunning) {
-            stopCarousel();
+        if (carouselWrapper) {
+            if (carouselRunning) {
+                stopCarousel();
+            }
         }
     } else if (window.scrollY > 0 && window.scrollY < headerDetachPosition) {
         // Starting scroll and still above detach position
@@ -19,15 +21,19 @@ const initPageHeader = () => {
         header.classList.remove('detached');
         header.classList.add('takeoff');
 
-        if (!carouselRunning) {
-            startCarousel();
+        if (carouselWrapper) {
+            if (!carouselRunning) {
+                startCarousel();
+            }
         }
     } else {
         // Top
         header.classList.remove('takeoff', 'detached');
 
-        if (!carouselRunning) {
-            startCarousel();
+        if (carouselWrapper) {
+            if (!carouselRunning) {
+                startCarousel();
+            }
         }
     }
 }

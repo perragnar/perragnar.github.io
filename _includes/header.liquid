@@ -8,10 +8,15 @@ const carouselItems = carouselItemData ? carouselItemData : [];
         <ul class="navigation-list">
             {% for link in site.data.navigation %}
                 <li class="{{ link.cssClass }}{% if page.url == link.url %} active{% endif %}">
-                    <a href="{{ link.url }}">
-                        {{ link.title }}
-                        {{ link.content }}
-                    </a>
+                    {% if link.cssClass == 'nav-item' %}
+                        <a href="{{ link.url }}">
+                            {{ link.title }}
+                        </a>
+                    {% elsif link.cssClass == 'nav-logo' %}
+                        <a href="{{ link.url }}" aria-label="{{ link.title }}">
+                            {{ link.content }}
+                        </a>
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>

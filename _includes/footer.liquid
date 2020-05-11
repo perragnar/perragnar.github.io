@@ -1,14 +1,13 @@
 <footer class="page-footer section">
     <div class="section__content fb fb--responsive fb--space-between fb--padding">
-        <div class="fi--3">
+        <div>
             <p>
                 &copy; 2020 Per Ragnar Edin
             </p>
-        </div>
-        <div class="fi--4">
+
             <ul class="navigation-list">
                 {% for link in site.data.navigation %}
-                    {% if link.title %}
+                    {% if link.cssClass == 'nav-item' %}
                         <li class="{{ link.cssClass }}{% if page.url == link.url %} active{% endif %}">
                             <a href="{{ link.url }}">
                                 {{ link.title }}
@@ -18,12 +17,12 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="fi--3">
+        <div>
             <p>
-                <a href="https://netlify.com/" target="_blank"><img data-src="/assets/img/footer-netlify-logo.svg" alt="Netlify" class="host-logo lazyload" /></a>
+                <a href="https://netlify.com/" rel="noreferrer" target="_blank"><img data-src="/assets/img/footer-netlify-logo.svg" alt="Netlify" class="host-logo lazyload" /></a>
             </p>
             <p>
-                <a href="https://app.netlify.com/sites/perragnar/overview" target="_blank"><img data-src="https://api.netlify.com/api/v1/badges/6d70a6f3-81c7-49ac-847f-124de5bd40f9/deploy-status" class="host-status lazyload" alt="Netlify Status"></a>
+                <a href="https://app.netlify.com/sites/perragnar/overview" rel="noreferrer" target="_blank"><img data-src="https://api.netlify.com/api/v1/badges/6d70a6f3-81c7-49ac-847f-124de5bd40f9/deploy-status" class="host-status lazyload" alt="Netlify Status"></a>
             </p>
             {% comment %} <p>
                 <button data-href="{{ site.github.repository_url }}/tree/master/{{ page.relative_path }}" class="button button--mini button--footer">Redigera</a>

@@ -127,6 +127,7 @@ const css = () => {
                 add: true
             }
         }))
+        .pipe(size({ gzip: true, showFiles: true }))
         .pipe(rename({
             basename: 'bundle',
             suffix: '.min',
