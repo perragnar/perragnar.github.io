@@ -67,17 +67,22 @@ const initCarousel = () => {
                 listElement.appendChild(infoElement);
             }
 
-            carousel.append(listElement);
+            if (listElement) {
+                carousel.append(listElement);
+            }
 
             // Indicators
             if (carouselItemCount > 1) {
                 const indicator = document.createElement('div');
+
                 indicator.classList.add('indicator');
                 indicator.setAttribute('data-index', key);
                 indicator.setAttribute('data-title', item.title);
+
                 if (currentCarouselPosition === key) {
                     indicator.classList.add('active');
                 }
+
                 document.querySelector('#carousel-page-indicator').appendChild(indicator);
             }
         });
@@ -129,16 +134,28 @@ const resetCarouselTimerIndicator = () => {
  */
 const showCarouselItem = () => {
     // Hides the current active item
-    document.querySelector(`.carousel-item.active`).classList.add('hide');
-    document.querySelector(`.carousel-item.active`).classList.remove('active');
+    const carouselActiveElement = document.querySelector('.carousel.active');
+    if (carouselActiveElement) {
+        carouselActiveElement.classList.add('hide');
+        carouselActiveElement.classList.remove('active');
+    }
 
     // Shows the next item
-    document.querySelector(`.carousel-item[data-carousel-item-index="${currentCarouselPosition}"]`).classList.remove('hide');
-    document.querySelector(`.carousel-item[data-carousel-item-index="${currentCarouselPosition}"]`).classList.add('active');
+    const carouselNextElement = document.querySelector(`.carousel-item[data-carousel-item-index="${currentCarouselPosition}"]`);
+    if (carouselNextElement) {
+        carouselNextElement.classList.remove('hide');
+        carouselNextElement.classList.add('active');
+    }
 
     // Update the indicator
-    document.querySelector('#carousel-page-indicator .indicator.active').classList.remove('active');
-    document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition].classList.add('active');
+    const carouselCurrentActiveIndicator = document.querySelector('#carousel-page-indicator .indicator.active');
+    const carouselNextIndicator = document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition];
+    if (carouselCurrentActiveIndicator) {
+        carouselCurrentActiveIndicator.classList.remove('active');
+    }
+    if (carouselNextIndicator) {
+        carouselNextIndicator.classList.add('active');
+    }
 
     // Set header color
     document.querySelector('#page-header').style.color = carouselItems[currentCarouselPosition].color.primary;
@@ -152,17 +169,19 @@ const showCarouselItem = () => {
     }
 
     // Carousel indicators
-    const currentImageTitle = document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition].getAttribute('data-title');
+    const currentImageTitle = (document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition]) ? document.querySelectorAll('#carousel-page-indicator .indicator')[currentCarouselPosition].getAttribute('data-title') : null;
     const indicators = document.querySelectorAll('#page-header .carousel-page-indicator .indicator');
-    for (const indicator of indicators) {
-        indicator.style.borderColor = carouselItems[currentCarouselPosition].color.primary;
-        if (indicator.classList.contains('active')) {
-            indicator.style.backgroundColor = carouselItems[currentCarouselPosition].color.primary;
-        } else {
-            indicator.style.backgroundColor = '';
+    if (indicators && currentImageTitle) {
+        for (const indicator of indicators) {
+            indicator.style.borderColor = carouselItems[currentCarouselPosition].color.primary;
+            if (indicator.classList.contains('active')) {
+                indicator.style.backgroundColor = carouselItems[currentCarouselPosition].color.primary;
+            } else {
+                indicator.style.backgroundColor = '';
+            }
         }
+        document.querySelector('#carousel-page-indicator .indicator__title').innerHTML = currentImageTitle;
     }
-    document.querySelector('#carousel-page-indicator .indicator__title').innerHTML = currentImageTitle;
 
     currentCarouselPosition = (currentCarouselPosition + 1 >= carouselItems.length) ? 0 : currentCarouselPosition += 1;
 }
