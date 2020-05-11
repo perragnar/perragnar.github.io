@@ -80,32 +80,8 @@ const javascript = () => {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/js/'));
 
-    // Building functions file
-    const functionsJs = gulp.src('./assets/js/functions/**/*.js')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: [
-                ['@babel/env', {
-                    modules: false
-                }]
-            ]
-        }))
-        // .pipe(concat('functions.js'))
-        .pipe(uglify())
-        .pipe(size({ gzip: true, showFiles: true }))
-        .on('error', function (err) {
-            console.log(err.toString());
-        })
-        .pipe(rename({
-            basename: "functions",
-            suffix: '.min',
-        }))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./assets/js/'));
-
     // Building app file
-    const appJs = gulp.src('./assets/js/app/**/*.js')
+    const appJs = gulp.src(['./assets/js/app/functions.js', './assets/js/app/app.js'])
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(babel({
@@ -115,7 +91,7 @@ const javascript = () => {
                 }]
             ]
         }))
-        // .pipe(concat('app.js'))
+        .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(size({ gzip: true, showFiles: true }))
         .on('error', function (err) {
@@ -128,7 +104,7 @@ const javascript = () => {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/js/'));
 
-    return merge(vendorJs, functionsJs, appJs);
+    return merge(vendorJs, appJs);
 }
 
 /**
