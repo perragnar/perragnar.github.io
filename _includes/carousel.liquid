@@ -4,3 +4,8 @@
         <div class="indicator__title"></div>
     </div>
 </div>
+
+<script>
+carouselItemData = {{ site.data.carousel | where: "active", "true" | jsonify }};
+const carouselItems = carouselItemData ? carouselItemData : [];
+</script>

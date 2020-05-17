@@ -407,7 +407,7 @@ const createImgPath = (path) => {
 }
 
 // const build = gulp.series(cleanup, gulp.parallel(content, javascript, css, images, fonts));
-const build = gulp.series(cleanup, gulp.parallel(javascript));
+const build = gulp.series(cleanup, gulp.parallel(javascript, css));
 const watch = gulp.series(build, siteWatch);
 const serve = gulp.series(build, siteServe);
 const inbox = gulp.series(buildGalleryIndex, handleInbox);

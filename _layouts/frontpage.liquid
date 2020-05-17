@@ -6,14 +6,7 @@ layout: default
     <main class="page">
         <section class="intro section">
             <div class="section__content">
-                <h1 class="page-title">Hej!</h1>
-                <p>
-                    Per Ragnar Edin heter jag och är hobbyfotograf.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta laboriosam inventore quisquam dolore unde consequuntur temporibus a omnis voluptate, hic doloribus quidem deleniti aliquam reprehenderit laborum ducimus modi iure neque.
-                </p>
-                <img data-src="/assets/img/sign-black.png" alt="Per Ragnar Edin" width="400" class="signature lazyload">
+                {{ content }}
             </div>
         </section>
         <section class="photo section">
@@ -192,45 +185,6 @@ layout: default
             </div>
         </div>
     </section> {% endcomment %}
-    <section class="section section--default">
-        <div class="slice">
-            <div class="row">
-                <div class="col col--full card card--ghost">
-                    <div class="card__body">
-                        <h3 class="section__header">Oh, btw...</h3>
-                        <p>
-                            Do you code? Using
-                            <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>?
-                            <br> I've made a couple of themes. Go grab them at
-                            <a href="https://marketplace.visualstudio.com/search?term=publisher%3A%22Per%20Ragnar%20Edin%22&target=VSCode&category=All%20categories&sortBy=Relevance"
-                                target="_blank">Visual Studio Marketplace</a>. Here's
-                            <strong>September Steel</strong> and
-                            <strong>Light+ Tweaked</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body align-center">
-                        <h4>September Steel</h4>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.september-steel" target="_blank" class="silent">
-                            <img src="https://raw.githubusercontent.com/perragnar/september-steel/master/images/screenshots/syntax-javascript.png" loading="lazy" alt="September Steel">
-                        </a>
-                        <a class="github-button" href="https://github.com/perragnar/september-steel" data-size="large" data-show-count="true" aria-label="Star perragnar/september-steel on GitHub">Star</a>
-                    </div>
-                </div>
-                <div class="col col--1-2 card card--ghost">
-                    <div class="card__body align-center">
-                        <h4>Default+ Tweaked</h4>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=perragnaredin.light-plus-tweaked" target="_blank" class="silent">
-                            <img src="https://raw.githubusercontent.com/perragnar/light-plus-tweaked/master/images/screenshots/screenshot-light.png" loading="lazy" alt="Default+ Tweaked">
-                        </a>
-                        <a class="github-button" href="https://github.com/perragnar/light-plus-tweaked" data-size="large" data-show-count="true" aria-label="Star perragnar/light-plus-tweaked on GitHub">Star</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <script async defer src="https://buttons.github.io/buttons.js"></script> {% endcomment %}
 {% endif %}
