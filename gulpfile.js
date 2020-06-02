@@ -308,25 +308,39 @@ const walkPhotos = (path, index) => {
             const exifParser = exifPrsr.create(photoBuffer);
             const exifResult = exifParser.parse();
 
-            contains.push({
+            let fileData = {
                 filename: file,
                 width: dimensions.width || null,
                 height: dimensions.height || null,
+                camera: null,
+                lens: null,
+                focal: null,
+                aperture: null,
+                shutter: null,
+                iso: null,
+                date: null
+            };
+
+            if (exifResult.tags) {
                 // The D7000 writes 'NIKON CORPORATION / NIKON D7000' across these fields.
                 // The X-E1 writes 'FUJIFILM / XE-1'. So we do this stupid thing to normalize
                 // as 'Make Model' which is what they should be in the first place...
-                camera: [(exifResult.tags.Make.split(' ')[0] || null), (exifResult.tags.Model.split(' ').pop()) || null].join(' '),
-                lens: exifResult.tags.LensModel || null,
-                focal: exifResult.tags.FocalLength || null,
-                aperture: exifResult.tags.FNumber || null,
+                if (exifResult.tags.Make) {
+                    fileData.camera = [(exifResult.tags.Make.split(' ')[0] || null), (exifResult.tags.Model.split(' ').pop()) || null].join(' ');
+                }
+                fileData.lens = exifResult.tags.LensModel || null;
+                fileData.focal = exifResult.tags.FocalLength || null;
+                fileData.aperture = exifResult.tags.FNumber || null;
                 // EXIF shutter speed is written in decimal seconds, which isn't how that is
                 // actually written. For times over 1 second, write as is with an "s" to signify
                 // full seconds. Otherwise, turn it into a fraction 1/x which is what people
                 // will be used to seeing. Yay math.
-                shutter: (exifResult.tags.ExposureTime > 1 ? (exifResult.tags.ExposureTime + 's') : ('1/' + (1 / exifResult.tags.ExposureTime))) || null,
-                iso: exifResult.tags.ISO || null,
-                date: exifResult.tags.DateTimeOriginal || null
-            });
+                fileData.shutter = (exifResult.tags.ExposureTime > 1 ? (exifResult.tags.ExposureTime + 's') : ('1/' + (1 / exifResult.tags.ExposureTime))) || null;
+                fileData.iso = exifResult.tags.ISO || null;
+                fileData.date = exifResult.tags.DateTimeOriginal || null;
+            }
+
+            contains.push(fileData);
         }
 
         index[dirname] = {
