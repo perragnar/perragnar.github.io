@@ -1,0 +1,13 @@
+---
+title: Björnö
+date: 2020-05-30
+layout: post
+categories:
+  - Fotoblogg
+tags:
+  - Björnö
+galleries:
+  - 2020-05-30-bjorno
+---
+
+Idag gick vi runt Björnö. Fint väder och fint ställe att tillbringa en dag på.
