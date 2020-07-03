@@ -1,0 +1,16 @@
+---
+title: Ny kamera
+date: 2020-07-03
+layout: post
+categories:
+  - Fotoblogg
+tags:
+  - Nikon Z6
+  - Testfoto
+galleries:
+  - 2020-07-03-ny-kamera
+---
+
+Idag kom min nya kamera. Jag bytte in min Nikon D500 mot en Nikon Z6 och efter att ha ställt in de flesta nya inställningarna var det dags att knäppa några testbilder.
+
+Även om det är väldigt tidigt ännu så märker jag direkt några större förbättringar. Dynamiska omfånget känns mycket bättre och det verkar vara stor skillnad när jag tar bilder i sämre ljusförhållanden.
