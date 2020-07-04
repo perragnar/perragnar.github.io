@@ -333,8 +333,13 @@ function walkPhotos(path, index) {
             return 0;
         });
 
+        var date = index[album].date.split('-');
+
         // Writing each gallery data file
-        fs.writeFileSync('./_data/galleries/' + album + '.yml', yaml.safeDump(index[album]));
+        fs.mkdir('./_data/galleries/' + date[0] + '/' + date[1] + '/', { recursive: true }, (err) => {
+            if (err) throw err;
+        });
+        fs.writeFileSync('./_data/galleries/' + date[0] + '/' + date[1] + '/' + album + '.yml', yaml.safeDump(index[album]));
 
         // Creating blog posts for each album
         let postContent = [];
@@ -351,7 +356,10 @@ function walkPhotos(path, index) {
         postContent.push('---');
         postContent.push('');
 
-        fs.writeFileSync('./_posts/' + album + '.markdown', postContent.join('\n'));
+        fs.mkdir('./_posts/' + date[0] + '/' + date[1] + '/', { recursive: true }, (err) => {
+            if (err) throw err;
+        });
+        fs.writeFileSync('./_posts/' + date[0] + '/' + date[1] + '/' + album + '.markdown', postContent.join('\n'));
     }
 
     return true;
