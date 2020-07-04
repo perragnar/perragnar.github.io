@@ -1,6 +1,8 @@
 {% if page.galleries %}
+    {% assign year = include.datetime | date: '%Y' %}
+    {% assign month = include.datetime | date: '%m' %}
     {% for gallerySlug in page.galleries %}
-        {% assign gallery = site.data.galleries[gallerySlug] %}
+        {% assign gallery = site.data.galleries[year][month][gallerySlug] %}
         <div class="row">
             <div class="col col--full card card--shadow">
                 <div class="card__body">

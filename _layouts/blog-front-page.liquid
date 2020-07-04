@@ -31,6 +31,8 @@ layout: default
             <div class="row">
                 {% assign photo_posts = site.posts | where: "categories", "Fotoblogg" | where_exp: "post", "post.draft != true" %}
                 {% for post in photo_posts limit: 6 %}
+                    {% assign year = post.date | date: "%Y" %}
+                    {% assign month = post.date | date: "%m" %}
                     {% assign post_categories = post.categories | downcase %}
                         {% unless post.draft %}
                             <div class="col col--1-3 card card--dark">
@@ -65,7 +67,7 @@ layout: default
 
                                         {% if posterMode == 'galleryfile' %}
                                             {% for gallerySlug in post.galleries %}
-                                                {% assign gallery = site.data.galleries[gallerySlug] %}
+                                                {% assign gallery = site.data.galleries[year][month][gallerySlug] %}
                                                 {% if gallery.contents %}
                                                     {% assign photos = gallery.contents %}
                                                     {% if gallery.poster %}
