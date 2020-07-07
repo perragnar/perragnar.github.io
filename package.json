@@ -43,7 +43,7 @@
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
     "merge-stream": "^2.0.0",
-    "npm": "^6.14.5",
+    "npm": "^6.14.6",
     "recursive-readdir-sync": "^1.0.6",
     "slug": "^2.1.1"
   }
