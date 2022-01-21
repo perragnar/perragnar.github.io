@@ -1,0 +1,24 @@
+{
+  "fullPath": "/content/2020/11/sala-gummi",
+  "images": [
+    {
+      "id": "7d80545e-e53b-406f-89d2-7abac1da8bd4",
+      "index": 1,
+      "files": {
+        "medium": "1-m.jpg",
+        "small": "1-s.jpg",
+        "thumbnail": "1-t.jpg"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 16,
+        "focalLengthEq": 16,
+        "aperture": "f/10",
+        "exposureTime": "1/0",
+        "iso": 50,
+        "lens": "NIKKOR Z 14-30mm f/4 S",
+        "description": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "fullPath": "/content/2021/04/cruising-i-sala",
+  "images": [
+    {
+      "id": "5bba0a11-a271-4c61-a1cc-ec7515a5c267",
+      "index": 1,
+      "files": {
+        "medium": "1-m.webp",
+        "small": "1-s.webp",
+        "thumbnail": "1-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "b6a88c4c-2e51-45ae-9d67-f9218f1550a7",
+      "index": 2,
+      "files": {
+        "medium": "2-m.webp",
+        "small": "2-s.webp",
+        "thumbnail": "2-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 170,
+        "focalLengthEq": 170,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "a7004878-1842-402a-9076-b823cd1a5b69",
+      "index": 3,
+      "files": {
+        "medium": "3-m.webp",
+        "small": "3-s.webp",
+        "thumbnail": "3-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "9fb026b1-b270-4732-98e3-6848477aa33b",
+      "index": 4,
+      "files": {
+        "medium": "4-m.webp",
+        "small": "4-s.webp",
+        "thumbnail": "4-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "58f221d6-f017-492f-b155-ecb47163b48d",
+      "index": 5,
+      "files": {
+        "medium": "5-m.webp",
+        "small": "5-s.webp",
+        "thumbnail": "5-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "e9a2f42d-e58b-4ca8-ae1c-260bb2d15104",
+      "index": 6,
+      "files": {
+        "medium": "6-m.webp",
+        "small": "6-s.webp",
+        "thumbnail": "6-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 170,
+        "focalLengthEq": 170,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "651a9c90-9f1b-4a76-9335-0ff13830c31d",
+      "index": 7,
+      "files": {
+        "medium": "7-m.webp",
+        "small": "7-s.webp",
+        "thumbnail": "7-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 116,
+        "focalLengthEq": 116,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "5d5c0626-ecd0-4608-aaa5-6d58740d23fb",
+      "index": 8,
+      "files": {
+        "medium": "8-m.webp",
+        "small": "8-s.webp",
+        "thumbnail": "8-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "3d5e1d66-841a-41f9-8f39-5c09ba30b70f",
+      "index": 9,
+      "files": {
+        "medium": "9-m.webp",
+        "small": "9-s.webp",
+        "thumbnail": "9-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 130,
+        "focalLengthEq": 130,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "0bf9f5ee-0ee2-4654-9e12-7863ba4961f3",
+      "index": 10,
+      "files": {
+        "medium": "10-m.webp",
+        "small": "10-s.webp",
+        "thumbnail": "10-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 100,
+        "focalLengthEq": 100,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "44516355-35f4-4121-9122-3be47c459f45",
+      "index": 11,
+      "files": {
+        "medium": "11-m.webp",
+        "small": "11-s.webp",
+        "thumbnail": "11-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 120,
+        "focalLengthEq": 120,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "098076d4-957b-452d-b80b-0d463d35d066",
+      "index": 12,
+      "files": {
+        "medium": "12-m.webp",
+        "small": "12-s.webp",
+        "thumbnail": "12-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 175,
+        "focalLengthEq": 175,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "6ebf1064-77a0-44ba-8bb2-9823457fbf70",
+      "index": 13,
+      "files": {
+        "medium": "13-m.webp",
+        "small": "13-s.webp",
+        "thumbnail": "13-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "3af59042-be8b-4498-8bc0-3675c616efd1",
+      "index": 14,
+      "files": {
+        "medium": "14-m.webp",
+        "small": "14-s.webp",
+        "thumbnail": "14-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 100,
+        "focalLengthEq": 100,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 800,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "077bf1ba-0f2c-4d50-b7cd-e955773770cf",
+      "index": 15,
+      "files": {
+        "medium": "15-m.webp",
+        "small": "15-s.webp",
+        "thumbnail": "15-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 175,
+        "focalLengthEq": 175,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 450,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "766b2777-016f-4426-9210-0b2d309513a8",
+      "index": 16,
+      "files": {
+        "medium": "16-m.webp",
+        "small": "16-s.webp",
+        "thumbnail": "16-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 175,
+        "focalLengthEq": 175,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 450,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "83803712-22b7-4cda-a605-dda1abb392d5",
+      "index": 17,
+      "files": {
+        "medium": "17-m.webp",
+        "small": "17-s.webp",
+        "thumbnail": "17-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 185,
+        "focalLengthEq": 185,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 800,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "ff8b0c08-21f1-438f-8009-19f4d0bc8b4f",
+      "index": 18,
+      "files": {
+        "medium": "18-m.webp",
+        "small": "18-s.webp",
+        "thumbnail": "18-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 170,
+        "focalLengthEq": 170,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 560,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "b9b00c55-4ef3-45bc-a716-1d8e490d34bb",
+      "index": 19,
+      "files": {
+        "medium": "19-m.webp",
+        "small": "19-s.webp",
+        "thumbnail": "19-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 180,
+        "focalLengthEq": 180,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 900,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "8fc709f9-a0cb-4d7e-8b30-05c8c4ef2dd9",
+      "index": 20,
+      "files": {
+        "medium": "20-m.webp",
+        "small": "20-s.webp",
+        "thumbnail": "20-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 180,
+        "focalLengthEq": 180,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1250,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "5ea2d8f1-a0bb-4ef3-80f1-4de4f0825fe4",
+      "index": 21,
+      "files": {
+        "medium": "21-m.webp",
+        "small": "21-s.webp",
+        "thumbnail": "21-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 105,
+        "focalLengthEq": 105,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 640,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "8cd3bb6d-a874-4530-a310-b1280f4bbd7e",
+      "index": 22,
+      "files": {
+        "medium": "22-m.webp",
+        "small": "22-s.webp",
+        "thumbnail": "22-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 150,
+        "focalLengthEq": 150,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 500,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "55bcb571-5fc3-44a9-bec4-3f5755737f02",
+      "index": 23,
+      "files": {
+        "medium": "23-m.webp",
+        "small": "23-s.webp",
+        "thumbnail": "23-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 170,
+        "focalLengthEq": 170,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "be7bf2e4-6391-4e37-9a32-056454b0e64d",
+      "index": 24,
+      "files": {
+        "medium": "24-m.webp",
+        "small": "24-s.webp",
+        "thumbnail": "24-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 130,
+        "focalLengthEq": 130,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "0973446f-992d-4879-a5db-f19ad061566c",
+      "index": 25,
+      "files": {
+        "medium": "25-m.webp",
+        "small": "25-s.webp",
+        "thumbnail": "25-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 175,
+        "focalLengthEq": 175,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "352366d4-02e6-481b-9853-dd23ad2c5b66",
+      "index": 26,
+      "files": {
+        "medium": "26-m.webp",
+        "small": "26-s.webp",
+        "thumbnail": "26-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 70,
+        "focalLengthEq": 70,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "f8de0fa0-431d-434e-ab30-c4839455b023",
+      "index": 27,
+      "files": {
+        "medium": "27-m.webp",
+        "small": "27-s.webp",
+        "thumbnail": "27-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "63df94c8-6c25-4c37-aec0-073a58ca0c7a",
+      "index": 28,
+      "files": {
+        "medium": "28-m.webp",
+        "small": "28-s.webp",
+        "thumbnail": "28-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 130,
+        "focalLengthEq": 130,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 320,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "0e4d118b-6518-48a8-8498-5a9c028162c8",
+      "index": 29,
+      "files": {
+        "medium": "29-m.webp",
+        "small": "29-s.webp",
+        "thumbnail": "29-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 175,
+        "focalLengthEq": 175,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "38aa4097-d9de-4385-83b9-0ddb1aa2b95a",
+      "index": 30,
+      "files": {
+        "medium": "30-m.webp",
+        "small": "30-s.webp",
+        "thumbnail": "30-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 75,
+        "focalLengthEq": 75,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1250,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "a7ff7f32-20b8-4b74-bb46-b0ab3d96bb58",
+      "index": 31,
+      "files": {
+        "medium": "31-m.webp",
+        "small": "31-s.webp",
+        "thumbnail": "31-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 135,
+        "focalLengthEq": 135,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1250,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "1dece783-d19c-4850-befe-e8831d783e3e",
+      "index": 32,
+      "files": {
+        "medium": "32-m.webp",
+        "small": "32-s.webp",
+        "thumbnail": "32-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 180,
+        "focalLengthEq": 180,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 560,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "86132838-ab6c-42f4-8b8a-fbea6be19cef",
+      "index": 33,
+      "files": {
+        "medium": "33-m.webp",
+        "small": "33-s.webp",
+        "thumbnail": "33-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "6a19b71c-c493-43e1-be61-18e055246917",
+      "index": 34,
+      "files": {
+        "medium": "34-m.webp",
+        "small": "34-s.webp",
+        "thumbnail": "34-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 110,
+        "focalLengthEq": 110,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "13af303e-d49d-46a6-8dab-1efc57bed1a0",
+      "index": 35,
+      "files": {
+        "medium": "35-m.webp",
+        "small": "35-s.webp",
+        "thumbnail": "35-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 180,
+        "focalLengthEq": 180,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "30667957-8180-4b44-b399-ba92cc51b3df",
+      "index": 36,
+      "files": {
+        "medium": "36-m.webp",
+        "small": "36-s.webp",
+        "thumbnail": "36-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 122,
+        "focalLengthEq": 122,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1000,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "692a3fae-0bf2-4487-8132-98f9a464fb5f",
+      "index": 37,
+      "files": {
+        "medium": "37-m.webp",
+        "small": "37-s.webp",
+        "thumbnail": "37-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 135,
+        "focalLengthEq": 135,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 1600,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    }
+  ]
+}

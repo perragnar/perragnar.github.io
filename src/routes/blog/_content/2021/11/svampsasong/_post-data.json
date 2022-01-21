@@ -1,0 +1,277 @@
+{
+  "fullPath": "/content/2021/11/svampsasong",
+  "images": [
+    {
+      "id": "21b59c8c-db45-4049-8040-ed3f507c0e26",
+      "index": 1,
+      "files": {
+        "medium": "1-m.webp",
+        "small": "1-s.webp",
+        "thumbnail": "1-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/10",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "9646f3c9-f5f4-42f0-afff-f63683a65763",
+      "index": 2,
+      "files": {
+        "medium": "2-m.webp",
+        "small": "2-s.webp",
+        "thumbnail": "2-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 550,
+        "aperture": "f/6.3",
+        "exposureTime": "1/500",
+        "iso": 100,
+        "lens": "150.0-600.0 mm f/5.0-6.3"
+      }
+    },
+    {
+      "id": "f3043aa7-0278-4ff8-90e9-51406ae4872a",
+      "index": 3,
+      "files": {
+        "medium": "3-m.webp",
+        "small": "3-s.webp",
+        "thumbnail": "3-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/3.8",
+        "exposureTime": "1/1250",
+        "iso": 450,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "12ad2121-5ed8-474b-99aa-58b14a6651b1",
+      "index": 4,
+      "files": {
+        "medium": "4-m.webp",
+        "small": "4-s.webp",
+        "thumbnail": "4-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/50",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "db17db34-9238-4b37-80b4-1b2996cd892f",
+      "index": 5,
+      "files": {
+        "medium": "5-m.webp",
+        "small": "5-s.webp",
+        "thumbnail": "5-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/18",
+        "exposureTime": "1/2",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "353ab8a8-776d-4f09-8659-da78c76a1ddd",
+      "index": 6,
+      "files": {
+        "medium": "6-m.webp",
+        "small": "6-s.webp",
+        "thumbnail": "6-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/8",
+        "exposureTime": "1/13",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "816b9650-572b-4b3f-b390-5edb39a7aa92",
+      "index": 7,
+      "files": {
+        "medium": "7-m.webp",
+        "small": "7-s.webp",
+        "thumbnail": "7-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/8",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "f8569489-f6e5-4656-8ae1-e727789829cc",
+      "index": 8,
+      "files": {
+        "medium": "8-m.webp",
+        "small": "8-s.webp",
+        "thumbnail": "8-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/25",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "1e439d98-7f72-4a65-87b3-73bbbeb17e75",
+      "index": 9,
+      "files": {
+        "medium": "9-m.webp",
+        "small": "9-s.webp",
+        "thumbnail": "9-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/25",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "bf48ab56-2f94-4b5a-afd6-06ffc1c083ad",
+      "index": 10,
+      "files": {
+        "medium": "10-m.webp",
+        "small": "10-s.webp",
+        "thumbnail": "10-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/3",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "22b60060-49f5-4565-a01e-b1d4687f2222",
+      "index": 11,
+      "files": {
+        "medium": "11-m.webp",
+        "small": "11-s.webp",
+        "thumbnail": "11-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/7.1",
+        "exposureTime": "1/3",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "b0ddc8c2-1c4d-4be3-959e-50d1a97c37e3",
+      "index": 12,
+      "files": {
+        "medium": "12-m.webp",
+        "small": "12-s.webp",
+        "thumbnail": "12-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/4",
+        "exposureTime": "1/20",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "0e2c5566-64e1-4c7c-989e-23c2b5def221",
+      "index": 13,
+      "files": {
+        "medium": "13-m.webp",
+        "small": "13-s.webp",
+        "thumbnail": "13-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/11",
+        "exposureTime": "1/8",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "cae3e888-0a94-4666-859c-d43e90da949c",
+      "index": 14,
+      "files": {
+        "medium": "14-m.webp",
+        "small": "14-s.webp",
+        "thumbnail": "14-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/8",
+        "exposureTime": "1/125",
+        "iso": 640,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "ab7ea239-a7bf-48b8-b46b-2dd45e8fa364",
+      "index": 15,
+      "files": {
+        "medium": "15-m.webp",
+        "small": "15-s.webp",
+        "thumbnail": "15-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/3.8",
+        "exposureTime": "1/1250",
+        "iso": 4000,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "cbecea80-b7b6-4763-855b-e568e734680a",
+      "index": 16,
+      "files": {
+        "medium": "16-m.webp",
+        "small": "16-s.webp",
+        "thumbnail": "16-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "aperture": "f/18",
+        "exposureTime": "1/8",
+        "iso": 50,
+        "lens": "85.0 mm f/3.5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "fullPath": "/content/2021/05/aholmen-och-stromsholms-slott",
+  "images": [
+    {
+      "id": "9a7a59e1-e9c5-4fd8-9f71-c7497df0a2fb",
+      "index": 1,
+      "files": {
+        "medium": "1-m.webp",
+        "small": "1-s.webp",
+        "thumbnail": "1-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/400",
+        "iso": 50,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "cd62191d-76c0-4668-a441-2351238cef93",
+      "index": 2,
+      "files": {
+        "medium": "2-m.webp",
+        "small": "2-s.webp",
+        "thumbnail": "2-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 200,
+        "focalLengthEq": 200,
+        "aperture": "f/2.8",
+        "exposureTime": "1/1000",
+        "iso": 220,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "876bc8b1-6b9e-433d-b72b-b9d1a3e0b19f",
+      "index": 3,
+      "files": {
+        "medium": "3-m.webp",
+        "small": "3-s.webp",
+        "thumbnail": "3-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "focalLengthEq": 127,
+        "aperture": "f/11",
+        "exposureTime": "1/200",
+        "iso": 100,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "7a3c459b-4bdf-4039-92c2-ee07fbf34a78",
+      "index": 4,
+      "files": {
+        "medium": "4-m.webp",
+        "small": "4-s.webp",
+        "thumbnail": "4-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "focalLengthEq": 127,
+        "aperture": "f/8",
+        "exposureTime": "1/160",
+        "iso": 100,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "4f93f7ad-c904-45bc-89db-3f089af74d0b",
+      "index": 5,
+      "files": {
+        "medium": "5-m.webp",
+        "small": "5-s.webp",
+        "thumbnail": "5-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 17.5,
+        "focalLengthEq": 22,
+        "aperture": "f/11",
+        "exposureTime": "1/20",
+        "iso": 50,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "ae1881cf-8812-43a9-8551-96d4ddb180d7",
+      "index": 6,
+      "files": {
+        "medium": "6-m.webp",
+        "small": "6-s.webp",
+        "thumbnail": "6-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 85,
+        "focalLengthEq": 127,
+        "aperture": "f/11",
+        "exposureTime": "1/80",
+        "iso": 100,
+        "lens": "85.0 mm f/3.5"
+      }
+    },
+    {
+      "id": "d95b57ad-77f8-43e2-81fc-756fd25a7265",
+      "index": 7,
+      "files": {
+        "medium": "7-m.webp",
+        "small": "7-s.webp",
+        "thumbnail": "7-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 16,
+        "focalLengthEq": 16,
+        "aperture": "f/11",
+        "exposureTime": "1/50",
+        "iso": 100,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "86473c19-9764-46b8-a6ab-9497bc953759",
+      "index": 8,
+      "files": {
+        "medium": "8-m.webp",
+        "small": "8-s.webp",
+        "thumbnail": "8-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 21,
+        "focalLengthEq": 21,
+        "aperture": "f/11",
+        "exposureTime": "1/80",
+        "iso": 100,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "fc65c57f-b76b-4c1f-9d35-93023d418c6b",
+      "index": 9,
+      "files": {
+        "medium": "9-m.webp",
+        "small": "9-s.webp",
+        "thumbnail": "9-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 155,
+        "focalLengthEq": 155,
+        "aperture": "f/11",
+        "exposureTime": "1/1",
+        "iso": 100,
+        "lens": "70.0-200.0 mm f/2.8"
+      }
+    },
+    {
+      "id": "f2f64c91-26b3-4bdf-9614-7b7fc073190b",
+      "index": 10,
+      "files": {
+        "medium": "10-m.webp",
+        "small": "10-s.webp",
+        "thumbnail": "10-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 14,
+        "focalLengthEq": 14,
+        "aperture": "f/13",
+        "exposureTime": "1/0",
+        "iso": 200,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "18723904-8202-4e06-abee-bc9009f50923",
+      "index": 11,
+      "files": {
+        "medium": "11-m.webp",
+        "small": "11-s.webp",
+        "thumbnail": "11-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 26,
+        "focalLengthEq": 26,
+        "aperture": "f/13",
+        "exposureTime": "1/0",
+        "iso": 100,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "5e7d0afe-8e8d-4231-89bd-2edb700d7597",
+      "index": 12,
+      "files": {
+        "medium": "12-m.webp",
+        "small": "12-s.webp",
+        "thumbnail": "12-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 16.5,
+        "focalLengthEq": 16,
+        "aperture": "f/8",
+        "exposureTime": "1/0",
+        "iso": 200,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    },
+    {
+      "id": "6ed5ce14-ce01-45a9-bb1e-dbbe96202038",
+      "index": 13,
+      "files": {
+        "medium": "13-m.webp",
+        "small": "13-s.webp",
+        "thumbnail": "13-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 21,
+        "focalLengthEq": 21,
+        "aperture": "f/8",
+        "exposureTime": "1/0",
+        "iso": 160,
+        "lens": "NIKKOR Z 14-30mm f/4 S"
+      }
+    }
+  ]
+}

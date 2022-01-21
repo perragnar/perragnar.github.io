@@ -1,0 +1,243 @@
+{
+  "fullPath": "/content/2021/10/fyrkantigt-i-vasteras",
+  "images": [
+    {
+      "id": "461304f7-1222-4182-84be-fc2dda9c1095",
+      "index": 1,
+      "files": {
+        "medium": "1-m.webp",
+        "small": "1-s.webp",
+        "thumbnail": "1-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 70,
+        "aperture": "f/5.6",
+        "exposureTime": "1/100",
+        "iso": 280,
+        "lens": "NIKKOR Z 24-70mm f/4 S"
+      }
+    },
+    {
+      "id": "00e553ab-ed3e-4e4e-972a-d6b04cd09472",
+      "index": 2,
+      "files": {
+        "medium": "2-m.webp",
+        "small": "2-s.webp",
+        "thumbnail": "2-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/1.8",
+        "exposureTime": "1/2500",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "6b39ac68-7644-4842-b7f6-09b00a52d1dc",
+      "index": 3,
+      "files": {
+        "medium": "3-m.webp",
+        "small": "3-s.webp",
+        "thumbnail": "3-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/400",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "e01575a3-7aa9-420b-8adb-879bf377b5e1",
+      "index": 4,
+      "files": {
+        "medium": "4-m.webp",
+        "small": "4-s.webp",
+        "thumbnail": "4-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/1.8",
+        "exposureTime": "1/1600",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "ec1fdfde-c9be-4cd6-8b43-6f834cc4dffd",
+      "index": 5,
+      "files": {
+        "medium": "5-m.webp",
+        "small": "5-s.webp",
+        "thumbnail": "5-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/250",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "243e10db-ca09-44b7-be33-47083039dd05",
+      "index": 6,
+      "files": {
+        "medium": "6-m.webp",
+        "small": "6-s.webp",
+        "thumbnail": "6-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/500",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "016c770c-284e-472b-b63b-4c326eb044bd",
+      "index": 7,
+      "files": {
+        "medium": "7-m.webp",
+        "small": "7-s.webp",
+        "thumbnail": "7-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/4",
+        "exposureTime": "1/400",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "8054e570-b3f1-4d1c-984b-00a4db8b376e",
+      "index": 8,
+      "files": {
+        "medium": "8-m.webp",
+        "small": "8-s.webp",
+        "thumbnail": "8-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/320",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "65f7221a-34d6-4c16-8b53-b510d61cde30",
+      "index": 9,
+      "files": {
+        "medium": "9-m.webp",
+        "small": "9-s.webp",
+        "thumbnail": "9-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/100",
+        "iso": 220,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "b7c7a4f0-7755-44be-be17-8b919359bdcb",
+      "index": 10,
+      "files": {
+        "medium": "10-m.webp",
+        "small": "10-s.webp",
+        "thumbnail": "10-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/100",
+        "iso": 720,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "95bb9796-82f4-4e18-b095-2e8ffec47649",
+      "index": 11,
+      "files": {
+        "medium": "11-m.webp",
+        "small": "11-s.webp",
+        "thumbnail": "11-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/100",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "3303a009-4008-4d86-a398-23e3ba8bc2bd",
+      "index": 12,
+      "files": {
+        "medium": "12-m.webp",
+        "small": "12-s.webp",
+        "thumbnail": "12-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/160",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "d7a757ae-1707-497a-9320-65bdac7929e6",
+      "index": 13,
+      "files": {
+        "medium": "13-m.webp",
+        "small": "13-s.webp",
+        "thumbnail": "13-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/5.6",
+        "exposureTime": "1/100",
+        "iso": 720,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    },
+    {
+      "id": "bbf1bb38-e508-47be-b8cb-deec3549628d",
+      "index": 14,
+      "files": {
+        "medium": "14-m.webp",
+        "small": "14-s.webp",
+        "thumbnail": "14-t.webp"
+      },
+      "exif": {
+        "camera": "NIKON Z 6",
+        "focalLength": 50,
+        "aperture": "f/1.8",
+        "exposureTime": "1/640",
+        "iso": 100,
+        "lens": "NIKKOR Z 50mm f/1.8 S"
+      }
+    }
+  ]
+}
