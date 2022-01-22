@@ -98,14 +98,21 @@
 
       :global.image {
         page-break-inside: avoid;
-        margin: 0 0 3rem;
+        margin: 0;
 
-        @media (max-width: 1000px) {
-          margin: 0 0 2rem;
-        }
+        // Hack for fixing bottom margin in CSS columns.
+        &::after {
+          content: '';
+          display: block;
+          height: 3rem;
 
-        @media (max-width: 600px) {
-          margin: 0 0 1rem;
+          @media (max-width: 1000px) {
+            height: 2rem;
+          }
+
+          @media (max-width: 600px) {
+            height: 1rem;
+          }
         }
       }
 
